@@ -1,0 +1,9 @@
+{
+  "targets_from_surf": 105,
+  "matched_count": 102,
+  "no_tiers_count": 0,
+  "unmatched_count": 3,
+  "api_detail_v2": "https://futures.mexc.com/api/v1/contract/detailV2?client=web",
+  "note": "keys are BASEQUOTE (no underscore), tiers from rlcs: lv, vol, mmr, imr, mlev",
+  "selected_file": "C:\\Users\\zhang\\Desktop\\crypto\\currency_leverage_collection\\data\\dataGet_api\\mexc\\mexc_selected.json"
+}

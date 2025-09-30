@@ -1,0 +1,13 @@
+{
+  "source": "https://www.weex.com/zh-CN/futures/introduction/risk-limit",
+  "generated_at": "2025-09-30 19:32:33",
+  "count_symbols": 105,
+  "count_errors": 0,
+  "errors": [],
+  "note": "所有字段均为字符串，直接来自页面展示（lv, range, mlev, mmr）",
+  "headless": true,
+  "render_timeout": 15.0,
+  "per_wait": 0.8,
+  "concurrency": 4,
+  "batches": 4
+}

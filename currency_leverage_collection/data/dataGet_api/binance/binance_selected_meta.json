@@ -1,0 +1,41 @@
+{
+  "source_raw": "C:\\Users\\zhang\\Desktop\\crypto\\currency_leverage_collection\\data\\dataGet_api\\binance\\brackets_raw.json",
+  "total_items_all": 718,
+  "wanted_count": 105,
+  "selected_count": 90,
+  "missing_count": 15,
+  "missing": [
+    "AVLUSDT",
+    "BGBUSDT",
+    "BROCCOLIUSDT",
+    "CHEEMSUSDT",
+    "DOGUSDT",
+    "KUSDT",
+    "LAUNCHCOINUSDT",
+    "LIBRAUSDT",
+    "MNTUSDT",
+    "OKBUSDT",
+    "PEPEUSDT",
+    "PIUSDT",
+    "RHEAUSDT",
+    "SATSUSDT",
+    "YZYUSDT"
+  ],
+  "unmatched": [
+    "AVLUSDT",
+    "BGBUSDT",
+    "BROCCOLIUSDT",
+    "CHEEMSUSDT",
+    "DOGUSDT",
+    "KUSDT",
+    "LAUNCHCOINUSDT",
+    "LIBRAUSDT",
+    "MNTUSDT",
+    "OKBUSDT",
+    "PEPEUSDT",
+    "PIUSDT",
+    "RHEAUSDT",
+    "SATSUSDT",
+    "YZYUSDT"
+  ]
+}

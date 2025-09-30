@@ -1,0 +1,242 @@
+{
+  "initial": null,
+  "requests": [
+    {
+      "duration": 382,
+      "method": "POST",
+      "reqBody": "data_list=W3siaWRlbnRpdGllcyI6eyIkaWRlbnRpdHlfY29va2llX2lkIjoiMTk5OTFmZjYzM2I0NzctMDI2ZWQ4NzU2ZTBlMmZlLTE2MmUyOTdmLTM2ODY0MDAtMTk5OTFmZjYzM2NjNGEifSwiZGlzdGluY3RfaWQiOiIxOTk5MWZmNjMzYjQ3Ny0wMjZlZDg3NTZlMGUyZmUtMTYyZTI5N2YtMzY4NjQwMC0xOTk5MWZmNjMzY2M0YSIsImxpYiI6eyIkbGliIjoianMiLCIkbGliX21ldGhvZCI6ImNvZGUiLCIkbGliX3ZlcnNpb24iOiIxLjI2LjQifSwicHJvcGVydGllcyI6eyIkdGltZXpvbmVfb2Zmc2V0IjotNDgwLCIkc2NyZWVuX2hlaWdodCI6MTQ0MCwiJHNjcmVlbl93aWR0aCI6MjU2MCwiJHZpZXdwb3J0X2hlaWdodCI6MTE3MywiJHZpZXdwb3J0X3dpZHRoIjoxMjUxLCIkbGliIjoianMiLCIkbGliX3ZlcnNpb24iOiIxLjI2LjQiLCIkbGF0ZXN0X3RyYWZmaWNfc291cmNlX3R5cGUiOiLnm7TmjqXmtYHph48iLCIkbGF0ZXN0X3NlYXJjaF9rZXl3b3JkIjoi5pyq5Y%2BW5Yiw5YC8X%2BebtOaOpeaJk%2BW8gCIsIiRsYXRlc3RfcmVmZXJyZXIiOiIiLCJ1c2VySWQiOiIiLCJkZXZpY2VJZCI6IiIsInVzZXJUb2tlbiI6IiIsImxvY2FsVGltZSI6IjIwMjUvMDkvMjkgMDQ6MjQ6MTcuNDc4IiwidXRjVGltZSI6IjIwMjUvMDkvMjggMjA6MjQ6MTcuNDgyIiwibGFuZ3VhZ2UiOiJlbiIsIiRyZWZlcnJlciI6IiIsIiR1cmwiOiJodHRwczovL3d3dy53ZWV4LmNvbS96aC1DTi9mdXR1cmVzL2ludHJvZHVjdGlvbi9yaXNrLWxpbWl0P2NvZGU9Y210X2J0Y3VzZHQiLCIkdXJsX3BhdGgiOiIvemgtQ04vZnV0dXJlcy9pbnRyb2R1Y3Rpb24vcmlzay1saW1pdCIsIiR0aXRsZSI6IldFRVjvvJrpobbnuqfmnJ%2FotKfkuqTmmJPnmoTliqDlr4botKfluIHkuqTmmJPmiYAgfCBCVEPlkozlsbHlr6jluIEiLCIkaXNfZmlyc3RfZGF5Ijp0cnVlLCIkaXNfZmlyc3RfdGltZSI6dHJ1ZSwiJHJlZmVycmVyX2hvc3QiOiIifSwiYW5vbnltb3VzX2lkIjoiMTk5OTFmZjYzM2I0NzctMDI2ZWQ4NzU2ZTBlMmZlLTE2MmUyOTdmLTM2ODY0MDAtMTk5OTFmZjYzM2NjNGEiLCJ0eXBlIjoidHJhY2siLCJldmVudCI6IiRwYWdldmlldyIsInRpbWUiOjE3NTkwOTEwNTc0ODcsIl90cmFja19pZCI6MTE1NjQ3NDg4LCJfZmx1c2hfdGltZSI6MTc1OTA5MTA1NzQ4OH1d",
+      "respLength": 0,
+      "startedAt": 1759091057489,
+      "status": 200,
+      "type": "xhr",
+      "url": "https://app-sensor.janapw.com:8106/sa.gif?project=production"
+    },
+    {
+      "duration": 853,
+      "method": "GET",
+      "reqBody": null,
+      "respLength": 24,
+      "startedAt": 1759091057636,
+      "status": 200,
+      "type": "xhr",
+      "url": "https://dswcnhr3lpzog.cloudfront.net/web_abroad.txt?v=1759091057635"
+    },
+    {
+      "duration": 426,
+      "method": "GET",
+      "reqBody": null,
+      "respLength": 24,
+      "startedAt": 1759091058073,
+      "status": 200,
+      "type": "xhr",
+      "url": "https://dswcnhr3lpzog.cloudfront.net/web_abroad.txt?v=1759091058073"
+    },
+    {
+      "duration": 97,
+      "method": "POST",
+      "reqBody": "{\"memory\":{\"totalJSHeapSize\":163399593,\"usedJSHeapSize\":109305041,\"jsHeapSizeLimit\":4294705152},\"resources\":[],\"referrer\":\"\",\"eventType\":1,\"firstPaint\":1100,\"firstContentfulPaint\":1100,\"startTime\":1759091055733.8,\"versions\":{\"fl\":\"2025.9.1\",\"js\":\"2024.6.1\",\"timings\":2},\"pageloadId\":\"a300faa0-dd70-48df-ab77-799b450f0668\",\"location\":\"https://www.weex.com/zh-CN/futures/introduction/risk-limit\",\"nt\":\"navigate\",\"serverTimings\":[{\"name\":\"cfCacheStatus\",\"dur\":0,\"desc\":\"HIT\"},{\"name\":\"cfOrigin\",\"dur\":0,\"desc\":\"\"},{\"name\":\"cfEdge\",\"dur\":21,\"desc\":\"\"}],\"timingsV2\":{\"unloadEventStart\":0,\"unloadEventEnd\":0,\"domInteractive\":1118.0999999940395,\"domContentLoadedEventStart\":1907.0999999940395,\"domContentLoadedEventEnd\":1907.8999999985099,\"domComplete\":2810.5,\"loadEventStart\":2810.5,\"loadEventEnd\":2813.6999999955297,\"type\":\"navigate\",\"redirectCount\":0,\"criticalCHRestart\":0,\"activationStart\":0,\"initiatorType\":\"navigation\",\"nextHopProtocol\":\"h2\",\"deliveryType\":\"\",\"workerStart\":0,\"redirectStart\":0,\"redirectEnd\":0,\"fetchStart\":1,\"domainLookupStart\":1,\"domainLookupEnd\":1,\"connectStart\":142.39999999850988,\"connectEnd\":313.19999999552965,\"secureConnectionStart\":143.5,\"requestStart\":313.3999999985099,\"responseStart\":412.79999999701977,\"responseEnd\":428.3999999985099,\"transferSize\":14249,\"encodedBodySize\":13949,\"decodedBodySize\":62533,\"responseStatus\":200,\"finalResponseHeadersStart\":412.79999999701977,\"firstInterimResponseStart\":0,\"workerRouterEvaluationStart\":0,\"workerCacheLookupStart\":0,\"workerMatchedSourceType\":\"\",\"workerFinalSourceType\":\"\",\"renderBlockingStatus\":\"non-blocking\",\"name\":\"https://www.weex.com/zh-CN/futures/introduction/risk-limit?code=cmt_btcusdt\",\"entryType\":\"navigation\",\"startTime\":0,\"duration\":2813.6999999955297},\"dt\":\"\",\"siteToken\":\"258d2bb7d94b4b0a80bb8b188151f03c\",\"st\":2}",
+      "respLength": 0,
+      "startedAt": 1759091058562,
+      "status": 204,
+      "type": "xhr",
+      "url": "/cdn-cgi/rum?"
+    },
+    {
+      "duration": 291,
+      "method": "GET",
+      "reqBody": null,
+      "respLength": 1407,
+      "startedAt": 1759091058835,
+      "status": 200,
+      "type": "fetch",
+      "url": "https://ekr.zdassets.com/compose/21e8f27e-9ee5-4df4-a53d-bd01295974a2"
+    },
+    {
+      "duration": 700,
+      "method": "GET",
+      "reqBody": null,
+      "respLength": 445,
+      "startedAt": 1759091058440,
+      "status": 200,
+      "type": "xhr",
+      "url": "https://webapi.weex.com/api/f-intro-risk-limit?locale=zh-Hans&populate=seo.metaImage"
+    },
+    {
+      "duration": 687,
+      "method": "POST",
+      "reqBody": "{\"languageType\":1}",
+      "respLength": 90,
+      "startedAt": 1759091058499,
+      "status": 200,
+      "type": "xhr",
+      "url": "https://gateway1.janapw.com/v1/user/public/ip/info"
+    },
+    {
+      "duration": 689,
+      "method": "POST",
+      "reqBody": "{\"businessTypeLevel\":1,\"languageType\":1}",
+      "respLength": 37,
+      "startedAt": 1759091058499,
+      "status": 200,
+      "type": "xhr",
+      "url": "https://gateway1.janapw.com/v1/push/record/selectByPageGroupJson"
+    },
+    {
+      "duration": 752,
+      "method": "POST",
+      "reqBody": "{\"languageType\":1}",
+      "respLength": 424,
+      "startedAt": 1759091058522,
+      "status": 200,
+      "type": "xhr",
+      "url": "https://gateway1.janapw.com/v1/mix/index/getPopularCryptocurrencies"
+    },
+    {
+      "duration": 800,
+      "method": "POST",
+      "reqBody": "{\"languageType\":1}",
+      "respLength": 72,
+      "startedAt": 1759091058494,
+      "status": 200,
+      "type": "xhr",
+      "url": "https://gateway1.janapw.com/v1/user/public/clearCookie"
+    },
+    {
+      "duration": 812,
+      "method": "GET",
+      "reqBody": null,
+      "respLength": 139,
+      "startedAt": 1759091058489,
+      "status": 200,
+      "type": "xhr",
+      "url": "https://gateway1.janapw.com/v1/if/health"
+    },
+    {
+      "duration": 804,
+      "method": "GET",
+      "reqBody": null,
+      "respLength": 30203,
+      "startedAt": 1759091058499,
+      "status": 200,
+      "type": "xhr",
+      "url": "https://gateway1.janapw.com/v1/msg/areaCode/app/v2/list?status=enable&pageIndex=0&pageSize=999&languageType=1"
+    },
+    {
+      "duration": 827,
+      "method": "POST",
+      "reqBody": "{\"languageType\":1}",
+      "respLength": 4435,
+      "startedAt": 1759091058495,
+      "status": 200,
+      "type": "xhr",
+      "url": "https://gateway1.janapw.com/v1/mix/index/navigationBar"
+    },
+    {
+      "duration": 848,
+      "method": "POST",
+      "reqBody": "{\"languageType\":1}",
+      "respLength": 986,
+      "startedAt": 1759091058495,
+      "status": 200,
+      "type": "xhr",
+      "url": "https://gateway1.janapw.com/v1/user/public/usdtRate"
+    },
+    {
+      "duration": 861,
+      "method": "GET",
+      "reqBody": null,
+      "respLength": 376,
+      "startedAt": 1759091058496,
+      "status": 200,
+      "type": "xhr",
+      "url": "https://gateway1.janapw.com/v1/assets/spotpro/switch/setting?languageType=1"
+    },
+    {
+      "duration": 945,
+      "method": "GET",
+      "reqBody": null,
+      "respLength": 1015112,
+      "startedAt": 1759091058498,
+      "status": 200,
+      "type": "xhr",
+      "url": "https://gateway1.janapw.com/outer/public/v1/newwallet/coin/coinChainList?languageType=1"
+    },
+    {
+      "duration": 955,
+      "method": "POST",
+      "reqBody": "{\"languageType\":1}",
+      "respLength": 44513,
+      "startedAt": 1759091058498,
+      "status": 200,
+      "type": "xhr",
+      "url": "https://gateway1.janapw.com/v1/if/base/coinList"
+    },
+    {
+      "duration": 1241,
+      "method": "GET",
+      "reqBody": null,
+      "respLength": 1418845,
+      "startedAt": 1759091058497,
+      "status": 200,
+      "type": "xhr",
+      "url": "https://http-gateway1.janapw.com/api/v1/public/meta/getMetaDataV2?languageType=1"
+    },
+    {
+      "duration": 1299,
+      "method": "GET",
+      "reqBody": null,
+      "respLength": 901880,
+      "startedAt": 1759091058498,
+      "status": 200,
+      "type": "xhr",
+      "url": "https://s-http-gateway1.janapw.com/api/v2/public/meta/getMetaData?languageType=1"
+    }
+  ],
+  "resources": [
+    {
+      "duration": 0,
+      "initiatorType": "navigation",
+      "name": "https://www.weex.com/zh-CN/futures/introduction/risk-limit?code=cmt_btcusdt"
+    },
+    {
+      "duration": 0,
+      "initiatorType": null,
+      "name": "visible"
+    }
+  ],
+  "responses": [
+    {
+      "json": {
+        "data": {
+          "attributes": {
+            "content": null,
+            "createdAt": "2025-02-13T03:24:59.207Z",
+            "locale": "zh-Hans",
+            "publishedAt": "2025-02-13T03:25:00.579Z",
+            "seo": {
+              "canonicalURL": null,
+              "id": 967,
+              "keywords": null,
+              "metaDescription": "了解 WEEX 期货交易的风险限额框架，包括杠杆层级和维持保证金率，以有效管理您的交易头寸。",
+              "metaImage": {
+                "data": null
+              },
+              "metaRobots": null,
+              "metaTitle": "了解WEEX期货交易中的风险限额",
+              "metaViewport": null,
+              "structuredData": null
+            },
+            "title": null,
+            "updatedAt": "2025-02-13T03:52:31.375Z"
+          },
+          "id": 2
+        },
+        "meta": {}
+      },
+      "length": 445,
+      "status": 200,
+      "text": null,
+      "url": "https://webapi.weex.com/api/f-intro-risk-limit?locale=zh-Hans&populate=seo.metaImage"
+    }
+  ]
+}

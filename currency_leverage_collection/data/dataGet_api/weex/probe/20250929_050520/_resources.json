@@ -1,0 +1,682 @@
+[
+  {
+    "name": "https://www.weex.com/trade-baseasset/nec.js",
+    "initiatorType": "script",
+    "duration": 123
+  },
+  {
+    "name": "https://www.weex.com/trade-baseasset/app.js?random=20221114",
+    "initiatorType": "script",
+    "duration": 114
+  },
+  {
+    "name": "https://www.weex.com/trade-baseasset/close.png",
+    "initiatorType": "img",
+    "duration": 122.30000000447035
+  },
+  {
+    "name": "https://www.weex.com/_trade/img/logoweex_black.488d562.svg",
+    "initiatorType": "img",
+    "duration": 122.29999999701977
+  },
+  {
+    "name": "https://www.weex.com/_trade/img/protection-black.79b65f1.svg",
+    "initiatorType": "img",
+    "duration": 134
+  },
+  {
+    "name": "https://www.weex.com/_trade/img/wxt-zone-black.884485d.svg",
+    "initiatorType": "img",
+    "duration": 158.89999999850988
+  },
+  {
+    "name": "https://www.weex.com/_trade/img/elite-black.0112c9b.svg",
+    "initiatorType": "img",
+    "duration": 133.59999999403954
+  },
+  {
+    "name": "https://www.weex.com/_trade/img/announcement-black.97f5cea.svg",
+    "initiatorType": "img",
+    "duration": 133.90000000596046
+  },
+  {
+    "name": "https://www.weex.com/_trade/img/career-black.5cee304.svg",
+    "initiatorType": "img",
+    "duration": 139.40000000596046
+  },
+  {
+    "name": "https://www.weex.com/_trade/img/affiliate-black.aeb0b7c.svg",
+    "initiatorType": "img",
+    "duration": 160.20000000298023
+  },
+  {
+    "name": "https://www.weex.com/_trade/img/crypto-black.fab9120.svg",
+    "initiatorType": "img",
+    "duration": 134.10000000149012
+  },
+  {
+    "name": "https://www.weex.com/_trade/img/blog-black.6373bae.svg",
+    "initiatorType": "img",
+    "duration": 159.89999999850988
+  },
+  {
+    "name": "https://www.weex.com/_trade/img/vip-black.ac7a874.svg",
+    "initiatorType": "img",
+    "duration": 136.70000000298023
+  },
+  {
+    "name": "https://www.weex.com/_trade/img/nav_p2p_black.b430deb.svg",
+    "initiatorType": "img",
+    "duration": 137.10000000149012
+  },
+  {
+    "name": "https://d2tfhb4luz96yb.cloudfront.net/otc/images/navigationBar/5497a37a9ac8ba2cc9cd40bbde125668.png",
+    "initiatorType": "img",
+    "duration": 378.80000000447035
+  },
+  {
+    "name": "https://d2tfhb4luz96yb.cloudfront.net/otc/images/navigationBar/34d5cc7a47737b9a0668230c6a37bf80.png",
+    "initiatorType": "img",
+    "duration": 379.20000000298023
+  },
+  {
+    "name": "https://d2tfhb4luz96yb.cloudfront.net/otc/images/navigationBar/b79e44c1ac0968566e4f6ffe891f2338.png",
+    "initiatorType": "img",
+    "duration": 385.70000000298023
+  },
+  {
+    "name": "https://www.weex.com/_trade/img/new-icon.2e99f0c.svg",
+    "initiatorType": "img",
+    "duration": 154.59999999403954
+  },
+  {
+    "name": "https://d2tfhb4luz96yb.cloudfront.net/otc/images/navigationBar/41208f40d09ecbabd365a7d6669ac245.png",
+    "initiatorType": "img",
+    "duration": 376.8999999985099
+  },
+  {
+    "name": "https://d2tfhb4luz96yb.cloudfront.net/otc/images/navigationBar/2f83dcc7353ef3eeb25f0a264c1c62b2.png",
+    "initiatorType": "img",
+    "duration": 385.19999999552965
+  },
+  {
+    "name": "https://d2tfhb4luz96yb.cloudfront.net/otc/images/navigationBar/b5285270df25e5c951c71ba179825a30.png",
+    "initiatorType": "img",
+    "duration": 385.59999999403954
+  },
+  {
+    "name": "https://d2tfhb4luz96yb.cloudfront.net/otc/images/navigationBar/7f8b6dbbb87c3bd8e472be327b929662.png",
+    "initiatorType": "img",
+    "duration": 495
+  },
+  {
+    "name": "https://d2tfhb4luz96yb.cloudfront.net/otc/images/navigationBar/e9b8fb30f56cb7cd49932e4d7527dac9.png",
+    "initiatorType": "img",
+    "duration": 452.30000000447035
+  },
+  {
+    "name": "https://www.weex.com/_trade/img/rewards-hub-black.302370d.png",
+    "initiatorType": "img",
+    "duration": 155.79999999701977
+  },
+  {
+    "name": "https://www.weex.com/_trade/img/icon_theme_sunny.48ada98.svg",
+    "initiatorType": "img",
+    "duration": 156.39999999850988
+  },
+  {
+    "name": "https://www.weex.com/_trade/img/coinmarketcap.181aa0a.svg",
+    "initiatorType": "img",
+    "duration": 151.29999999701977
+  },
+  {
+    "name": "https://www.weex.com/_trade/img/discord.44ba8b9.svg",
+    "initiatorType": "img",
+    "duration": 151.5
+  },
+  {
+    "name": "https://www.weex.com/_trade/img/linkedin.a994929.svg",
+    "initiatorType": "img",
+    "duration": 151.70000000298023
+  },
+  {
+    "name": "https://www.weex.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js",
+    "initiatorType": "script",
+    "duration": 112
+  },
+  {
+    "name": "https://www.weex.com/_trade/3de2493.js",
+    "initiatorType": "script",
+    "duration": 401
+  },
+  {
+    "name": "https://www.weex.com/_trade/6500937.js",
+    "initiatorType": "script",
+    "duration": 440.1000000014901
+  },
+  {
+    "name": "https://www.weex.com/_trade/aa5493f.js",
+    "initiatorType": "script",
+    "duration": 457
+  },
+  {
+    "name": "https://www.weex.com/_trade/e5d72c3.js",
+    "initiatorType": "script",
+    "duration": 537.5
+  },
+  {
+    "name": "https://www.weex.com/_trade/52702ef.js",
+    "initiatorType": "script",
+    "duration": 557
+  },
+  {
+    "name": "https://www.weex.com/_trade/f5c7b04.js",
+    "initiatorType": "script",
+    "duration": 576.8000000044703
+  },
+  {
+    "name": "https://www.weex.com/_trade/e997e75.js",
+    "initiatorType": "script",
+    "duration": 680.6000000014901
+  },
+  {
+    "name": "https://www.weex.com/_trade/f7c8c89.js",
+    "initiatorType": "script",
+    "duration": 688.3000000044703
+  },
+  {
+    "name": "https://www.weex.com/_trade/2432f51.js",
+    "initiatorType": "script",
+    "duration": 698.2000000029802
+  },
+  {
+    "name": "https://www.weex.com/_trade/c847fe0.js",
+    "initiatorType": "script",
+    "duration": 813
+  },
+  {
+    "name": "https://www.weex.com/_trade/bfc8cf8.js",
+    "initiatorType": "script",
+    "duration": 820.2000000029802
+  },
+  {
+    "name": "https://www.weex.com/_trade/2dfc012.js",
+    "initiatorType": "script",
+    "duration": 840
+  },
+  {
+    "name": "https://www.weex.com/_trade/154bfb2.js",
+    "initiatorType": "script",
+    "duration": 941.3999999985099
+  },
+  {
+    "name": "https://www.weex.com/_trade/8ba6e2b.js",
+    "initiatorType": "script",
+    "duration": 956.0999999940395
+  },
+  {
+    "name": "https://www.weex.com/_trade/5187ee6.js",
+    "initiatorType": "script",
+    "duration": 979.6999999955297
+  },
+  {
+    "name": "https://www.weex.com/_trade/df6a748.js",
+    "initiatorType": "script",
+    "duration": 1087.6999999955297
+  },
+  {
+    "name": "https://www.weex.com/_trade/fb03345.js",
+    "initiatorType": "script",
+    "duration": 1090.6000000014901
+  },
+  {
+    "name": "https://www.weex.com/_trade/cd61bc9.js",
+    "initiatorType": "script",
+    "duration": 1114.2000000029802
+  },
+  {
+    "name": "https://www.weex.com/_trade/112996f.js",
+    "initiatorType": "script",
+    "duration": 1222.7000000029802
+  },
+  {
+    "name": "https://www.weex.com/_trade/7a3d6b0.js",
+    "initiatorType": "script",
+    "duration": 1226.8000000044703
+  },
+  {
+    "name": "https://www.weex.com/_trade/d54cdc5.js",
+    "initiatorType": "script",
+    "duration": 1265.6000000014901
+  },
+  {
+    "name": "https://www.weex.com/_trade/3b51137.js",
+    "initiatorType": "script",
+    "duration": 1351.6000000014901
+  },
+  {
+    "name": "https://www.weex.com/_trade/d9b4d7e.js",
+    "initiatorType": "script",
+    "duration": 1353.6000000014901
+  },
+  {
+    "name": "https://www.weex.com/_trade/b7a7a56.js",
+    "initiatorType": "script",
+    "duration": 1400.3999999985099
+  },
+  {
+    "name": "https://www.weex.com/_trade/b4d2c5e.js",
+    "initiatorType": "script",
+    "duration": 1486.3999999985099
+  },
+  {
+    "name": "https://www.weex.com/_trade/3e244b9.js",
+    "initiatorType": "script",
+    "duration": 1490.8999999985099
+  },
+  {
+    "name": "https://www.weex.com/_trade/82501cd.js",
+    "initiatorType": "script",
+    "duration": 1531.8999999985099
+  },
+  {
+    "name": "https://www.weex.com/_trade/30d1fa8.js",
+    "initiatorType": "script",
+    "duration": 1610.8999999985099
+  },
+  {
+    "name": "https://www.weex.com/_trade/962306d.js",
+    "initiatorType": "script",
+    "duration": 1620.1999999955297
+  },
+  {
+    "name": "https://www.weex.com/_trade/3829409.js",
+    "initiatorType": "script",
+    "duration": 1652.3999999985099
+  },
+  {
+    "name": "https://www.weex.com/_trade/03b1af1.js",
+    "initiatorType": "script",
+    "duration": 1760.5
+  },
+  {
+    "name": "https://www.weex.com/_trade/20c0061.js",
+    "initiatorType": "script",
+    "duration": 1763.6000000014901
+  },
+  {
+    "name": "https://www.weex.com/_trade/63ca0a4.js",
+    "initiatorType": "script",
+    "duration": 1781.1000000014901
+  },
+  {
+    "name": "https://www.weex.com/_trade/28d3d56.js",
+    "initiatorType": "script",
+    "duration": 1885.2000000029802
+  },
+  {
+    "name": "https://www.weex.com/_trade/b38eac9.js",
+    "initiatorType": "script",
+    "duration": 1883.5
+  },
+  {
+    "name": "https://www.weex.com/_trade/323a205.js",
+    "initiatorType": "script",
+    "duration": 1910.3999999985099
+  },
+  {
+    "name": "https://www.weex.com/_trade/a846e3f.js",
+    "initiatorType": "script",
+    "duration": 2010.7000000029802
+  },
+  {
+    "name": "https://www.weex.com/_trade/de80ec2.js",
+    "initiatorType": "script",
+    "duration": 2010.5
+  },
+  {
+    "name": "https://www.weex.com/_trade/7d7f9d6.js",
+    "initiatorType": "script",
+    "duration": 2045.6999999955297
+  },
+  {
+    "name": "https://www.weex.com/_trade/a09457b.js",
+    "initiatorType": "script",
+    "duration": 2127.6999999955297
+  },
+  {
+    "name": "https://www.weex.com/_trade/969c456.js",
+    "initiatorType": "script",
+    "duration": 2154.5
+  },
+  {
+    "name": "https://www.weex.com/_trade/2dab30b.js",
+    "initiatorType": "script",
+    "duration": 2162.5
+  },
+  {
+    "name": "https://www.weex.com/_trade/cdaa1a1.js",
+    "initiatorType": "script",
+    "duration": 2260.5
+  },
+  {
+    "name": "https://www.weex.com/_trade/7d2d830.js",
+    "initiatorType": "script",
+    "duration": 2269.8000000044703
+  },
+  {
+    "name": "https://www.weex.com/_trade/4a24dec.js",
+    "initiatorType": "script",
+    "duration": 2272.60000000149
+  },
+  {
+    "name": "https://www.weex.com/_trade/d712117.js",
+    "initiatorType": "script",
+    "duration": 2383.2999999970198
+  },
+  {
+    "name": "https://www.weex.com/_trade/44d166b.js",
+    "initiatorType": "script",
+    "duration": 2381.89999999851
+  },
+  {
+    "name": "https://www.weex.com/_trade/c9bc14f.js",
+    "initiatorType": "script",
+    "duration": 2388.0999999940395
+  },
+  {
+    "name": "https://www.weex.com/_trade/af4240e.js",
+    "initiatorType": "script",
+    "duration": 2519.89999999851
+  },
+  {
+    "name": "https://www.weex.com/_trade/4357e91.js",
+    "initiatorType": "script",
+    "duration": 2523.4000000059605
+  },
+  {
+    "name": "https://www.weex.com/_trade/646ff14.js",
+    "initiatorType": "script",
+    "duration": 2513.3000000044703
+  },
+  {
+    "name": "https://www.weex.com/_trade/2038141.js",
+    "initiatorType": "script",
+    "duration": 2637.8000000044703
+  },
+  {
+    "name": "https://www.weex.com/_trade/dc2d5c2.js",
+    "initiatorType": "script",
+    "duration": 2641.10000000149
+  },
+  {
+    "name": "https://www.weex.com/_trade/5b859a9.js",
+    "initiatorType": "script",
+    "duration": 2663.5
+  },
+  {
+    "name": "https://www.weex.com/_trade/17371c9.js",
+    "initiatorType": "script",
+    "duration": 2773
+  },
+  {
+    "name": "https://www.weex.com/_trade/1529f88.js",
+    "initiatorType": "script",
+    "duration": 2771.89999999851
+  },
+  {
+    "name": "https://www.weex.com/_trade/f2e9002.js",
+    "initiatorType": "script",
+    "duration": 2790.39999999851
+  },
+  {
+    "name": "https://www.weex.com/_trade/bf02714.js",
+    "initiatorType": "script",
+    "duration": 2906.0999999940395
+  },
+  {
+    "name": "https://www.weex.com/_trade/8b97a2e.js",
+    "initiatorType": "script",
+    "duration": 2912.5
+  },
+  {
+    "name": "https://www.weex.com/_trade/40b7485.js",
+    "initiatorType": "script",
+    "duration": 2915.2000000029802
+  },
+  {
+    "name": "https://www.weex.com/_trade/404fc1d.js",
+    "initiatorType": "script",
+    "duration": 3050.8000000044703
+  },
+  {
+    "name": "https://www.weex.com/_trade/602abba.js",
+    "initiatorType": "script",
+    "duration": 3062.89999999851
+  },
+  {
+    "name": "https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015",
+    "initiatorType": "script",
+    "duration": 3204.9000000059605
+  },
+  {
+    "name": "https://app-sensor.janapw.com:8106/sa.gif?project=production",
+    "initiatorType": "xmlhttprequest",
+    "duration": 279.1000000014901
+  },
+  {
+    "name": "https://dswcnhr3lpzog.cloudfront.net/web_abroad.txt?v=1759093526838",
+    "initiatorType": "xmlhttprequest",
+    "duration": 683
+  },
+  {
+    "name": "https://www.weex.com/_trade/c205b86.js",
+    "initiatorType": "script",
+    "duration": 144.39999999850988
+  },
+  {
+    "name": "https://gateway1.janapw.com/v1/if/health",
+    "initiatorType": "xmlhttprequest",
+    "duration": 705.1000000014901
+  },
+  {
+    "name": "https://dswcnhr3lpzog.cloudfront.net/web_abroad.txt?v=1759093527617",
+    "initiatorType": "xmlhttprequest",
+    "duration": 370.5
+  },
+  {
+    "name": "https://www.weex.com/_trade/926e3b8.js",
+    "initiatorType": "script",
+    "duration": 111.19999999552965
+  },
+  {
+    "name": "https://www.weex.com/_trade/img/black-icon1.7af7f5c.svg",
+    "initiatorType": "img",
+    "duration": 119.60000000149012
+  },
+  {
+    "name": "https://www.weex.com/_trade/img/black-icon2.5b0aacc.svg",
+    "initiatorType": "img",
+    "duration": 122.5
+  },
+  {
+    "name": "https://www.weex.com/_trade/img/black-icon4.f1afa69.svg",
+    "initiatorType": "img",
+    "duration": 417.90000000596046
+  },
+  {
+    "name": "https://webapi.weex.com/api/f-intro-risk-limit?locale=zh-Hans&populate=seo.metaImage",
+    "initiatorType": "xmlhttprequest",
+    "duration": 720
+  },
+  {
+    "name": "https://http-gateway1.janapw.com/api/v1/public/meta/getMetaDataV2?languageType=1",
+    "initiatorType": "xmlhttprequest",
+    "duration": 840.0999999940395
+  },
+  {
+    "name": "https://s-http-gateway1.janapw.com/api/v2/public/meta/getMetaData?languageType=1",
+    "initiatorType": "xmlhttprequest",
+    "duration": 911.6999999955297
+  },
+  {
+    "name": "https://static.zdassets.com/ekr/snippet.js?key=21e8f27e-9ee5-4df4-a53d-bd01295974a2",
+    "initiatorType": "script",
+    "duration": 280.5
+  },
+  {
+    "name": "https://www.weex.com/cdn-cgi/rum?",
+    "initiatorType": "xmlhttprequest",
+    "duration": 86.70000000298023
+  },
+  {
+    "name": "https://ekr.zdassets.com/compose/21e8f27e-9ee5-4df4-a53d-bd01295974a2",
+    "initiatorType": "fetch",
+    "duration": 454
+  },
+  {
+    "name": "https://gateway1.janapw.com/v1/if/base/coinList",
+    "initiatorType": "xmlhttprequest",
+    "duration": 587.7999999970198
+  },
+  {
+    "name": "https://gateway1.janapw.com/outer/public/v1/newwallet/coin/coinChainList?languageType=1",
+    "initiatorType": "xmlhttprequest",
+    "duration": 581.7000000029802
+  },
+  {
+    "name": "https://gateway1.janapw.com/v1/user/public/clearCookie",
+    "initiatorType": "xmlhttprequest",
+    "duration": 474.1000000014901
+  },
+  {
+    "name": "https://gateway1.janapw.com/v1/mix/index/navigationBar",
+    "initiatorType": "xmlhttprequest",
+    "duration": 442.70000000298023
+  },
+  {
+    "name": "https://gateway1.janapw.com/v1/user/public/usdtRate",
+    "initiatorType": "xmlhttprequest",
+    "duration": 465.79999999701977
+  },
+  {
+    "name": "https://gateway1.janapw.com/v1/assets/spotpro/switch/setting?languageType=1",
+    "initiatorType": "xmlhttprequest",
+    "duration": 434.20000000298023
+  },
+  {
+    "name": "https://gateway1.janapw.com/v1/msg/areaCode/app/v2/list?status=enable&pageIndex=0&pageSize=999&languageType=1",
+    "initiatorType": "xmlhttprequest",
+    "duration": 571.3999999985099
+  },
+  {
+    "name": "https://gateway1.janapw.com/v1/user/public/ip/info",
+    "initiatorType": "xmlhttprequest",
+    "duration": 401.1000000014901
+  },
+  {
+    "name": "https://gateway1.janapw.com/v1/push/record/selectByPageGroupJson",
+    "initiatorType": "xmlhttprequest",
+    "duration": 502.1000000014901
+  },
+  {
+    "name": "https://gateway1.janapw.com/v1/mix/index/getPopularCryptocurrencies",
+    "initiatorType": "xmlhttprequest",
+    "duration": 470.3999999985099
+  },
+  {
+    "name": "https://d2tfhb4luz96yb.cloudfront.net/otc/images/contract_coin_img/d99bca657face47f8c24e2f5c7ef983e.png",
+    "initiatorType": "img",
+    "duration": 131.60000000149012
+  },
+  {
+    "name": "https://d2tfhb4luz96yb.cloudfront.net/otc/images/contract_pro_coin_img/8c7d2cf75276d2a339e785150b2f62b7.png",
+    "initiatorType": "img",
+    "duration": 161.30000000447035
+  },
+  {
+    "name": "https://d2tfhb4luz96yb.cloudfront.net/otc/images/contract_pro_coin_img/ed524d4ea39d1d851018d710a76b74cd.png",
+    "initiatorType": "img",
+    "duration": 161.5
+  },
+  {
+    "name": "https://d2tfhb4luz96yb.cloudfront.net/otc/images/contract_pro_coin_img/b2b5d2dc8e2bfd37e5ffbe69b92c1410.png",
+    "initiatorType": "img",
+    "duration": 397.3999999985099
+  },
+  {
+    "name": "https://d2tfhb4luz96yb.cloudfront.net/otc/images/contract_pro_coin_img/5b334524c37271407ff9dc3a4b9033d7.png",
+    "initiatorType": "img",
+    "duration": 396.5
+  },
+  {
+    "name": "https://d2tfhb4luz96yb.cloudfront.net/otc/images/contract_pro_coin_img/3db965abfc5ade491b235aec325c5eb9.png",
+    "initiatorType": "img",
+    "duration": 419.30000000447035
+  },
+  {
+    "name": "https://d2tfhb4luz96yb.cloudfront.net/otc/images/contract_pro_coin_img/3c07397ad2014312444d8a402995631c.png",
+    "initiatorType": "img",
+    "duration": 714.1000000014901
+  },
+  {
+    "name": "https://d2tfhb4luz96yb.cloudfront.net/otc/images/contract_pro_coin_img/7bd13330c912bb9bd169d3211627ebec.png",
+    "initiatorType": "img",
+    "duration": 759
+  },
+  {
+    "name": "https://d2tfhb4luz96yb.cloudfront.net/otc/images/contract_pro_coin_img/7896f92244aa2a0a54448b7a380f5c6b.png",
+    "initiatorType": "img",
+    "duration": 760
+  },
+  {
+    "name": "https://d2tfhb4luz96yb.cloudfront.net/otc/images/contract_pro_coin_img/e20ee72c29ea01fa56c4737d4fa84363.png",
+    "initiatorType": "img",
+    "duration": 1149.7000000029802
+  },
+  {
+    "name": "https://d2tfhb4luz96yb.cloudfront.net/otc/images/contract_pro_coin_img/8de0b4b18e6025e8a5b24e8d2f668d7d.png",
+    "initiatorType": "img",
+    "duration": 1176.1000000014901
+  },
+  {
+    "name": "https://d2tfhb4luz96yb.cloudfront.net/otc/images/contract_pro_coin_img/21707c9d54ab851b6ce3cd605bf25462.png",
+    "initiatorType": "img",
+    "duration": 1176.6999999955297
+  },
+  {
+    "name": "https://d2tfhb4luz96yb.cloudfront.net/otc/images/contract_pro_coin_img/9b5fbe8133e55dfa1bcfbe80d695fc4b.png",
+    "initiatorType": "img",
+    "duration": 1404.7999999970198
+  },
+  {
+    "name": "https://d2tfhb4luz96yb.cloudfront.net/otc/images/contract_pro_coin_img/8d2d4da821e81c4962d1d9d379f2890c.png",
+    "initiatorType": "img",
+    "duration": 1709.5
+  },
+  {
+    "name": "https://d2tfhb4luz96yb.cloudfront.net/otc/images/contract_pro_coin_img/0f458919be5673625379b5b53ab7d0d6.png",
+    "initiatorType": "img",
+    "duration": 1738.6000000014901
+  },
+  {
+    "name": "https://d2tfhb4luz96yb.cloudfront.net/otc/images/navigationBar/44b7dbc6949a920b584c32bfbb816256.png",
+    "initiatorType": "img",
+    "duration": 1075.8000000044703
+  },
+  {
+    "name": "https://d2tfhb4luz96yb.cloudfront.net/otc/images/navigationBar/0b03ba198de79f40e426d8158cd1f791.png",
+    "initiatorType": "img",
+    "duration": 1169.8000000044703
+  },
+  {
+    "name": "https://app-sensor.janapw.com:8106/sa.gif?project=production",
+    "initiatorType": "xmlhttprequest",
+    "duration": 130.40000000596046
+  },
+  {
+    "name": "https://app-sensor.janapw.com:8106/sa.gif?project=production",
+    "initiatorType": "xmlhttprequest",
+    "duration": 108.59999999403954
+  }
+]

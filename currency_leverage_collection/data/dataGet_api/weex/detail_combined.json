@@ -1,0 +1,95 @@
+{
+  "BTC/USDT": [
+    {
+      "lv": 1,
+      "notional_low_usdt": 0,
+      "notional_high_usdt": 2000000,
+      "mlev": 400.0,
+      "mmr": 0.15
+    },
+    {
+      "lv": 2,
+      "notional_low_usdt": 2000001,
+      "notional_high_usdt": 3500000,
+      "mlev": 300.0,
+      "mmr": 0.2
+    },
+    {
+      "lv": 3,
+      "notional_low_usdt": 3500001,
+      "notional_high_usdt": 4900000,
+      "mlev": 200.0,
+      "mmr": 0.3
+    },
+    {
+      "lv": 4,
+      "notional_low_usdt": 4900001,
+      "notional_high_usdt": 5900000,
+      "mlev": 125.0,
+      "mmr": 0.4
+    },
+    {
+      "lv": 5,
+      "notional_low_usdt": 5900001,
+      "notional_high_usdt": 6500000,
+      "mlev": 100.0,
+      "mmr": 0.5
+    },
+    {
+      "lv": 6,
+      "notional_low_usdt": 6500001,
+      "notional_high_usdt": 7000000,
+      "mlev": 50.0,
+      "mmr": 1.0
+    },
+    {
+      "lv": 7,
+      "notional_low_usdt": 7000001,
+      "notional_high_usdt": 11000000,
+      "mlev": 20.0,
+      "mmr": 2.5
+    },
+    {
+      "lv": 8,
+      "notional_low_usdt": 11000001,
+      "notional_high_usdt": 60000000,
+      "mlev": 10.0,
+      "mmr": 5.0
+    },
+    {
+      "lv": 9,
+      "notional_low_usdt": 60000001,
+      "notional_high_usdt": 140000000,
+      "mlev": 5.0,
+      "mmr": 10.0
+    },
+    {
+      "lv": 10,
+      "notional_low_usdt": 140000001,
+      "notional_high_usdt": 280000000,
+      "mlev": 4.0,
+      "mmr": 12.5
+    },
+    {
+      "lv": 11,
+      "notional_low_usdt": 280000001,
+      "notional_high_usdt": 560000000,
+      "mlev": 3.0,
+      "mmr": 15.0
+    },
+    {
+      "lv": 12,
+      "notional_low_usdt": 560000001,
+      "notional_high_usdt": 840000000,
+      "mlev": 2.0,
+      "mmr": 25.0
+    },
+    {
+      "lv": 13,
+      "notional_low_usdt": 840000001,
+      "notional_high_usdt": 10000000000,
+      "mlev": 1.0,
+      "mmr": 50.0
+    }
+  ]
+}
