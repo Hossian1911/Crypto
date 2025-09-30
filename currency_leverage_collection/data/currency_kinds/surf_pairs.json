@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.surf.one/stats/",
-  "collected_at": "2025-09-27T20:25:42",
+  "collected_at": "2025-09-30T21:20:44",
   "pairs": [
     {
       "pair": "0G/USDT",
@@ -183,6 +183,11 @@
       "quote": "USDT"
     },
     {
+      "pair": "FF/USDT",
+      "base": "FF",
+      "quote": "USDT"
+    },
+    {
       "pair": "GRIFFAIN/USDT",
       "base": "GRIFFAIN",
       "quote": "USDT"
@@ -220,11 +225,6 @@
     {
       "pair": "KAITO/USDT",
       "base": "KAITO",
-      "quote": "USDT"
-    },
-    {
-      "pair": "LAUNCHCOIN/USDT",
-      "base": "LAUNCHCOIN",
       "quote": "USDT"
     },
     {

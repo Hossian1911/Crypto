@@ -1,4 +1,0 @@
-weex api_key ：weex_c0321bf78c96c6ef28fa0b6545787edb
-mexc api_key :  mx0vglCjtAwAAOY7yv
-bybit api_key :
-binance api_key :IOWNzzd7D4ILUmoR34u2VF9TRJTfAL733SnHTYGysN3Bs5vTgwzmMZPkGShGA9dl

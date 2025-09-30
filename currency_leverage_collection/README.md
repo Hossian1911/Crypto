@@ -1,228 +1,167 @@
-# 项目说明：跨交易所杠杆-风险限额与维持保证金率采集与对比
+# currency_leverage_collection
 
-本项目的目标是从 SURF 官方获取“支持币种清单”，并针对每个币种分别查询 Binance、Bybit、MEXC、WEEX 四家交易所在不同杠杆/风险分层下的“最大可开仓名义价值（或仓位上限）”及“维持保证金率（Maintenance Margin Rate, 简写 MM 或 maintMarginRatio）”，最终整合生成 Excel 表格，便于横向对比。
+跨交易所（Binance / Bybit / MEXC / WEEX）风险限额（Risk Limit / Leverage Brackets）采集、整合与制表项目。
+
+- 自动获取目标币种（SURF 列表，仅 USDT 计价）。
+- 并行抓取四家交易所的风险限额/档位信息（包含 Selenium 解析 WEEX 动态页面）。
+- 统一筛选成“目标 USDT 交易对”的精选结果 `<exchange>_selected.json`。
+- 生成多 Sheet Excel（每个币种一个 Sheet），列示“最大杠杆、最大持仓(USDT)、维持保证金率”。
 
 ---
 
-## 1. 项目架构
+## 1) 目录结构与角色
 
 - `currencyGet_surf/`
-  - 负责从 SURF 官网/接口获取支持交易的币种列表（如 `BTC`, `ETH` 等，或更精确的合约交易对 `BTCUSDT`）。
-- `dataGet_binance/`
-  - 负责调用 Binance 接口，拉取“分层（leverage/risk limit brackets）”的最大名义价值与维持保证金率。
-- `dataGet_bybit/`
-  - 负责调用 Bybit 接口，拉取“风险限额（Risk Limit）/分层”的最大名义价值与维持保证金率。
-- `dataGet_mexc/`
-  - 负责调用 MEXC 接口，拉取“风险限额/分层”的最大名义价值与维持保证金率。
-- `dataGet_weex/`
-  - 负责调用 WEEX 接口或页面抓取，获取“风险限额/分层”的最大名义价值与维持保证金率。
-- `config/`
-  - 存放统一配置（API 域名、请求头、签名参数、超时与重试、输出目录等）。
-- `table_maker/`
-  - 将上述数据合并，生成 Excel 表格。
+  - `fetch_symbols.py`
+    - 获取 SURF 支持币种集合，输出 `data/currency_kinds/surf_pairs.json`（只保留 `quote == USDT`）。
+    - 默认“HTTP模式”，不会打开浏览器。若 `settings.SURF_USE_BROWSER=True` 则启用 Selenium/Edge 抓取。
+- `dataGet/`
+  - `binance_brackets_fetch.py`
+    - 抓取全量风险分层 → 过滤出目标交易对 → `data/dataGet_api/binance/binance_selected.json`
+  - `bybit_brackets_fetch.py`
+    - 依据目标交易对并发请求 → `data/dataGet_api/bybit/bybit_selected.json`
+  - `mexc_brackets_fetch.py`
+    - 抓取 detailV2 和全量 ticker → 选优/换算 → `data/dataGet_api/mexc/mexc_selected.json`
+  - `weex_brackets_fetch.py`
+    - Selenium 多实例并发解析风险限额表格（`ul.list-settle`）→ `data/dataGet_api/weex/weex_selected.json`
+  - `dataGet_main.py`
+    - 并行启动四家抓取脚本，一键运行；日志写入 `data/dataGet_api/_logs/`
+  - `probe/*.py`
+    - CDP 网络探针脚本（诊断工具）
+  - `utils/`
+    - `multithread_utils.py`：线程池与进度条
+    - `retry_utils.py`：多种重试装饰器
+- `tableMake/`
+  - `tableMake.py`
+    - 读取四家 `*_selected.json`，按 SURF 目标币种生成 Excel 至 `result/Leverage&Margin_<timestamp>.xlsx`
+- `data/`
+  - `currency_kinds/surf_pairs.json`：SURF 获取的目标币种集合（base/quote）
+  - `dataGet_api/<exchange>/...`：各交易所原始与精选结果
+- `result/`
+  - `Leverage&Margin_<timestamp>.xlsx`：最终制表结果
+  - `_logs/`：整链路运行日志
 - `main.py`
-  - 主入口，一键执行：拉取 SURF 币种 -> 并发/批量查询四所分层参数 -> 规整与落表。
+  - 项目一键主入口（位于 `currency_leverage_collection/` 根目录）
 
 ---
 
-## 2. 数据口径与术语统一
+## 2) 抓取目标 URL 与字段
 
-为保证对比一致性，定义如下数据口径：
+- Binance
+  - 目标端点（Web BAPI）：
+    - `https://www.binance.com/bapi/futures/v1/friendly/future/common/brackets`
+  - 关键字段（示例）：
+    - `symbol`，`riskBrackets[*].maxOpenPosLeverage`（最大杠杆）、`riskBrackets[*].bracketNotionalCap`（最大名义持仓）、`riskBrackets[*].bracketMaintenanceMarginRate`（维持保证金率）
+  - 过滤策略：仅保留无后缀的 `BASEUSDT`（忽略 `BTCUSDT_250328` 等带后缀合约）
 
-- “币种/交易对”：以 USDT 合约为主（例如 `BTCUSDT`）。若 SURF 返回币种而非具体交易对，则需在各交易所内映射到标准合约符号。
-- “杠杆倍数（X）”：交易所通常以分层（tier/bracket）方式定义，最大杠杆随名义头寸（notional/position size）增加而降低。
-- “最大可开仓名义价值/仓位上限”：每个分层给出一个 `notionalCap`（或 `position limit / riskLimitValue`），在该区间内对应一个最大可用初始杠杆（initial leverage）。
-- “维持保证金率（MM）”：分层中的维持保证金率；不同交易所字段名称不同，但语义一致，用于计算维持保证金。
-- “分层/风险限额（tier/risk limit/bracket）”：同一合约会给出多档区间，每档包含：名义价值范围、最大初始杠杆、维持保证金率等参数。
+- Bybit
+  - 目标端点（站内 API）：
+    - `https://www.bybitglobal.com/x-api/contract/v5/public/support/symbol-risk?symbol=<SYMBOL>`
+  - 关键字段（示例）：
+    - `maximumLever`（最大杠杆）、`storingLocationValue`（名义上限）、`maintenanceMarginRate`（维持保证金率）
 
-注意：
-- 各交易所字段命名不同、单位可能不同（如名义价值单位为 USDT 或 合约张数）。本项目在 `table_maker` 统一换算为“USDT 名义价值”。
-- 有的接口是“私有接口（需签名/密钥）”，有的为“公开接口（无需密钥）”。本项目优先使用公开接口；若仅私有可得，则在 `config` 中配置 API Key/Secret，并在代码中安全加载。
+- MEXC
+  - 目标端点：
+    - 详情包：`https://futures.mexc.com/api/v1/contract/detailV2?client=web`
+    - 全量 ticker：`https://futures.mexc.com/api/v1/contract/ticker?`
+  - 关键字段（示例）：
+    - `mlev`（最大杠杆）、`notional_usdt`（名义上限，经由张数*面值*价格计算得出）、`mmr`（维持保证金率）
 
----
-
-## 3. 各交易所接口与字段映射（初版调研）
-
-以下为基于官方文档的字段定位思路与常用端点。具体实现时请以最新文档为准并在代码中进行健壮性处理。
-
-### 3.1 Binance（币安）USDT 永续（USDS-M）
-
-- 文档：`developers.binance.com` -> Derivatives -> USDⓈ-Margined Futures -> Account/Market API
-- 关键端点（常见）：
-  - 【分层/杠杆表】`/fapi/v1/leverageBracket`（历史上为 USER-DATA；后来也提供过市场数据版本，具体以变更日志为准）。
-- 典型响应字段（示例）：
-  - `symbol`: 如 `BTCUSDT`
-  - `brackets`: 数组，每个元素包含：
-    - `bracket`: 分层序号
-    - `initialLeverage`: 该层最大初始杠杆
-    - `notionalCap`: 该层名义价值上限（USDT）
-    - `notionalFloor`: 该层名义价值下限（USDT）
-    - `maintMarginRatio`: 该层维持保证金率
-- 口径说明：
-  - 可将 `initialLeverage` 直接映射为某一档“最大杠杆 X”。
-  - 以 `notionalCap` 为“最大可开仓名义价值（USDT）”。
-  - 以 `maintMarginRatio` 为“维持保证金率”。
-
-### 3.2 Bybit v5
-
-- 文档：`bybit-exchange.github.io/docs/v5/`
-- 关键端点（常见）：
-  - 【合约基础信息】`GET /v5/market/instruments-info`（返回合约基础过滤器，不一定包含分层）
-  - 【风险限额列表】`GET /v5/contract/risk-limit`（线性/反向合约的风险限额分层）
-    - 典型查询参数：`category=linear|inverse`，`symbol=BTCUSDT`
-- 典型响应字段（示例，以 risk-limit 为参考）：
-  - `riskId`：分层编号
-  - `limit` 或 `riskLimitValue`：该层名义价值上限（单位通常为 USDT 或 合约面值换算）
-  - `maintainMargin` 或 `maintainMarginRate`：该层维持保证金（率）
-  - `initialMargin` 或 `initialMarginRate`：初始保证金（率），可换算最大杠杆（`leverage = 1 / initialMarginRate`）
-- 口径说明：
-  - 若返回初始保证金率，可通过 `1 / initialMarginRate` 求得“最大初始杠杆”。
-  - 名义价值单位需根据合约面值统一换算为 USDT。
-
-### 3.3 MEXC 合约
-
-- 文档：`mexc.com/api-docs/`（合约/期货）
-- 关键端点（常见）：
-  - 【风险限额】文档条目：`Get risk limits`（部分场景属于私有端点，需要 API Key/签名）。
-- 典型响应字段（示例，命名以文档为准）：
-  - `level`/`tier`：分层编号
-  - `maxNotional` / `positionLimit`：该层名义价值/仓位上限
-  - `maintMarginRate`：维持保证金率
-  - `initialMarginRate`：初始保证金率（可换算最大杠杆）
-- 口径说明：
-  - 若仅私有接口可得，则需在 `config` 中配置密钥，并在运行时签名请求。
-
-### 3.4 WEEX 合约
-
-- 文档/帮助中心：`weex.com`（风险限额说明页）
-- 当前观察：
-  - 官方 API 文档对“风险限额/维持保证金率”的开放度较低，可能需要：
-    - 方案 A：若存在公开或私有 API，则直接请求。
-    - 方案 B：无 API 时，抓取官方“风险限额表格”网页并解析（需做好反爬与结构变更兜底）。
-- 目标字段：
-  - 分层编号、每层最大杠杆、名义价值上限、维持保证金率。
+- WEEX
+  - 风险限额说明页（动态渲染）：
+    - `https://www.weex.com/zh-CN/futures/introduction/risk-limit?code=cmt_<base>usdt`
+      - 例如 `ARB` → `...risk-limit?code=cmt_arbusdt`
+  - DOM 选择器与字段：
+    - `ul.list-settle > li > span`，按列取 `lv / range / mlev / mmr`
+    - `range` 为区间字符串，取上界作为“最大持仓(USDT)”
 
 ---
 
-## 4. 数据抓取与映射流程
+## 3) 数据流与输出
 
-1. `currencyGet_surf`
-   - 尝试通过 SURF 官网/接口获取“支持币种清单”。
-   - 若仅有币种（如 `BTC`），需要在各交易所内映射至标准交易对（优先 USDT 合约：`BTCUSDT`）。
-   - 产出：`symbols.json`，例如：
-     ```json
-     {
-       "BTC": {"binance": "BTCUSDT", "bybit": "BTCUSDT", "mexc": "BTC_USDT", "weex": "BTCUSDT"},
-       "ETH": {"binance": "ETHUSDT", ...}
-     }
-     ```
-
-2. `dataGet_*`
-   - 针对每个交易所、每个合约交易对，请求该交易所“分层/风险限额”接口。
-   - 解析字段并统一映射为通用结构：
-     ```json
-     {
-       "exchange": "binance",
-       "symbol": "BTCUSDT",
-       "tiers": [
-         {"tier": 1, "maxLeverage": 125, "notionalCapUSDT": 50000, "maintMarginRate": 0.003},
-         {"tier": 2, "maxLeverage": 100, "notionalCapUSDT": 100000, "maintMarginRate": 0.002},
-         ...
-       ]
-     }
-     ```
-   - 注意：
-     - 若返回初始保证金率 `imr`，则 `maxLeverage = round(1 / imr)`。
-     - 若名义价值单位为“张数/合约单位”，需按合约面值/标的价格换算为 USDT 名义价值（落表需明确写明计算基价时间戳）。
-
-3. `table_maker`
-   - 输入：来自四所的数据（按每个交易对合并）。
-   - 输出：Excel 表格（`xlsx`），表头类似：
-     - 行维度：杠杆档位（125X、100X、75X、50X、25X、10X等）
-     - 列维度：`BINANCE 最大开仓`、`BINANCE 维持保证金率`、`BYBIT 最大开仓`、`BYBIT 维持保证金率`、`WEEX 最大开仓`、`WEEX 维持保证金率`、`MEXC 最大开仓`、`MEXC 维持保证金率`
-   - 逻辑：
-     - 将每家交易所“分层（以最大杠杆/初始保证金率）”映射到上述行中的标准杠杆档位，若某档不存在则留空或填 `-`。
-
-4. `main`
-   - 步骤编排：拉取 SURF 币种 -> 并发请求四所数据 -> 统一映射 -> 生成 Excel。
+1. 获取 SURF 目标
+   - `currencyGet_surf/fetch_symbols.py` 产出 `data/currency_kinds/surf_pairs.json`
+2. 并行抓四家交易所
+   - `dataGet/dataGet_main.py` 调度四个脚本（见上）
+   - 精选结果写入：
+     - Binance: `data/dataGet_api/binance/binance_selected.json`
+     - Bybit: `data/dataGet_api/bybit/bybit_selected.json`
+     - MEXC: `data/dataGet_api/mexc/mexc_selected.json`
+     - WEEX: `data/dataGet_api/weex/weex_selected.json`
+3. 制表
+   - `tableMake/tableMake.py` 读取上述四个精选结果，按币种生成 Excel：
+     - 列：`最大杠杆`、`最大持仓 (USDT)`、`维持保证金率`
+     - 交易所块顺序：BINANCE → WEEX → MECX → BYBIT（与样表贴近）
+   - `result/Leverage&Margin_<timestamp>.xlsx`
 
 ---
 
-## 5. 输出表格格式（示意）
+## 4) 运行
 
-以 `BTC` 为例（与需求配图一致）：
+- 安装依赖：
+```bash
+pip install -r requirements.txt
+```
 
-- 行：`125X / 100X / 75X / 50X / 25X / 10X`
-- 列：`BINANCE 最大开仓`、`BINANCE 维持保证金率`、`BYBIT 最大开仓`、`BYBIT 维持保证金率`、`WEEX 最大开仓`、`WEEX 维持保证金率`、`MEXC 最大开仓`、`MEXC 维持保证金率`
+- 一键运行（推荐）：
+```bash
+python main.py
+```
+流程：获取 SURF 币种 → 并行抓四所数据 → 生成 Excel（输出至 `result/`）。
 
-空缺数据使用 `-` 表示。
-
----
-
-## 6. 开发注意事项
-
-- 并发与限频：各交易所有速率限制，需加入速率控制与指数退避重试。
-- 错误兜底：接口波动、字段变更、网络超时需重试和降级（如仅返回部分分层则照常落表）。
-- 时间戳/价差：若需名义价值换算（基于标记价格/指数价），请统一在同一时间点取价并记录时间戳，落表备注“价格采样时间”。
-- 账号与密钥：尽量使用公开端点；若必须使用私有端点，请在本地 `.env` 或系统安全存储中配置，不要写入仓库。
-- 可测试性：为每家交易所编写最小可运行示例与 Mock，便于在无密钥/离线情况下跑通表格生成流程。
-
----
-
-## 7. 任务清单（Roadmap）
-
-- [ ] 确认 SURF 官网与“支持币种”获取方式（API/页面抓取），落地 `currencyGet_surf`。
-- [ ] Binance：验证 `/fapi/v1/leverageBracket` 可用性（市场/私有），完成解析器与映射。
-- [ ] Bybit：实现 `GET /v5/contract/risk-limit`（或同等端点）解析与映射。
-- [ ] MEXC：确认 `Get risk limits` 端点可用性（若私有则接入签名），实现解析与映射。
-- [ ] WEEX：确认是否存在公开/私有端点；若无，开发网页抓取器并解析风险限额表格。
-- [ ] 统一名义价值单位为 USDT，必要时增加价格服务用于换算。
-- [ ] `table_maker`：实现 Excel 生成，行按标准杠杆档位，列按交易所与指标。
-- [ ] `main`：整合一键运行，提供日志与失败重试。
+- 分步运行（调试）：
+```bash
+python currencyGet_surf/fetch_symbols.py
+python dataGet/dataGet_main.py
+python tableMake/tableMake.py
+```
 
 ---
 
-## 8. 字段映射速查表（对齐到通用模型）
+## 5) 制表口径映射（与样表对齐）
 
-通用模型字段：`tier` / `maxLeverage` / `notionalCapUSDT` / `maintMarginRate`
+- 最大杠杆：
+  - Binance `maxOpenPosLeverage`
+  - Bybit `maximumLever`
+  - MEXC `mlev`
+  - WEEX `mlev`
+  - 展示保留小数精度，统一后缀 `X`（如 `12.5X`）
 
-- Binance：
-  - `initialLeverage` -> `maxLeverage`
-  - `notionalCap` -> `notionalCapUSDT`
-  - `maintMarginRatio` -> `maintMarginRate`
-- Bybit（risk limit）：
-  - `initialMarginRate` -> `maxLeverage = 1 / initialMarginRate`
-  - `riskLimitValue`/`limit` -> `notionalCapUSDT`（按单位换算）
-  - `maintainMargin`/`maintainMarginRate` -> `maintMarginRate`
-- MEXC：
-  - `initialMarginRate` -> `maxLeverage = 1 / initialMarginRate`
-  - `maxNotional`/`positionLimit` -> `notionalCapUSDT`
-  - `maintMarginRate` -> `maintMarginRate`
-- WEEX：
-  - 页面或接口中的“最大杠杆” -> `maxLeverage`
-  - “仓位/名义上限” -> `notionalCapUSDT`
-  - “维持保证金率” -> `maintMarginRate`
+- 最大持仓 (USDT)：
+  - Binance `bracketNotionalCap`
+  - Bybit `storingLocationValue`
+  - MEXC `notional_usdt`
+  - WEEX `range` 上界
 
----
-
-## 9. 依赖与实现建议
-
-- 语言与库建议：
-  - Python 3.10+
-  - `httpx`（或 `requests`）用于 HTTP 请求
-  - `pydantic` 统一响应数据校验与模型化
-  - `pandas`, `openpyxl` 用于 Excel 生成
-  - `tenacity`/自实现重试
-- 目录建议：
-  - `currencyGet_surf/`
-  - `dataGet_binance/`, `dataGet_bybit/`, `dataGet_mexc/`, `dataGet_weex/`
-  - `table_maker/`
-  - `config/`
-  - `main.py`
+- 维持保证金率：
+  - Binance `bracketMaintenanceMarginRate` → 百分数
+  - Bybit `maintenanceMarginRate` → 百分数
+  - MEXC `mmr` → 百分数
+  - WEEX `mmr`（已为百分数字符串，原样）
 
 ---
 
-## 10. 备注
+## 6) 配置说明（config/settings）
 
-- 文档与端点可能会有变更，请以各交易所官方文档为准，并在实现中加上变更感知与告警。
-- 若 SURF 并无公开 API，则采用页面抓取或从 SURF 的静态资源中解析支持币种清单；无法自动化时，先落地人工字典，后续替换为自动化。
+建议在 `config/settings.py` 中提供下列键（脚本会有默认路径，存在则以配置为准）：
+
+- SURF 抓取
+  - `SURF_STATS_URL`：SURF 统计/支持币种页面 URL
+  - `SURF_USE_BROWSER`：是否使用浏览器（默认 False，HTTP 模式不打开浏览器）
+  - `SURF_HEADLESS`：启用浏览器时是否无头
+  - `SURF_TIMEOUT`、`SURF_MAX_SCROLLS`、`SURF_SCROLL_PAUSE`
+  - `SURF_ONLY_USDT=True`、`SURF_QUOTE='USDT'`
+  - 输出：`DATA_DIR`、`OUTPUT_JSON`、`OUTPUT_CSV`、`OUTPUT_TXT`
+
+- dataGet 输出（若提供）：`DATAGET_OUTPUT_DIR`（默认 `data/dataGet_api`）
+
+- 其他敏感信息（如需要）：通过 `.env` 或系统环境变量加载，避免入库。
+
+---
+
+## 7) 备注与常见问题
+
+- Binance 返回中可能存在后缀合约（如 `BTCUSDT_250328`）；本项目仅保留无后缀 `BASEUSDT` 的精确记录。
+- WEEX 页面动态渲染较慢时，可在 `weex_brackets_fetch.py` 调整并发与 `render_timeout`、`per_wait`。
+- 若某币种在某交易所缺失数据，对应表格行会留空。
+- 目录名为 `tableMake/`（非 `tableMaker/`）。如误建，可直接删除无影响。

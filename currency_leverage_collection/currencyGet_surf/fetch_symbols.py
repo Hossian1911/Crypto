@@ -6,8 +6,9 @@ from datetime import datetime
 from pathlib import Path
 from typing import List, Tuple
 from config import settings
+import httpx
 
-# Selenium imports必须在文件顶部
+# Selenium imports必须在文件顶部（但仅在浏览器模式下使用）
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.edge.service import Service as EdgeService
@@ -222,7 +223,37 @@ def _save_outputs(pairs: List[SurfPair]) -> Tuple[Path, Path, Path]:
     return settings.OUTPUT_JSON, settings.OUTPUT_CSV, settings.OUTPUT_TXT
 
 
+def _fetch_and_save_http() -> Tuple[Path, Path, Path]:
+    """使用 HTTP 直接抓取页面源码并正则解析交易对，不打开浏览器。"""
+    resp = httpx.get(settings.SURF_STATS_URL, timeout=settings.SURF_TIMEOUT, headers={
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36",
+        "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+    })
+    resp.raise_for_status()
+    html = resp.text.upper()
+    # 直接匹配 BASE/QUOTE，默认按配置仅保留 USDT
+    tokens = sorted(set(re.findall(r"[A-Z0-9-]+/[A-Z0-9-]+", html)))
+    pairs: List[SurfPair] = []
+    seen = set()
+    for tok in tokens:
+        try:
+            base, quote = tok.split("/")
+        except ValueError:
+            continue
+        if settings.SURF_ONLY_USDT and quote != settings.SURF_QUOTE:
+            continue
+        if tok in seen:
+            continue
+        seen.add(tok)
+        pairs.append(SurfPair(pair=tok, base=base, quote=quote))
+    return _save_outputs(pairs)
+
+
 def fetch_and_save() -> Tuple[Path, Path, Path]:
+    # 若配置要求不启用浏览器，则走 HTTP 模式（不打开任何网页窗口/浏览器进程）
+    use_browser = bool(getattr(settings, "SURF_USE_BROWSER", False))
+    if not use_browser:
+        return _fetch_and_save_http()
     driver = _build_driver()
     try:
         driver.get(settings.SURF_STATS_URL)
