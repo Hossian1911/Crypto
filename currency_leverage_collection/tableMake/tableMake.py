@@ -15,6 +15,8 @@ DATA_DIR = BASE_DIR / "data" / "dataGet_api"
 SURF_PATH = BASE_DIR / "data" / "currency_kinds" / "surf_pairs.json"
 RESULT_DIR = BASE_DIR / "result"
 RESULT_DIR.mkdir(parents=True, exist_ok=True)
+RESULT_HTML_DIR = RESULT_DIR / "html"
+RESULT_HTML_DIR.mkdir(parents=True, exist_ok=True)
 
 EX_ORDER = ["binance", "weex", "mexc", "bybit"]  # 按样表顺序
 
@@ -293,6 +295,93 @@ def beautify_sheet(ws) -> None:
                 cell.alignment = Alignment(horizontal="center", vertical="center")
 
 
+def _build_html(symbols: List[str], html_payload: Dict[str, Dict[str, List[List[Any]]]], book_name: str) -> Path:
+    """生成带下拉的静态 HTML，联动展示四所数据。"""
+    # 简单样式与脚本（纯原生，不依赖外链）
+    exchanges = ["BINANCE", "WEEX", "MECX", "BYBIT"]
+    data_json = json.dumps(html_payload, ensure_ascii=False)
+    symbols_json = json.dumps(symbols, ensure_ascii=False)
+    html = f"""
+<!doctype html>
+<html lang=zh-CN>
+<head>
+  <meta charset=utf-8>
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <title>Leverage & Margin Dashboard - {book_name}</title>
+  <style>
+    body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin: 24px; }}
+    .bar {{ display:flex; align-items:center; gap:12px; margin-bottom:16px; }}
+    select {{ padding:6px 10px; font-size:14px; }}
+    h2 {{ margin: 16px 0 8px; font-size:16px; }}
+    table {{ border-collapse: collapse; width: 680px; margin-bottom: 18px; }}
+    th, td {{ border: 1px solid #999; padding: 6px 8px; text-align: center; }}
+    th:first-child, td:first-child {{ text-align: left; }}
+    thead th {{ background: #eee; font-weight: 700; }}
+  </style>
+  <script>
+    const DATA = {data_json};
+    const SYMBOLS = {symbols_json};
+    const EXS = {json.dumps(["BINANCE","WEEX","MECX","BYBIT"])};
+    function onSymbolChange() {{
+      const sym = document.getElementById('sym').value;
+      render(sym);
+    }}
+    function createTable(rows) {{
+      const tbl = document.createElement('table');
+      const thead = document.createElement('thead');
+      thead.innerHTML = '<tr><th></th><th>最大杠杆</th><th>最大持仓 (USDT)</th><th>维持保证金率</th></tr>';
+      tbl.appendChild(thead);
+      const tbody = document.createElement('tbody');
+      for (const r of rows) {{
+        const tr = document.createElement('tr');
+        for (const c of r) {{
+          const td = document.createElement('td');
+          td.textContent = (c===null||c===undefined)?'':c;
+          tr.appendChild(td);
+        }}
+        tbody.appendChild(tr);
+      }}
+      tbl.appendChild(tbody);
+      return tbl;
+    }}
+    function render(sym) {{
+      const root = document.getElementById('root');
+      root.innerHTML = '';
+      const payload = DATA[sym] || {{}};
+      for (const ex of EXS) {{
+        const h = document.createElement('h2');
+        h.textContent = ex;
+        root.appendChild(h);
+        const rows = payload[ex] || [["", "", "", ""]];
+        root.appendChild(createTable(rows));
+      }}
+    }}
+    window.addEventListener('DOMContentLoaded', () => {{
+      const sel = document.getElementById('sym');
+      for (const s of SYMBOLS) {{
+        const opt = document.createElement('option');
+        opt.value = s; opt.textContent = s; sel.appendChild(opt);
+      }}
+      const init = SYMBOLS.includes('BTCUSDT') ? 'BTCUSDT' : (SYMBOLS[0] || '');
+      sel.value = init;
+      render(init);
+    }});
+  </script>
+  </head>
+  <body>
+    <div class="bar">
+      <label for="sym">币种：</label>
+      <select id="sym" onchange="onSymbolChange()"></select>
+    </div>
+    <div id="root"></div>
+  </body>
+</html>
+"""
+    out = RESULT_HTML_DIR / f"{book_name}.html"
+    out.write_text(html, encoding="utf-8")
+    return out
+
+
 def make_excel() -> Path:
     targets = load_targets()
     sources = {
@@ -309,6 +398,9 @@ def make_excel() -> Path:
 
     header = ["", "最大杠杆", "最大持仓 (USDT)", "维持保证金率"]
 
+    # 准备 HTML 数据聚合结构：{symbol: {EX: [[ex_name, lev, notional, mmr], ...]}}
+    html_payload: Dict[str, Dict[str, List[List[Any]]]] = {}
+
     for sym in targets:
         # 仅当至少一个交易所存在该币种时才创建Sheet
         if not any(sym in (sources[ex] or {}) for ex in EX_ORDER):
@@ -320,21 +412,40 @@ def make_excel() -> Path:
         ws["B1"].font = Font(bold=True)
         ws["C1"].font = Font(bold=True)
         ws["D1"].font = Font(bold=True)
+        # HTML 聚合容器
+        html_payload[sym] = {}
+
         for ex in EX_ORDER:
             rows = build_rows_for_exchange(ex, sym, sources)
             for r in rows:
                 ws.append(r)
             # 交易所之间留一个空行
             ws.append(["", "", "", ""]) 
+            # 写入 HTML 数据（展示时第一列不需要重复的交易所名，保留与 Excel 一致即可）
+            # 将空字符串统一保留，前端按空单元显示
+            # 显示区块标题使用大写交易所名
+            ex_upper = "BINANCE" if ex=="binance" else ("BYBIT" if ex=="bybit" else ("MECX" if ex=="mexc" else "WEEX"))
+            html_payload[sym][ex_upper] = rows or [["", "", "", ""]]
         beautify_sheet(ws)
         autosize(ws)
 
     ts = time.strftime("%Y%m%d_%H%M%S")
     out = RESULT_DIR / f"Leverage&Margin_{ts}.xlsx"
     wb.save(out)
+    # 生成 HTML（带下拉联动）
+    # 仅使用实际创建了 Sheet 的币种（即 html_payload 的键集合）
+    created_symbols = sorted(html_payload.keys())
+    _build_html(created_symbols, html_payload, out.stem)
     return out
 
 
 if __name__ == "__main__":
+    # 运行时守卫日志：用于定位外部误创建目录的问题
+    import os
+    print("[tableMake] CWD:", os.getcwd())
+    print("[tableMake] SCRIPT_DIR:", Path(__file__).resolve().parent)
+    print("[tableMake] RESULT_DIR:", RESULT_DIR)
+    print("[tableMake] Guard: 本脚本输出到 'result/'")
+
     path = make_excel()
     print(f"已生成: {path}")

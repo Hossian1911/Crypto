@@ -6,6 +6,7 @@
 - 并行抓取四家交易所的风险限额/档位信息（包含 Selenium 解析 WEEX 动态页面）。
 - 统一筛选成“目标 USDT 交易对”的精选结果 `<exchange>_selected.json`。
 - 生成多 Sheet Excel（每个币种一个 Sheet），列示“最大杠杆、最大持仓(USDT)、维持保证金率”。
+- 同步生成交互式 HTML Dashboard（下拉选择币种查看四交易所数据）。
 
 ---
 
@@ -38,7 +39,8 @@
   - `currency_kinds/surf_pairs.json`：SURF 获取的目标币种集合（base/quote）
   - `dataGet_api/<exchange>/...`：各交易所原始与精选结果
 - `result/`
-  - `Leverage&Margin_<timestamp>.xlsx`：最终制表结果
+  - `Leverage&Margin_<timestamp>.xlsx`：最终制表结果（多 Sheet）
+  - `html/Leverage&Margin_<timestamp>.html`：交互式 Dashboard（下拉选择币种）
   - `_logs/`：整链路运行日志
 - `main.py`
   - 项目一键主入口（位于 `currency_leverage_collection/` 根目录）
@@ -89,10 +91,12 @@
      - MEXC: `data/dataGet_api/mexc/mexc_selected.json`
      - WEEX: `data/dataGet_api/weex/weex_selected.json`
 3. 制表
-   - `tableMake/tableMake.py` 读取上述四个精选结果，按币种生成 Excel：
+   - `tableMake/tableMake.py` 读取上述四个精选结果，按币种生成 Excel 与 HTML：
      - 列：`最大杠杆`、`最大持仓 (USDT)`、`维持保证金率`
      - 交易所块顺序：BINANCE → WEEX → MECX → BYBIT（与样表贴近）
-   - `result/Leverage&Margin_<timestamp>.xlsx`
+   - 产物：
+     - Excel：`result/Leverage&Margin_<timestamp>.xlsx`
+     - HTML：`result/html/Leverage&Margin_<timestamp>.html`
 
 ---
 
@@ -107,7 +111,7 @@ pip install -r requirements.txt
 ```bash
 python main.py
 ```
-流程：获取 SURF 币种 → 并行抓四所数据 → 生成 Excel（输出至 `result/`）。
+流程：获取 SURF 币种 → 并行抓四所数据 → 生成 Excel 与 HTML（输出至 `result/` 与 `result/html/`）。
 
 - 分步运行（调试）：
 ```bash
@@ -115,6 +119,10 @@ python currencyGet_surf/fetch_symbols.py
 python dataGet/dataGet_main.py
 python tableMake/tableMake.py
 ```
+
+运行完成后可直接用浏览器打开 `result/html/Leverage&Margin_<timestamp>.html`：
+- 顶部为“币种下拉菜单”，默认选择 `BTCUSDT`（若不存在则选第一个币种）。
+- 页面依序展示四家交易所表格，列头与 Excel 一致。
 
 ---
 
