@@ -16,6 +16,7 @@ SCRIPTS = {
     "bybit": BASE_DIR / "bybit_brackets_fetch.py",
     "mexc": BASE_DIR / "mexc_brackets_fetch.py",
     "weex": BASE_DIR / "weex_brackets_fetch.py",
+    "surf": BASE_DIR / "surf_limits_fetch.py",
 }
 
 LOG_DIR = BASE_DIR.parent / "data" / "dataGet_api" / "_logs"
@@ -46,6 +47,7 @@ def main(parallel: int = 4) -> None:
         ("bybit", SCRIPTS["bybit"], []),
         ("mexc", SCRIPTS["mexc"], []),
         ("weex", SCRIPTS["weex"], []),
+        ("surf", SCRIPTS["surf"], []),
     ]
 
     print(f"将并行运行 {len(jobs)} 个数据获取任务（线程池大小={parallel}）...\n日志目录: {LOG_DIR}")

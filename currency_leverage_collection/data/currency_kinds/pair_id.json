@@ -1,0 +1,531 @@
+{
+  "source_url": "https://surfv2-api.surf.one/public/pair/profit/stats",
+  "collected_at": "2025-10-12T01:26:51",
+  "items": [
+    {
+      "symbol": "SOL",
+      "pair_id": "3"
+    },
+    {
+      "symbol": "BNB",
+      "pair_id": "4"
+    },
+    {
+      "symbol": "ETH",
+      "pair_id": "5"
+    },
+    {
+      "symbol": "BTC",
+      "pair_id": "6"
+    },
+    {
+      "symbol": "DOGE",
+      "pair_id": "7"
+    },
+    {
+      "symbol": "MERL",
+      "pair_id": "338391213563145213"
+    },
+    {
+      "symbol": "AAVE",
+      "pair_id": "344556658007413760"
+    },
+    {
+      "symbol": "LTC",
+      "pair_id": "344556659181818880"
+    },
+    {
+      "symbol": "WLD",
+      "pair_id": "345622500929312768"
+    },
+    {
+      "symbol": "CHEEMS",
+      "pair_id": "345622504624494595"
+    },
+    {
+      "symbol": "ARC",
+      "pair_id": "345622504624494601"
+    },
+    {
+      "symbol": "FARTCOIN",
+      "pair_id": "345622504624494603"
+    },
+    {
+      "symbol": "GRIFFAIN",
+      "pair_id": "345622504624494605"
+    },
+    {
+      "symbol": "MELANIA",
+      "pair_id": "345622504624494608"
+    },
+    {
+      "symbol": "MEW",
+      "pair_id": "345622504624494609"
+    },
+    {
+      "symbol": "MOODENG",
+      "pair_id": "345622504624494610"
+    },
+    {
+      "symbol": "POPCAT",
+      "pair_id": "345622504624494612"
+    },
+    {
+      "symbol": "VINE",
+      "pair_id": "345622504624494614"
+    },
+    {
+      "symbol": "VVV",
+      "pair_id": "345622504624494616"
+    },
+    {
+      "symbol": "TST",
+      "pair_id": "345622504624494617"
+    },
+    {
+      "symbol": "AVL",
+      "pair_id": "345622504624494619"
+    },
+    {
+      "symbol": "LIBRA",
+      "pair_id": "345622504624494620"
+    },
+    {
+      "symbol": "BROCCOLI",
+      "pair_id": "345622504624494621"
+    },
+    {
+      "symbol": "RAY",
+      "pair_id": "347111602306969600"
+    },
+    {
+      "symbol": "JUP",
+      "pair_id": "347111604018245632"
+    },
+    {
+      "symbol": "ACT",
+      "pair_id": "347111604295069696"
+    },
+    {
+      "symbol": "ADA",
+      "pair_id": "347111605171679232"
+    },
+    {
+      "symbol": "XRP",
+      "pair_id": "347111606283169792"
+    },
+    {
+      "symbol": "EOS",
+      "pair_id": "347111607847645184"
+    },
+    {
+      "symbol": "PNUT",
+      "pair_id": "347111608942358528"
+    },
+    {
+      "symbol": "BNX",
+      "pair_id": "347111611643490304"
+    },
+    {
+      "symbol": "TRX",
+      "pair_id": "347111611874177024"
+    },
+    {
+      "symbol": "BAKE",
+      "pair_id": "347111612650123264"
+    },
+    {
+      "symbol": "OM",
+      "pair_id": "347111613182799872"
+    },
+    {
+      "symbol": "CAKE",
+      "pair_id": "347111614285901824"
+    },
+    {
+      "symbol": "PEPE",
+      "pair_id": "347111616588574720"
+    },
+    {
+      "symbol": "PENGU",
+      "pair_id": "347111618681532416"
+    },
+    {
+      "symbol": "WIF",
+      "pair_id": "347111620719964160"
+    },
+    {
+      "symbol": "LINK",
+      "pair_id": "347111621466550272"
+    },
+    {
+      "symbol": "AI16Z",
+      "pair_id": "347465522314880001"
+    },
+    {
+      "symbol": "VIRTUAL",
+      "pair_id": "347465522314880002"
+    },
+    {
+      "symbol": "HYPE",
+      "pair_id": "347465522314880003"
+    },
+    {
+      "symbol": "SUI",
+      "pair_id": "347465522314880004"
+    },
+    {
+      "symbol": "AIXBT",
+      "pair_id": "347495740595551232"
+    },
+    {
+      "symbol": "TRUMP",
+      "pair_id": "349633951912684544"
+    },
+    {
+      "symbol": "IP",
+      "pair_id": "359465789956292608"
+    },
+    {
+      "symbol": "SHELL",
+      "pair_id": "359465791478824960"
+    },
+    {
+      "symbol": "PI",
+      "pair_id": "360852310403842048"
+    },
+    {
+      "symbol": "KAITO",
+      "pair_id": "360931161288998912"
+    },
+    {
+      "symbol": "BAN",
+      "pair_id": "361865415812448256"
+    },
+    {
+      "symbol": "VANA",
+      "pair_id": "362563872936165376"
+    },
+    {
+      "symbol": "TON",
+      "pair_id": "362953984731774976"
+    },
+    {
+      "symbol": "DOG",
+      "pair_id": "362953990117261312"
+    },
+    {
+      "symbol": "ORDI",
+      "pair_id": "362953992407351296"
+    },
+    {
+      "symbol": "SATS",
+      "pair_id": "362953995846680576"
+    },
+    {
+      "symbol": "MUBARAK",
+      "pair_id": "369821362136547328"
+    },
+    {
+      "symbol": "ORCA",
+      "pair_id": "372406395867234304"
+    },
+    {
+      "symbol": "S",
+      "pair_id": "372406396785786880"
+    },
+    {
+      "symbol": "PARTI",
+      "pair_id": "372865786315800576"
+    },
+    {
+      "symbol": "PAXG",
+      "pair_id": "373889454600880128"
+    },
+    {
+      "symbol": "FHE",
+      "pair_id": "378692710455836672"
+    },
+    {
+      "symbol": "BABY",
+      "pair_id": "378697810184241152"
+    },
+    {
+      "symbol": "LPT",
+      "pair_id": "396827018349510656"
+    },
+    {
+      "symbol": "ENA",
+      "pair_id": "398828132376772608"
+    },
+    {
+      "symbol": "ARB",
+      "pair_id": "398828133622480896"
+    },
+    {
+      "symbol": "MASK",
+      "pair_id": "398828134889160704"
+    },
+    {
+      "symbol": "MKR",
+      "pair_id": "400641518932590592"
+    },
+    {
+      "symbol": "TAO",
+      "pair_id": "400641520052469760"
+    },
+    {
+      "symbol": "AVAX",
+      "pair_id": "400641523470827520"
+    },
+    {
+      "symbol": "RESOLV",
+      "pair_id": "401345707035852800"
+    },
+    {
+      "symbol": "SPX",
+      "pair_id": "410114104766758912"
+    },
+    {
+      "symbol": "1000BONK",
+      "pair_id": "410470859602395136"
+    },
+    {
+      "symbol": "PUMP",
+      "pair_id": "412394882502492160"
+    },
+    {
+      "symbol": "SAHARA",
+      "pair_id": "416568236344082432"
+    },
+    {
+      "symbol": "CFX",
+      "pair_id": "418444693890662400"
+    },
+    {
+      "symbol": "MYX",
+      "pair_id": "421319393037778944"
+    },
+    {
+      "symbol": "OKB",
+      "pair_id": "423891225494421504"
+    },
+    {
+      "symbol": "BGB",
+      "pair_id": "424178690243428352"
+    },
+    {
+      "symbol": "MNT",
+      "pair_id": "425773262857830400"
+    },
+    {
+      "symbol": "PLUME",
+      "pair_id": "425773263986098176"
+    },
+    {
+      "symbol": "DOT",
+      "pair_id": "425773265131143168"
+    },
+    {
+      "symbol": "BIO",
+      "pair_id": "426495844024320000"
+    },
+    {
+      "symbol": "YZY",
+      "pair_id": "426759672440029184"
+    },
+    {
+      "symbol": "WLFI",
+      "pair_id": "427538006799286272"
+    },
+    {
+      "symbol": "XPL",
+      "pair_id": "428976662680436736"
+    },
+    {
+      "symbol": "TREE",
+      "pair_id": "429348054663954432"
+    },
+    {
+      "symbol": "LINEA",
+      "pair_id": "430903578714963968"
+    },
+    {
+      "symbol": "JELLYJELLY",
+      "pair_id": "431783305449308160"
+    },
+    {
+      "symbol": "M",
+      "pair_id": "432241655114891264"
+    },
+    {
+      "symbol": "BCH",
+      "pair_id": "432324928348356608"
+    },
+    {
+      "symbol": "LAUNCHCOIN",
+      "pair_id": "432655890206687232"
+    },
+    {
+      "symbol": "SOMI",
+      "pair_id": "432655892018626560"
+    },
+    {
+      "symbol": "NMR",
+      "pair_id": "432899089231773696"
+    },
+    {
+      "symbol": "SAPIEN",
+      "pair_id": "432899090477481984"
+    },
+    {
+      "symbol": "RED",
+      "pair_id": "433239137311522816"
+    },
+    {
+      "symbol": "BTR",
+      "pair_id": "433239139693887488"
+    },
+    {
+      "symbol": "TA",
+      "pair_id": "433239141044453376"
+    },
+    {
+      "symbol": "OPEN",
+      "pair_id": "433385148075999232"
+    },
+    {
+      "symbol": "FLOCK",
+      "pair_id": "433626162028085248"
+    },
+    {
+      "symbol": "K",
+      "pair_id": "433626163345096704"
+    },
+    {
+      "symbol": "AI",
+      "pair_id": "433734705884430336"
+    },
+    {
+      "symbol": "B2",
+      "pair_id": "434390666290659328"
+    },
+    {
+      "symbol": "YGG",
+      "pair_id": "434752740829167616"
+    },
+    {
+      "symbol": "HIFI",
+      "pair_id": "435040168576024576"
+    },
+    {
+      "symbol": "BSW",
+      "pair_id": "435040170278912000"
+    },
+    {
+      "symbol": "MEME",
+      "pair_id": "435162381555859456"
+    },
+    {
+      "symbol": "AVNT",
+      "pair_id": "435811033433505792"
+    },
+    {
+      "symbol": "CRV",
+      "pair_id": "436265098378477568"
+    },
+    {
+      "symbol": "ZKC",
+      "pair_id": "436312198516572160"
+    },
+    {
+      "symbol": "Q",
+      "pair_id": "436337626698481664"
+    },
+    {
+      "symbol": "PEOPLE",
+      "pair_id": "436617926909362176"
+    },
+    {
+      "symbol": "RHEA",
+      "pair_id": "437315947242455040"
+    },
+    {
+      "symbol": "ASTER",
+      "pair_id": "437354159306440704"
+    },
+    {
+      "symbol": "STBL",
+      "pair_id": "437680641539047424"
+    },
+    {
+      "symbol": "SUN",
+      "pair_id": "437680642776367104"
+    },
+    {
+      "symbol": "W",
+      "pair_id": "437943168139264000"
+    },
+    {
+      "symbol": "0G",
+      "pair_id": "438308644195401728"
+    },
+    {
+      "symbol": "UXLINK",
+      "pair_id": "438710658586902528"
+    },
+    {
+      "symbol": "FTT",
+      "pair_id": "439062993519509504"
+    },
+    {
+      "symbol": "MIRA",
+      "pair_id": "439911659746917376"
+    },
+    {
+      "symbol": "WAL",
+      "pair_id": "440126675170775040"
+    },
+    {
+      "symbol": "ZEC",
+      "pair_id": "440126685295824896"
+    },
+    {
+      "symbol": "COAI",
+      "pair_id": "440126699745202176"
+    },
+    {
+      "symbol": "AIA",
+      "pair_id": "440126702135955456"
+    },
+    {
+      "symbol": "GIGGLE",
+      "pair_id": "440126732464967680"
+    },
+    {
+      "symbol": "MON",
+      "pair_id": "440126845056864256"
+    },
+    {
+      "symbol": "LIGHT",
+      "pair_id": "440258940689338368"
+    },
+    {
+      "symbol": "XAN",
+      "pair_id": "440968617098104832"
+    },
+    {
+      "symbol": "FF",
+      "pair_id": "440998816812519424"
+    },
+    {
+      "symbol": "4",
+      "pair_id": "442055780732447744"
+    },
+    {
+      "symbol": "2Z",
+      "pair_id": "442085980090346496"
+    }
+  ],
+  "count": 131
+}

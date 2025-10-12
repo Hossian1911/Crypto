@@ -9,9 +9,10 @@ BASE_DIR = Path(__file__).resolve().parent
 PY = sys.executable or "python"
 
 # 路径（以项目根 currency_leverage_collection 为基准）
-FETCH_SYMBOLS = BASE_DIR / "currencyGet_surf" / "fetch_symbols.py"
+# 优先使用基于 API 的币种抓取
+FETCH_SYMBOLS = BASE_DIR / "currencyGet_surf" / "fetch_symbols_api.py"
 DATAGET_MAIN = BASE_DIR / "dataGet" / "dataGet_main.py"
-TABLE_MAKE = BASE_DIR / "tableMake" / "tableMake.py"
+TABLE_MAKE = BASE_DIR / "tableMake" / "tableMake_main.py"
 
 LOG_DIR = BASE_DIR / "result" / "_logs"
 LOG_DIR.mkdir(parents=True, exist_ok=True)
@@ -47,8 +48,8 @@ def main() -> int:
         print("[!] dataGet_main 失败")
         return rc
 
-    # 3) 制作表格
-    rc = run_py("tableMake", TABLE_MAKE)
+    # 3) 制作表格并写库（tableMake_main 内部包含：生成 Excel → 建最小表 → Excel 入库）
+    rc = run_py("tableMake_main", TABLE_MAKE)
     if rc != 0:
         print("[!] tableMake 失败")
         return rc

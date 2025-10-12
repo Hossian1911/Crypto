@@ -1,0 +1,39 @@
+{
+  "source": "https://surfv2-api.surf.one/pool/pair/config",
+  "generated_at": "2025-10-12 01:27:13",
+  "total": 131,
+  "ok": 126,
+  "errors": 5,
+  "error_samples": [
+    {
+      "symbol": "PENGU",
+      "pair_id": "347111618681532416",
+      "error": "request_failed",
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=347111618681532416"
+    },
+    {
+      "symbol": "OM",
+      "pair_id": "347111613182799872",
+      "error": "request_failed",
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=347111613182799872"
+    },
+    {
+      "symbol": "CAKE",
+      "pair_id": "347111614285901824",
+      "error": "request_failed",
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=347111614285901824"
+    },
+    {
+      "symbol": "BAKE",
+      "pair_id": "347111612650123264",
+      "error": "request_failed",
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=347111612650123264"
+    },
+    {
+      "symbol": "WIF",
+      "pair_id": "347111620719964160",
+      "error": "request_failed",
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=347111620719964160"
+    }
+  ]
+}

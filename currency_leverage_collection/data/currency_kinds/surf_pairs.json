@@ -1,20 +1,130 @@
 {
-  "source_url": "https://www.surf.one/stats/",
-  "collected_at": "2025-09-30T21:20:44",
+  "source_url": "https://surfv2-api.surf.one/public/pair/profit/stats",
+  "collected_at": "2025-10-12T01:26:51",
   "pairs": [
     {
-      "pair": "0G/USDT",
-      "base": "0G",
+      "pair": "SOL/USDT",
+      "base": "SOL",
       "quote": "USDT"
     },
     {
-      "pair": "1000BONK/USDT",
-      "base": "1000BONK",
+      "pair": "BNB/USDT",
+      "base": "BNB",
+      "quote": "USDT"
+    },
+    {
+      "pair": "ETH/USDT",
+      "base": "ETH",
+      "quote": "USDT"
+    },
+    {
+      "pair": "BTC/USDT",
+      "base": "BTC",
+      "quote": "USDT"
+    },
+    {
+      "pair": "DOGE/USDT",
+      "base": "DOGE",
+      "quote": "USDT"
+    },
+    {
+      "pair": "MERL/USDT",
+      "base": "MERL",
       "quote": "USDT"
     },
     {
       "pair": "AAVE/USDT",
       "base": "AAVE",
+      "quote": "USDT"
+    },
+    {
+      "pair": "LTC/USDT",
+      "base": "LTC",
+      "quote": "USDT"
+    },
+    {
+      "pair": "WLD/USDT",
+      "base": "WLD",
+      "quote": "USDT"
+    },
+    {
+      "pair": "CHEEMS/USDT",
+      "base": "CHEEMS",
+      "quote": "USDT"
+    },
+    {
+      "pair": "ARC/USDT",
+      "base": "ARC",
+      "quote": "USDT"
+    },
+    {
+      "pair": "FARTCOIN/USDT",
+      "base": "FARTCOIN",
+      "quote": "USDT"
+    },
+    {
+      "pair": "GRIFFAIN/USDT",
+      "base": "GRIFFAIN",
+      "quote": "USDT"
+    },
+    {
+      "pair": "MELANIA/USDT",
+      "base": "MELANIA",
+      "quote": "USDT"
+    },
+    {
+      "pair": "MEW/USDT",
+      "base": "MEW",
+      "quote": "USDT"
+    },
+    {
+      "pair": "MOODENG/USDT",
+      "base": "MOODENG",
+      "quote": "USDT"
+    },
+    {
+      "pair": "POPCAT/USDT",
+      "base": "POPCAT",
+      "quote": "USDT"
+    },
+    {
+      "pair": "VINE/USDT",
+      "base": "VINE",
+      "quote": "USDT"
+    },
+    {
+      "pair": "VVV/USDT",
+      "base": "VVV",
+      "quote": "USDT"
+    },
+    {
+      "pair": "TST/USDT",
+      "base": "TST",
+      "quote": "USDT"
+    },
+    {
+      "pair": "AVL/USDT",
+      "base": "AVL",
+      "quote": "USDT"
+    },
+    {
+      "pair": "LIBRA/USDT",
+      "base": "LIBRA",
+      "quote": "USDT"
+    },
+    {
+      "pair": "BROCCOLI/USDT",
+      "base": "BROCCOLI",
+      "quote": "USDT"
+    },
+    {
+      "pair": "RAY/USDT",
+      "base": "RAY",
+      "quote": "USDT"
+    },
+    {
+      "pair": "JUP/USDT",
+      "base": "JUP",
       "quote": "USDT"
     },
     {
@@ -28,143 +138,8 @@
       "quote": "USDT"
     },
     {
-      "pair": "AI/USDT",
-      "base": "AI",
-      "quote": "USDT"
-    },
-    {
-      "pair": "AI16Z/USDT",
-      "base": "AI16Z",
-      "quote": "USDT"
-    },
-    {
-      "pair": "AIXBT/USDT",
-      "base": "AIXBT",
-      "quote": "USDT"
-    },
-    {
-      "pair": "ARB/USDT",
-      "base": "ARB",
-      "quote": "USDT"
-    },
-    {
-      "pair": "ARC/USDT",
-      "base": "ARC",
-      "quote": "USDT"
-    },
-    {
-      "pair": "ASTER/USDT",
-      "base": "ASTER",
-      "quote": "USDT"
-    },
-    {
-      "pair": "AVAX/USDT",
-      "base": "AVAX",
-      "quote": "USDT"
-    },
-    {
-      "pair": "AVL/USDT",
-      "base": "AVL",
-      "quote": "USDT"
-    },
-    {
-      "pair": "AVNT/USDT",
-      "base": "AVNT",
-      "quote": "USDT"
-    },
-    {
-      "pair": "B2/USDT",
-      "base": "B2",
-      "quote": "USDT"
-    },
-    {
-      "pair": "BABY/USDT",
-      "base": "BABY",
-      "quote": "USDT"
-    },
-    {
-      "pair": "BAKE/USDT",
-      "base": "BAKE",
-      "quote": "USDT"
-    },
-    {
-      "pair": "BAN/USDT",
-      "base": "BAN",
-      "quote": "USDT"
-    },
-    {
-      "pair": "BCH/USDT",
-      "base": "BCH",
-      "quote": "USDT"
-    },
-    {
-      "pair": "BGB/USDT",
-      "base": "BGB",
-      "quote": "USDT"
-    },
-    {
-      "pair": "BIO/USDT",
-      "base": "BIO",
-      "quote": "USDT"
-    },
-    {
-      "pair": "BNB/USDT",
-      "base": "BNB",
-      "quote": "USDT"
-    },
-    {
-      "pair": "BNX/USDT",
-      "base": "BNX",
-      "quote": "USDT"
-    },
-    {
-      "pair": "BROCCOLI/USDT",
-      "base": "BROCCOLI",
-      "quote": "USDT"
-    },
-    {
-      "pair": "BSW/USDT",
-      "base": "BSW",
-      "quote": "USDT"
-    },
-    {
-      "pair": "BTC/USDT",
-      "base": "BTC",
-      "quote": "USDT"
-    },
-    {
-      "pair": "CAKE/USDT",
-      "base": "CAKE",
-      "quote": "USDT"
-    },
-    {
-      "pair": "CFX/USDT",
-      "base": "CFX",
-      "quote": "USDT"
-    },
-    {
-      "pair": "CHEEMS/USDT",
-      "base": "CHEEMS",
-      "quote": "USDT"
-    },
-    {
-      "pair": "DOG/USDT",
-      "base": "DOG",
-      "quote": "USDT"
-    },
-    {
-      "pair": "DOGE/USDT",
-      "base": "DOGE",
-      "quote": "USDT"
-    },
-    {
-      "pair": "DOT/USDT",
-      "base": "DOT",
-      "quote": "USDT"
-    },
-    {
-      "pair": "ENA/USDT",
-      "base": "ENA",
+      "pair": "XRP/USDT",
+      "base": "XRP",
       "quote": "USDT"
     },
     {
@@ -173,148 +148,23 @@
       "quote": "USDT"
     },
     {
-      "pair": "ETH/USDT",
-      "base": "ETH",
+      "pair": "PNUT/USDT",
+      "base": "PNUT",
       "quote": "USDT"
     },
     {
-      "pair": "FARTCOIN/USDT",
-      "base": "FARTCOIN",
+      "pair": "BNX/USDT",
+      "base": "BNX",
       "quote": "USDT"
     },
     {
-      "pair": "FF/USDT",
-      "base": "FF",
+      "pair": "TRX/USDT",
+      "base": "TRX",
       "quote": "USDT"
     },
     {
-      "pair": "GRIFFAIN/USDT",
-      "base": "GRIFFAIN",
-      "quote": "USDT"
-    },
-    {
-      "pair": "HIFI/USDT",
-      "base": "HIFI",
-      "quote": "USDT"
-    },
-    {
-      "pair": "HYPE/USDT",
-      "base": "HYPE",
-      "quote": "USDT"
-    },
-    {
-      "pair": "IP/USDT",
-      "base": "IP",
-      "quote": "USDT"
-    },
-    {
-      "pair": "JELLYJELLY/USDT",
-      "base": "JELLYJELLY",
-      "quote": "USDT"
-    },
-    {
-      "pair": "JUP/USDT",
-      "base": "JUP",
-      "quote": "USDT"
-    },
-    {
-      "pair": "K/USDT",
-      "base": "K",
-      "quote": "USDT"
-    },
-    {
-      "pair": "KAITO/USDT",
-      "base": "KAITO",
-      "quote": "USDT"
-    },
-    {
-      "pair": "LIBRA/USDT",
-      "base": "LIBRA",
-      "quote": "USDT"
-    },
-    {
-      "pair": "LINEA/USDT",
-      "base": "LINEA",
-      "quote": "USDT"
-    },
-    {
-      "pair": "LINK/USDT",
-      "base": "LINK",
-      "quote": "USDT"
-    },
-    {
-      "pair": "LPT/USDT",
-      "base": "LPT",
-      "quote": "USDT"
-    },
-    {
-      "pair": "LTC/USDT",
-      "base": "LTC",
-      "quote": "USDT"
-    },
-    {
-      "pair": "M/USDT",
-      "base": "M",
-      "quote": "USDT"
-    },
-    {
-      "pair": "MASK/USDT",
-      "base": "MASK",
-      "quote": "USDT"
-    },
-    {
-      "pair": "MELANIA/USDT",
-      "base": "MELANIA",
-      "quote": "USDT"
-    },
-    {
-      "pair": "MEME/USDT",
-      "base": "MEME",
-      "quote": "USDT"
-    },
-    {
-      "pair": "MERL/USDT",
-      "base": "MERL",
-      "quote": "USDT"
-    },
-    {
-      "pair": "MEW/USDT",
-      "base": "MEW",
-      "quote": "USDT"
-    },
-    {
-      "pair": "MIRA/USDT",
-      "base": "MIRA",
-      "quote": "USDT"
-    },
-    {
-      "pair": "MKR/USDT",
-      "base": "MKR",
-      "quote": "USDT"
-    },
-    {
-      "pair": "MNT/USDT",
-      "base": "MNT",
-      "quote": "USDT"
-    },
-    {
-      "pair": "MOODENG/USDT",
-      "base": "MOODENG",
-      "quote": "USDT"
-    },
-    {
-      "pair": "MUBARAK/USDT",
-      "base": "MUBARAK",
-      "quote": "USDT"
-    },
-    {
-      "pair": "MYX/USDT",
-      "base": "MYX",
-      "quote": "USDT"
-    },
-    {
-      "pair": "OKB/USDT",
-      "base": "OKB",
+      "pair": "BAKE/USDT",
+      "base": "BAKE",
       "quote": "USDT"
     },
     {
@@ -323,8 +173,113 @@
       "quote": "USDT"
     },
     {
-      "pair": "OPEN/USDT",
-      "base": "OPEN",
+      "pair": "CAKE/USDT",
+      "base": "CAKE",
+      "quote": "USDT"
+    },
+    {
+      "pair": "PEPE/USDT",
+      "base": "PEPE",
+      "quote": "USDT"
+    },
+    {
+      "pair": "PENGU/USDT",
+      "base": "PENGU",
+      "quote": "USDT"
+    },
+    {
+      "pair": "WIF/USDT",
+      "base": "WIF",
+      "quote": "USDT"
+    },
+    {
+      "pair": "LINK/USDT",
+      "base": "LINK",
+      "quote": "USDT"
+    },
+    {
+      "pair": "AI16Z/USDT",
+      "base": "AI16Z",
+      "quote": "USDT"
+    },
+    {
+      "pair": "VIRTUAL/USDT",
+      "base": "VIRTUAL",
+      "quote": "USDT"
+    },
+    {
+      "pair": "HYPE/USDT",
+      "base": "HYPE",
+      "quote": "USDT"
+    },
+    {
+      "pair": "SUI/USDT",
+      "base": "SUI",
+      "quote": "USDT"
+    },
+    {
+      "pair": "AIXBT/USDT",
+      "base": "AIXBT",
+      "quote": "USDT"
+    },
+    {
+      "pair": "TRUMP/USDT",
+      "base": "TRUMP",
+      "quote": "USDT"
+    },
+    {
+      "pair": "IP/USDT",
+      "base": "IP",
+      "quote": "USDT"
+    },
+    {
+      "pair": "SHELL/USDT",
+      "base": "SHELL",
+      "quote": "USDT"
+    },
+    {
+      "pair": "PI/USDT",
+      "base": "PI",
+      "quote": "USDT"
+    },
+    {
+      "pair": "KAITO/USDT",
+      "base": "KAITO",
+      "quote": "USDT"
+    },
+    {
+      "pair": "BAN/USDT",
+      "base": "BAN",
+      "quote": "USDT"
+    },
+    {
+      "pair": "VANA/USDT",
+      "base": "VANA",
+      "quote": "USDT"
+    },
+    {
+      "pair": "TON/USDT",
+      "base": "TON",
+      "quote": "USDT"
+    },
+    {
+      "pair": "DOG/USDT",
+      "base": "DOG",
+      "quote": "USDT"
+    },
+    {
+      "pair": "ORDI/USDT",
+      "base": "ORDI",
+      "quote": "USDT"
+    },
+    {
+      "pair": "SATS/USDT",
+      "base": "SATS",
+      "quote": "USDT"
+    },
+    {
+      "pair": "MUBARAK/USDT",
+      "base": "MUBARAK",
       "quote": "USDT"
     },
     {
@@ -333,8 +288,8 @@
       "quote": "USDT"
     },
     {
-      "pair": "ORDI/USDT",
-      "base": "ORDI",
+      "pair": "S/USDT",
+      "base": "S",
       "quote": "USDT"
     },
     {
@@ -348,103 +303,38 @@
       "quote": "USDT"
     },
     {
-      "pair": "PENGU/USDT",
-      "base": "PENGU",
+      "pair": "FHE/USDT",
+      "base": "FHE",
       "quote": "USDT"
     },
     {
-      "pair": "PEPE/USDT",
-      "base": "PEPE",
+      "pair": "BABY/USDT",
+      "base": "BABY",
       "quote": "USDT"
     },
     {
-      "pair": "PI/USDT",
-      "base": "PI",
+      "pair": "LPT/USDT",
+      "base": "LPT",
       "quote": "USDT"
     },
     {
-      "pair": "PLUME/USDT",
-      "base": "PLUME",
+      "pair": "ENA/USDT",
+      "base": "ENA",
       "quote": "USDT"
     },
     {
-      "pair": "PNUT/USDT",
-      "base": "PNUT",
+      "pair": "ARB/USDT",
+      "base": "ARB",
       "quote": "USDT"
     },
     {
-      "pair": "POPCAT/USDT",
-      "base": "POPCAT",
+      "pair": "MASK/USDT",
+      "base": "MASK",
       "quote": "USDT"
     },
     {
-      "pair": "PUMP/USDT",
-      "base": "PUMP",
-      "quote": "USDT"
-    },
-    {
-      "pair": "RAY/USDT",
-      "base": "RAY",
-      "quote": "USDT"
-    },
-    {
-      "pair": "RESOLV/USDT",
-      "base": "RESOLV",
-      "quote": "USDT"
-    },
-    {
-      "pair": "RHEA/USDT",
-      "base": "RHEA",
-      "quote": "USDT"
-    },
-    {
-      "pair": "S/USDT",
-      "base": "S",
-      "quote": "USDT"
-    },
-    {
-      "pair": "SAHARA/USDT",
-      "base": "SAHARA",
-      "quote": "USDT"
-    },
-    {
-      "pair": "SAPIEN/USDT",
-      "base": "SAPIEN",
-      "quote": "USDT"
-    },
-    {
-      "pair": "SATS/USDT",
-      "base": "SATS",
-      "quote": "USDT"
-    },
-    {
-      "pair": "SHELL/USDT",
-      "base": "SHELL",
-      "quote": "USDT"
-    },
-    {
-      "pair": "SOL/USDT",
-      "base": "SOL",
-      "quote": "USDT"
-    },
-    {
-      "pair": "SOMI/USDT",
-      "base": "SOMI",
-      "quote": "USDT"
-    },
-    {
-      "pair": "SPX/USDT",
-      "base": "SPX",
-      "quote": "USDT"
-    },
-    {
-      "pair": "STBL/USDT",
-      "base": "STBL",
-      "quote": "USDT"
-    },
-    {
-      "pair": "SUI/USDT",
-      "base": "SUI",
+      "pair": "MKR/USDT",
+      "base": "MKR",
       "quote": "USDT"
     },
     {
@@ -453,53 +343,78 @@
       "quote": "USDT"
     },
     {
-      "pair": "TON/USDT",
-      "base": "TON",
+      "pair": "AVAX/USDT",
+      "base": "AVAX",
       "quote": "USDT"
     },
     {
-      "pair": "TREE/USDT",
-      "base": "TREE",
+      "pair": "RESOLV/USDT",
+      "base": "RESOLV",
       "quote": "USDT"
     },
     {
-      "pair": "TRUMP/USDT",
-      "base": "TRUMP",
+      "pair": "SPX/USDT",
+      "base": "SPX",
       "quote": "USDT"
     },
     {
-      "pair": "TRX/USDT",
-      "base": "TRX",
+      "pair": "1000BONK/USDT",
+      "base": "1000BONK",
       "quote": "USDT"
     },
     {
-      "pair": "TST/USDT",
-      "base": "TST",
+      "pair": "PUMP/USDT",
+      "base": "PUMP",
       "quote": "USDT"
     },
     {
-      "pair": "VANA/USDT",
-      "base": "VANA",
+      "pair": "SAHARA/USDT",
+      "base": "SAHARA",
       "quote": "USDT"
     },
     {
-      "pair": "VINE/USDT",
-      "base": "VINE",
+      "pair": "CFX/USDT",
+      "base": "CFX",
       "quote": "USDT"
     },
     {
-      "pair": "VIRTUAL/USDT",
-      "base": "VIRTUAL",
+      "pair": "MYX/USDT",
+      "base": "MYX",
       "quote": "USDT"
     },
     {
-      "pair": "WIF/USDT",
-      "base": "WIF",
+      "pair": "OKB/USDT",
+      "base": "OKB",
       "quote": "USDT"
     },
     {
-      "pair": "WLD/USDT",
-      "base": "WLD",
+      "pair": "BGB/USDT",
+      "base": "BGB",
+      "quote": "USDT"
+    },
+    {
+      "pair": "MNT/USDT",
+      "base": "MNT",
+      "quote": "USDT"
+    },
+    {
+      "pair": "PLUME/USDT",
+      "base": "PLUME",
+      "quote": "USDT"
+    },
+    {
+      "pair": "DOT/USDT",
+      "base": "DOT",
+      "quote": "USDT"
+    },
+    {
+      "pair": "BIO/USDT",
+      "base": "BIO",
+      "quote": "USDT"
+    },
+    {
+      "pair": "YZY/USDT",
+      "base": "YZY",
       "quote": "USDT"
     },
     {
@@ -513,8 +428,88 @@
       "quote": "USDT"
     },
     {
-      "pair": "XRP/USDT",
-      "base": "XRP",
+      "pair": "TREE/USDT",
+      "base": "TREE",
+      "quote": "USDT"
+    },
+    {
+      "pair": "LINEA/USDT",
+      "base": "LINEA",
+      "quote": "USDT"
+    },
+    {
+      "pair": "JELLYJELLY/USDT",
+      "base": "JELLYJELLY",
+      "quote": "USDT"
+    },
+    {
+      "pair": "M/USDT",
+      "base": "M",
+      "quote": "USDT"
+    },
+    {
+      "pair": "BCH/USDT",
+      "base": "BCH",
+      "quote": "USDT"
+    },
+    {
+      "pair": "LAUNCHCOIN/USDT",
+      "base": "LAUNCHCOIN",
+      "quote": "USDT"
+    },
+    {
+      "pair": "SOMI/USDT",
+      "base": "SOMI",
+      "quote": "USDT"
+    },
+    {
+      "pair": "NMR/USDT",
+      "base": "NMR",
+      "quote": "USDT"
+    },
+    {
+      "pair": "SAPIEN/USDT",
+      "base": "SAPIEN",
+      "quote": "USDT"
+    },
+    {
+      "pair": "RED/USDT",
+      "base": "RED",
+      "quote": "USDT"
+    },
+    {
+      "pair": "BTR/USDT",
+      "base": "BTR",
+      "quote": "USDT"
+    },
+    {
+      "pair": "TA/USDT",
+      "base": "TA",
+      "quote": "USDT"
+    },
+    {
+      "pair": "OPEN/USDT",
+      "base": "OPEN",
+      "quote": "USDT"
+    },
+    {
+      "pair": "FLOCK/USDT",
+      "base": "FLOCK",
+      "quote": "USDT"
+    },
+    {
+      "pair": "K/USDT",
+      "base": "K",
+      "quote": "USDT"
+    },
+    {
+      "pair": "AI/USDT",
+      "base": "AI",
+      "quote": "USDT"
+    },
+    {
+      "pair": "B2/USDT",
+      "base": "B2",
       "quote": "USDT"
     },
     {
@@ -523,10 +518,145 @@
       "quote": "USDT"
     },
     {
-      "pair": "YZY/USDT",
-      "base": "YZY",
+      "pair": "HIFI/USDT",
+      "base": "HIFI",
+      "quote": "USDT"
+    },
+    {
+      "pair": "BSW/USDT",
+      "base": "BSW",
+      "quote": "USDT"
+    },
+    {
+      "pair": "MEME/USDT",
+      "base": "MEME",
+      "quote": "USDT"
+    },
+    {
+      "pair": "AVNT/USDT",
+      "base": "AVNT",
+      "quote": "USDT"
+    },
+    {
+      "pair": "CRV/USDT",
+      "base": "CRV",
+      "quote": "USDT"
+    },
+    {
+      "pair": "ZKC/USDT",
+      "base": "ZKC",
+      "quote": "USDT"
+    },
+    {
+      "pair": "Q/USDT",
+      "base": "Q",
+      "quote": "USDT"
+    },
+    {
+      "pair": "PEOPLE/USDT",
+      "base": "PEOPLE",
+      "quote": "USDT"
+    },
+    {
+      "pair": "RHEA/USDT",
+      "base": "RHEA",
+      "quote": "USDT"
+    },
+    {
+      "pair": "ASTER/USDT",
+      "base": "ASTER",
+      "quote": "USDT"
+    },
+    {
+      "pair": "STBL/USDT",
+      "base": "STBL",
+      "quote": "USDT"
+    },
+    {
+      "pair": "SUN/USDT",
+      "base": "SUN",
+      "quote": "USDT"
+    },
+    {
+      "pair": "W/USDT",
+      "base": "W",
+      "quote": "USDT"
+    },
+    {
+      "pair": "0G/USDT",
+      "base": "0G",
+      "quote": "USDT"
+    },
+    {
+      "pair": "UXLINK/USDT",
+      "base": "UXLINK",
+      "quote": "USDT"
+    },
+    {
+      "pair": "FTT/USDT",
+      "base": "FTT",
+      "quote": "USDT"
+    },
+    {
+      "pair": "MIRA/USDT",
+      "base": "MIRA",
+      "quote": "USDT"
+    },
+    {
+      "pair": "WAL/USDT",
+      "base": "WAL",
+      "quote": "USDT"
+    },
+    {
+      "pair": "ZEC/USDT",
+      "base": "ZEC",
+      "quote": "USDT"
+    },
+    {
+      "pair": "COAI/USDT",
+      "base": "COAI",
+      "quote": "USDT"
+    },
+    {
+      "pair": "AIA/USDT",
+      "base": "AIA",
+      "quote": "USDT"
+    },
+    {
+      "pair": "GIGGLE/USDT",
+      "base": "GIGGLE",
+      "quote": "USDT"
+    },
+    {
+      "pair": "MON/USDT",
+      "base": "MON",
+      "quote": "USDT"
+    },
+    {
+      "pair": "LIGHT/USDT",
+      "base": "LIGHT",
+      "quote": "USDT"
+    },
+    {
+      "pair": "XAN/USDT",
+      "base": "XAN",
+      "quote": "USDT"
+    },
+    {
+      "pair": "FF/USDT",
+      "base": "FF",
+      "quote": "USDT"
+    },
+    {
+      "pair": "4/USDT",
+      "base": "4",
+      "quote": "USDT"
+    },
+    {
+      "pair": "2Z/USDT",
+      "base": "2Z",
       "quote": "USDT"
     }
   ],
-  "count": 105
+  "count": 131
 }

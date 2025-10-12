@@ -1,6 +1,6 @@
 {
-  "targets_from_surf": 105,
-  "matched_count": 102,
+  "targets_from_surf": 131,
+  "matched_count": 128,
   "no_tiers_count": 0,
   "unmatched_count": 3,
   "api_detail_v2": "https://futures.mexc.com/api/v1/contract/detailV2?client=web",

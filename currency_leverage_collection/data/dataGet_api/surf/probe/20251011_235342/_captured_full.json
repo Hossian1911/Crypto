@@ -1,0 +1,1455 @@
+{
+  "initial": null,
+  "requests": [
+    {
+      "duration": 214,
+      "method": "GET",
+      "reqBody": null,
+      "respLength": 39424,
+      "startedAt": 1760198026045,
+      "status": 200,
+      "type": "fetch",
+      "url": "/locales/en/translation.json"
+    },
+    {
+      "duration": 215,
+      "method": "GET",
+      "reqBody": null,
+      "respLength": 26203,
+      "startedAt": 1760198026044,
+      "status": 200,
+      "type": "fetch",
+      "url": "/locales/zh-CN/translation.json"
+    },
+    {
+      "duration": 215,
+      "method": "GET",
+      "reqBody": null,
+      "respLength": 1076,
+      "startedAt": 1760198026044,
+      "status": 404,
+      "type": "fetch",
+      "url": "/locales/zh/translation.json"
+    },
+    {
+      "duration": 194,
+      "method": "POST",
+      "reqBody": "{\"memory\":{\"totalJSHeapSize\":63717690,\"usedJSHeapSize\":44859302,\"jsHeapSizeLimit\":4294705152},\"resources\":[],\"referrer\":\"\",\"eventType\":1,\"firstPaint\":0,\"firstContentfulPaint\":0,\"startTime\":1760198024214.7,\"versions\":{\"fl\":\"2024.11.0\",\"js\":\"2024.6.1\",\"timings\":2},\"pageloadId\":\"4772900e-8e44-4775-b564-47148f99c96a\",\"location\":\"https://www.surf.one/stats/\",\"nt\":\"navigate\",\"timingsV2\":{\"unloadEventStart\":0,\"unloadEventEnd\":0,\"domInteractive\":684.1999999955297,\"domContentLoadedEventStart\":882.3999999985099,\"domContentLoadedEventEnd\":883.1999999955297,\"domComplete\":883.5,\"loadEventStart\":883.6000000014901,\"loadEventEnd\":885.6000000014901,\"type\":\"navigate\",\"redirectCount\":0,\"criticalCHRestart\":0,\"activationStart\":0,\"initiatorType\":\"navigation\",\"nextHopProtocol\":\"h2\",\"deliveryType\":\"\",\"workerStart\":0,\"redirectStart\":0,\"redirectEnd\":0,\"fetchStart\":0.8999999985098839,\"domainLookupStart\":0.8999999985098839,\"domainLookupEnd\":0.8999999985098839,\"connectStart\":35.79999999701977,\"connectEnd\":265.79999999701977,\"secureConnectionStart\":37.69999999552965,\"requestStart\":266,\"responseStart\":568.3999999985099,\"responseEnd\":569.1999999955297,\"transferSize\":1484,\"encodedBodySize\":1184,\"decodedBodySize\":2493,\"responseStatus\":404,\"finalResponseHeadersStart\":568.3999999985099,\"firstInterimResponseStart\":0,\"workerRouterEvaluationStart\":0,\"workerCacheLookupStart\":0,\"workerMatchedSourceType\":\"\",\"workerFinalSourceType\":\"\",\"renderBlockingStatus\":\"non-blocking\",\"name\":\"https://www.surf.one/stats/\",\"entryType\":\"navigation\",\"startTime\":0,\"duration\":885.6000000014901},\"dt\":\"\",\"siteToken\":\"6e57ce3ffebe4234a04dd61163908f2d\",\"st\":2}",
+      "respLength": 0,
+      "startedAt": 1760198026241,
+      "status": 204,
+      "type": "xhr",
+      "url": "/cdn-cgi/rum?"
+    },
+    {
+      "duration": 502,
+      "method": "POST",
+      "reqBody": null,
+      "respLength": 0,
+      "startedAt": 1760198026038,
+      "status": 0,
+      "type": "fetch",
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-V2LVCZ9CQC&gtm=45je5a80v9174516678za200zd9174516678&_p=1760198025098&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=932162613.1760198026&ul=zh-cn&sr=1970x1108&uaa=&uab=&uafvl=&uamb=0&uam=&uap=Windows&uapv=&uaw=0&are=1&frm=0&pscdl=noapi&_s=1&tag_exp=101509157~103116026~103200004~103233427~104527907~104528501~104684208~104684211~104948813~105322303~115480710~115834636~115834638~115868795~115868797&sid=1760198026&sct=1&seg=0&dl=https%3A%2F%2Fwww.surf.one%2Fstats%2F&dt=SURF&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=1824"
+    },
+    {
+      "duration": 206,
+      "method": "HEAD",
+      "reqBody": null,
+      "respLength": 0,
+      "startedAt": 1760198026439,
+      "status": 200,
+      "type": "fetch",
+      "url": "https://surfv2-api.surf.one/ping"
+    },
+    {
+      "duration": 227,
+      "method": "HEAD",
+      "reqBody": null,
+      "respLength": 0,
+      "startedAt": 1760198026436,
+      "status": 200,
+      "type": "fetch",
+      "url": "https://surfv2-api.surf.one/ping"
+    },
+    {
+      "duration": 525,
+      "method": "GET",
+      "reqBody": null,
+      "respLength": 983889,
+      "startedAt": 1760198026152,
+      "status": 200,
+      "type": "fetch",
+      "url": ""
+    },
+    {
+      "duration": 301,
+      "method": "HEAD",
+      "reqBody": null,
+      "respLength": 0,
+      "startedAt": 1760198026436,
+      "status": 200,
+      "type": "fetch",
+      "url": "https://surfv2-api3.surf.one/ping"
+    },
+    {
+      "duration": 309,
+      "method": "HEAD",
+      "reqBody": null,
+      "respLength": 0,
+      "startedAt": 1760198026436,
+      "status": 200,
+      "type": "fetch",
+      "url": "https://surfv2-api2.surf.one/ping"
+    },
+    {
+      "duration": 321,
+      "method": "HEAD",
+      "reqBody": null,
+      "respLength": 0,
+      "startedAt": 1760198026437,
+      "status": 200,
+      "type": "fetch",
+      "url": "https://surfv2-api4.surf.one/ping"
+    },
+    {
+      "duration": 396,
+      "method": "GET",
+      "reqBody": null,
+      "respLength": 28400,
+      "startedAt": 1760198026450,
+      "status": 200,
+      "type": "xhr",
+      "url": "https://surfv2-api.surf.one/public/pair/profit/stats"
+    },
+    {
+      "duration": 409,
+      "method": "GET",
+      "reqBody": null,
+      "respLength": 1282,
+      "startedAt": 1760198026449,
+      "status": 200,
+      "type": "xhr",
+      "url": "https://surfv2-api.surf.one/public/daily/stats"
+    },
+    {
+      "duration": 917,
+      "method": "GET",
+      "reqBody": null,
+      "respLength": 672,
+      "startedAt": 1760198026157,
+      "status": 200,
+      "type": "xhr",
+      "url": "https://surfv2-api.surf.one/public/trading/configs"
+    },
+    {
+      "duration": 919,
+      "method": "GET",
+      "reqBody": null,
+      "respLength": 306321,
+      "startedAt": 1760198026157,
+      "status": 200,
+      "type": "xhr",
+      "url": "https://surfv2-api.surf.one/market/pair/decimal/config"
+    },
+    {
+      "duration": 1058,
+      "method": "GET",
+      "reqBody": null,
+      "respLength": 2079,
+      "startedAt": 1760198026158,
+      "status": 200,
+      "type": "fetch",
+      "url": "https://auth.privy.io/api/v1/apps/cm5unv2qb07ig23v255jqe4r2"
+    },
+    {
+      "duration": 152,
+      "method": "GET",
+      "reqBody": null,
+      "respLength": 40362,
+      "startedAt": 1760198027732,
+      "status": 200,
+      "type": "fetch",
+      "url": ""
+    },
+    {
+      "duration": 601,
+      "method": "POST",
+      "reqBody": "{\"event_name\":\"sdk_initialize\",\"client_id\":\"46000603-0523-4389-a56b-ae6a8f2879de\",\"payload\":{\"loginMethods\":[\"wallet\",\"email\"],\"embeddedWallets\":{\"createOnLogin\":\"users-without-wallets\"},\"supportedChains\":[56,1,8453,4200,728126428],\"defaultChain\":56,\"solana\":{\"connectors\":[]},\"clientTimestamp\":\"2025-10-11T15:53:47.352Z\"}}",
+      "respLength": 4,
+      "startedAt": 1760198027354,
+      "status": 200,
+      "type": "fetch",
+      "url": "https://auth.privy.io/api/v1/analytics_events"
+    }
+  ],
+  "resources": [],
+  "responses": [
+    {
+      "json": {
+        "data": {
+          "list": [
+            {
+              "fee_rate": "0.000074",
+              "fee_saved": "359173.074384",
+              "pair_id": "3",
+              "pair_logo": "https://res.surf.one/images/solana.png?v=1",
+              "share_profit": "24028.242471",
+              "symbol": "SOL",
+              "total_size": "323791966.789299150359092291"
+            },
+            {
+              "fee_rate": "0.000089",
+              "fee_saved": "29593.12892",
+              "pair_id": "4",
+              "pair_logo": "https://res.surf.one/images/bnb-icon2_2x.png?v=1",
+              "share_profit": "2120.109712",
+              "symbol": "BNB",
+              "total_size": "23620764.660254"
+            },
+            {
+              "fee_rate": "0.000072",
+              "fee_saved": "585714.118883",
+              "pair_id": "5",
+              "pair_logo": "https://res.surf.one/images/ethereum.png?v=1",
+              "share_profit": "43516.419594",
+              "symbol": "ETH",
+              "total_size": "600708880.816234036865234402"
+            },
+            {
+              "fee_rate": "0.000043",
+              "fee_saved": "1124606.986345",
+              "pair_id": "6",
+              "pair_logo": "https://res.surf.one/images/btc20230419112752.png?v=1",
+              "share_profit": "50594.550717",
+              "symbol": "BTC",
+              "total_size": "1164326725.44635021093750002"
+            },
+            {
+              "fee_rate": "0.000041",
+              "fee_saved": "222757.654608",
+              "pair_id": "7",
+              "pair_logo": "https://res.surf.one/images/dogecoin.png?v=1",
+              "share_profit": "8551.709771",
+              "symbol": "DOGE",
+              "total_size": "204253893.629423000000000021"
+            },
+            {
+              "fee_rate": "0.000524",
+              "fee_saved": "9328.750094",
+              "pair_id": "338391213563145213",
+              "pair_logo": "https://res.surf.one/images/merlin.png?v=1",
+              "share_profit": "1371.371372",
+              "symbol": "MERL",
+              "total_size": "2615284.199034"
+            },
+            {
+              "fee_rate": "0.000259",
+              "fee_saved": "897.221993",
+              "pair_id": "344556658007413760",
+              "pair_logo": "https://res.surf.one/images/aave-token-round.webp?v=1",
+              "share_profit": "173.299607",
+              "symbol": "AAVE",
+              "total_size": "669076"
+            },
+            {
+              "fee_rate": "0.000059",
+              "fee_saved": "39407.773825",
+              "pair_id": "344556659181818880",
+              "pair_logo": "https://res.surf.one/images/LrysCc5Q_400x400.webp?v=1",
+              "share_profit": "1552.052743",
+              "symbol": "LTC",
+              "total_size": "25988748.250804"
+            },
+            {
+              "fee_rate": "0.000348",
+              "fee_saved": "709.700968",
+              "pair_id": "345622500929312768",
+              "pair_logo": "https://res.surf.one/images/worldcoin.webp?v=1",
+              "share_profit": "133.616507",
+              "symbol": "WLD",
+              "total_size": "383563.236956"
+            },
+            {
+              "fee_rate": "0.000197",
+              "fee_saved": "258.701544",
+              "pair_id": "345622504624494595",
+              "pair_logo": "https://res.surf.one/images/Hg4_Lhbg_400x400.png?v=1",
+              "share_profit": "36.416073",
+              "symbol": "CHEEMS",
+              "total_size": "184448.510684"
+            },
+            {
+              "fee_rate": "0.000372",
+              "fee_saved": "62.456924",
+              "pair_id": "345622504624494601",
+              "pair_logo": "https://res.surf.one/images/u312bPNA_400x400.webp?v=1",
+              "share_profit": "18.925384",
+              "symbol": "ARC",
+              "total_size": "50863.942795"
+            },
+            {
+              "fee_rate": "0.00022",
+              "fee_saved": "21861.907772",
+              "pair_id": "345622504624494603",
+              "pair_logo": "https://res.surf.one/images/fart.webp?v=1",
+              "share_profit": "1549.309435",
+              "symbol": "FARTCOIN",
+              "total_size": "7011193.72991"
+            },
+            {
+              "fee_rate": "0.000416",
+              "fee_saved": "1045.417278",
+              "pair_id": "345622504624494605",
+              "pair_logo": "https://res.surf.one/images/GRIFFAIN.webp?v=1",
+              "share_profit": "367.396063",
+              "symbol": "GRIFFAIN",
+              "total_size": "883008.338426"
+            },
+            {
+              "fee_rate": "0.000465",
+              "fee_saved": "2848.559748",
+              "pair_id": "345622504624494608",
+              "pair_logo": "https://res.surf.one/images/melania-meme.webp?v=1",
+              "share_profit": "1170.478229",
+              "symbol": "MELANIA",
+              "total_size": "2511898.735808"
+            },
+            {
+              "fee_rate": "0.000264",
+              "fee_saved": "3434.443615",
+              "pair_id": "345622504624494609",
+              "pair_logo": "https://res.surf.one/images/MEW.webp?v=1",
+              "share_profit": "680.140298",
+              "symbol": "MEW",
+              "total_size": "2571614.946084"
+            },
+            {
+              "fee_rate": "0.000221",
+              "fee_saved": "772.836953",
+              "pair_id": "345622504624494610",
+              "pair_logo": "https://res.surf.one/images/MOODENG.jpg?v=1",
+              "share_profit": "124.088276",
+              "symbol": "MOODENG",
+              "total_size": "560578.268734"
+            },
+            {
+              "fee_rate": "0.00017",
+              "fee_saved": "1698.520751",
+              "pair_id": "345622504624494612",
+              "pair_logo": "https://res.surf.one/images/image.webp?v=1",
+              "share_profit": "203.123959",
+              "symbol": "POPCAT",
+              "total_size": "1188527.943784"
+            },
+            {
+              "fee_rate": "0.000321",
+              "fee_saved": "4428.58339",
+              "pair_id": "345622504624494614",
+              "pair_logo": "https://res.surf.one/images/vine.webp?v=1",
+              "share_profit": "1111.600699",
+              "symbol": "VINE",
+              "total_size": "3462615.05621"
+            },
+            {
+              "fee_rate": "0",
+              "fee_saved": "8.083967",
+              "pair_id": "345622504624494616",
+              "pair_logo": "https://res.surf.one/images/Venice_Token_(1).webp?v=1",
+              "share_profit": "0",
+              "symbol": "VVV",
+              "total_size": "5052.47995"
+            },
+            {
+              "fee_rate": "0.000278",
+              "fee_saved": "29718.530313",
+              "pair_id": "345622504624494617",
+              "pair_logo": "https://res.surf.one/images/Test.webp?v=1",
+              "share_profit": "960.595277",
+              "symbol": "TST",
+              "total_size": "3449340.647848"
+            },
+            {
+              "fee_rate": "0.001131",
+              "fee_saved": "616.591045",
+              "pair_id": "345622504624494619",
+              "pair_logo": "https://res.surf.one/images/AV.png?v=1",
+              "share_profit": "1490.534408",
+              "symbol": "AVL",
+              "total_size": "1316953.408662"
+            },
+            {
+              "fee_rate": "0.000431",
+              "fee_saved": "8032.109712",
+              "pair_id": "345622504624494620",
+              "pair_logo": "https://res.surf.one/images/libra_64.png?v=1",
+              "share_profit": "2967.627461",
+              "symbol": "LIBRA",
+              "total_size": "6874835.733354"
+            },
+            {
+              "fee_rate": "0.002403",
+              "fee_saved": "0",
+              "pair_id": "345622504624494621",
+              "pair_logo": "https://res.surf.one/images/cszdog_64.png?v=1",
+              "share_profit": "1287.843613",
+              "symbol": "BROCCOLI",
+              "total_size": "535822.279772"
+            },
+            {
+              "fee_rate": "0.000083",
+              "fee_saved": "118.655511",
+              "pair_id": "347111602306969600",
+              "pair_logo": "https://res.surf.one/images/360409544729296896.png",
+              "share_profit": "6.497568",
+              "symbol": "RAY",
+              "total_size": "78220.674842"
+            },
+            {
+              "fee_rate": "0.000564",
+              "fee_saved": "18267.963645",
+              "pair_id": "347111604018245632",
+              "pair_logo": "https://res.surf.one/images/jup.webp?v=1",
+              "share_profit": "3720.432959",
+              "symbol": "JUP",
+              "total_size": "6592154.97481"
+            },
+            {
+              "fee_rate": "0.000281",
+              "fee_saved": "373.428797",
+              "pair_id": "347111604295069696",
+              "pair_logo": "https://res.surf.one/images/362953997507624960.png",
+              "share_profit": "79.691203",
+              "symbol": "ACT",
+              "total_size": "283200"
+            },
+            {
+              "fee_rate": "0.000229",
+              "fee_saved": "214682.723261",
+              "pair_id": "347111605171679232",
+              "pair_logo": "https://res.surf.one/images/362953986094923776.png",
+              "share_profit": "45313.396354",
+              "symbol": "ADA",
+              "total_size": "197631517.844364"
+            },
+            {
+              "fee_rate": "0.000069",
+              "fee_saved": "11870.158594",
+              "pair_id": "347111606283169792",
+              "pair_logo": "https://res.surf.one/images/xrp-symbol-white-128.png?v=1",
+              "share_profit": "699.5882",
+              "symbol": "XRP",
+              "total_size": "9999957.672034"
+            },
+            {
+              "fee_rate": "0.00028",
+              "fee_saved": "6438.243655",
+              "pair_id": "347111607847645184",
+              "pair_logo": "https://res.surf.one/images/365261278626709504.png",
+              "share_profit": "1368.742446",
+              "symbol": "EOS",
+              "total_size": "4879366.313273400000000005"
+            },
+            {
+              "fee_rate": "0.000323",
+              "fee_saved": "87683.450641",
+              "pair_id": "347111608942358528",
+              "pair_logo": "https://res.surf.one/images/Peanut_the_Squirrel.webp?v=1",
+              "share_profit": "10813.450566",
+              "symbol": "PNUT",
+              "total_size": "33424584.031696"
+            },
+            {
+              "fee_rate": "0.000111",
+              "fee_saved": "355.190786",
+              "pair_id": "347111611643490304",
+              "pair_logo": "https://res.surf.one/images/RqJfmXQV_400x400.webp?v=1",
+              "share_profit": "26.673869",
+              "symbol": "BNX",
+              "total_size": "238665.409388"
+            },
+            {
+              "fee_rate": "0.00005",
+              "fee_saved": "6929.775621",
+              "pair_id": "347111611874177024",
+              "pair_logo": "https://res.surf.one/images/365261268623294464.png",
+              "share_profit": "288.959518",
+              "symbol": "TRX",
+              "total_size": "5670648.185286"
+            },
+            {
+              "fee_rate": "0.000981",
+              "fee_saved": "60590.530314",
+              "pair_id": "347111612650123264",
+              "pair_logo": "https://res.surf.one/images/bakerytoken_logo.webp?v=1",
+              "share_profit": "408.919468",
+              "symbol": "BAKE",
+              "total_size": "416787.830822"
+            },
+            {
+              "fee_rate": "0.000152",
+              "fee_saved": "30650.804107",
+              "pair_id": "347111613182799872",
+              "pair_logo": "https://res.surf.one/images/360409538186182656.png",
+              "share_profit": "1345.587234",
+              "symbol": "OM",
+              "total_size": "8796984.312412"
+            },
+            {
+              "fee_rate": "0.001098",
+              "fee_saved": "202.943617",
+              "pair_id": "347111614285901824",
+              "pair_logo": "https://res.surf.one/images/pancakeswap-cake-logo_(1).webp?v=1",
+              "share_profit": "118.175812",
+              "symbol": "CAKE",
+              "total_size": "107555.358626"
+            },
+            {
+              "fee_rate": "0.000158",
+              "fee_saved": "15619.338384",
+              "pair_id": "347111616588574720",
+              "pair_logo": "https://res.surf.one/images/pepe-token.png?v=1",
+              "share_profit": "1850.575152",
+              "symbol": "PEPE",
+              "total_size": "11640866.196766"
+            },
+            {
+              "fee_rate": "0.000182",
+              "fee_saved": "14374.198572",
+              "pair_id": "347111618681532416",
+              "pair_logo": "https://res.surf.one/images/PUDGY_PENGUINS_PENGU_PFP.png?v=1",
+              "share_profit": "1678.355889",
+              "symbol": "PENGU",
+              "total_size": "9176349.057948000000000004"
+            },
+            {
+              "fee_rate": "0.000491",
+              "fee_saved": "67721.694472",
+              "pair_id": "347111620719964160",
+              "pair_logo": "https://res.surf.one/images/dogwifhat.jpg?v=1",
+              "share_profit": "14235.484746",
+              "symbol": "WIF",
+              "total_size": "28966480.012664"
+            },
+            {
+              "fee_rate": "0.000457",
+              "fee_saved": "206.652135",
+              "pair_id": "347111621466550272",
+              "pair_logo": "https://res.surf.one/images/368881368806981632.png",
+              "share_profit": "101.0445",
+              "symbol": "LINK",
+              "total_size": "221052.785908000000000004"
+            },
+            {
+              "fee_rate": "0.000255",
+              "fee_saved": "138028.193273",
+              "pair_id": "347465522314880001",
+              "pair_logo": "https://res.surf.one/images/AI16Z.png?v=1",
+              "share_profit": "7226.570362",
+              "symbol": "AI16Z",
+              "total_size": "28251546.954526"
+            },
+            {
+              "fee_rate": "0.000151",
+              "fee_saved": "22494.902631",
+              "pair_id": "347465522314880002",
+              "pair_logo": "https://res.surf.one/images/LOGOMARK.png?v=1",
+              "share_profit": "1330.250971",
+              "symbol": "VIRTUAL",
+              "total_size": "8794035.81906"
+            },
+            {
+              "fee_rate": "0.000216",
+              "fee_saved": "32113.819507",
+              "pair_id": "347465522314880003",
+              "pair_logo": "https://res.surf.one/images/hyperliquid.png?v=1",
+              "share_profit": "4888.224634",
+              "symbol": "HYPE",
+              "total_size": "22629558.773192"
+            },
+            {
+              "fee_rate": "0.000314",
+              "fee_saved": "38147.521806",
+              "pair_id": "347465522314880004",
+              "pair_logo": "https://res.surf.one/images/sui-ocean-square.png?1727791290?v=1",
+              "share_profit": "10644.316115",
+              "symbol": "SUI",
+              "total_size": "33801533.738783745635986328"
+            },
+            {
+              "fee_rate": "0.000052",
+              "fee_saved": "111.248178",
+              "pair_id": "347495740595551232",
+              "pair_logo": "https://res.surf.one/images/3.png?v=1",
+              "share_profit": "3.756246",
+              "symbol": "AIXBT",
+              "total_size": "71877.765308"
+            },
+            {
+              "fee_rate": "0.000144",
+              "fee_saved": "181435.039872",
+              "pair_id": "349633951912684544",
+              "pair_logo": "https://res.surf.one/images/trump.png?v=1",
+              "share_profit": "13985.151459",
+              "symbol": "TRUMP",
+              "total_size": "96882717.260544"
+            },
+            {
+              "fee_rate": "0.000154",
+              "fee_saved": "6754.53566",
+              "pair_id": "359465789956292608",
+              "pair_logo": "https://res.surf.one/images/359465784419811328.png",
+              "share_profit": "334.518474",
+              "symbol": "IP",
+              "total_size": "2169538.593034"
+            },
+            {
+              "fee_rate": "0.000028",
+              "fee_saved": "190.403053",
+              "pair_id": "359465791478824960",
+              "pair_logo": "https://res.surf.one/images/359465790749016064.jpg",
+              "share_profit": "3.44189",
+              "symbol": "SHELL",
+              "total_size": "121153.089844"
+            },
+            {
+              "fee_rate": "0.000291",
+              "fee_saved": "151825.227542",
+              "pair_id": "360852310403842048",
+              "pair_logo": "https://res.surf.one/images/360858750006853632.png",
+              "share_profit": "17554.877296",
+              "symbol": "PI",
+              "total_size": "60196213.248584"
+            },
+            {
+              "fee_rate": "0.001487",
+              "fee_saved": "93.463697",
+              "pair_id": "360931161288998912",
+              "pair_logo": "https://res.surf.one/images/360931158701113344.png",
+              "share_profit": "1240.72523",
+              "symbol": "KAITO",
+              "total_size": "833868.079522"
+            },
+            {
+              "fee_rate": "0.000635",
+              "fee_saved": "366.653929",
+              "pair_id": "361865415812448256",
+              "pair_logo": "https://res.surf.one/images/361865413358780416.png",
+              "share_profit": "241.870135",
+              "symbol": "BAN",
+              "total_size": "380327.540426"
+            },
+            {
+              "fee_rate": "0.000221",
+              "fee_saved": "3209.234964",
+              "pair_id": "362563872936165376",
+              "pair_logo": "https://res.surf.one/images/362563868175630336.png",
+              "share_profit": "516.102482",
+              "symbol": "VANA",
+              "total_size": "2328335.904206"
+            },
+            {
+              "fee_rate": "0.000108",
+              "fee_saved": "2670.238297",
+              "pair_id": "362953984731774976",
+              "pair_logo": "https://res.surf.one/images/362953978687782912.png",
+              "share_profit": "161.747735",
+              "symbol": "TON",
+              "total_size": "1493316.968736"
+            },
+            {
+              "fee_rate": "0.00231",
+              "fee_saved": "0",
+              "pair_id": "362953990117261312",
+              "pair_logo": "https://res.surf.one/images/362953989051908096.png",
+              "share_profit": "1065.085675",
+              "symbol": "DOG",
+              "total_size": "461040.352986"
+            },
+            {
+              "fee_rate": "0.000386",
+              "fee_saved": "1650.8789",
+              "pair_id": "362953992407351296",
+              "pair_logo": "https://res.surf.one/images/362953991421689856.png",
+              "share_profit": "526.105775",
+              "symbol": "ORDI",
+              "total_size": "1360615.422334"
+            },
+            {
+              "fee_rate": "0.000656",
+              "fee_saved": "4231.084692",
+              "pair_id": "362953995846680576",
+              "pair_logo": "https://res.surf.one/images/362953993976020992.png",
+              "share_profit": "2940.407866",
+              "symbol": "SATS",
+              "total_size": "4482182.849206"
+            },
+            {
+              "fee_rate": "0.001936",
+              "fee_saved": "510.616207",
+              "pair_id": "369821362136547328",
+              "pair_logo": "https://res.surf.one/images/369827664904585216.jpg\r\n",
+              "share_profit": "292.864369",
+              "symbol": "MUBARAK",
+              "total_size": "151210.385386"
+            },
+            {
+              "fee_rate": "0.001422",
+              "fee_saved": "39.766181",
+              "pair_id": "372406395867234304",
+              "pair_logo": "https://res.surf.one/images/372406393870745600.png",
+              "share_profit": "318.250251",
+              "symbol": "ORCA",
+              "total_size": "223760.270086"
+            },
+            {
+              "fee_rate": "0.000696",
+              "fee_saved": "572.793637",
+              "pair_id": "372406396785786880",
+              "pair_logo": "https://res.surf.one/images/372406396244721664.png",
+              "share_profit": "441.663672",
+              "symbol": "S",
+              "total_size": "634035.818474"
+            },
+            {
+              "fee_rate": "0.00108",
+              "fee_saved": "36.778056",
+              "pair_id": "372865786315800576",
+              "pair_logo": "https://res.surf.one/images/372865781760786432.png",
+              "share_profit": "76.386188",
+              "symbol": "PARTI",
+              "total_size": "70727.652962"
+            },
+            {
+              "fee_rate": "0.000046",
+              "fee_saved": "45955.605093",
+              "pair_id": "373889454600880128",
+              "pair_logo": "https://res.surf.one/images/373889450846978048.png",
+              "share_profit": "1293.154755",
+              "symbol": "PAXG",
+              "total_size": "27997937.785780000000000003"
+            },
+            {
+              "fee_rate": "0.000022",
+              "fee_saved": "13.404401",
+              "pair_id": "378692710455836672",
+              "pair_logo": "https://res.surf.one/images/378692707272359936.jpg",
+              "share_profit": "0.189519",
+              "symbol": "FHE",
+              "total_size": "8496.2"
+            },
+            {
+              "fee_rate": "0.00016",
+              "fee_saved": "169.790963",
+              "pair_id": "378697810184241152",
+              "pair_logo": "https://res.surf.one/images/378697802428973056.png",
+              "share_profit": "18.965538",
+              "symbol": "BABY",
+              "total_size": "117972.813578"
+            },
+            {
+              "fee_rate": "0.000297",
+              "fee_saved": "839.421722",
+              "pair_id": "396827018349510656",
+              "pair_logo": "https://res.surf.one/images/396827014813712384.png",
+              "share_profit": "191.697512",
+              "symbol": "LPT",
+              "total_size": "644449.521698"
+            },
+            {
+              "fee_rate": "0.000283",
+              "fee_saved": "16701.732434",
+              "pair_id": "398828132376772608",
+              "pair_logo": "https://res.surf.one/images/398828129717583872.png",
+              "share_profit": "2899.338949",
+              "symbol": "ENA",
+              "total_size": "10225081.057334"
+            },
+            {
+              "fee_rate": "0.00007",
+              "fee_saved": "1671.743455",
+              "pair_id": "398828133622480896",
+              "pair_logo": "https://res.surf.one/images/398828132821368832.png",
+              "share_profit": "41.287634",
+              "symbol": "ARB",
+              "total_size": "582481.362852"
+            },
+            {
+              "fee_rate": "0.000129",
+              "fee_saved": "1121.376049",
+              "pair_id": "398828134889160704",
+              "pair_logo": "https://res.surf.one/images/398828134096437248.png",
+              "share_profit": "98.497822",
+              "symbol": "MASK",
+              "total_size": "762421.169948"
+            },
+            {
+              "fee_rate": "0.000194",
+              "fee_saved": "463.414064",
+              "pair_id": "400641518932590592",
+              "pair_logo": "https://res.surf.one/images/400641516214681600.png",
+              "share_profit": "64.086736",
+              "symbol": "MKR",
+              "total_size": "329688"
+            },
+            {
+              "fee_rate": "0.00012",
+              "fee_saved": "13777.850595",
+              "pair_id": "400641520052469760",
+              "pair_logo": "https://res.surf.one/images/400641519234580480.png",
+              "share_profit": "691.168232",
+              "symbol": "TAO",
+              "total_size": "5725678.591516"
+            },
+            {
+              "fee_rate": "0.000045",
+              "fee_saved": "169.913524",
+              "pair_id": "400641523470827520",
+              "pair_logo": "https://res.surf.one/images/400641522590023680.png",
+              "share_profit": "5.000768",
+              "symbol": "AVAX",
+              "total_size": "109027.06"
+            },
+            {
+              "fee_rate": "0.000291",
+              "fee_saved": "7296.690403",
+              "pair_id": "401345707035852800",
+              "pair_logo": "https://res.surf.one/images/401345703734935552.png",
+              "share_profit": "1623.686948",
+              "symbol": "RESOLV",
+              "total_size": "5575235.844998"
+            },
+            {
+              "fee_rate": "0.000075",
+              "fee_saved": "1581.886839",
+              "pair_id": "410114104766758912",
+              "pair_logo": "https://res.surf.one/images/410114100660535296.png",
+              "share_profit": "40.653698",
+              "symbol": "SPX",
+              "total_size": "536895.296462"
+            },
+            {
+              "fee_rate": "0.000079",
+              "fee_saved": "9153.349276",
+              "pair_id": "410470859602395136",
+              "pair_logo": "https://res.surf.one/images/410599401472393216.png",
+              "share_profit": "457.095934",
+              "symbol": "1000BONK",
+              "total_size": "5731420.092112"
+            },
+            {
+              "fee_rate": "0.000195",
+              "fee_saved": "468219.576767",
+              "pair_id": "412394882502492160",
+              "pair_logo": "https://res.surf.one/images/412394878828281856.png",
+              "share_profit": "49106.819831",
+              "symbol": "PUMP",
+              "total_size": "250642634.01108"
+            },
+            {
+              "fee_rate": "0.000316",
+              "fee_saved": "31813.682136",
+              "pair_id": "416568236344082432",
+              "pair_logo": "https://res.surf.one/images/416568220061794304.png",
+              "share_profit": "3416.073223",
+              "symbol": "SAHARA",
+              "total_size": "10807866.929834000000000004"
+            },
+            {
+              "fee_rate": "0.000399",
+              "fee_saved": "11297.421254",
+              "pair_id": "418444693890662400",
+              "pair_logo": "https://res.surf.one/images/cfx.png",
+              "share_profit": "2320.979714",
+              "symbol": "CFX",
+              "total_size": "5806529.0482628623046875"
+            },
+            {
+              "fee_rate": "0.000356",
+              "fee_saved": "124725.212244",
+              "pair_id": "421319393037778944",
+              "pair_logo": "https://res.surf.one/images/421319389992714240.png",
+              "share_profit": "9374.79499",
+              "symbol": "MYX",
+              "total_size": "26314964.645369690759658818"
+            },
+            {
+              "fee_rate": "0.000927",
+              "fee_saved": "13092.391621",
+              "pair_id": "423891225494421504",
+              "pair_logo": "https://res.surf.one/images/423891222533242880.png",
+              "share_profit": "6550.87509",
+              "symbol": "OKB",
+              "total_size": "7060945.057376000000000012"
+            },
+            {
+              "fee_rate": "0.001477",
+              "fee_saved": "1708.084224",
+              "pair_id": "424178690243428352",
+              "pair_logo": "https://res.surf.one/images/424178687160614912.png",
+              "share_profit": "1113.46108",
+              "symbol": "BGB",
+              "total_size": "753581.639998"
+            },
+            {
+              "fee_rate": "0.000312",
+              "fee_saved": "941.980567",
+              "pair_id": "425773262857830400",
+              "pair_logo": "https://res.surf.one/images/425773259821154304.png",
+              "share_profit": "52.018025",
+              "symbol": "MNT",
+              "total_size": "166656.370964"
+            },
+            {
+              "fee_rate": "0.000208",
+              "fee_saved": "773.273729",
+              "pair_id": "425773263986098176",
+              "pair_logo": "https://res.surf.one/images/425773263231123456.png",
+              "share_profit": "49.120041",
+              "symbol": "PLUME",
+              "total_size": "235460.75263"
+            },
+            {
+              "fee_rate": "0.000043",
+              "fee_saved": "523.253321",
+              "pair_id": "425773265131143168",
+              "pair_logo": "https://res.surf.one/images/425773264346808320.png",
+              "share_profit": "12.703522",
+              "symbol": "DOT",
+              "total_size": "291129"
+            },
+            {
+              "fee_rate": "0.000289",
+              "fee_saved": "10117.985327",
+              "pair_id": "426495844024320000",
+              "pair_logo": "https://res.surf.one/images/426495839670632448.png",
+              "share_profit": "1088.657866",
+              "symbol": "BIO",
+              "total_size": "3754822.486678"
+            },
+            {
+              "fee_rate": "0.000318",
+              "fee_saved": "12124.238231",
+              "pair_id": "426759672440029184",
+              "pair_logo": "https://res.surf.one/images/426759669151694848.png",
+              "share_profit": "231.832624",
+              "symbol": "YZY",
+              "total_size": "728178.683012"
+            },
+            {
+              "fee_rate": "0.000143",
+              "fee_saved": "61145.797263",
+              "pair_id": "427538006799286272",
+              "pair_logo": "https://res.surf.one/images/wlfi.png",
+              "share_profit": "4398.561675",
+              "symbol": "WLFI",
+              "total_size": "30752652.76219"
+            },
+            {
+              "fee_rate": "0.000607",
+              "fee_saved": "2879.334814",
+              "pair_id": "428976662680436736",
+              "pair_logo": "https://res.surf.one/images/428976660038025216.png",
+              "share_profit": "947.755895",
+              "symbol": "XPL",
+              "total_size": "1559442.700628000000000006"
+            },
+            {
+              "fee_rate": "0.000779",
+              "fee_saved": "1058.189637",
+              "pair_id": "429348054663954432",
+              "pair_logo": "https://res.surf.one/images/429348051308511232.png",
+              "share_profit": "41.804267",
+              "symbol": "TREE",
+              "total_size": "53621.567318"
+            },
+            {
+              "fee_rate": "0.000757",
+              "fee_saved": "2822.334266",
+              "pair_id": "430903578714963968",
+              "pair_logo": "https://res.surf.one/images/431072426055434240.png",
+              "share_profit": "700.27064",
+              "symbol": "LINEA",
+              "total_size": "924927.50624"
+            },
+            {
+              "fee_rate": "0.000158",
+              "fee_saved": "1055.590901",
+              "pair_id": "431783305449308160",
+              "pair_logo": "https://res.surf.one/images/431783302412632064.png",
+              "share_profit": "33.992059",
+              "symbol": "JELLYJELLY",
+              "total_size": "214084.48"
+            },
+            {
+              "fee_rate": "0.000219",
+              "fee_saved": "17457.381532",
+              "pair_id": "432241655114891264",
+              "pair_logo": "https://res.surf.one/images/432241653013544960.png",
+              "share_profit": "948.139739",
+              "symbol": "M",
+              "total_size": "4314933.460124"
+            },
+            {
+              "fee_rate": "0.000349",
+              "fee_saved": "198.179196",
+              "pair_id": "432324928348356608",
+              "pair_logo": "https://res.surf.one/images/432324925282320384.png",
+              "share_profit": "53.466396",
+              "symbol": "BCH",
+              "total_size": "153030"
+            },
+            {
+              "fee_rate": "0.000137",
+              "fee_saved": "228.0154",
+              "pair_id": "432655890206687232",
+              "pair_logo": "https://res.surf.one/images/432655885672644608.png",
+              "share_profit": "5.298462",
+              "symbol": "LAUNCHCOIN",
+              "total_size": "38563"
+            },
+            {
+              "fee_rate": "0.000179",
+              "fee_saved": "1253.590492",
+              "pair_id": "432655892018626560",
+              "pair_logo": "https://res.surf.one/images/432655890701615104.png",
+              "share_profit": "51.816101",
+              "symbol": "SOMI",
+              "total_size": "288195.946"
+            },
+            {
+              "fee_rate": "0.000298",
+              "fee_saved": "32.740511",
+              "pair_id": "432899089231773696",
+              "pair_logo": "https://res.surf.one/images/432899084949389312.png",
+              "share_profit": "3.270978",
+              "symbol": "NMR",
+              "total_size": "10947.47174"
+            },
+            {
+              "fee_rate": "0.00011",
+              "fee_saved": "2512.869248",
+              "pair_id": "432899090477481984",
+              "pair_logo": "https://res.surf.one/images/432899089709924352.png",
+              "share_profit": "11.122997",
+              "symbol": "SAPIEN",
+              "total_size": "100250"
+            },
+            {
+              "fee_rate": "0.000079",
+              "fee_saved": "136.850836",
+              "pair_id": "433239137311522816",
+              "pair_logo": "https://res.surf.one/images/433239134190960640.png",
+              "share_profit": "2.00093",
+              "symbol": "RED",
+              "total_size": "25136"
+            },
+            {
+              "fee_rate": "0.000384",
+              "fee_saved": "135.158763",
+              "pair_id": "433239139693887488",
+              "pair_logo": "https://res.surf.one/images/433239138771140608.png",
+              "share_profit": "6.523018",
+              "symbol": "BTR",
+              "total_size": "16968"
+            },
+            {
+              "fee_rate": "0.000204",
+              "fee_saved": "172.156526",
+              "pair_id": "433239141044453376",
+              "pair_logo": "https://res.surf.one/images/433239140155260928.png",
+              "share_profit": "2.868259",
+              "symbol": "TA",
+              "total_size": "14045.4"
+            },
+            {
+              "fee_rate": "0.001912",
+              "fee_saved": "684.437549",
+              "pair_id": "433385148075999232",
+              "pair_logo": "https://res.surf.one/images/433385144338874368.png",
+              "share_profit": "328.418964",
+              "symbol": "OPEN",
+              "total_size": "171755.6"
+            },
+            {
+              "fee_rate": "0.000658",
+              "fee_saved": "225.705876",
+              "pair_id": "433626162028085248",
+              "pair_logo": "https://res.surf.one/images/433626159079489536.png",
+              "share_profit": "16.745903",
+              "symbol": "FLOCK",
+              "total_size": "25423.4"
+            },
+            {
+              "fee_rate": "0.005476",
+              "fee_saved": "3489.585198",
+              "pair_id": "433626163345096704",
+              "pair_logo": "https://res.surf.one/images/433626162460098560.png",
+              "share_profit": "360.594706",
+              "symbol": "K",
+              "total_size": "65838"
+            },
+            {
+              "fee_rate": "0.000511",
+              "fee_saved": "1710.031324",
+              "pair_id": "433734705884430336",
+              "pair_logo": "https://res.surf.one/images/433734701438468096.png",
+              "share_profit": "41.112129",
+              "symbol": "AI",
+              "total_size": "80338"
+            },
+            {
+              "fee_rate": "0.000988",
+              "fee_saved": "909.953341",
+              "pair_id": "434390666290659328",
+              "pair_logo": "https://res.surf.one/images/434390660888395776.png",
+              "share_profit": "269.214278",
+              "symbol": "B2",
+              "total_size": "272327.601012"
+            },
+            {
+              "fee_rate": "0.000485",
+              "fee_saved": "254.713935",
+              "pair_id": "434752740829167616",
+              "pair_logo": "https://res.surf.one/images/434752737863794688.png",
+              "share_profit": "32.905754",
+              "symbol": "YGG",
+              "total_size": "67736.423"
+            },
+            {
+              "fee_rate": "0.000339",
+              "fee_saved": "12425.561556",
+              "pair_id": "435040168576024576",
+              "pair_logo": "https://res.surf.one/images/435040165707120640.png",
+              "share_profit": "206.549792",
+              "symbol": "HIFI",
+              "total_size": "607791.096658"
+            },
+            {
+              "fee_rate": "0.002759",
+              "fee_saved": "0",
+              "pair_id": "435040170278912000",
+              "pair_logo": "https://res.surf.one/images/435040169108701184.png",
+              "share_profit": "342.987212",
+              "symbol": "BSW",
+              "total_size": "124300"
+            },
+            {
+              "fee_rate": "0.000459",
+              "fee_saved": "415.864497",
+              "pair_id": "435162381555859456",
+              "pair_logo": "https://res.surf.one/images/435162378615652352.png",
+              "share_profit": "19.419881",
+              "symbol": "MEME",
+              "total_size": "42242"
+            },
+            {
+              "fee_rate": "0.000419",
+              "fee_saved": "658.407869",
+              "pair_id": "435811033433505792",
+              "pair_logo": "https://res.surf.one/images/435811030304555008.png",
+              "share_profit": "62.035114",
+              "symbol": "AVNT",
+              "total_size": "147872.96158"
+            },
+            {
+              "fee_rate": "0",
+              "fee_saved": "90.291376",
+              "pair_id": "436265098378477568",
+              "pair_logo": "https://res.surf.one/images/436265091222994944.png",
+              "share_profit": "0",
+              "symbol": "CRV",
+              "total_size": "26981"
+            },
+            {
+              "fee_rate": "0.000791",
+              "fee_saved": "25.337003",
+              "pair_id": "436312198516572160",
+              "pair_logo": "https://res.surf.one/images/436312195911909376.png",
+              "share_profit": "4.483333",
+              "symbol": "ZKC",
+              "total_size": "5666.4"
+            },
+            {
+              "fee_rate": "0.001868",
+              "fee_saved": "67.602052",
+              "pair_id": "436337626698481664",
+              "pair_logo": "https://res.surf.one/images/436337623707942912.png",
+              "share_profit": "45.726259",
+              "symbol": "Q",
+              "total_size": "24476.64"
+            },
+            {
+              "fee_rate": "0.001242",
+              "fee_saved": "52.070763",
+              "pair_id": "436617926909362176",
+              "pair_logo": "https://res.surf.one/images/436617901894533120.png",
+              "share_profit": "23.188411",
+              "symbol": "PEOPLE",
+              "total_size": "18655.845762"
+            },
+            {
+              "fee_rate": "0.002449",
+              "fee_saved": "4864.779508",
+              "pair_id": "437315947242455040",
+              "pair_logo": "https://res.surf.one/images/437315944889450496.png",
+              "share_profit": "199.658126",
+              "symbol": "RHEA",
+              "total_size": "81521.96"
+            },
+            {
+              "fee_rate": "0.000182",
+              "fee_saved": "31572.884838",
+              "pair_id": "437354159306440704",
+              "pair_logo": "https://res.surf.one/images/437354155867111424.png",
+              "share_profit": "3516.157254",
+              "symbol": "ASTER",
+              "total_size": "19251556.566838"
+            },
+            {
+              "fee_rate": "0.000712",
+              "fee_saved": "577.518556",
+              "pair_id": "437680641539047424",
+              "pair_logo": "https://res.surf.one/images/437680638879858688.png",
+              "share_profit": "104.182289",
+              "symbol": "STBL",
+              "total_size": "146147.232922"
+            },
+            {
+              "fee_rate": "0.001069",
+              "fee_saved": "47.81225",
+              "pair_id": "437680642776367104",
+              "pair_logo": "https://res.surf.one/images/437680641912340480.png",
+              "share_profit": "28.749016",
+              "symbol": "SUN",
+              "total_size": "26883.6"
+            },
+            {
+              "fee_rate": "0.000201",
+              "fee_saved": "51.147604",
+              "pair_id": "437943168139264000",
+              "pair_logo": "https://res.surf.one/images/437943142843416576.png",
+              "share_profit": "3.378943",
+              "symbol": "W",
+              "total_size": "16791.659262"
+            },
+            {
+              "fee_rate": "0.000657",
+              "fee_saved": "538.249286",
+              "pair_id": "438308644195401728",
+              "pair_logo": "https://res.surf.one/images/438308641561378816.png",
+              "share_profit": "334.889599",
+              "symbol": "0G",
+              "total_size": "509671.64709352"
+            },
+            {
+              "fee_rate": "0.000358",
+              "fee_saved": "12.740169",
+              "pair_id": "438710658586902528",
+              "pair_logo": "https://res.surf.one/images/438710652593242112.png",
+              "share_profit": "3.678263",
+              "symbol": "UXLINK",
+              "total_size": "10261.52"
+            },
+            {
+              "fee_rate": "0.000279",
+              "fee_saved": "5.148709",
+              "pair_id": "439062993519509504",
+              "pair_logo": "https://res.surf.one/images/439062988930940928.png",
+              "share_profit": "1.091291",
+              "symbol": "FTT",
+              "total_size": "3900"
+            },
+            {
+              "fee_rate": "0.000359",
+              "fee_saved": "212.902587",
+              "pair_id": "439911659746917376",
+              "pair_logo": "https://res.surf.one/images/439919913038453760.jpeg",
+              "share_profit": "25.591069",
+              "symbol": "MIRA",
+              "total_size": "71181.512214"
+            },
+            {
+              "fee_rate": "0.000556",
+              "fee_saved": "12.347892",
+              "pair_id": "440126675170775040",
+              "pair_logo": "https://res.surf.one/images/444855889619257344.png",
+              "share_profit": "1.502136",
+              "symbol": "WAL",
+              "total_size": "2700"
+            },
+            {
+              "fee_rate": "0.000629",
+              "fee_saved": "133.770684",
+              "pair_id": "440126685295824896",
+              "pair_logo": "https://res.surf.one/images/442017681969711104.png",
+              "share_profit": "63.223049",
+              "symbol": "ZEC",
+              "total_size": "100392.272734"
+            },
+            {
+              "fee_rate": "0.000332",
+              "fee_saved": "1045.649095",
+              "pair_id": "440126699745202176",
+              "pair_logo": "https://res.surf.one/images/443519217631692800.jpeg",
+              "share_profit": "69.576753",
+              "symbol": "COAI",
+              "total_size": "208956.487552"
+            },
+            {
+              "fee_rate": "0.000151",
+              "fee_saved": "438.469414",
+              "pair_id": "440126702135955456",
+              "pair_logo": "https://res.surf.one/images/442402956172527616.jpeg",
+              "share_profit": "13.816276",
+              "symbol": "AIA",
+              "total_size": "91378.6"
+            },
+            {
+              "fee_rate": "0.000464",
+              "fee_saved": "106.251722",
+              "pair_id": "440126732464967680",
+              "pair_logo": "https://res.surf.one/images/444590157547374592.jpg",
+              "share_profit": "13.55147",
+              "symbol": "GIGGLE",
+              "total_size": "29192.379998"
+            },
+            {
+              "fee_rate": "0.000674",
+              "fee_saved": "2084.693847",
+              "pair_id": "440126845056864256",
+              "pair_logo": "https://res.surf.one/images/445002713596365824.jpg",
+              "share_profit": "2.446958",
+              "symbol": "MON",
+              "total_size": "3630.1"
+            },
+            {
+              "fee_rate": "0",
+              "fee_saved": "19.2769",
+              "pair_id": "440258940689338368",
+              "pair_logo": "https://res.surf.one/images/442320233466628096.png",
+              "share_profit": "0",
+              "symbol": "LIGHT",
+              "total_size": "2500"
+            },
+            {
+              "fee_rate": "0.000404",
+              "fee_saved": "184.492231",
+              "pair_id": "440968617098104832",
+              "pair_logo": "https://res.surf.one/images/441017313668302848.jpg",
+              "share_profit": "10.089364",
+              "symbol": "XAN",
+              "total_size": "24969.79161"
+            },
+            {
+              "fee_rate": "0.000537",
+              "fee_saved": "728.81769",
+              "pair_id": "440998816812519424",
+              "pair_logo": "https://res.surf.one/images/441014390066448384.jpeg",
+              "share_profit": "124.203987",
+              "symbol": "FF",
+              "total_size": "230925.86656"
+            },
+            {
+              "fee_rate": "0.000367",
+              "fee_saved": "5869.713548",
+              "pair_id": "442055780732447744",
+              "pair_logo": "https://res.surf.one/images/444255830938683392.png",
+              "share_profit": "412.824807",
+              "symbol": "4",
+              "total_size": "1122595.499192"
+            },
+            {
+              "fee_rate": "0.00015",
+              "fee_saved": "3953.655274",
+              "pair_id": "442085980090346496",
+              "pair_logo": "https://res.surf.one/images/442093494756902912.jpeg",
+              "share_profit": "208.594599",
+              "symbol": "2Z",
+              "total_size": "1384131.618728"
+            }
+          ],
+          "total_fee_saved": "4506354.656993"
+        },
+        "errno": "200",
+        "msg": "success"
+      },
+      "length": 28400,
+      "status": 200,
+      "text": null,
+      "url": "https://surfv2-api.surf.one/public/pair/profit/stats"
+    },
+    {
+      "json": {
+        "data": {
+          "daily_stats": [
+            {
+              "daily_collateral": "24344.67036",
+              "daily_pnl": "602.314197",
+              "daily_size": "2726411.886516",
+              "daily_trader": 44,
+              "date": "2025-10-04T00:00:00Z"
+            },
+            {
+              "daily_collateral": "118374.34829",
+              "daily_pnl": "-909.00136",
+              "daily_size": "9140044.4207",
+              "daily_trader": 123,
+              "date": "2025-10-05T00:00:00Z"
+            },
+            {
+              "daily_collateral": "169947.844522",
+              "daily_pnl": "3580.892821",
+              "daily_size": "8895011.0175775",
+              "daily_trader": 121,
+              "date": "2025-10-06T00:00:00Z"
+            },
+            {
+              "daily_collateral": "139866.594304",
+              "daily_pnl": "-65.565435",
+              "daily_size": "8534899.0758755",
+              "daily_trader": 113,
+              "date": "2025-10-07T00:00:00Z"
+            },
+            {
+              "daily_collateral": "218387.590117",
+              "daily_pnl": "-8642.489662",
+              "daily_size": "13601182.472202",
+              "daily_trader": 117,
+              "date": "2025-10-08T00:00:00Z"
+            },
+            {
+              "daily_collateral": "161886.877603",
+              "daily_pnl": "-13399.958271",
+              "daily_size": "10053502.810253",
+              "daily_trader": 121,
+              "date": "2025-10-09T00:00:00Z"
+            },
+            {
+              "daily_collateral": "98584.999981",
+              "daily_pnl": "-13147.482164",
+              "daily_size": "6195673.613735",
+              "daily_trader": 153,
+              "date": "2025-10-10T00:00:00Z"
+            },
+            {
+              "daily_collateral": "73060.666863",
+              "daily_pnl": "6078.10314",
+              "daily_size": "5031399.49838",
+              "daily_trader": 104,
+              "date": "2025-10-11T00:00:00Z"
+            }
+          ],
+          "total_pnl": "-188094.443708",
+          "total_size": "3586742175.794083616862159424",
+          "total_trader": 2507
+        },
+        "errno": "200",
+        "msg": "success"
+      },
+      "length": 1282,
+      "status": 200,
+      "text": null,
+      "url": "https://surfv2-api.surf.one/public/daily/stats"
+    }
+  ]
+}

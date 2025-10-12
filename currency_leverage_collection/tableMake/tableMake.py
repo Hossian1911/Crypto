@@ -18,7 +18,7 @@ RESULT_DIR.mkdir(parents=True, exist_ok=True)
 RESULT_HTML_DIR = RESULT_DIR / "html"
 RESULT_HTML_DIR.mkdir(parents=True, exist_ok=True)
 
-EX_ORDER = ["binance", "weex", "mexc", "bybit"]  # 按样表顺序
+EX_ORDER = ["binance", "weex", "mexc", "bybit", "surf"]  # 按样表顺序，增加 SURF
 
 # 读取 surf 目标（只取 USDT）
 def load_targets() -> List[str]:
@@ -66,6 +66,36 @@ def load_binance() -> Dict[str, List[Dict[str, Any]]]:
             out[sym] = tiers
     return out
 
+
+def load_surf() -> Dict[str, List[Dict[str, Any]]]:
+    """读取 SURF 限额聚合结果，将单条限额映射为统一的 tiers 结构。
+    输入文件：data/dataGet_api/surf/surf_limits.json
+    结构：{"items": [{symbol, pair_id, pair_name, max_leverage, max_order_size, max_mmr, ...}, ...]}
+    输出：{ "ETHUSDT": [ {mlev, notional_usdt, mmr} ] }
+    """
+    p = DATA_DIR / "surf" / "surf_limits.json"
+    if not p.exists():
+        return {}
+    data = json.loads(p.read_text(encoding="utf-8"))
+    items = data.get("items") if isinstance(data, dict) else None
+    out: Dict[str, List[Dict[str, Any]]] = {}
+    if isinstance(items, list):
+        for it in items:
+            if not isinstance(it, dict):
+                continue
+            base = str(it.get("symbol") or "").strip().upper()
+            if not base:
+                continue
+            sym = f"{base}USDT"
+            mlev = it.get("max_leverage")
+            notional = it.get("max_order_size")  # 字符串数值，保持一致再统一 parse
+            mmr = it.get("max_mmr")              # 小数，如 0.01
+            out[sym] = [{
+                "mlev": mlev,
+                "notional_usdt": notional,
+                "mmr": mmr,
+            }]
+    return out
 
 def load_bybit() -> Dict[str, List[Dict[str, Any]]]:
     p = DATA_DIR / "bybit" / "bybit_selected.json"
@@ -247,6 +277,16 @@ def build_rows_for_exchange(ex: str, sym: str, sources: Dict[str, Dict[str, List
             mmr = t.get("mmr") or ""  # weex 已是百分数字符串
             rows.append([ex_name, lev, notional, mmr])
         return rows or [["WEEX", "", "", ""]]
+    elif ex == "surf":
+        tiers = sources[ex].get(sym, [])
+        rows = []
+        for i, t in enumerate(tiers):
+            ex_name = "SURF" if i == 0 else ""
+            lev = to_leverage_str(t.get("mlev"))
+            notional = parse_number(t.get("notional_usdt"))
+            mmr = to_percent_str(t.get("mmr"))
+            rows.append([ex_name, lev, notional, mmr])
+        return rows or [["SURF", "", "", ""]]
     else:
         return []
 
@@ -298,7 +338,7 @@ def beautify_sheet(ws) -> None:
 def _build_html(symbols: List[str], html_payload: Dict[str, Dict[str, List[List[Any]]]], book_name: str) -> Path:
     """生成带下拉的静态 HTML，联动展示四所数据。"""
     # 简单样式与脚本（纯原生，不依赖外链）
-    exchanges = ["BINANCE", "WEEX", "MECX", "BYBIT"]
+    exchanges = ["BINANCE", "WEEX", "MECX", "BYBIT", "SURF"]
     data_json = json.dumps(html_payload, ensure_ascii=False)
     symbols_json = json.dumps(symbols, ensure_ascii=False)
     html = f"""
@@ -321,7 +361,7 @@ def _build_html(symbols: List[str], html_payload: Dict[str, Dict[str, List[List[
   <script>
     const DATA = {data_json};
     const SYMBOLS = {symbols_json};
-    const EXS = {json.dumps(["BINANCE","WEEX","MECX","BYBIT"])};
+    const EXS = {json.dumps(["BINANCE","WEEX","MECX","BYBIT","SURF"])};
     function onSymbolChange() {{
       const sym = document.getElementById('sym').value;
       render(sym);
@@ -389,6 +429,7 @@ def make_excel() -> Path:
         "bybit": load_bybit(),
         "mexc": load_mexc(),
         "weex": load_weex(),
+        "surf": load_surf(),
     }
 
     wb = Workbook()
@@ -424,7 +465,12 @@ def make_excel() -> Path:
             # 写入 HTML 数据（展示时第一列不需要重复的交易所名，保留与 Excel 一致即可）
             # 将空字符串统一保留，前端按空单元显示
             # 显示区块标题使用大写交易所名
-            ex_upper = "BINANCE" if ex=="binance" else ("BYBIT" if ex=="bybit" else ("MECX" if ex=="mexc" else "WEEX"))
+            ex_upper = (
+                "BINANCE" if ex=="binance" else
+                ("BYBIT" if ex=="bybit" else
+                ("MECX" if ex=="mexc" else
+                ("WEEX" if ex=="weex" else "SURF")))
+            )
             html_payload[sym][ex_upper] = rows or [["", "", "", ""]]
         beautify_sheet(ws)
         autosize(ws)

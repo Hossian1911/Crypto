@@ -1,0 +1,18 @@
+GET 200 236ms /locales/en/translation.json
+GET 200 237ms /locales/zh-CN/translation.json
+GET 404 238ms /locales/zh/translation.json
+POST 204 100ms /cdn-cgi/rum?
+POST 0 346ms https://www.google-analytics.com/g/collect?v=2&tid=G-V2LVCZ9CQC&gtm=45je5a80v9174516678za200zd9174516678&_p=1760198478560&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1675401917.1760198479&ul=zh-cn&sr=1970x1108&uaa=&uab=&uafvl=&uamb=0&uam=&uap=Windows&uapv=&uaw=0&are=1&frm=0&pscdl=noapi&_s=1&tag_exp=101509157~103116026~103200004~103233427~104527906~104528501~104684208~104684211~104948813~115480709~115834636~115834638~115868792~115868794&sid=1760198479&sct=1&seg=0&dl=https%3A%2F%2Fwww.surf.one%2Fstats%2F&dt=SURF&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=1801
+GET 200 527ms 
+HEAD 200 310ms https://surfv2-api2.surf.one/ping
+HEAD 200 333ms https://surfv2-api3.surf.one/ping
+HEAD 200 381ms https://surfv2-api4.surf.one/ping
+HEAD 200 439ms https://surfv2-api.surf.one/ping
+HEAD 200 446ms https://surfv2-api.surf.one/ping
+GET 200 1063ms https://auth.privy.io/api/v1/apps/cm5unv2qb07ig23v255jqe4r2
+GET 200 780ms https://surfv2-api.surf.one/public/daily/stats
+GET 200 819ms https://surfv2-api.surf.one/public/pair/profit/stats
+GET 200 1171ms https://surfv2-api.surf.one/public/trading/configs
+GET 200 1406ms https://surfv2-api.surf.one/market/pair/decimal/config
+POST 200 559ms https://auth.privy.io/api/v1/analytics_events
+GET 200 139ms 

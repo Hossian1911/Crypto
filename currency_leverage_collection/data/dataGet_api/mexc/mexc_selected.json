@@ -3,7 +3,7 @@
     {
       "lv": 1,
       "vol_contracts": 680000,
-      "notional_usdt": 1733456.0,
+      "notional_usdt": 1544484.0,
       "mmr": 0.005,
       "imr": 0.02,
       "mlev": 50
@@ -12,18 +12,38 @@
   "1000BONKUSDT": [
     {
       "lv": 1,
-      "vol_contracts": 2300,
-      "notional_usdt": 431020.0,
+      "vol_contracts": 4500,
+      "notional_usdt": 644445.0,
       "mmr": 0.004,
       "imr": 0.008,
       "mlev": 125
+    }
+  ],
+  "2ZUSDT": [
+    {
+      "lv": 1,
+      "vol_contracts": 75000,
+      "notional_usdt": 20375.25,
+      "mmr": 0.01,
+      "imr": 0.02,
+      "mlev": 50
+    }
+  ],
+  "4USDT": [
+    {
+      "lv": 1,
+      "vol_contracts": 15000,
+      "notional_usdt": 15036.0,
+      "mmr": 0.01,
+      "imr": 0.02,
+      "mlev": 50
     }
   ],
   "AAVEUSDT": [
     {
       "lv": 1,
       "vol_contracts": 550000,
-      "notional_usdt": 1494789.9999999998,
+      "notional_usdt": 1320330.0,
       "mmr": 0.004,
       "imr": 0.005,
       "mlev": 200
@@ -32,8 +52,8 @@
   "ACTUSDT": [
     {
       "lv": 1,
-      "vol_contracts": 500000,
-      "notional_usdt": 156500.0,
+      "vol_contracts": 750000,
+      "notional_usdt": 162975.0,
       "mmr": 0.005,
       "imr": 0.01,
       "mlev": 100
@@ -43,7 +63,7 @@
     {
       "lv": 1,
       "vol_contracts": 550000,
-      "notional_usdt": 434389.99999999994,
+      "notional_usdt": 361295.0,
       "mmr": 0.0023,
       "imr": 0.00333333,
       "mlev": 300
@@ -51,7 +71,7 @@
     {
       "lv": 2,
       "vol_contracts": 2800000,
-      "notional_usdt": 2211440.0,
+      "notional_usdt": 1839320.0,
       "mmr": 0.004,
       "imr": 0.005,
       "mlev": 200
@@ -60,18 +80,28 @@
   "AI16ZUSDT": [
     {
       "lv": 1,
-      "vol_contracts": 425000,
-      "notional_usdt": 35470.5,
+      "vol_contracts": 900000,
+      "notional_usdt": 50868.0,
       "mmr": 0.005,
       "imr": 0.01,
       "mlev": 100
     }
   ],
+  "AIAUSDT": [
+    {
+      "lv": 1,
+      "vol_contracts": 5400,
+      "notional_usdt": 4096.9800000000005,
+      "mmr": 0.01,
+      "imr": 0.05,
+      "mlev": 20
+    }
+  ],
   "AIUSDT": [
     {
       "lv": 1,
-      "vol_contracts": 500000,
-      "notional_usdt": 57850.0,
+      "vol_contracts": 800000,
+      "notional_usdt": 64880.00000000001,
       "mmr": 0.005,
       "imr": 0.01,
       "mlev": 100
@@ -80,8 +110,8 @@
   "AIXBTUSDT": [
     {
       "lv": 1,
-      "vol_contracts": 60000,
-      "notional_usdt": 52698.0,
+      "vol_contracts": 120000,
+      "notional_usdt": 72024.0,
       "mmr": 0.005,
       "imr": 0.01,
       "mlev": 100
@@ -91,7 +121,7 @@
     {
       "lv": 1,
       "vol_contracts": 2500000,
-      "notional_usdt": 1024000.0,
+      "notional_usdt": 800749.9999999999,
       "mmr": 0.004,
       "imr": 0.005,
       "mlev": 200
@@ -101,8 +131,8 @@
   "ASTERUSDT": [
     {
       "lv": 1,
-      "vol_contracts": 25000,
-      "notional_usdt": 43675.0,
+      "vol_contracts": 15000,
+      "notional_usdt": 19822.5,
       "mmr": 0.005,
       "imr": 0.01,
       "mlev": 100
@@ -111,8 +141,8 @@
   "AVAXUSDT": [
     {
       "lv": 1,
-      "vol_contracts": 450000,
-      "notional_usdt": 1313910.0,
+      "vol_contracts": 650000,
+      "notional_usdt": 1491555.0,
       "mmr": 0.004,
       "imr": 0.005,
       "mlev": 200
@@ -121,18 +151,18 @@
   "AVLUSDT": [
     {
       "lv": 1,
-      "vol_contracts": 90000,
-      "notional_usdt": 20691.0,
+      "vol_contracts": 112500,
+      "notional_usdt": 15063.749999999998,
       "mmr": 0.005,
-      "imr": 0.05,
-      "mlev": 20
+      "imr": 0.01,
+      "mlev": 100
     }
   ],
   "AVNTUSDT": [
     {
       "lv": 1,
-      "vol_contracts": 23000,
-      "notional_usdt": 27542.5,
+      "vol_contracts": 33000,
+      "notional_usdt": 20823.0,
       "mmr": 0.01,
       "imr": 0.02,
       "mlev": 50
@@ -141,8 +171,8 @@
   "B2USDT": [
     {
       "lv": 1,
-      "vol_contracts": 89500,
-      "notional_usdt": 89204.65000000001,
+      "vol_contracts": 55000,
+      "notional_usdt": 66946.0,
       "mmr": 0.005,
       "imr": 0.01,
       "mlev": 100
@@ -151,8 +181,8 @@
   "BABYUSDT": [
     {
       "lv": 1,
-      "vol_contracts": 21000,
-      "notional_usdt": 9857.4,
+      "vol_contracts": 33000,
+      "notional_usdt": 11121.0,
       "mmr": 0.005,
       "imr": 0.01,
       "mlev": 100
@@ -161,18 +191,18 @@
   "BAKEUSDT": [
     {
       "lv": 1,
-      "vol_contracts": 6000,
-      "notional_usdt": 2232.0,
+      "vol_contracts": 26000,
+      "notional_usdt": 3494.4,
       "mmr": 0.004,
-      "imr": 0.005,
-      "mlev": 200
+      "imr": 0.02,
+      "mlev": 50
     }
   ],
   "BANUSDT": [
     {
       "lv": 1,
       "vol_contracts": 80000,
-      "notional_usdt": 57543.99999999999,
+      "notional_usdt": 42616.0,
       "mmr": 0.005,
       "imr": 0.01,
       "mlev": 100
@@ -181,8 +211,8 @@
   "BCHUSDT": [
     {
       "lv": 1,
-      "vol_contracts": 280000,
-      "notional_usdt": 1548176.0,
+      "vol_contracts": 175000,
+      "notional_usdt": 917892.5,
       "mmr": 0.004,
       "imr": 0.005,
       "mlev": 200
@@ -192,8 +222,8 @@
   "BIOUSDT": [
     {
       "lv": 1,
-      "vol_contracts": 7400,
-      "notional_usdt": 974.2099999999999,
+      "vol_contracts": 11000,
+      "notional_usdt": 942.81,
       "mmr": 0.005,
       "imr": 0.01,
       "mlev": 100
@@ -202,8 +232,8 @@
   "BNBUSDT": [
     {
       "lv": 1,
-      "vol_contracts": 300000,
-      "notional_usdt": 3029910.0,
+      "vol_contracts": 230000,
+      "notional_usdt": 2686285.0,
       "mmr": 0.004,
       "imr": 0.005,
       "mlev": 200
@@ -223,7 +253,7 @@
     {
       "lv": 1,
       "vol_contracts": 90000,
-      "notional_usdt": 23121.0,
+      "notional_usdt": 23292.0,
       "mmr": 0.01,
       "imr": 0.02,
       "mlev": 50
@@ -232,8 +262,8 @@
   "BSWUSDT": [
     {
       "lv": 1,
-      "vol_contracts": 10000,
-      "notional_usdt": 962.0,
+      "vol_contracts": 7500,
+      "notional_usdt": 434.25,
       "mmr": 0.005,
       "imr": 0.01,
       "mlev": 100
@@ -243,7 +273,7 @@
     {
       "lv": 1,
       "vol_contracts": 50000,
-      "notional_usdt": 565499.5,
+      "notional_usdt": 560295.5,
       "mmr": 0.001,
       "imr": 0.002,
       "mlev": 500
@@ -251,7 +281,7 @@
     {
       "lv": 2,
       "vol_contracts": 60000,
-      "notional_usdt": 678599.3999999999,
+      "notional_usdt": 672354.6000000001,
       "mmr": 0.004,
       "imr": 0.005,
       "mlev": 200
@@ -259,7 +289,7 @@
     {
       "lv": 3,
       "vol_contracts": 250000,
-      "notional_usdt": 2827497.5,
+      "notional_usdt": 2801477.5,
       "mmr": 0.005,
       "imr": 0.01,
       "mlev": 100
@@ -267,7 +297,7 @@
     {
       "lv": 4,
       "vol_contracts": 1200000,
-      "notional_usdt": 13571988.0,
+      "notional_usdt": 13447092.0,
       "mmr": 0.01,
       "imr": 0.02,
       "mlev": 50
@@ -275,7 +305,7 @@
     {
       "lv": 5,
       "vol_contracts": 3000000,
-      "notional_usdt": 33929970.0,
+      "notional_usdt": 33617730.0,
       "mmr": 0.02,
       "imr": 0.05,
       "mlev": 20
@@ -283,17 +313,27 @@
     {
       "lv": 6,
       "vol_contracts": 4500000,
-      "notional_usdt": 50894955.0,
+      "notional_usdt": 50426595.0,
       "mmr": 0.05,
       "imr": 0.1,
       "mlev": 10
     }
   ],
+  "BTRUSDT": [
+    {
+      "lv": 1,
+      "vol_contracts": 40000,
+      "notional_usdt": 24084.0,
+      "mmr": 0.01,
+      "imr": 0.02,
+      "mlev": 50
+    }
+  ],
   "CAKEUSDT": [
     {
       "lv": 1,
-      "vol_contracts": 70000,
-      "notional_usdt": 175616.0,
+      "vol_contracts": 53000,
+      "notional_usdt": 148198.59999999998,
       "mmr": 0.004,
       "imr": 0.008,
       "mlev": 125
@@ -303,7 +343,7 @@
     {
       "lv": 1,
       "vol_contracts": 3500000,
-      "notional_usdt": 497770.00000000006,
+      "notional_usdt": 363930.0,
       "mmr": 0.004,
       "imr": 0.008,
       "mlev": 125
@@ -313,25 +353,45 @@
     {
       "lv": 1,
       "vol_contracts": 150,
-      "notional_usdt": 1551.75,
+      "notional_usdt": 2353.2,
       "mmr": 0.005,
       "imr": 0.01,
       "mlev": 100
+    }
+  ],
+  "COAIUSDT": [
+    {
+      "lv": 1,
+      "vol_contracts": 350,
+      "notional_usdt": 2246.3,
+      "mmr": 0.01,
+      "imr": 0.02,
+      "mlev": 50
+    }
+  ],
+  "CRVUSDT": [
+    {
+      "lv": 1,
+      "vol_contracts": 9000000,
+      "notional_usdt": 463320.00000000006,
+      "mmr": 0.004,
+      "imr": 0.008,
+      "mlev": 125
     }
   ],
   "DOGEUSDT": [
     {
       "lv": 1,
       "vol_contracts": 18500,
-      "notional_usdt": 424297.5,
+      "notional_usdt": 356957.5,
       "mmr": 0.0023,
       "imr": 0.00333333,
       "mlev": 300
     },
     {
       "lv": 2,
-      "vol_contracts": 150000,
-      "notional_usdt": 3440250.0,
+      "vol_contracts": 200000,
+      "notional_usdt": 3859000.0,
       "mmr": 0.004,
       "imr": 0.005,
       "mlev": 200
@@ -340,8 +400,8 @@
   "DOGUSDT": [
     {
       "lv": 1,
-      "vol_contracts": 15000,
-      "notional_usdt": 29985.0,
+      "vol_contracts": 18800,
+      "notional_usdt": 36678.8,
       "mmr": 0.005,
       "imr": 0.01,
       "mlev": 100
@@ -351,7 +411,7 @@
     {
       "lv": 1,
       "vol_contracts": 500000,
-      "notional_usdt": 193900.0,
+      "notional_usdt": 157250.0,
       "mmr": 0.0023,
       "imr": 0.00333333,
       "mlev": 300
@@ -359,7 +419,7 @@
     {
       "lv": 2,
       "vol_contracts": 2000000,
-      "notional_usdt": 775600.0,
+      "notional_usdt": 629000.0,
       "mmr": 0.004,
       "imr": 0.005,
       "mlev": 200
@@ -368,8 +428,8 @@
   "ENAUSDT": [
     {
       "lv": 1,
-      "vol_contracts": 57500,
-      "notional_usdt": 315445.0,
+      "vol_contracts": 100000,
+      "notional_usdt": 399500.0,
       "mmr": 0.004,
       "imr": 0.005,
       "mlev": 200
@@ -389,7 +449,7 @@
     {
       "lv": 1,
       "vol_contracts": 15000,
-      "notional_usdt": 623181.0,
+      "notional_usdt": 575506.5,
       "mmr": 0.001,
       "imr": 0.002,
       "mlev": 500
@@ -397,7 +457,7 @@
     {
       "lv": 2,
       "vol_contracts": 30000,
-      "notional_usdt": 1246362.0,
+      "notional_usdt": 1151013.0,
       "mmr": 0.004,
       "imr": 0.005,
       "mlev": 200
@@ -405,7 +465,7 @@
     {
       "lv": 3,
       "vol_contracts": 90000,
-      "notional_usdt": 3739086.0,
+      "notional_usdt": 3453039.0,
       "mmr": 0.005,
       "imr": 0.01,
       "mlev": 100
@@ -413,7 +473,7 @@
     {
       "lv": 4,
       "vol_contracts": 400000,
-      "notional_usdt": 16618160.0,
+      "notional_usdt": 15346840.0,
       "mmr": 0.01,
       "imr": 0.02,
       "mlev": 50
@@ -421,7 +481,7 @@
     {
       "lv": 5,
       "vol_contracts": 1000000,
-      "notional_usdt": 41545400.0,
+      "notional_usdt": 38367100.0,
       "mmr": 0.02,
       "imr": 0.05,
       "mlev": 20
@@ -429,7 +489,7 @@
     {
       "lv": 6,
       "vol_contracts": 1500000,
-      "notional_usdt": 62318100.0,
+      "notional_usdt": 57550650.0,
       "mmr": 0.05,
       "imr": 0.1,
       "mlev": 10
@@ -438,8 +498,8 @@
   "FARTCOINUSDT": [
     {
       "lv": 1,
-      "vol_contracts": 8500,
-      "notional_usdt": 50830.0,
+      "vol_contracts": 13000,
+      "notional_usdt": 47541.0,
       "mmr": 0.005,
       "imr": 0.01,
       "mlev": 100
@@ -448,9 +508,49 @@
   "FFUSDT": [
     {
       "lv": 1,
-      "vol_contracts": 170000,
-      "notional_usdt": 30957.000000000004,
+      "vol_contracts": 250000,
+      "notional_usdt": 29025.0,
       "mmr": 0.005,
+      "imr": 0.02,
+      "mlev": 50
+    }
+  ],
+  "FHEUSDT": [
+    {
+      "lv": 1,
+      "vol_contracts": 8000,
+      "notional_usdt": 2518.4,
+      "mmr": 0.01,
+      "imr": 0.02,
+      "mlev": 50
+    }
+  ],
+  "FLOCKUSDT": [
+    {
+      "lv": 1,
+      "vol_contracts": 180000,
+      "notional_usdt": 37692.0,
+      "mmr": 0.005,
+      "imr": 0.01,
+      "mlev": 100
+    }
+  ],
+  "FTTUSDT": [
+    {
+      "lv": 1,
+      "vol_contracts": 1635000,
+      "notional_usdt": 114286.49999999999,
+      "mmr": 0.004,
+      "imr": 0.008,
+      "mlev": 125
+    }
+  ],
+  "GIGGLEUSDT": [
+    {
+      "lv": 1,
+      "vol_contracts": 2000,
+      "notional_usdt": 26272.000000000004,
+      "mmr": 0.01,
       "imr": 0.02,
       "mlev": 50
     }
@@ -459,7 +559,7 @@
     {
       "lv": 1,
       "vol_contracts": 50000,
-      "notional_usdt": 14370.0,
+      "notional_usdt": 10880.0,
       "mmr": 0.005,
       "imr": 0.01,
       "mlev": 100
@@ -469,17 +569,17 @@
     {
       "lv": 1,
       "vol_contracts": 5000,
-      "notional_usdt": 5340.0,
+      "notional_usdt": 2826.0,
       "mmr": 0.004,
-      "imr": 0.008,
-      "mlev": 125
+      "imr": 0.05,
+      "mlev": 20
     }
   ],
   "HYPEUSDT": [
     {
       "lv": 1,
-      "vol_contracts": 130000,
-      "notional_usdt": 583258.0,
+      "vol_contracts": 80000,
+      "notional_usdt": 305024.0,
       "mmr": 0.005,
       "imr": 0.01,
       "mlev": 100
@@ -488,18 +588,18 @@
   "IPUSDT": [
     {
       "lv": 1,
-      "vol_contracts": 11000,
-      "notional_usdt": 93819.0,
+      "vol_contracts": 4100,
+      "notional_usdt": 24313.0,
       "mmr": 0.004,
-      "imr": 0.008,
-      "mlev": 125
+      "imr": 0.02,
+      "mlev": 50
     }
   ],
   "JELLYJELLYUSDT": [
     {
       "lv": 1,
-      "vol_contracts": 55000,
-      "notional_usdt": 26933.5,
+      "vol_contracts": 32000,
+      "notional_usdt": 22265.600000000002,
       "mmr": 0.005,
       "imr": 0.01,
       "mlev": 100
@@ -508,8 +608,8 @@
   "JUPUSDT": [
     {
       "lv": 1,
-      "vol_contracts": 190000,
-      "notional_usdt": 800470.0,
+      "vol_contracts": 280000,
+      "notional_usdt": 948080.0,
       "mmr": 0.004,
       "imr": 0.005,
       "mlev": 200
@@ -519,7 +619,7 @@
     {
       "lv": 1,
       "vol_contracts": 2700,
-      "notional_usdt": 3947.94,
+      "notional_usdt": 3039.66,
       "mmr": 0.004,
       "imr": 0.02,
       "mlev": 50
@@ -535,6 +635,16 @@
       "mlev": 50
     }
   ],
+  "LAUNCHCOINUSDT": [
+    {
+      "lv": 1,
+      "vol_contracts": 4200,
+      "notional_usdt": 3446.5199999999995,
+      "mmr": 0.005,
+      "imr": 0.01,
+      "mlev": 100
+    }
+  ],
   "LIBRAUSDT": [
     {
       "lv": 1,
@@ -545,11 +655,21 @@
       "mlev": 50
     }
   ],
+  "LIGHTUSDT": [
+    {
+      "lv": 1,
+      "vol_contracts": 10500,
+      "notional_usdt": 8876.7,
+      "mmr": 0.01,
+      "imr": 0.02,
+      "mlev": 50
+    }
+  ],
   "LINEAUSDT": [
     {
       "lv": 1,
-      "vol_contracts": 180000,
-      "notional_usdt": 45882.0,
+      "vol_contracts": 300000,
+      "notional_usdt": 55320.00000000001,
       "mmr": 0.005,
       "imr": 0.01,
       "mlev": 100
@@ -559,7 +679,7 @@
     {
       "lv": 1,
       "vol_contracts": 125000,
-      "notional_usdt": 267612.5,
+      "notional_usdt": 225412.50000000003,
       "mmr": 0.0023,
       "imr": 0.00333333,
       "mlev": 300
@@ -567,7 +687,7 @@
     {
       "lv": 2,
       "vol_contracts": 630000,
-      "notional_usdt": 1348767.0,
+      "notional_usdt": 1136079.0,
       "mmr": 0.004,
       "imr": 0.005,
       "mlev": 200
@@ -577,7 +697,7 @@
     {
       "lv": 1,
       "vol_contracts": 1600,
-      "notional_usdt": 959.52,
+      "notional_usdt": 771.8399999999999,
       "mmr": 0.004,
       "imr": 0.02,
       "mlev": 50
@@ -587,7 +707,7 @@
     {
       "lv": 1,
       "vol_contracts": 2000000,
-      "notional_usdt": 2107600.0,
+      "notional_usdt": 1943400.0,
       "mmr": 0.004,
       "imr": 0.005,
       "mlev": 200
@@ -597,7 +717,7 @@
     {
       "lv": 1,
       "vol_contracts": 37000,
-      "notional_usdt": 4536.2,
+      "notional_usdt": 3322.6,
       "mmr": 0.004,
       "imr": 0.008,
       "mlev": 125
@@ -607,7 +727,7 @@
     {
       "lv": 1,
       "vol_contracts": 6000000,
-      "notional_usdt": 98400.0,
+      "notional_usdt": 68400.0,
       "mmr": 0.005,
       "imr": 0.01,
       "mlev": 100
@@ -617,7 +737,7 @@
     {
       "lv": 1,
       "vol_contracts": 740000,
-      "notional_usdt": 171902.0,
+      "notional_usdt": 124098.00000000001,
       "mmr": 0.004,
       "imr": 0.008,
       "mlev": 125
@@ -626,18 +746,18 @@
   "MERLUSDT": [
     {
       "lv": 1,
-      "vol_contracts": 220000,
-      "notional_usdt": 67152.8,
+      "vol_contracts": 145000,
+      "notional_usdt": 53103.35,
       "mmr": 0.005,
-      "imr": 0.02,
-      "mlev": 50
+      "imr": 0.01,
+      "mlev": 100
     }
   ],
   "MEWUSDT": [
     {
       "lv": 1,
       "vol_contracts": 220000,
-      "notional_usdt": 562980.0,
+      "notional_usdt": 441540.0,
       "mmr": 0.004,
       "imr": 0.008,
       "mlev": 125
@@ -646,8 +766,8 @@
   "MIRAUSDT": [
     {
       "lv": 1,
-      "vol_contracts": 75000,
-      "notional_usdt": 43140.0,
+      "vol_contracts": 110000,
+      "notional_usdt": 37070.0,
       "mmr": 0.005,
       "imr": 0.01,
       "mlev": 100
@@ -666,28 +786,38 @@
   "MNTUSDT": [
     {
       "lv": 1,
-      "vol_contracts": 3050,
-      "notional_usdt": 54720.05,
+      "vol_contracts": 2300,
+      "notional_usdt": 39060.9,
       "mmr": 0.005,
       "imr": 0.01,
       "mlev": 100
+    }
+  ],
+  "MONUSDT": [
+    {
+      "lv": 1,
+      "vol_contracts": 50000,
+      "notional_usdt": null,
+      "mmr": 0.01,
+      "imr": 0.02,
+      "mlev": 50
     }
   ],
   "MOODENGUSDT": [
     {
       "lv": 1,
       "vol_contracts": 120000,
-      "notional_usdt": 172800.0,
+      "notional_usdt": 132708.0,
       "mmr": 0.004,
-      "imr": 0.005,
-      "mlev": 200
+      "imr": 0.008,
+      "mlev": 125
     }
   ],
   "MUBARAKUSDT": [
     {
       "lv": 1,
       "vol_contracts": 9000,
-      "notional_usdt": 25488.0,
+      "notional_usdt": 22077.0,
       "mmr": 0.01,
       "imr": 0.02,
       "mlev": 50
@@ -696,8 +826,8 @@
   "MUSDT": [
     {
       "lv": 1,
-      "vol_contracts": 3450,
-      "notional_usdt": 8170.29,
+      "vol_contracts": 5000,
+      "notional_usdt": 11485.0,
       "mmr": 0.005,
       "imr": 0.01,
       "mlev": 100
@@ -706,18 +836,28 @@
   "MYXUSDT": [
     {
       "lv": 1,
-      "vol_contracts": 100,
-      "notional_usdt": 16005.199999999999,
+      "vol_contracts": 25,
+      "notional_usdt": 900.175,
       "mmr": 0.005,
       "imr": 0.05,
       "mlev": 20
+    }
+  ],
+  "NMRUSDT": [
+    {
+      "lv": 1,
+      "vol_contracts": 1750,
+      "notional_usdt": 2236.5,
+      "mmr": 0.004,
+      "imr": 0.02,
+      "mlev": 50
     }
   ],
   "OKBUSDT": [
     {
       "lv": 1,
       "vol_contracts": 500,
-      "notional_usdt": 9362.0,
+      "notional_usdt": 8959.5,
       "mmr": 0.02,
       "imr": 0.04,
       "mlev": 25
@@ -726,8 +866,8 @@
   "OMUSDT": [
     {
       "lv": 1,
-      "vol_contracts": 450000,
-      "notional_usdt": 723825.0,
+      "vol_contracts": 650000,
+      "notional_usdt": 714415.0,
       "mmr": 0.005,
       "imr": 0.01,
       "mlev": 100
@@ -746,8 +886,8 @@
   "ORCAUSDT": [
     {
       "lv": 1,
-      "vol_contracts": 4200,
-      "notional_usdt": 7896.0,
+      "vol_contracts": 6550,
+      "notional_usdt": 10722.35,
       "mmr": 0.005,
       "imr": 0.01,
       "mlev": 100
@@ -756,8 +896,8 @@
   "ORDIUSDT": [
     {
       "lv": 1,
-      "vol_contracts": 570000,
-      "notional_usdt": 449160.0,
+      "vol_contracts": 1100000,
+      "notional_usdt": 565510.0,
       "mmr": 0.004,
       "imr": 0.005,
       "mlev": 200
@@ -767,7 +907,7 @@
     {
       "lv": 1,
       "vol_contracts": 4000,
-      "notional_usdt": 4808.0,
+      "notional_usdt": 3472.0,
       "mmr": 0.005,
       "imr": 0.01,
       "mlev": 100
@@ -777,7 +917,7 @@
     {
       "lv": 1,
       "vol_contracts": 10000,
-      "notional_usdt": 38271.3,
+      "notional_usdt": 39831.799999999996,
       "mmr": 0.004,
       "imr": 0.02,
       "mlev": 50
@@ -786,18 +926,28 @@
   "PENGUUSDT": [
     {
       "lv": 1,
-      "vol_contracts": 800000,
-      "notional_usdt": 217360.0,
+      "vol_contracts": 1305000,
+      "notional_usdt": 298453.5,
       "mmr": 0.004,
       "imr": 0.008,
       "mlev": 125
+    }
+  ],
+  "PEOPLEUSDT": [
+    {
+      "lv": 1,
+      "vol_contracts": 3500000,
+      "notional_usdt": 422450.00000000006,
+      "mmr": 0.004,
+      "imr": 0.005,
+      "mlev": 200
     }
   ],
   "PEPEUSDT": [
     {
       "lv": 1,
       "vol_contracts": 2000,
-      "notional_usdt": 182800.0,
+      "notional_usdt": 141480.0,
       "mmr": 0.0023,
       "imr": 0.00333333,
       "mlev": 300
@@ -805,7 +955,7 @@
     {
       "lv": 2,
       "vol_contracts": 32000,
-      "notional_usdt": 2924800.0,
+      "notional_usdt": 2263680.0,
       "mmr": 0.004,
       "imr": 0.005,
       "mlev": 200
@@ -814,8 +964,8 @@
   "PIUSDT": [
     {
       "lv": 1,
-      "vol_contracts": 160000,
-      "notional_usdt": 41536.0,
+      "vol_contracts": 250000,
+      "notional_usdt": 52525.0,
       "mmr": 0.004,
       "imr": 0.008,
       "mlev": 125
@@ -825,7 +975,7 @@
     {
       "lv": 1,
       "vol_contracts": 180000,
-      "notional_usdt": 163332.0,
+      "notional_usdt": 153972.0,
       "mmr": 0.005,
       "imr": 0.01,
       "mlev": 100
@@ -834,8 +984,8 @@
   "PNUTUSDT": [
     {
       "lv": 1,
-      "vol_contracts": 110000,
-      "notional_usdt": 218900.0,
+      "vol_contracts": 200000,
+      "notional_usdt": 285400.0,
       "mmr": 0.005,
       "imr": 0.01,
       "mlev": 100
@@ -844,8 +994,8 @@
   "POPCATUSDT": [
     {
       "lv": 1,
-      "vol_contracts": 25500,
-      "notional_usdt": 54136.5,
+      "vol_contracts": 45000,
+      "notional_usdt": 70785.0,
       "mmr": 0.004,
       "imr": 0.005,
       "mlev": 200
@@ -861,21 +1011,41 @@
       "mlev": 50
     }
   ],
+  "QUSDT": [
+    {
+      "lv": 1,
+      "vol_contracts": 10000,
+      "notional_usdt": 19746.0,
+      "mmr": 0.01,
+      "imr": 0.02,
+      "mlev": 50
+    }
+  ],
   "RAYUSDT": [
     {
       "lv": 1,
-      "vol_contracts": 685000,
-      "notional_usdt": 177209.5,
+      "vol_contracts": 1035000,
+      "notional_usdt": 205551.0,
       "mmr": 0.005,
       "imr": 0.01,
       "mlev": 100
     }
   ],
+  "REDUSDT": [
+    {
+      "lv": 1,
+      "vol_contracts": 65000,
+      "notional_usdt": 24427.0,
+      "mmr": 0.005,
+      "imr": 0.02,
+      "mlev": 50
+    }
+  ],
   "RESOLVUSDT": [
     {
       "lv": 1,
-      "vol_contracts": 10500,
-      "notional_usdt": 10754.1,
+      "vol_contracts": 23000,
+      "notional_usdt": 15952.800000000001,
       "mmr": 0.005,
       "imr": 0.01,
       "mlev": 100
@@ -884,8 +1054,8 @@
   "RHEAUSDT": [
     {
       "lv": 1,
-      "vol_contracts": 13000,
-      "notional_usdt": 4114.5,
+      "vol_contracts": 20000,
+      "notional_usdt": 4566.0,
       "mmr": 0.02,
       "imr": 0.05,
       "mlev": 20
@@ -895,7 +1065,7 @@
     {
       "lv": 1,
       "vol_contracts": 11500,
-      "notional_usdt": 8733.099999999999,
+      "notional_usdt": 8648.0,
       "mmr": 0.005,
       "imr": 0.02,
       "mlev": 50
@@ -904,8 +1074,8 @@
   "SAPIENUSDT": [
     {
       "lv": 1,
-      "vol_contracts": 9000,
-      "notional_usdt": 15811.2,
+      "vol_contracts": 13000,
+      "notional_usdt": 13578.5,
       "mmr": 0.01,
       "imr": 0.02,
       "mlev": 50
@@ -914,8 +1084,8 @@
   "SATSUSDT": [
     {
       "lv": 1,
-      "vol_contracts": 480000,
-      "notional_usdt": 182448.0,
+      "vol_contracts": 40000,
+      "notional_usdt": 10372.0,
       "mmr": 0.005,
       "imr": 0.01,
       "mlev": 100
@@ -924,8 +1094,8 @@
   "SHELLUSDT": [
     {
       "lv": 1,
-      "vol_contracts": 330000,
-      "notional_usdt": 36300.0,
+      "vol_contracts": 600000,
+      "notional_usdt": 49200.0,
       "mmr": 0.005,
       "imr": 0.01,
       "mlev": 100
@@ -935,7 +1105,7 @@
     {
       "lv": 1,
       "vol_contracts": 25000,
-      "notional_usdt": 517700.00000000006,
+      "notional_usdt": 459950.0,
       "mmr": 0.0023,
       "imr": 0.00333333,
       "mlev": 300
@@ -943,7 +1113,7 @@
     {
       "lv": 2,
       "vol_contracts": 550000,
-      "notional_usdt": 11389400.0,
+      "notional_usdt": 10118900.0,
       "mmr": 0.004,
       "imr": 0.005,
       "mlev": 200
@@ -953,17 +1123,17 @@
     {
       "lv": 1,
       "vol_contracts": 7000,
-      "notional_usdt": 5131.0,
+      "notional_usdt": 3953.6,
       "mmr": 0.005,
-      "imr": 0.01,
-      "mlev": 100
+      "imr": 0.02,
+      "mlev": 50
     }
   ],
   "SPXUSDT": [
     {
       "lv": 1,
-      "vol_contracts": 160000,
-      "notional_usdt": 151744.0,
+      "vol_contracts": 115000,
+      "notional_usdt": 127972.0,
       "mmr": 0.005,
       "imr": 0.01,
       "mlev": 100
@@ -972,18 +1142,18 @@
   "STBLUSDT": [
     {
       "lv": 1,
-      "vol_contracts": 5500,
-      "notional_usdt": 22510.95,
-      "mmr": 0.01,
-      "imr": 0.02,
-      "mlev": 50
+      "vol_contracts": 13000,
+      "notional_usdt": 15091.7,
+      "mmr": 0.005,
+      "imr": 0.01,
+      "mlev": 100
     }
   ],
   "SUIUSDT": [
     {
       "lv": 1,
       "vol_contracts": 60000,
-      "notional_usdt": 192576.0,
+      "notional_usdt": 160590.0,
       "mmr": 0.0023,
       "imr": 0.00333333,
       "mlev": 300
@@ -991,17 +1161,27 @@
     {
       "lv": 2,
       "vol_contracts": 600000,
-      "notional_usdt": 1925760.0,
+      "notional_usdt": 1605900.0,
       "mmr": 0.004,
       "imr": 0.005,
       "mlev": 200
     }
   ],
+  "SUNUSDT": [
+    {
+      "lv": 1,
+      "vol_contracts": 4750,
+      "notional_usdt": 116313.24999999999,
+      "mmr": 0.004,
+      "imr": 0.008,
+      "mlev": 125
+    }
+  ],
   "SUSDT": [
     {
       "lv": 1,
-      "vol_contracts": 3300000,
-      "notional_usdt": 825330.0,
+      "vol_contracts": 6500000,
+      "notional_usdt": 1229150.0,
       "mmr": 0.01,
       "imr": 0.02,
       "mlev": 50
@@ -1011,7 +1191,7 @@
     {
       "lv": 1,
       "vol_contracts": 60000,
-      "notional_usdt": 181740.0,
+      "notional_usdt": 183600.0,
       "mmr": 0.0023,
       "imr": 0.00333333,
       "mlev": 300
@@ -1019,18 +1199,28 @@
     {
       "lv": 2,
       "vol_contracts": 260000,
-      "notional_usdt": 787539.9999999999,
+      "notional_usdt": 795600.0,
       "mmr": 0.004,
       "imr": 0.005,
       "mlev": 200
+    }
+  ],
+  "TAUSDT": [
+    {
+      "lv": 1,
+      "vol_contracts": 6500,
+      "notional_usdt": 2520.0499999999997,
+      "mmr": 0.005,
+      "imr": 0.01,
+      "mlev": 100
     }
   ],
   "TONUSDT": [],
   "TREEUSDT": [
     {
       "lv": 1,
-      "vol_contracts": 160,
-      "notional_usdt": 40.480000000000004,
+      "vol_contracts": 300,
+      "notional_usdt": 53.61,
       "mmr": 0.005,
       "imr": 0.05,
       "mlev": 20
@@ -1040,7 +1230,7 @@
     {
       "lv": 1,
       "vol_contracts": 2000,
-      "notional_usdt": 241.79999999999998,
+      "notional_usdt": 206.8,
       "mmr": 0.005,
       "imr": 0.01,
       "mlev": 100
@@ -1050,7 +1240,7 @@
     {
       "lv": 1,
       "vol_contracts": 570000,
-      "notional_usdt": 1908360.0,
+      "notional_usdt": 1820238.0,
       "mmr": 0.004,
       "imr": 0.005,
       "mlev": 200
@@ -1060,17 +1250,27 @@
     {
       "lv": 1,
       "vol_contracts": 11000,
-      "notional_usdt": 3418.8,
+      "notional_usdt": 2597.1,
       "mmr": 0.01,
       "imr": 0.02,
       "mlev": 50
     }
   ],
+  "UXLINKUSDT": [
+    {
+      "lv": 1,
+      "vol_contracts": 31500,
+      "notional_usdt": null,
+      "mmr": 0.004,
+      "imr": 0.008,
+      "mlev": 125
+    }
+  ],
   "VANAUSDT": [
     {
       "lv": 1,
-      "vol_contracts": 120000,
-      "notional_usdt": 45000.0,
+      "vol_contracts": 180000,
+      "notional_usdt": 50040.0,
       "mmr": 0.005,
       "imr": 0.05,
       "mlev": 20
@@ -1079,28 +1279,48 @@
   "VINEUSDT": [
     {
       "lv": 1,
-      "vol_contracts": 130000,
-      "notional_usdt": 68380.0,
+      "vol_contracts": 200000,
+      "notional_usdt": 80500.0,
       "mmr": 0.004,
-      "imr": 0.01,
-      "mlev": 100
+      "imr": 0.02,
+      "mlev": 50
     }
   ],
   "VIRTUALUSDT": [
     {
       "lv": 1,
-      "vol_contracts": 5000,
-      "notional_usdt": 50010.0,
+      "vol_contracts": 10000,
+      "notional_usdt": 73900.0,
       "mmr": 0.005,
       "imr": 0.01,
       "mlev": 100
     }
   ],
+  "VVVUSDT": [
+    {
+      "lv": 1,
+      "vol_contracts": 850000,
+      "notional_usdt": 142120.0,
+      "mmr": 0.005,
+      "imr": 0.01,
+      "mlev": 100
+    }
+  ],
+  "WALUSDT": [
+    {
+      "lv": 1,
+      "vol_contracts": 10000,
+      "notional_usdt": 23550.0,
+      "mmr": 0.01,
+      "imr": 0.05,
+      "mlev": 20
+    }
+  ],
   "WIFUSDT": [
     {
       "lv": 1,
-      "vol_contracts": 200000,
-      "notional_usdt": 1410000.0,
+      "vol_contracts": 300000,
+      "notional_usdt": 1528200.0,
       "mmr": 0.004,
       "imr": 0.005,
       "mlev": 200
@@ -1110,15 +1330,15 @@
     {
       "lv": 1,
       "vol_contracts": 120000,
-      "notional_usdt": 148476.0,
+      "notional_usdt": 112248.0,
       "mmr": 0.0023,
       "imr": 0.00333333,
       "mlev": 300
     },
     {
       "lv": 2,
-      "vol_contracts": 530000,
-      "notional_usdt": 655769.0,
+      "vol_contracts": 800000,
+      "notional_usdt": 748320.0,
       "mmr": 0.004,
       "imr": 0.005,
       "mlev": 200
@@ -1127,8 +1347,28 @@
   "WLFIUSDT": [
     {
       "lv": 1,
-      "vol_contracts": 1500000,
-      "notional_usdt": 295800.0,
+      "vol_contracts": 2300000,
+      "notional_usdt": 299690.0,
+      "mmr": 0.005,
+      "imr": 0.01,
+      "mlev": 100
+    }
+  ],
+  "WUSDT": [
+    {
+      "lv": 1,
+      "vol_contracts": 2700000,
+      "notional_usdt": 208548.0,
+      "mmr": 0.01,
+      "imr": 0.02,
+      "mlev": 50
+    }
+  ],
+  "XANUSDT": [
+    {
+      "lv": 1,
+      "vol_contracts": 30000,
+      "notional_usdt": 10413.0,
       "mmr": 0.005,
       "imr": 0.01,
       "mlev": 100
@@ -1137,18 +1377,18 @@
   "XPLUSDT": [
     {
       "lv": 1,
-      "vol_contracts": 71000,
-      "notional_usdt": 76538.0,
-      "mmr": 0.01,
-      "imr": 0.02,
-      "mlev": 50
+      "vol_contracts": 105000,
+      "notional_usdt": 45244.5,
+      "mmr": 0.005,
+      "imr": 0.01,
+      "mlev": 100
     }
   ],
   "XRPUSDT": [
     {
       "lv": 1,
       "vol_contracts": 160000,
-      "notional_usdt": 456656.0,
+      "notional_usdt": 397488.0,
       "mmr": 0.0023,
       "imr": 0.00333333,
       "mlev": 300
@@ -1156,7 +1396,7 @@
     {
       "lv": 2,
       "vol_contracts": 840000,
-      "notional_usdt": 2397444.0,
+      "notional_usdt": 2086812.0000000002,
       "mmr": 0.004,
       "imr": 0.005,
       "mlev": 200
@@ -1164,7 +1404,7 @@
     {
       "lv": 3,
       "vol_contracts": 2550000,
-      "notional_usdt": 7277955.0,
+      "notional_usdt": 6334965.0,
       "mmr": 0.02,
       "imr": 0.04,
       "mlev": 25
@@ -1174,7 +1414,7 @@
     {
       "lv": 1,
       "vol_contracts": 1300000,
-      "notional_usdt": 207219.99999999997,
+      "notional_usdt": 151580.0,
       "mmr": 0.004,
       "imr": 0.005,
       "mlev": 200
@@ -1184,7 +1424,27 @@
     {
       "lv": 1,
       "vol_contracts": 65000,
-      "notional_usdt": 26916.5,
+      "notional_usdt": 26214.5,
+      "mmr": 0.01,
+      "imr": 0.02,
+      "mlev": 50
+    }
+  ],
+  "ZECUSDT": [
+    {
+      "lv": 1,
+      "vol_contracts": 23000,
+      "notional_usdt": 60864.9,
+      "mmr": 0.005,
+      "imr": 0.01,
+      "mlev": 100
+    }
+  ],
+  "ZKCUSDT": [
+    {
+      "lv": 1,
+      "vol_contracts": 300000,
+      "notional_usdt": 55650.0,
       "mmr": 0.01,
       "imr": 0.02,
       "mlev": 50

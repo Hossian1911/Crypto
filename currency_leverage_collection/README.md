@@ -1,12 +1,13 @@
 # currency_leverage_collection
 
-跨交易所（Binance / Bybit / MEXC / WEEX）风险限额（Risk Limit / Leverage Brackets）采集、整合与制表项目。
+跨交易所（Binance / Bybit / MEXC / WEEX / SURF）风险限额（Risk Limit / Leverage Brackets）采集、整合、制表与入库项目。
 
 - 自动获取目标币种（SURF 列表，仅 USDT 计价）。
 - 并行抓取四家交易所的风险限额/档位信息（包含 Selenium 解析 WEEX 动态页面）。
 - 统一筛选成“目标 USDT 交易对”的精选结果 `<exchange>_selected.json`。
 - 生成多 Sheet Excel（每个币种一个 Sheet），列示“最大杠杆、最大持仓(USDT)、维持保证金率”。
 - 同步生成交互式 HTML Dashboard（下拉选择币种查看四交易所数据）。
+- 一键将最新 Excel 中的 5 列指标写入 PostgreSQL（最小表：`symbol, exchange, max_leverage, max_size, mmr`）。
 
 ---
 
@@ -34,7 +35,13 @@
     - `retry_utils.py`：多种重试装饰器
 - `tableMake/`
   - `tableMake.py`
-    - 读取四家 `*_selected.json`，按 SURF 目标币种生成 Excel 至 `result/Leverage&Margin_<timestamp>.xlsx`
+    - 读取四家 `*_selected.json` + `surf/surf_limits.json`，按 SURF 目标币种生成 Excel 和 HTML
+  - `setup_platform_exchanges_setting_schema.py`
+    - 创建最小入库表 `platform_exchanges_setting_min`（如不存在则创建），唯一键 `(symbol, exchange)`
+  - `excel_write_platform_exchanges_setting.py`
+    - 从最新 Excel 解析并写入 5 列到 `platform_exchanges_setting_min`（ON CONFLICT upsert）
+  - `tableMake_main.py`
+    - Orchestrator：顺序执行 1) 生成 Excel 2) 创建最小表 3) Excel 入库
 - `data/`
   - `currency_kinds/surf_pairs.json`：SURF 获取的目标币种集合（base/quote）
   - `dataGet_api/<exchange>/...`：各交易所原始与精选结果
@@ -91,12 +98,15 @@
      - MEXC: `data/dataGet_api/mexc/mexc_selected.json`
      - WEEX: `data/dataGet_api/weex/weex_selected.json`
 3. 制表
-   - `tableMake/tableMake.py` 读取上述四个精选结果，按币种生成 Excel 与 HTML：
-     - 列：`最大杠杆`、`最大持仓 (USDT)`、`维持保证金率`
-     - 交易所块顺序：BINANCE → WEEX → MECX → BYBIT（与样表贴近）
-   - 产物：
-     - Excel：`result/Leverage&Margin_<timestamp>.xlsx`
-     - HTML：`result/html/Leverage&Margin_<timestamp>.html`
+  - `tableMake/tableMake.py` 读取上述四个精选结果与 SURF 限额，按币种生成 Excel 与 HTML：
+    - 列：`最大杠杆`、`最大持仓 (USDT)`、`维持保证金率`
+    - 交易所块顺序：BINANCE → WEEX → MECX → BYBIT → SURF
+  - 产物：
+    - Excel：`result/Leverage&Margin_<timestamp>.xlsx`
+    - HTML：`result/html/Leverage&Margin_<timestamp>.html`
+4. 入库（PostgreSQL）
+  - `tableMake/setup_platform_exchanges_setting_schema.py`（如不存在则创建最小表）
+  - `tableMake/excel_write_platform_exchanges_setting.py`（将 5 列写入 `platform_exchanges_setting_min`）
 
 ---
 
@@ -107,17 +117,21 @@
 pip install -r requirements.txt
 ```
 
-- 一键运行（推荐）：
+- 一键运行（推荐，全流程含入库）：
 ```bash
 python main.py
 ```
-流程：获取 SURF 币种 → 并行抓四所数据 → 生成 Excel 与 HTML（输出至 `result/` 与 `result/html/`）。
+流程：获取 SURF 币种 → 并行抓四所数据 → 生成 Excel 与 HTML → 创建最小表 → Excel 入库。
 
 - 分步运行（调试）：
 ```bash
 python currencyGet_surf/fetch_symbols.py
 python dataGet/dataGet_main.py
 python tableMake/tableMake.py
+# 创建最小表（如不存在）
+python tableMake/setup_platform_exchanges_setting_schema.py
+# 写入 PostgreSQL（仅 5 列，幂等 upsert）
+python tableMake/excel_write_platform_exchanges_setting.py
 ```
 
 运行完成后可直接用浏览器打开 `result/html/Leverage&Margin_<timestamp>.html`：
@@ -163,7 +177,18 @@ python tableMake/tableMake.py
 
 - dataGet 输出（若提供）：`DATAGET_OUTPUT_DIR`（默认 `data/dataGet_api`）
 
-- 其他敏感信息（如需要）：通过 `.env` 或系统环境变量加载，避免入库。
+- 其他敏感信息（如需要）：通过 `.env` 或系统环境变量加载。
+
+### 数据库连接（PostgreSQL）
+- 默认连接（已写入脚本常量，若需修改请编辑脚本文件）：
+  - Host: `platformuser.cluster-custom-csteuf9lw8dv.ap-northeast-1.rds.amazonaws.com`
+  - Port: `5432`
+  - DB: `replication_report`
+  - User: `platform_exchanges_user`
+  - Password: 见内部配置
+  - 目标表：`platform_exchanges_setting_min`
+
+> 若 PG 要求 SSL，可在运行前设置环境变量 `PG_SSLMODE=require`。
 
 ---
 
