@@ -1,0 +1,49 @@
+2025-10-12 20:34:54,507 INFO 服务启动，进入常驻循环：每8小时执行一次
+2025-10-12 20:34:54,507 INFO 运行子任务 fetch_symbols: C:\Users\zhang\Desktop\crypto\currency_leverage_collection\currencyGet_surf\fetch_symbols_api.py
+2025-10-12 20:34:55,369 INFO 完成子任务 fetch_symbols, rc=1
+2025-10-12 20:34:55,369 ERROR fetch_symbols 失败, rc=1
+2025-10-12 20:34:55,369 WARNING 一次执行返回非零 rc=1
+2025-10-12 20:34:55,370 INFO 休眠 28825 秒后再次执行
+2025-10-12 20:35:21,611 ERROR 已有实例在运行，退出
+2025-10-12 20:36:05,857 INFO 服务启动，进入常驻循环：每8小时执行一次
+2025-10-12 20:36:05,858 INFO 运行子任务 fetch_symbols: C:\Users\zhang\Desktop\crypto\currency_leverage_collection\currencyGet_surf\fetch_symbols_api.py
+2025-10-12 20:36:10,604 INFO 完成子任务 fetch_symbols, rc=0
+2025-10-12 20:36:10,604 INFO 运行子任务 dataGet_main: C:\Users\zhang\Desktop\crypto\currency_leverage_collection\dataGet\dataGet_main.py
+2025-10-12 20:38:47,733 INFO 完成子任务 dataGet_main, rc=0
+2025-10-12 20:38:47,733 INFO 运行子任务 tableMake_main: C:\Users\zhang\Desktop\crypto\currency_leverage_collection\tableMake\tableMake_main.py
+2025-10-12 20:39:02,605 INFO 完成子任务 tableMake_main, rc=0
+2025-10-12 20:39:02,605 INFO 全流程完成, 用时 176.7s
+2025-10-12 20:39:02,605 INFO 休眠 28818 秒后再次执行
+2025-10-12 20:45:41,609 INFO 服务启动，进入常驻循环：每8小时执行一次
+2025-10-12 20:45:41,610 INFO 运行子任务 fetch_symbols: C:\Users\zhang\Desktop\crypto\currency_leverage_collection\currencyGet_surf\fetch_symbols_api.py
+2025-10-12 20:45:42,399 INFO 完成子任务 fetch_symbols, rc=1
+2025-10-12 20:45:42,399 ERROR fetch_symbols 失败, rc=1
+2025-10-12 20:45:42,401 WARNING 一次执行返回非零 rc=1
+2025-10-12 20:45:42,401 INFO 休眠 3638 秒后再次执行
+2025-10-12 20:46:01,759 INFO 收到中断信号，准备退出
+2025-10-12 20:46:01,948 INFO 服务启动，进入常驻循环：每8小时执行一次
+2025-10-12 20:46:01,948 INFO 运行子任务 fetch_symbols: C:\Users\zhang\Desktop\crypto\currency_leverage_collection\currencyGet_surf\fetch_symbols_api.py
+2025-10-12 20:46:06,283 INFO 完成子任务 fetch_symbols, rc=0
+2025-10-12 20:46:06,284 INFO 运行子任务 dataGet_main: C:\Users\zhang\Desktop\crypto\currency_leverage_collection\dataGet\dataGet_main.py
+2025-10-12 20:48:48,411 INFO 完成子任务 dataGet_main, rc=0
+2025-10-12 20:48:48,411 INFO 运行子任务 tableMake_main: C:\Users\zhang\Desktop\crypto\currency_leverage_collection\tableMake\tableMake_main.py
+2025-10-12 20:49:06,117 INFO 完成子任务 tableMake_main, rc=0
+2025-10-12 20:49:06,117 INFO 全流程完成, 用时 184.2s
+2025-10-12 20:49:06,117 INFO 休眠 3604 秒后再次执行
+2025-10-12 20:49:58,224 INFO 收到中断信号，准备退出
+2025-10-12 20:50:03,377 INFO 服务启动，进入常驻循环：每8小时执行一次
+2025-10-12 20:50:03,377 INFO 运行子任务 fetch_symbols: C:\Users\zhang\Desktop\crypto\currency_leverage_collection\currencyGet_surf\fetch_symbols_api.py
+2025-10-12 20:50:04,032 INFO 完成子任务 fetch_symbols, rc=1
+2025-10-12 20:50:04,032 ERROR fetch_symbols 失败, rc=1
+2025-10-12 20:50:04,032 WARNING 一次执行返回非零 rc=1
+2025-10-12 20:50:04,032 INFO 休眠 3618 秒后再次执行
+2025-10-12 20:53:32,094 INFO 服务启动，进入常驻循环：每8小时执行一次
+2025-10-12 20:53:32,095 INFO 运行子任务 fetch_symbols: C:\Users\zhang\Desktop\crypto\currency_leverage_collection\currencyGet_surf\fetch_symbols_api.py
+2025-10-12 20:53:36,561 INFO 完成子任务 fetch_symbols, rc=0
+2025-10-12 20:53:36,561 INFO 运行子任务 dataGet_main: C:\Users\zhang\Desktop\crypto\currency_leverage_collection\dataGet\dataGet_main.py
+2025-10-12 20:56:15,332 INFO 完成子任务 dataGet_main, rc=0
+2025-10-12 20:56:15,332 INFO 运行子任务 tableMake_main: C:\Users\zhang\Desktop\crypto\currency_leverage_collection\tableMake\tableMake_main.py
+2025-10-12 20:56:30,913 INFO 完成子任务 tableMake_main, rc=0
+2025-10-12 20:56:30,913 INFO 全流程完成, 用时 178.8s
+2025-10-12 20:56:30,914 INFO 休眠 3640 秒后再次执行
+2025-10-12 20:56:53,293 INFO 收到中断信号，准备退出

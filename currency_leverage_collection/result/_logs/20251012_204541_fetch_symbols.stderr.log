@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "C:\Users\zhang\Desktop\crypto\currency_leverage_collection\currencyGet_surf\fetch_symbols_api.py", line 10, in <module>
+    from config import settings
+ModuleNotFoundError: No module named 'config'
