@@ -4,6 +4,7 @@ from pathlib import Path
 from datetime import datetime
 import io
 import csv
+import pandas as pd
 import streamlit as st
 
 ROOT = Path(__file__).resolve().parent
@@ -24,11 +25,16 @@ def load_data(p: Path, mtime_ns: int):
 def rows_to_csv(rows: list[list[str]]) -> str:
     buf = io.StringIO()
     writer = csv.writer(buf)
-    # 写入简单表头
-    writer.writerow(["", "最大杠杆", "最大持仓 (USDT)", "维持保证金率"])
+    writer.writerow(["Exchange", "Max Leverage", "Max Position (USDT)", "Maintenance Margin Rate"])
     for r in rows or [["", "", "", ""]]:
         writer.writerow([(c if c is not None else "") for c in r])
     return buf.getvalue()
+
+
+def rows_to_df(rows: list[list[str]]) -> "pd.DataFrame":
+    cols = ["Exchange", "Max Leverage", "Max Position (USDT)", "Maintenance Margin Rate"]
+    safe_rows = rows or [["", "", "", ""]]
+    return pd.DataFrame(safe_rows, columns=cols)
 
 
 def main():
@@ -36,8 +42,8 @@ def main():
     st.title("Leverage & MMR Dashboard")
 
     with st.sidebar:
-        st.header("数据源")
-        uploaded = st.file_uploader("手动上传 JSON (可选)", type=["json"], help="如不上传，则自动读取 result/html 下最新的 JSON")
+        st.header("Data Source")
+        uploaded = st.file_uploader("Upload JSON (optional)", type=["json"], help="If empty, the latest file under result/html will be used")
 
     if uploaded is not None:
         try:
@@ -50,7 +56,7 @@ def main():
     else:
         data_path = latest_json()
         if not data_path:
-            st.error("未找到 JSON 数据，请先运行生成流程（main.py 或 tableMake_main）")
+            st.error("No JSON found. Please run the generator (main.py or tableMake_main) first.")
             return
         stat = data_path.stat()
         mtime_ns = stat.st_mtime_ns
@@ -61,14 +67,14 @@ def main():
     payload = data.get("data", {})
 
     with st.sidebar:
-        st.header("控制台")
+        st.header("Controls")
         idx = max(0, symbols.index("BTCUSDT")) if "BTCUSDT" in symbols and len(symbols) > 0 else 0
-        sym = st.selectbox("币种", symbols, index=idx if symbols else 0)
-        auto_refresh = st.checkbox("自动刷新", value=False, help="结合 APScheduler 每小时更新后前端自动轮询")
-        interval = st.slider("刷新间隔(秒)", 5, 120, 30)
+        sym = st.selectbox("Symbol", symbols, index=idx if symbols else 0)
+        auto_refresh = st.checkbox("Auto refresh", value=False, help="Auto rerun after APScheduler writes a new file")
+        interval = st.slider("Refresh interval (sec)", 5, 120, 30)
         ts_text = datetime.fromtimestamp(mtime_ns / 1e9).strftime("%Y-%m-%d %H:%M:%S")
-        st.caption(f"数据文件: {data_path.name if data_path else uploaded.name}")
-        st.caption(f"最后修改: {ts_text}")
+        st.caption(f"Data file: {data_path.name if data_path else uploaded.name}")
+        st.caption(f"Last modified: {ts_text}")
 
         if auto_refresh and uploaded is None:
             st.experimental_data_editor  # hint to keep streamlit import active
@@ -80,29 +86,45 @@ def main():
                 pass
 
     if not symbols:
-        st.warning("symbols 为空")
+        st.warning("Symbols is empty")
         return
 
     s = summary.get(sym)
     if not s:
-        st.warning("该币种缺少 summary")
+        st.warning("No summary for selected symbol")
         return
 
-    col1, col2 = st.columns(2)
+    col1, col2, col3 = st.columns(3)
     with col1:
-        st.metric("跨所最大杠杆", s.get("max_leverage", {}).get("display", ""), help=s.get("max_leverage", {}).get("exchange", ""))
+        st.metric("Cross-exchange Max Leverage", s.get("max_leverage", {}).get("display", ""), help=s.get("max_leverage", {}).get("exchange", ""))
     with col2:
-        st.metric("全所最低MMR", s.get("min_mmr", {}).get("display", ""), help=s.get("min_mmr", {}).get("exchange", ""))
+        st.metric("Global Min MMR", s.get("min_mmr", {}).get("display", ""), help=s.get("min_mmr", {}).get("exchange", ""))
+    with col3:
+        st.metric("Cross-exchange Max Position", s.get("max_position", {}).get("display", ""), help=s.get("max_position", {}).get("exchange", ""))
 
-    ex_order = ["BINANCE", "WEEX", "MECX", "BYBIT", "SURF"]
+    ex_order = ["Aggregate", "BINANCE", "WEEX", "MECX", "BYBIT", "SURF"]
     tabs = st.tabs(ex_order)
-    for tab, ex in zip(tabs, ex_order):
+
+    # Aggregate tab
+    with tabs[0]:
+        st.subheader("Aggregate (Cross-Exchange)")
+        ag_cols = st.columns(3)
+        with ag_cols[0]:
+            st.metric("Max Leverage", s.get("max_leverage", {}).get("display", ""), help=s.get("max_leverage", {}).get("exchange", ""))
+        with ag_cols[1]:
+            st.metric("Max Position (USDT)", s.get("max_position", {}).get("display", ""), help=s.get("max_position", {}).get("exchange", ""))
+        with ag_cols[2]:
+            st.metric("Min MMR", s.get("min_mmr", {}).get("display", ""), help=s.get("min_mmr", {}).get("exchange", ""))
+
+    # Exchange tabs
+    for tab, ex in zip(tabs[1:], ex_order[1:]):
         with tab:
             rows = payload.get(sym, {}).get(ex, [["", "", "", ""]])
-            st.table(rows if rows else [["", "", "", ""]])
+            df = rows_to_df(rows)
+            st.table(df)
             csv_text = rows_to_csv(rows)
             st.download_button(
-                label=f"下载 {ex} CSV",
+                label=f"Download {ex} CSV",
                 data=csv_text,
                 file_name=f"{sym}_{ex}.csv",
                 mime="text/csv",

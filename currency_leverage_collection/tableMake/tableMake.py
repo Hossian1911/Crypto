@@ -234,21 +234,28 @@ def compute_summary_for_symbol(sym: str, sources: Dict[str, Dict[str, List[Dict[
     best_lev_ex: Optional[str] = None
     best_mmr_val: Optional[float] = None
     best_mmr_ex: Optional[str] = None
+    best_pos_val: Optional[float] = None
+    best_pos_ex: Optional[str] = None
     for ex in ["binance", "weex", "mexc", "bybit"]:
         tiers = sources.get(ex, {}).get(sym, []) or []
         for t in tiers:
             if ex == "binance":
                 lev = parse_number(t.get("mlev"))
                 mmr = _mmr_numeric(t.get("mmr"))
+                pos = parse_number(t.get("notional_usdt")) or parse_number(t.get("bracketNotionalCap"))
             elif ex == "bybit":
                 lev = parse_number(t.get("maximumLever"))
                 mmr = _mmr_numeric(t.get("maintenanceMarginRate"))
+                pos = parse_number(t.get("storingLocationValue"))
             elif ex == "mexc":
                 lev = parse_number(t.get("mlev"))
                 mmr = _mmr_numeric(t.get("mmr"))
+                pos = parse_number(t.get("notional_usdt"))
             else:
                 lev = parse_number(t.get("mlev"))
                 mmr = _mmr_numeric(t.get("mmr"))
+                rng = t.get("range")
+                pos = weex_range_upper(rng) if isinstance(rng, str) else parse_number(t.get("notional_usdt"))
             if lev is not None:
                 if best_lev_val is None or float(lev) > best_lev_val:
                     best_lev_val = float(lev)
@@ -257,6 +264,10 @@ def compute_summary_for_symbol(sym: str, sources: Dict[str, Dict[str, List[Dict[
                 if best_mmr_val is None or float(mmr) < best_mmr_val:
                     best_mmr_val = float(mmr)
                     best_mmr_ex = ex
+            if pos is not None:
+                if best_pos_val is None or float(pos) > best_pos_val:
+                    best_pos_val = float(pos)
+                    best_pos_ex = ex
     lev_ex_disp = (
         "BINANCE" if best_lev_ex == "binance" else (
         "WEEX" if best_lev_ex == "weex" else (
@@ -271,9 +282,25 @@ def compute_summary_for_symbol(sym: str, sources: Dict[str, Dict[str, List[Dict[
     )
     lev_disp = to_leverage_str(best_lev_val) if best_lev_val is not None else ""
     mmr_disp = to_percent_str(best_mmr_val) if best_mmr_val is not None else ""
+    def pos_disp(v: Optional[float]) -> str:
+        if v is None:
+            return ""
+        try:
+            if float(v).is_integer():
+                return f"{int(v):,}"
+            return f"{v:,.2f}"
+        except Exception:
+            return str(v)
+    pos_ex_disp = (
+        "BINANCE" if best_pos_ex == "binance" else (
+        "WEEX" if best_pos_ex == "weex" else (
+        "MECX" if best_pos_ex == "mexc" else (
+        "BYBIT" if best_pos_ex == "bybit" else "")))
+    )
     return {
         "max_leverage": {"value": best_lev_val, "display": lev_disp, "exchange": lev_ex_disp},
         "min_mmr": {"value": best_mmr_val, "display": mmr_disp, "exchange": mmr_ex_disp},
+        "max_position": {"value": best_pos_val, "display": pos_disp(best_pos_val), "exchange": pos_ex_disp},
     }
 
 
@@ -406,7 +433,7 @@ def _build_html(symbols: List[str], html_payload: Dict[str, Dict[str, List[List[
     exs_json = json.dumps(["BINANCE","WEEX","MECX","BYBIT","SURF"], ensure_ascii=False)
     html_tmpl = """
 <!doctype html>
-<html lang=zh-CN>
+<html lang=en>
 <head>
   <meta charset=utf-8>
   <meta name=viewport content="width=device-width, initial-scale=1">
@@ -433,7 +460,7 @@ def _build_html(symbols: List[str], html_payload: Dict[str, Dict[str, List[List[
     function createTable(rows) {
       const tbl = document.createElement('table');
       const thead = document.createElement('thead');
-      thead.innerHTML = '<tr><th></th><th>最大杠杆</th><th>最大持仓 (USDT)</th><th>维持保证金率</th></tr>';
+      thead.innerHTML = '<tr><th>Exchange</th><th>Max Leverage</th><th>Max Position (USDT)</th><th>Maintenance Margin Rate</th></tr>';
       tbl.appendChild(thead);
       const tbody = document.createElement('tbody');
       for (const r of rows) {
@@ -462,11 +489,15 @@ def _build_html(symbols: List[str], html_payload: Dict[str, Dict[str, List[List[
         box.style.background = '#fffbe6';
         box.style.fontWeight = '600';
         const left = document.createElement('span');
-        left.textContent = `跨所最大杠杆: ${s.max_leverage.display} (${s.max_leverage.exchange})`;
+        left.textContent = `Cross-exchange Max Leverage: ${s.max_leverage.display} (${s.max_leverage.exchange})`;
         left.style.marginRight = '24px';
         const right = document.createElement('span');
-        right.textContent = `全所最低MMR: ${s.min_mmr.display} (${s.min_mmr.exchange})`;
+        right.textContent = `Global Min MMR: ${s.min_mmr.display} (${s.min_mmr.exchange})`;
+        right.style.marginRight = '24px';
+        const mid = document.createElement('span');
+        mid.textContent = `Cross-exchange Max Position: ${s.max_position.display} (${s.max_position.exchange})`;
         box.appendChild(left);
+        box.appendChild(mid);
         box.appendChild(right);
         sumRoot.appendChild(box);
       }
@@ -493,7 +524,7 @@ def _build_html(symbols: List[str], html_payload: Dict[str, Dict[str, List[List[
   </head>
   <body>
     <div class="bar">
-      <label for="sym">币种：</label>
+      <label for="sym">Symbol:</label>
       <select id="sym" onchange="onSymbolChange()"></select>
     </div>
     <div id="summary"></div>

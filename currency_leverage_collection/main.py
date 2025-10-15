@@ -30,6 +30,7 @@ PY = _resolve_python(BASE_DIR)
 FETCH_SYMBOLS = BASE_DIR / "currencyGet_surf" / "fetch_symbols_api.py"
 DATAGET_MAIN = BASE_DIR / "dataGet" / "dataGet_main.py"
 TABLE_MAKE = BASE_DIR / "tableMake" / "tableMake_main.py"
+PUBLISH_PS1 = BASE_DIR / "scripts" / "publish_latest_json.ps1"
 
 LOG_DIR = BASE_DIR / "result" / "_logs"
 LOG_DIR.mkdir(parents=True, exist_ok=True)
@@ -51,6 +52,24 @@ def run_py(name: str, path: Path, args: list[str] | None = None) -> int:
     with outp.open("w", encoding="utf-8", buffering=1) as fo, errp.open("w", encoding="utf-8", buffering=1) as fe:
         # 统一以项目根为工作目录，保证包导入如 `from config import settings` 正常
         rc = subprocess.call([PY, str(path), *args], stdout=fo, stderr=fe, cwd=str(BASE_DIR))
+    print(f"[=] 完成 {name}, rc={rc}, 日志: {outp.name} / {errp.name}")
+    logging.info("完成子任务 %s, rc=%s", name, rc)
+    return rc
+
+
+def run_ps1(name: str, path: Path, args: list[str] | None = None) -> int:
+    args = args or []
+    if not path.exists():
+        print(f"[X] 脚本不存在: {path}")
+        logging.error("脚本不存在: %s", path)
+        return 127
+    ts = time.strftime("%Y%m%d_%H%M%S")
+    outp = LOG_DIR / f"{ts}_{name}.stdout.log"
+    errp = LOG_DIR / f"{ts}_{name}.stderr.log"
+    print(f"[+] 运行 {name}: {path}")
+    logging.info("运行子任务 %s: %s", name, path)
+    with outp.open("w", encoding="utf-8", buffering=1) as fo, errp.open("w", encoding="utf-8", buffering=1) as fe:
+        rc = subprocess.call(["powershell", "-ExecutionPolicy", "Bypass", "-File", str(path), *args], stdout=fo, stderr=fe, cwd=str(BASE_DIR))
     print(f"[=] 完成 {name}, rc={rc}, 日志: {outp.name} / {errp.name}")
     logging.info("完成子任务 %s, rc=%s", name, rc)
     return rc
@@ -100,6 +119,11 @@ def run_once() -> int:
         print("[!] tableMake 失败")
         logging.error("tableMake 失败, rc=%s", rc)
         return rc
+    prc = run_ps1("publish_latest_json", PUBLISH_PS1)
+    if prc != 0:
+        print("[!] publish_latest_json 失败")
+        logging.error("publish_latest_json 失败, rc=%s", prc)
+        return prc
 
     dur = time.time() - start
     print(f"[OK] 全流程完成，用时 {dur:.1f}s")
