@@ -1,6 +1,6 @@
 {
   "source_url": "https://surfv2-api.surf.one/public/pair/profit/stats",
-  "collected_at": "2025-10-12T20:53:36",
+  "collected_at": "2025-10-15T11:47:30",
   "pairs": [
     {
       "pair": "SOL/USDT",
@@ -613,6 +613,11 @@
       "quote": "USDT"
     },
     {
+      "pair": "AGT/USDT",
+      "base": "AGT",
+      "quote": "USDT"
+    },
+    {
       "pair": "COAI/USDT",
       "base": "COAI",
       "quote": "USDT"
@@ -658,5 +663,5 @@
       "quote": "USDT"
     }
   ],
-  "count": 131
+  "count": 132
 }

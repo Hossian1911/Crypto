@@ -1,6 +1,6 @@
 {
   "source_url": "https://surfv2-api.surf.one/public/pair/profit/stats",
-  "collected_at": "2025-10-12T20:53:36",
+  "collected_at": "2025-10-15T11:47:30",
   "items": [
     {
       "symbol": "SOL",
@@ -491,6 +491,10 @@
       "pair_id": "440126685295824896"
     },
     {
+      "symbol": "AGT",
+      "pair_id": "440126691608252416"
+    },
+    {
       "symbol": "COAI",
       "pair_id": "440126699745202176"
     },
@@ -527,5 +531,5 @@
       "pair_id": "442085980090346496"
     }
   ],
-  "count": 131
+  "count": 132
 }

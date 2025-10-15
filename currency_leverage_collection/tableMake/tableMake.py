@@ -215,6 +215,68 @@ def to_leverage_str(v: Any) -> str:
         return f"{s}X"
 
 
+def _mmr_numeric(v: Any) -> Optional[float]:
+    if v is None:
+        return None
+    if isinstance(v, str) and v.strip().endswith('%'):
+        try:
+            return float(v.strip().rstrip('%')) / 100.0
+        except Exception:
+            return None
+    num = parse_number(v)
+    if num is None:
+        return None
+    return float(num)
+
+
+def compute_summary_for_symbol(sym: str, sources: Dict[str, Dict[str, List[Dict[str, Any]]]]) -> Dict[str, Any]:
+    best_lev_val: Optional[float] = None
+    best_lev_ex: Optional[str] = None
+    best_mmr_val: Optional[float] = None
+    best_mmr_ex: Optional[str] = None
+    for ex in ["binance", "weex", "mexc", "bybit"]:
+        tiers = sources.get(ex, {}).get(sym, []) or []
+        for t in tiers:
+            if ex == "binance":
+                lev = parse_number(t.get("mlev"))
+                mmr = _mmr_numeric(t.get("mmr"))
+            elif ex == "bybit":
+                lev = parse_number(t.get("maximumLever"))
+                mmr = _mmr_numeric(t.get("maintenanceMarginRate"))
+            elif ex == "mexc":
+                lev = parse_number(t.get("mlev"))
+                mmr = _mmr_numeric(t.get("mmr"))
+            else:
+                lev = parse_number(t.get("mlev"))
+                mmr = _mmr_numeric(t.get("mmr"))
+            if lev is not None:
+                if best_lev_val is None or float(lev) > best_lev_val:
+                    best_lev_val = float(lev)
+                    best_lev_ex = ex
+            if mmr is not None:
+                if best_mmr_val is None or float(mmr) < best_mmr_val:
+                    best_mmr_val = float(mmr)
+                    best_mmr_ex = ex
+    lev_ex_disp = (
+        "BINANCE" if best_lev_ex == "binance" else (
+        "WEEX" if best_lev_ex == "weex" else (
+        "MECX" if best_lev_ex == "mexc" else (
+        "BYBIT" if best_lev_ex == "bybit" else "")))
+    )
+    mmr_ex_disp = (
+        "BINANCE" if best_mmr_ex == "binance" else (
+        "WEEX" if best_mmr_ex == "weex" else (
+        "MECX" if best_mmr_ex == "mexc" else (
+        "BYBIT" if best_mmr_ex == "bybit" else "")))
+    )
+    lev_disp = to_leverage_str(best_lev_val) if best_lev_val is not None else ""
+    mmr_disp = to_percent_str(best_mmr_val) if best_mmr_val is not None else ""
+    return {
+        "max_leverage": {"value": best_lev_val, "display": lev_disp, "exchange": lev_ex_disp},
+        "min_mmr": {"value": best_mmr_val, "display": mmr_disp, "exchange": mmr_ex_disp},
+    }
+
+
 def weex_range_upper(s: str) -> Optional[float]:
     if not isinstance(s, str):
         return None
@@ -335,77 +397,98 @@ def beautify_sheet(ws) -> None:
                 cell.alignment = Alignment(horizontal="center", vertical="center")
 
 
-def _build_html(symbols: List[str], html_payload: Dict[str, Dict[str, List[List[Any]]]], book_name: str) -> Path:
+def _build_html(symbols: List[str], html_payload: Dict[str, Dict[str, List[List[Any]]]], summaries: Dict[str, Dict[str, Any]], book_name: str) -> Path:
     """生成带下拉的静态 HTML，联动展示四所数据。"""
-    # 简单样式与脚本（纯原生，不依赖外链）
     exchanges = ["BINANCE", "WEEX", "MECX", "BYBIT", "SURF"]
     data_json = json.dumps(html_payload, ensure_ascii=False)
+    summary_json = json.dumps(summaries, ensure_ascii=False)
     symbols_json = json.dumps(symbols, ensure_ascii=False)
-    html = f"""
+    exs_json = json.dumps(["BINANCE","WEEX","MECX","BYBIT","SURF"], ensure_ascii=False)
+    html_tmpl = """
 <!doctype html>
 <html lang=zh-CN>
 <head>
   <meta charset=utf-8>
   <meta name=viewport content="width=device-width, initial-scale=1">
-  <title>Leverage & Margin Dashboard - {book_name}</title>
+  <title>Leverage & Margin Dashboard - __BOOK_NAME__</title>
   <style>
-    body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin: 24px; }}
-    .bar {{ display:flex; align-items:center; gap:12px; margin-bottom:16px; }}
-    select {{ padding:6px 10px; font-size:14px; }}
-    h2 {{ margin: 16px 0 8px; font-size:16px; }}
-    table {{ border-collapse: collapse; width: 680px; margin-bottom: 18px; }}
-    th, td {{ border: 1px solid #999; padding: 6px 8px; text-align: center; }}
-    th:first-child, td:first-child {{ text-align: left; }}
-    thead th {{ background: #eee; font-weight: 700; }}
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin: 24px; }
+    .bar { display:flex; align-items:center; gap:12px; margin-bottom:16px; }
+    select { padding:6px 10px; font-size:14px; }
+    h2 { margin: 16px 0 8px; font-size:16px; }
+    table { border-collapse: collapse; width: 680px; margin-bottom: 18px; }
+    th, td { border: 1px solid #999; padding: 6px 8px; text-align: center; }
+    th:first-child, td:first-child { text-align: left; }
+    thead th { background: #eee; font-weight: 700; }
   </style>
   <script>
-    const DATA = {data_json};
-    const SYMBOLS = {symbols_json};
-    const EXS = {json.dumps(["BINANCE","WEEX","MECX","BYBIT","SURF"])};
-    function onSymbolChange() {{
+    const DATA = __DATA__;
+    const SUMMARY = __SUMMARY__;
+    const SYMBOLS = __SYMBOLS__;
+    const EXS = __EXS__;
+    function onSymbolChange() {
       const sym = document.getElementById('sym').value;
       render(sym);
-    }}
-    function createTable(rows) {{
+    }
+    function createTable(rows) {
       const tbl = document.createElement('table');
       const thead = document.createElement('thead');
       thead.innerHTML = '<tr><th></th><th>最大杠杆</th><th>最大持仓 (USDT)</th><th>维持保证金率</th></tr>';
       tbl.appendChild(thead);
       const tbody = document.createElement('tbody');
-      for (const r of rows) {{
+      for (const r of rows) {
         const tr = document.createElement('tr');
-        for (const c of r) {{
+        for (const c of r) {
           const td = document.createElement('td');
           td.textContent = (c===null||c===undefined)?'':c;
           tr.appendChild(td);
-        }}
+        }
         tbody.appendChild(tr);
-      }}
+      }
       tbl.appendChild(tbody);
       return tbl;
-    }}
-    function render(sym) {{
+    }
+    function render(sym) {
       const root = document.getElementById('root');
       root.innerHTML = '';
-      const payload = DATA[sym] || {{}};
-      for (const ex of EXS) {{
+      const sumRoot = document.getElementById('summary');
+      sumRoot.innerHTML = '';
+      const s = SUMMARY[sym] || null;
+      if (s) {
+        const box = document.createElement('div');
+        box.style.margin = '8px 0 12px';
+        box.style.padding = '10px 12px';
+        box.style.border = '1px solid #aaa';
+        box.style.background = '#fffbe6';
+        box.style.fontWeight = '600';
+        const left = document.createElement('span');
+        left.textContent = `跨所最大杠杆: ${s.max_leverage.display} (${s.max_leverage.exchange})`;
+        left.style.marginRight = '24px';
+        const right = document.createElement('span');
+        right.textContent = `全所最低MMR: ${s.min_mmr.display} (${s.min_mmr.exchange})`;
+        box.appendChild(left);
+        box.appendChild(right);
+        sumRoot.appendChild(box);
+      }
+      const payload = DATA[sym] || {};
+      for (const ex of EXS) {
         const h = document.createElement('h2');
         h.textContent = ex;
         root.appendChild(h);
         const rows = payload[ex] || [["", "", "", ""]];
         root.appendChild(createTable(rows));
-      }}
-    }}
-    window.addEventListener('DOMContentLoaded', () => {{
+      }
+    }
+    window.addEventListener('DOMContentLoaded', () => {
       const sel = document.getElementById('sym');
-      for (const s of SYMBOLS) {{
+      for (const s of SYMBOLS) {
         const opt = document.createElement('option');
         opt.value = s; opt.textContent = s; sel.appendChild(opt);
-      }}
+      }
       const init = SYMBOLS.includes('BTCUSDT') ? 'BTCUSDT' : (SYMBOLS[0] || '');
       sel.value = init;
       render(init);
-    }});
+    });
   </script>
   </head>
   <body>
@@ -413,12 +496,21 @@ def _build_html(symbols: List[str], html_payload: Dict[str, Dict[str, List[List[
       <label for="sym">币种：</label>
       <select id="sym" onchange="onSymbolChange()"></select>
     </div>
+    <div id="summary"></div>
     <div id="root"></div>
   </body>
 </html>
 """
+    html = (html_tmpl
+            .replace("__BOOK_NAME__", book_name)
+            .replace("__DATA__", data_json)
+            .replace("__SUMMARY__", summary_json)
+            .replace("__SYMBOLS__", symbols_json)
+            .replace("__EXS__", exs_json))
     out = RESULT_HTML_DIR / f"{book_name}.html"
     out.write_text(html, encoding="utf-8")
+    json_out = RESULT_HTML_DIR / f"{book_name}.json"
+    json_out.write_text(json.dumps({"symbols": symbols, "data": html_payload, "summary": summaries}, ensure_ascii=False), encoding="utf-8")
     return out
 
 
@@ -441,6 +533,7 @@ def make_excel() -> Path:
 
     # 准备 HTML 数据聚合结构：{symbol: {EX: [[ex_name, lev, notional, mmr], ...]}}
     html_payload: Dict[str, Dict[str, List[List[Any]]]] = {}
+    summaries: Dict[str, Dict[str, Any]] = {}
 
     for sym in targets:
         # 仅当至少一个交易所存在该币种时才创建Sheet
@@ -455,6 +548,11 @@ def make_excel() -> Path:
         ws["D1"].font = Font(bold=True)
         # HTML 聚合容器
         html_payload[sym] = {}
+        summary = compute_summary_for_symbol(sym, sources)
+        summaries[sym] = summary
+        ws.append(["", "跨所最大杠杆", f"{summary['max_leverage']['display']} ({summary['max_leverage']['exchange']})", ""]) 
+        ws.append(["", "全所最低MMR", f"{summary['min_mmr']['display']} ({summary['min_mmr']['exchange']})", ""]) 
+        ws.append(["", "", "", ""]) 
 
         for ex in EX_ORDER:
             rows = build_rows_for_exchange(ex, sym, sources)
@@ -481,7 +579,7 @@ def make_excel() -> Path:
     # 生成 HTML（带下拉联动）
     # 仅使用实际创建了 Sheet 的币种（即 html_payload 的键集合）
     created_symbols = sorted(html_payload.keys())
-    _build_html(created_symbols, html_payload, out.stem)
+    _build_html(created_symbols, html_payload, summaries, out.stem)
     return out
 
 

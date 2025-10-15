@@ -1,8 +1,8 @@
 {
   "source_raw": "C:\\Users\\zhang\\Desktop\\crypto\\currency_leverage_collection\\data\\dataGet_api\\binance\\brackets_raw.json",
-  "total_items_all": 729,
-  "wanted_count": 131,
-  "selected_count": 116,
+  "total_items_all": 732,
+  "wanted_count": 132,
+  "selected_count": 117,
   "missing_count": 15,
   "missing": [
     "AVLUSDT",

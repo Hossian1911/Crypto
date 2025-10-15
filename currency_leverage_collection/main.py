@@ -123,7 +123,7 @@ def main() -> int:
         logging.error("已有实例在运行，退出")
         return 1
 
-    logging.info("服务启动，进入常驻循环：每8小时执行一次")
+    logging.info("服务启动，进入常驻循环：每1小时执行一次")
     try:
         while True:
             try:
