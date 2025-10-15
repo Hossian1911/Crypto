@@ -1,0 +1,4 @@
+# Ignore generated result artifacts
+result/**/*.html
+result/**/*.xlsx
+result/**/*.csv

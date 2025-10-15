@@ -94,26 +94,16 @@ def main():
         st.warning("No summary for selected symbol")
         return
 
-    col1, col2, col3 = st.columns(3)
-    with col1:
-        st.metric("Cross-exchange Max Leverage", s.get("max_leverage", {}).get("display", ""), help=s.get("max_leverage", {}).get("exchange", ""))
-    with col2:
-        st.metric("Global Min MMR", s.get("min_mmr", {}).get("display", ""), help=s.get("min_mmr", {}).get("exchange", ""))
-    with col3:
-        st.metric("Cross-exchange Max Position", s.get("max_position", {}).get("display", ""), help=s.get("max_position", {}).get("exchange", ""))
-
     ex_order = ["Aggregate", "BINANCE", "WEEX", "MECX", "BYBIT", "SURF"]
     tabs = st.tabs(ex_order)
 
     # Aggregate tab
     with tabs[0]:
         st.subheader("Aggregate (Cross-Exchange)")
-        ag_cols = st.columns(3)
+        ag_cols = st.columns(2)
         with ag_cols[0]:
             st.metric("Max Leverage", s.get("max_leverage", {}).get("display", ""), help=s.get("max_leverage", {}).get("exchange", ""))
         with ag_cols[1]:
-            st.metric("Max Position (USDT)", s.get("max_position", {}).get("display", ""), help=s.get("max_position", {}).get("exchange", ""))
-        with ag_cols[2]:
             st.metric("Min MMR", s.get("min_mmr", {}).get("display", ""), help=s.get("min_mmr", {}).get("exchange", ""))
 
     # Exchange tabs

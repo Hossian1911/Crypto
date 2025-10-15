@@ -1,0 +1,19 @@
+RepoDir: C:\Users\zhang\Desktop\crypto
+Latest JSON: C:\Users\zhang\Desktop\crypto\currency_leverage_collection\result\html\Leverage&Margin_20251015_133645.json
+Deleting old JSON: C:\Users\zhang\Desktop\crypto\currency_leverage_collection\result\html\Leverage&Margin_20251015_115017.json
+[main ee6e881] data: update leverage JSON (2025-10-15 13:36:59)
+ 28 files changed, 33096 insertions(+), 32852 deletions(-)
+ create mode 100644 currency_leverage_collection/result/Leverage&Margin_20251015_133645.xlsx
+ create mode 100644 currency_leverage_collection/result/_logs/20251015_133350_fetch_symbols.stderr.log
+ create mode 100644 currency_leverage_collection/result/_logs/20251015_133350_fetch_symbols.stdout.log
+ create mode 100644 currency_leverage_collection/result/_logs/20251015_133355_dataGet_main.stderr.log
+ create mode 100644 currency_leverage_collection/result/_logs/20251015_133355_dataGet_main.stdout.log
+ create mode 100644 currency_leverage_collection/result/_logs/20251015_133640_tableMake_main.stderr.log
+ create mode 100644 currency_leverage_collection/result/_logs/20251015_133640_tableMake_main.stdout.log
+ create mode 100644 currency_leverage_collection/result/_logs/20251015_133655_publish_latest_json.stderr.log
+ create mode 100644 currency_leverage_collection/result/_logs/20251015_133655_publish_latest_json.stdout.log
+ delete mode 100644 currency_leverage_collection/result/html/Leverage&Margin_20251015_115017.json
+ create mode 100644 currency_leverage_collection/result/html/Leverage&Margin_20251015_133645.html
+ create mode 100644 currency_leverage_collection/result/html/Leverage&Margin_20251015_133645.json
+ create mode 100644 currency_leverage_collection/scripts/publish_latest_json.ps1
+Published latest JSON and pushed to remote.

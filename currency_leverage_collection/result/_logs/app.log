@@ -57,3 +57,30 @@
 2025-10-15 11:50:28,602 INFO 全流程完成, 用时 183.1s
 2025-10-15 11:50:28,603 INFO 休眠 3614 秒后再次执行
 2025-10-15 13:33:28,693 ERROR 已有实例在运行，退出
+2025-10-15 13:33:50,649 INFO 服务启动，进入常驻循环：每1小时执行一次
+2025-10-15 13:33:50,649 INFO 运行子任务 fetch_symbols: C:\Users\zhang\Desktop\crypto\currency_leverage_collection\currencyGet_surf\fetch_symbols_api.py
+2025-10-15 13:33:55,140 INFO 完成子任务 fetch_symbols, rc=0
+2025-10-15 13:33:55,141 INFO 运行子任务 dataGet_main: C:\Users\zhang\Desktop\crypto\currency_leverage_collection\dataGet\dataGet_main.py
+2025-10-15 13:36:40,211 INFO 完成子任务 dataGet_main, rc=0
+2025-10-15 13:36:40,211 INFO 运行子任务 tableMake_main: C:\Users\zhang\Desktop\crypto\currency_leverage_collection\tableMake\tableMake_main.py
+2025-10-15 13:36:55,825 INFO 完成子任务 tableMake_main, rc=0
+2025-10-15 13:36:55,825 INFO 运行子任务 publish_latest_json: C:\Users\zhang\Desktop\crypto\currency_leverage_collection\scripts\publish_latest_json.ps1
+2025-10-15 13:37:05,608 INFO 完成子任务 publish_latest_json, rc=0
+2025-10-15 13:37:05,608 INFO 全流程完成, 用时 195.0s
+2025-10-15 13:37:05,608 INFO 休眠 3653 秒后再次执行
+2025-10-15 13:55:26,563 INFO 服务启动，进入常驻循环：每1小时执行一次
+2025-10-15 13:55:26,564 INFO 运行子任务 fetch_symbols: C:\Users\zhang\Desktop\crypto\currency_leverage_collection\currencyGet_surf\fetch_symbols_api.py
+2025-10-15 13:55:31,381 INFO 完成子任务 fetch_symbols, rc=0
+2025-10-15 13:55:31,382 INFO 运行子任务 dataGet_main: C:\Users\zhang\Desktop\crypto\currency_leverage_collection\dataGet\dataGet_main.py
+2025-10-15 13:58:23,329 INFO 完成子任务 dataGet_main, rc=0
+2025-10-15 13:58:23,332 INFO 运行子任务 tableMake_main: C:\Users\zhang\Desktop\crypto\currency_leverage_collection\tableMake\tableMake_main.py
+2025-10-15 13:58:39,971 INFO 完成子任务 tableMake_main, rc=0
+2025-10-15 13:58:39,971 INFO 运行子任务 publish_latest_json: C:\Users\zhang\Desktop\crypto\currency_leverage_collection\scripts\publish_latest_json.ps1
+2025-10-15 13:58:47,393 INFO 完成子任务 publish_latest_json, rc=0
+2025-10-15 13:58:47,393 INFO 全流程完成, 用时 200.8s
+2025-10-15 13:58:47,394 INFO 休眠 3631 秒后再次执行
+2025-10-15 14:19:38,955 INFO 收到中断信号，准备退出
+2025-10-15 14:19:39,205 INFO 服务启动，进入常驻循环：每1小时执行一次
+2025-10-15 14:19:39,206 INFO 运行子任务 fetch_symbols: C:\Users\zhang\Desktop\crypto\currency_leverage_collection\currencyGet_surf\fetch_symbols_api.py
+2025-10-15 14:19:43,882 INFO 完成子任务 fetch_symbols, rc=0
+2025-10-15 14:19:43,882 INFO 运行子任务 dataGet_main: C:\Users\zhang\Desktop\crypto\currency_leverage_collection\dataGet\dataGet_main.py
