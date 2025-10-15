@@ -6,6 +6,7 @@ import io
 import csv
 import pandas as pd
 import streamlit as st
+import re
 
 ROOT = Path(__file__).resolve().parent
 HTML_DIR = ROOT / "result" / "html"
@@ -35,6 +36,116 @@ def rows_to_df(rows: list[list[str]]) -> "pd.DataFrame":
     cols = ["Exchange", "Max Leverage", "Max Position (USDT)", "Maintenance Margin Rate"]
     safe_rows = rows or [["", "", "", ""]]
     return pd.DataFrame(safe_rows, columns=cols)
+
+
+NUM_RE = re.compile(r"[-+]?[0-9]*\.?[0-9]+")
+
+
+def _num(v):
+    if v is None:
+        return None
+    if isinstance(v, (int, float)):
+        return float(v)
+    s = str(v).strip()
+    if not s:
+        return None
+    m = NUM_RE.search(s)
+    return float(m.group(0)) if m else None
+
+
+def _lev_to_float(v):
+    # "5X" -> 5.0; "10x" -> 10.0; 50 -> 50.0
+    if v is None:
+        return None
+    if isinstance(v, (int, float)):
+        return float(v)
+    s = str(v).strip().upper().replace(" ", "")
+    s = s.replace("X", "")
+    return _num(s)
+
+
+def _mmr_to_float(v):
+    # "0.10%" -> 0.001; 0.001 -> 0.001
+    if v is None:
+        return None
+    if isinstance(v, (int, float)):
+        return float(v)
+    s = str(v).strip()
+    if s.endswith('%'):
+        try:
+            return float(s.rstrip('%')) / 100.0
+        except Exception:
+            return None
+    return _num(s)
+
+
+def _fmt_pos(v: float | None) -> str:
+    if v is None:
+        return ""
+    try:
+        f = float(v)
+        return f"{int(f):,}" if f.is_integer() else f"{f:,.2f}"
+    except Exception:
+        return str(v)
+
+
+def _fmt_pct(v: float | None) -> str:
+    if v is None:
+        return ""
+    try:
+        return f"{v*100:.2f}%"
+    except Exception:
+        return str(v)
+
+
+def build_aggregate_union_table(sym: str, payload: dict) -> pd.DataFrame:
+    # Collect union of leverage tiers from four exchanges (exclude SURF)
+    exs = ["BINANCE", "WEEX", "MECX", "BYBIT"]
+    by_lev: dict[float, list[tuple[str, float | None, float | None]]] = {}
+    for ex in exs:
+        rows = payload.get(sym, {}).get(ex, []) or []
+        for r in rows:
+            if len(r) < 4:
+                continue
+            lev_raw, pos_raw, mmr_raw = r[1], r[2], r[3]
+            lev = _lev_to_float(lev_raw)
+            if lev is None:
+                continue
+            pos = _num(pos_raw)
+            mmr = _mmr_to_float(mmr_raw)
+            by_lev.setdefault(lev, []).append((ex, pos, mmr))
+    if not by_lev:
+        return pd.DataFrame(columns=["Leverage", "Max Position (USDT)", "Max Position Source", "Min MMR", "Min MMR Source"])  # empty
+
+    records: list[dict] = []
+    for lev in sorted(by_lev.keys()):
+        entries = by_lev[lev]
+        # Max position
+        max_pos_val = None
+        max_pos_ex = ""
+        for ex, pos, _mmr in entries:
+            if pos is None:
+                continue
+            if max_pos_val is None or float(pos) > max_pos_val:
+                max_pos_val = float(pos)
+                max_pos_ex = ex
+        # Min MMR
+        min_mmr_val = None
+        min_mmr_ex = ""
+        for ex, _pos, mmr in entries:
+            if mmr is None:
+                continue
+            if min_mmr_val is None or float(mmr) < min_mmr_val:
+                min_mmr_val = float(mmr)
+                min_mmr_ex = ex
+        records.append({
+            "Leverage": f"{int(lev)}X" if float(lev).is_integer() else f"{lev}X",
+            "Max Position (USDT)": _fmt_pos(max_pos_val),
+            "Max Position Source": max_pos_ex,
+            "Min MMR": _fmt_pct(min_mmr_val),
+            "Min MMR Source": min_mmr_ex,
+        })
+    return pd.DataFrame.from_records(records)
 
 
 def main():
@@ -97,14 +208,14 @@ def main():
     ex_order = ["Aggregate", "BINANCE", "WEEX", "MECX", "BYBIT", "SURF"]
     tabs = st.tabs(ex_order)
 
-    # Aggregate tab
+    # Aggregate tab: union of leverage tiers across exchanges
     with tabs[0]:
         st.subheader("Aggregate (Cross-Exchange)")
-        ag_cols = st.columns(2)
-        with ag_cols[0]:
-            st.metric("Max Leverage", s.get("max_leverage", {}).get("display", ""), help=s.get("max_leverage", {}).get("exchange", ""))
-        with ag_cols[1]:
-            st.metric("Min MMR", s.get("min_mmr", {}).get("display", ""), help=s.get("min_mmr", {}).get("exchange", ""))
+        agg_df = build_aggregate_union_table(sym, payload)
+        if agg_df.empty:
+            st.info("No aggregated tiers found.")
+        else:
+            st.dataframe(agg_df, use_container_width=True)
 
     # Exchange tabs
     for tab, ex in zip(tabs[1:], ex_order[1:]):
