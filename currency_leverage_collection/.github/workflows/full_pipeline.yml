@@ -1,0 +1,40 @@
+name: Full Project Pipeline (Hourly)
+
+on:
+  schedule:
+    - cron: "0 * * * *"  # 每小时（UTC 整点）
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: full-project-pipeline
+  cancel-in-progress: false
+
+jobs:
+  run_all:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        shell: pwsh
+        run: |
+          python -m pip install --upgrade pip
+          if (Test-Path requirements.txt) { pip install -r requirements.txt }
+          pip install httpx pandas openpyxl
+
+      - name: Run full pipeline (main.py)
+        shell: pwsh
+        env:
+          CI: "true"
+        run: |
+          python main.py

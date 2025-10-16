@@ -1,45 +1,8 @@
 {
   "source": "https://surfv2-api.surf.one/pool/pair/config",
-  "generated_at": "2025-10-16 18:45:30",
+  "generated_at": "2025-10-16 20:55:27",
   "total": 134,
-  "ok": 128,
-  "errors": 6,
-  "error_samples": [
-    {
-      "symbol": "TA",
-      "pair_id": "433239141044453376",
-      "error": "request_failed",
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=433239141044453376"
-    },
-    {
-      "symbol": "AI",
-      "pair_id": "433734705884430336",
-      "error": "request_failed",
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=433734705884430336"
-    },
-    {
-      "symbol": "OPEN",
-      "pair_id": "433385148075999232",
-      "error": "request_failed",
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=433385148075999232"
-    },
-    {
-      "symbol": "BTR",
-      "pair_id": "433239139693887488",
-      "error": "request_failed",
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=433239139693887488"
-    },
-    {
-      "symbol": "0G",
-      "pair_id": "438308644195401728",
-      "error": "request_failed",
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=438308644195401728"
-    },
-    {
-      "symbol": "UXLINK",
-      "pair_id": "438710658586902528",
-      "error": "request_failed",
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=438710658586902528"
-    }
-  ]
+  "ok": 134,
+  "errors": 0,
+  "error_samples": []
 }

@@ -85,13 +85,13 @@ def _pos_fmt(v: float) -> str:
 
 def _select_tier_for_threshold(rows: List[List[Any]], S: float) -> Optional[Tuple[float, float]]:
     """
-    在一所的行表中，根据阈值 S 选择一档：
-    - 原则：找到“Max Position >= S 且下一档 < S”的那一行；若所有行均 >= S，取第一行（通常杠杆最低、仓位最大）；若所有行均 < S，返回 None。
+    选择“刚好覆盖 S 的那一档”：
+    - 取满足 pos >= S 的档位中，pos 最小的那一档（即“比略大的挡位”）。
+    - 若所有行 pos < S，则返回 None（该所不覆盖该层级）。
     输入 rows 格式：[[ex_name, lev_str, pos_float, mmr_str], ...]
     返回 (leverage_float, mmr_float)
     """
-    # 过滤出 pos、lev、mmr 都可解析的行
-    parsed = []
+    parsed: List[Tuple[float, float, float]] = []
     for r in rows:
         if len(r) < 4:
             continue
@@ -103,32 +103,25 @@ def _select_tier_for_threshold(rows: List[List[Any]], S: float) -> Optional[Tupl
         parsed.append((lev, pos, mmr))
     if not parsed:
         return None
-    # 假设 pos 随 lev 增大而下降，但为稳妥：按 pos 从大到小排序
+    # 按 pos 从大到小排序，然后线性扫描，选“最后一个仍满足 pos>=S 的行”
     parsed.sort(key=lambda t: t[1], reverse=True)
-    max_pos = parsed[0][1]
-    min_pos = parsed[-1][1]
-    # 若 S 大于等于最大 pos，则选第一行（更低杠杆那档）
-    if S >= max_pos:
-        return (parsed[0][0], parsed[0][2])
-    # 若 S 小于等于最小 pos，则选最后一行（“最后一个也要拿”）
-    if S <= min_pos:
-        return (parsed[-1][0], parsed[-1][2])
-    # 遍历查找“当前 >= S 且下一档 < S”的位置
-    for i in range(len(parsed) - 1):
-        lev, pos, mmr = parsed[i]
-        _, pos_next, _ = parsed[i + 1]
-        if pos >= S and pos_next < S:
-            return (lev, mmr)
-    # 兜底（理论不应到达）：返回最后一行
-    if parsed:
-        return (parsed[-1][0], parsed[-1][2])
-    return None
+    chosen: Optional[Tuple[float, float, float]] = None
+    for lev, pos, mmr in parsed:
+        if pos >= S:
+            chosen = (lev, pos, mmr)
+        else:
+            break
+    if chosen is None:
+        return None
+    return (chosen[0], chosen[2])
 
 
-def _street_for_symbol(payload: Dict[str, Dict[str, List[List[Any]]]], sym: str, S: float) -> Tuple[Optional[float], Optional[float]]:
-    """跨所基准：返回 (max_leverage, min_mmr) for level S。"""
-    levs: List[float] = []
-    mmrs: List[float] = []
+def _street_for_symbol(payload: Dict[str, Dict[str, List[List[Any]]]], sym: str, S: float) -> Tuple[Optional[float], Optional[str], Optional[float], Optional[str]]:
+    """跨所基准：返回 (max_leverage, max_lev_source, min_mmr, min_mmr_source) for level S。"""
+    max_lev_val: Optional[float] = None
+    max_lev_src: Optional[str] = None
+    min_mmr_val: Optional[float] = None
+    min_mmr_src: Optional[str] = None
     sym_map = payload.get(sym) or {}
     for ex in EXS_SHOW:
         rows = sym_map.get(ex) or []
@@ -136,9 +129,13 @@ def _street_for_symbol(payload: Dict[str, Dict[str, List[List[Any]]]], sym: str,
         if pick is None:
             continue
         lev, mmr = pick
-        levs.append(lev)
-        mmrs.append(mmr)
-    return (max(levs) if levs else None, min(mmrs) if mmrs else None)
+        if lev is not None and (max_lev_val is None or lev > max_lev_val):
+            max_lev_val = lev
+            max_lev_src = ex
+        if mmr is not None and (min_mmr_val is None or mmr < min_mmr_val):
+            min_mmr_val = mmr
+            min_mmr_src = ex
+    return max_lev_val, max_lev_src, min_mmr_val, min_mmr_src
 
 
 def _build_groups() -> Tuple[List[str], List[str]]:
@@ -186,7 +183,7 @@ def generate_excel() -> Path:
 
     def write_sheet(sym: str, tiers: List[int]) -> None:
         ws = wb.create_sheet(title=f"{sym} Suggest Rule")
-        header = ["max position size", "Max Leverage", "Min MMR", "IM(%)"]
+        header = ["max position size", "Max Leverage", "Max Lev Source", "Min MMR", "Min MMR Source", "IM"]
         ws.append(header)
         # 样式
         for c in range(1, len(header) + 1):
@@ -197,37 +194,44 @@ def generate_excel() -> Path:
         # 逐层级写入：严格按街上基准聚合
         tiers_json[sym] = []
         for S in tiers:
-            street_lev, street_mmr = _street_for_symbol(payload, sym, float(S))
+            street_lev, street_lev_src, street_mmr, street_mmr_src = _street_for_symbol(payload, sym, float(S))
             # 若缺失，留空
             if street_lev is None and street_mmr is None:
-                ws.append([_pos_fmt(S), "", "", ""])
+                ws.append([_pos_fmt(S), "", "", "", "", ""])
                 tiers_json[sym].append({
                     "position": S,
                     "leverage_value": None,
                     "leverage_display": "",
+                    "max_lev_source": "",
                     "mmr_value": None,
                     "mmr_display": "",
+                    "min_mmr_source": "",
                     "im_value": None,
                     "im_display": "",
                 })
                 continue
             lev_str = _lev_fmt(street_lev) if street_lev is not None else ""
             mmr_str = _mmr_fmt(street_mmr) if street_mmr is not None else ""
-            im_pct = f"{(_im_from_lev(street_lev)*100):.2f}" if street_lev is not None else ""
+            im_val = (100.0 / float(street_lev)) if street_lev is not None else None
+            im_str = f"{im_val:.2f}" if im_val is not None else ""
             ws.append([
                 _pos_fmt(S),
                 lev_str,
+                (street_lev_src or ""),
                 mmr_str,
-                im_pct,
+                (street_mmr_src or ""),
+                im_str,
             ])
             tiers_json[sym].append({
                 "position": S,
                 "leverage_value": float(street_lev) if street_lev is not None else None,
                 "leverage_display": lev_str,
+                "max_lev_source": street_lev_src or "",
                 "mmr_value": float(street_mmr) if street_mmr is not None else None,
                 "mmr_display": mmr_str,
-                "im_value": (100.0 / float(street_lev)) if street_lev is not None else None,
-                "im_display": (im_pct + "%") if im_pct else "",
+                "min_mmr_source": street_mmr_src or "",
+                "im_value": im_val,
+                "im_display": im_str,
             })
         # 边框
         thin = Side(style="thin", color="FFCCCCCC")

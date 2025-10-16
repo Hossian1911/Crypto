@@ -284,20 +284,27 @@ def main():
         st.header("Controls")
         idx = max(0, symbols.index("BTCUSDT")) if "BTCUSDT" in symbols and len(symbols) > 0 else 0
         sym = st.selectbox("Symbol", symbols, index=idx if symbols else 0)
-        auto_refresh = st.checkbox("Auto refresh", value=False, help="Auto rerun after APScheduler writes a new file")
-        interval = st.slider("Refresh interval (sec)", 5, 120, 30)
-        ts_text = datetime.fromtimestamp(mtime_ns / 1e9).strftime("%Y-%m-%d %H:%M:%S")
-        st.caption(f"Data file: {data_path.name if data_path else uploaded.name}")
-        st.caption(f"Last modified: {ts_text}")
 
-        if auto_refresh and uploaded is None:
-            st.experimental_data_editor  # hint to keep streamlit import active
-            st_autorefresh_count = st.experimental_rerun  # prevent linting removal
-            st_autorefresh = st.autorefresh  # type: ignore[attr-defined]
-            try:
-                st.autorefresh(interval=interval * 1000, key="auto-refresh")  # type: ignore[attr-defined]
-            except Exception:
-                pass
+        # Data Source: show latest updated time from filename (Beijing time)
+        st.subheader("Data Source")
+        fn = (data_path.name if data_path else (uploaded.name if uploaded else ""))
+        ts_beijing = ""
+        try:
+            # Expecting: Leverage&Margin_YYYYMMDD_HHMMSS.json
+            m = re.search(r"Leverage&Margin_(\d{8})_(\d{6})\.json", fn)
+            if m:
+                ymd = m.group(1)
+                hms = m.group(2)
+                dt = datetime.strptime(ymd + hms, "%Y%m%d%H%M%S")
+                # Treat as local filename time; mark explicitly as Beijing Time
+                ts_beijing = dt.strftime("%Y-%m-%d %H:%M:%S 北京时间")
+        except Exception:
+            ts_beijing = ""
+        st.caption(f"File: {fn}")
+        if ts_beijing:
+            st.caption(f"Last updated: {ts_beijing}")
+
+        # Frequency controls removed; auto update is driven by GitHub Actions hourly.
 
     if not symbols:
         st.warning("Symbols is empty")
@@ -336,8 +343,10 @@ def main():
                         recs.append({
                             "max position size": _fmt_pos(t.get("position")),
                             "Max Leverage": t.get("leverage_display") or "",
+                            "Max Lev Source": t.get("max_lev_source") or "",
                             "Min MMR": t.get("mmr_display") or "",
-                            "IM(%)": t.get("im_display") or "",
+                            "Min MMR Source": t.get("min_mmr_source") or "",
+                            "IM": t.get("im_display") or "",
                         })
                     df = pd.DataFrame.from_records(recs)
             if df is not None:

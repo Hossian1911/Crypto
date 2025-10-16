@@ -1,0 +1,16 @@
+[cmc_top20] 开始获取 CoinMarketCap Top20（排除 USDT/USDC）…
+[cmc_top20] 完成: OK 用时 12.1s  日志: cmc_top20.stdout.log / cmc_top20.stderr.log
+将并行运行 5 个数据获取任务（线程池大小=4）...
+日志目录: C:\Users\zhang\Desktop\crypto\currency_leverage_collection\data\dataGet_api\_logs
+[binance] 完成: OK 用时 6.9s  日志: binance.stdout.log / binance.stderr.log
+[mexc] 完成: OK 用时 13.3s  日志: mexc.stdout.log / mexc.stderr.log
+[surf] 完成: OK 用时 10.5s  日志: surf.stdout.log / surf.stderr.log
+[bybit] 完成: OK 用时 178.8s  日志: bybit.stdout.log / bybit.stderr.log
+[weex] 完成: OK 用时 184.6s  日志: weex.stdout.log / weex.stderr.log
+
+=== 汇总 ===
+- binance: rc=0 dur=6.89s out=C:\Users\zhang\Desktop\crypto\currency_leverage_collection\data\dataGet_api\_logs\binance.stdout.log err=C:\Users\zhang\Desktop\crypto\currency_leverage_collection\data\dataGet_api\_logs\binance.stderr.log
+- bybit: rc=0 dur=178.85s out=C:\Users\zhang\Desktop\crypto\currency_leverage_collection\data\dataGet_api\_logs\bybit.stdout.log err=C:\Users\zhang\Desktop\crypto\currency_leverage_collection\data\dataGet_api\_logs\bybit.stderr.log
+- mexc: rc=0 dur=13.27s out=C:\Users\zhang\Desktop\crypto\currency_leverage_collection\data\dataGet_api\_logs\mexc.stdout.log err=C:\Users\zhang\Desktop\crypto\currency_leverage_collection\data\dataGet_api\_logs\mexc.stderr.log
+- weex: rc=0 dur=184.58s out=C:\Users\zhang\Desktop\crypto\currency_leverage_collection\data\dataGet_api\_logs\weex.stdout.log err=C:\Users\zhang\Desktop\crypto\currency_leverage_collection\data\dataGet_api\_logs\weex.stderr.log
+- surf: rc=0 dur=10.51s out=C:\Users\zhang\Desktop\crypto\currency_leverage_collection\data\dataGet_api\_logs\surf.stdout.log err=C:\Users\zhang\Desktop\crypto\currency_leverage_collection\data\dataGet_api\_logs\surf.stderr.log

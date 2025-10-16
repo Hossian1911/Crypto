@@ -124,3 +124,70 @@
 2025-10-16 18:37:11,063 INFO 完成子任务 publish_latest_json, rc=0
 2025-10-16 18:37:11,063 INFO 全流程完成, 用时 196.7s
 2025-10-16 18:37:11,063 INFO 休眠 3641 秒后再次执行
+2025-10-16 18:44:25,348 INFO 服务启动，进入常驻循环：每1小时执行一次
+2025-10-16 18:44:25,349 INFO 运行子任务 fetch_symbols: C:\Users\zhang\Desktop\crypto\currency_leverage_collection\currencyGet_surf\fetch_symbols_api.py
+2025-10-16 18:44:29,821 INFO 完成子任务 fetch_symbols, rc=0
+2025-10-16 18:44:29,821 INFO 运行子任务 dataGet_main: C:\Users\zhang\Desktop\crypto\currency_leverage_collection\dataGet\dataGet_main.py
+2025-10-16 18:47:36,218 INFO 完成子任务 dataGet_main, rc=0
+2025-10-16 18:47:36,218 INFO 运行子任务 tableMake_main: C:\Users\zhang\Desktop\crypto\currency_leverage_collection\tableMake\tableMake_main.py
+2025-10-16 18:47:51,303 INFO 完成子任务 tableMake_main, rc=0
+2025-10-16 18:47:51,304 INFO 运行子任务 make_suggest_rules: C:\Users\zhang\Desktop\crypto\currency_leverage_collection\tableMake\make_suggest_rules.py
+2025-10-16 18:47:52,780 INFO 完成子任务 make_suggest_rules, rc=0
+2025-10-16 18:47:52,780 INFO 运行子任务 publish_latest_json: C:\Users\zhang\Desktop\crypto\currency_leverage_collection\scripts\publish_latest_json.ps1
+2025-10-16 18:48:00,406 INFO 完成子任务 publish_latest_json, rc=0
+2025-10-16 18:48:00,406 INFO 全流程完成, 用时 215.1s
+2025-10-16 18:48:00,407 INFO 休眠 3605 秒后再次执行
+2025-10-16 19:48:05,421 INFO 运行子任务 fetch_symbols: C:\Users\zhang\Desktop\crypto\currency_leverage_collection\currencyGet_surf\fetch_symbols_api.py
+2025-10-16 19:48:09,860 INFO 完成子任务 fetch_symbols, rc=0
+2025-10-16 19:48:09,860 INFO 运行子任务 dataGet_main: C:\Users\zhang\Desktop\crypto\currency_leverage_collection\dataGet\dataGet_main.py
+2025-10-16 19:51:26,737 INFO 完成子任务 dataGet_main, rc=0
+2025-10-16 19:51:26,740 INFO 运行子任务 tableMake_main: C:\Users\zhang\Desktop\crypto\currency_leverage_collection\tableMake\tableMake_main.py
+2025-10-16 19:51:41,659 INFO 完成子任务 tableMake_main, rc=0
+2025-10-16 19:51:41,659 INFO 运行子任务 make_suggest_rules: C:\Users\zhang\Desktop\crypto\currency_leverage_collection\tableMake\make_suggest_rules.py
+2025-10-16 19:51:43,275 INFO 完成子任务 make_suggest_rules, rc=0
+2025-10-16 19:51:43,278 INFO 运行子任务 publish_latest_json: C:\Users\zhang\Desktop\crypto\currency_leverage_collection\scripts\publish_latest_json.ps1
+2025-10-16 19:51:51,353 INFO 完成子任务 publish_latest_json, rc=0
+2025-10-16 19:51:51,354 INFO 全流程完成, 用时 225.9s
+2025-10-16 19:51:51,355 INFO 休眠 3659 秒后再次执行
+2025-10-16 20:21:59,594 INFO 收到中断信号，准备退出
+2025-10-16 20:21:59,837 INFO 服务启动，进入常驻循环：每1小时执行一次
+2025-10-16 20:21:59,837 INFO 运行子任务 fetch_symbols: C:\Users\zhang\Desktop\crypto\currency_leverage_collection\currencyGet_surf\fetch_symbols_api.py
+2025-10-16 20:22:03,088 INFO 完成子任务 fetch_symbols, rc=0
+2025-10-16 20:22:03,088 INFO 运行子任务 dataGet_main: C:\Users\zhang\Desktop\crypto\currency_leverage_collection\dataGet\dataGet_main.py
+2025-10-16 20:31:54,724 INFO 完成子任务 dataGet_main, rc=0
+2025-10-16 20:31:54,728 INFO 运行子任务 tableMake_main: C:\Users\zhang\Desktop\crypto\currency_leverage_collection\tableMake\tableMake_main.py
+2025-10-16 20:32:07,277 INFO 完成子任务 tableMake_main, rc=0
+2025-10-16 20:32:07,278 INFO 运行子任务 make_suggest_rules: C:\Users\zhang\Desktop\crypto\currency_leverage_collection\tableMake\make_suggest_rules.py
+2025-10-16 20:32:08,885 INFO 完成子任务 make_suggest_rules, rc=0
+2025-10-16 20:32:08,886 INFO 运行子任务 publish_latest_json: C:\Users\zhang\Desktop\crypto\currency_leverage_collection\scripts\publish_latest_json.ps1
+2025-10-16 20:32:24,255 INFO 完成子任务 publish_latest_json, rc=0
+2025-10-16 20:32:24,255 INFO 全流程完成, 用时 624.4s
+2025-10-16 20:32:24,256 INFO 休眠 3619 秒后再次执行
+2025-10-16 20:36:46,290 INFO 收到中断信号，准备退出
+2025-10-16 20:38:41,661 INFO 服务启动，进入常驻循环：每1小时执行一次
+2025-10-16 20:38:41,661 INFO 运行子任务 fetch_symbols: C:\Users\zhang\Desktop\crypto\currency_leverage_collection\currencyGet_surf\fetch_symbols_api.py
+2025-10-16 20:38:46,526 INFO 完成子任务 fetch_symbols, rc=0
+2025-10-16 20:38:46,526 INFO 运行子任务 dataGet_main: C:\Users\zhang\Desktop\crypto\currency_leverage_collection\dataGet\dataGet_main.py
+2025-10-16 20:41:40,659 INFO 完成子任务 dataGet_main, rc=0
+2025-10-16 20:41:40,661 INFO 运行子任务 tableMake_main: C:\Users\zhang\Desktop\crypto\currency_leverage_collection\tableMake\tableMake_main.py
+2025-10-16 20:41:58,382 INFO 完成子任务 tableMake_main, rc=0
+2025-10-16 20:41:58,383 INFO 运行子任务 make_suggest_rules: C:\Users\zhang\Desktop\crypto\currency_leverage_collection\tableMake\make_suggest_rules.py
+2025-10-16 20:41:59,839 INFO 完成子任务 make_suggest_rules, rc=0
+2025-10-16 20:41:59,840 INFO 运行子任务 publish_latest_json: C:\Users\zhang\Desktop\crypto\currency_leverage_collection\scripts\publish_latest_json.ps1
+2025-10-16 20:42:07,741 INFO 完成子任务 publish_latest_json, rc=0
+2025-10-16 20:42:07,741 INFO 全流程完成, 用时 206.1s
+2025-10-16 20:42:07,741 INFO 休眠 3646 秒后再次执行
+2025-10-16 20:54:49,553 INFO 收到中断信号，准备退出
+2025-10-16 20:54:49,841 INFO 服务启动，进入常驻循环：每1小时执行一次
+2025-10-16 20:54:49,841 INFO 运行子任务 fetch_symbols: C:\Users\zhang\Desktop\crypto\currency_leverage_collection\currencyGet_surf\fetch_symbols_api.py
+2025-10-16 20:54:54,605 INFO 完成子任务 fetch_symbols, rc=0
+2025-10-16 20:54:54,605 INFO 运行子任务 dataGet_main: C:\Users\zhang\Desktop\crypto\currency_leverage_collection\dataGet\dataGet_main.py
+2025-10-16 20:57:54,730 INFO 完成子任务 dataGet_main, rc=0
+2025-10-16 20:57:54,731 INFO 运行子任务 tableMake_main: C:\Users\zhang\Desktop\crypto\currency_leverage_collection\tableMake\tableMake_main.py
+2025-10-16 20:58:11,050 INFO 完成子任务 tableMake_main, rc=0
+2025-10-16 20:58:11,051 INFO 运行子任务 make_suggest_rules: C:\Users\zhang\Desktop\crypto\currency_leverage_collection\tableMake\make_suggest_rules.py
+2025-10-16 20:58:12,624 INFO 完成子任务 make_suggest_rules, rc=0
+2025-10-16 20:58:12,624 INFO 运行子任务 publish_latest_json: C:\Users\zhang\Desktop\crypto\currency_leverage_collection\scripts\publish_latest_json.ps1
+2025-10-16 20:58:20,897 INFO 完成子任务 publish_latest_json, rc=0
+2025-10-16 20:58:20,897 INFO 全流程完成, 用时 211.1s
+2025-10-16 20:58:20,898 INFO 休眠 3606 秒后再次执行
