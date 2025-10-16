@@ -1,5 +1,5 @@
 {
-  "generated_at": "20251016_205812",
+  "generated_at": "20251016_223635",
   "tiers": {
     "BTCUSDT": [
       {
@@ -415,52 +415,6 @@
         "im_display": "0.50"
       }
     ],
-    "HYPEUSDT": [
-      {
-        "position": 50000,
-        "leverage_value": 100.0,
-        "leverage_display": "100X",
-        "max_lev_source": "MECX",
-        "mmr_value": 0.005,
-        "mmr_display": "0.50%",
-        "min_mmr_source": "MECX",
-        "im_value": 1.0,
-        "im_display": "1.00"
-      },
-      {
-        "position": 200000,
-        "leverage_value": 100.0,
-        "leverage_display": "100X",
-        "max_lev_source": "MECX",
-        "mmr_value": 0.005,
-        "mmr_display": "0.50%",
-        "min_mmr_source": "MECX",
-        "im_value": 1.0,
-        "im_display": "1.00"
-      },
-      {
-        "position": 500000,
-        "leverage_value": 25.0,
-        "leverage_display": "25X",
-        "max_lev_source": "BINANCE",
-        "mmr_value": 0.02,
-        "mmr_display": "2.00%",
-        "min_mmr_source": "BINANCE",
-        "im_value": 4.0,
-        "im_display": "4.00"
-      },
-      {
-        "position": 1000000,
-        "leverage_value": 25.0,
-        "leverage_display": "25X",
-        "max_lev_source": "BINANCE",
-        "mmr_value": 0.02,
-        "mmr_display": "2.00%",
-        "min_mmr_source": "BINANCE",
-        "im_value": 4.0,
-        "im_display": "4.00"
-      }
-    ],
     "BCHUSDT": [
       {
         "position": 50000,
@@ -505,6 +459,52 @@
         "min_mmr_source": "BINANCE",
         "im_value": 5.0,
         "im_display": "5.00"
+      }
+    ],
+    "HYPEUSDT": [
+      {
+        "position": 50000,
+        "leverage_value": 100.0,
+        "leverage_display": "100X",
+        "max_lev_source": "MECX",
+        "mmr_value": 0.005,
+        "mmr_display": "0.50%",
+        "min_mmr_source": "MECX",
+        "im_value": 1.0,
+        "im_display": "1.00"
+      },
+      {
+        "position": 200000,
+        "leverage_value": 100.0,
+        "leverage_display": "100X",
+        "max_lev_source": "MECX",
+        "mmr_value": 0.005,
+        "mmr_display": "0.50%",
+        "min_mmr_source": "MECX",
+        "im_value": 1.0,
+        "im_display": "1.00"
+      },
+      {
+        "position": 500000,
+        "leverage_value": 25.0,
+        "leverage_display": "25X",
+        "max_lev_source": "BINANCE",
+        "mmr_value": 0.02,
+        "mmr_display": "2.00%",
+        "min_mmr_source": "BINANCE",
+        "im_value": 4.0,
+        "im_display": "4.00"
+      },
+      {
+        "position": 1000000,
+        "leverage_value": 25.0,
+        "leverage_display": "25X",
+        "max_lev_source": "BINANCE",
+        "mmr_value": 0.02,
+        "mmr_display": "2.00%",
+        "min_mmr_source": "BINANCE",
+        "im_value": 4.0,
+        "im_display": "4.00"
       }
     ],
     "SUIUSDT": [
@@ -1011,14 +1011,14 @@
     "ASTERUSDT": [
       {
         "position": 20000,
-        "leverage_value": 100.0,
-        "leverage_display": "100X",
-        "max_lev_source": "MECX",
-        "mmr_value": 0.005,
-        "mmr_display": "0.50%",
-        "min_mmr_source": "MECX",
-        "im_value": 1.0,
-        "im_display": "1.00"
+        "leverage_value": 75.0,
+        "leverage_display": "75X",
+        "max_lev_source": "BINANCE",
+        "mmr_value": 0.01,
+        "mmr_display": "1.00%",
+        "min_mmr_source": "BINANCE",
+        "im_value": 1.3333333333333333,
+        "im_display": "1.33"
       },
       {
         "position": 100000,
@@ -3623,14 +3623,14 @@
       },
       {
         "position": 200000,
-        "leverage_value": 100.0,
-        "leverage_display": "100X",
-        "max_lev_source": "MECX",
-        "mmr_value": 0.005,
-        "mmr_display": "0.50%",
-        "min_mmr_source": "MECX",
-        "im_value": 1.0,
-        "im_display": "1.00"
+        "leverage_value": 10.0,
+        "leverage_display": "10X",
+        "max_lev_source": "WEEX",
+        "mmr_value": 0.05,
+        "mmr_display": "5.00%",
+        "min_mmr_source": "WEEX",
+        "im_value": 10.0,
+        "im_display": "10.00"
       }
     ],
     "REDUSDT": [
@@ -4616,14 +4616,14 @@
     "XANUSDT": [
       {
         "position": 20000,
-        "leverage_value": 100.0,
-        "leverage_display": "100X",
-        "max_lev_source": "MECX",
-        "mmr_value": 0.005,
-        "mmr_display": "0.50%",
-        "min_mmr_source": "MECX",
-        "im_value": 1.0,
-        "im_display": "1.00"
+        "leverage_value": 20.0,
+        "leverage_display": "20X",
+        "max_lev_source": "BINANCE",
+        "mmr_value": 0.025,
+        "mmr_display": "2.50%",
+        "min_mmr_source": "BINANCE",
+        "im_value": 5.0,
+        "im_display": "5.00"
       },
       {
         "position": 100000,
