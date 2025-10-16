@@ -1,8 +1,8 @@
-name: Full Project Pipeline (Hourly)
+name: Full Project Pipeline (Every 5 Minutes)
 
 on:
   schedule:
-    - cron: "0 * * * *"  # 每小时（UTC 整点）
+    - cron: "*/5 * * * *"  # 每5分钟（UTC）
   workflow_dispatch: {}
 
 permissions:
@@ -27,6 +27,7 @@ jobs:
 
       - name: Install dependencies
         shell: pwsh
+        working-directory: ./currency_leverage_collection
         run: |
           python -m pip install --upgrade pip
           if (Test-Path requirements.txt) { pip install -r requirements.txt }
@@ -34,7 +35,19 @@ jobs:
 
       - name: Run full pipeline (main.py)
         shell: pwsh
+        working-directory: ./currency_leverage_collection
         env:
-          CI: "true"
+          CI: "true"   # 让 main.py 走“跳锁+只跑一次”
         run: |
           python main.py
+
+      # 可选：失败时打印最近的错误日志，便于排查
+      - name: Print latest stderr logs (debug)
+        if: failure()
+        shell: pwsh
+        working-directory: ./currency_leverage_collection/result/_logs
+        run: |
+          Get-ChildItem -File -Filter "*stderr.log" | Sort-Object LastWriteTime | Select-Object -Last 3 | ForEach-Object {
+            Write-Host "==== $_ ===="
+            Get-Content -Path $_ -Encoding utf8 -Tail 500
+          }
