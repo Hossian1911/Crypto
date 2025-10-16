@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="386fb972-146a-4deb-b36a-d267023a6224" name="更改" comment="">
+      <change beforePath="$PROJECT_DIR$/currency_leverage_collection/currencyGet_surf/fetch_symbols.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency_leverage_collection/data/currency_kinds/surf_bases.txt" beforeDir="false" afterPath="$PROJECT_DIR$/currency_leverage_collection/data/currency_kinds/surf_bases.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency_leverage_collection/data/currency_kinds/surf_pairs.csv" beforeDir="false" afterPath="$PROJECT_DIR$/currency_leverage_collection/data/currency_kinds/surf_pairs.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency_leverage_collection/data/currency_kinds/surf_pairs.json" beforeDir="false" afterPath="$PROJECT_DIR$/currency_leverage_collection/data/currency_kinds/surf_pairs.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency_leverage_collection/data/dataGet_api/_logs/bybit.stdout.log" beforeDir="false" afterPath="$PROJECT_DIR$/currency_leverage_collection/data/dataGet_api/_logs/bybit.stdout.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency_leverage_collection/data/dataGet_api/_logs/weex.stdout.log" beforeDir="false" afterPath="$PROJECT_DIR$/currency_leverage_collection/data/dataGet_api/_logs/weex.stdout.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency_leverage_collection/data/dataGet_api/binance/binance_selected.json" beforeDir="false" afterPath="$PROJECT_DIR$/currency_leverage_collection/data/dataGet_api/binance/binance_selected.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency_leverage_collection/data/dataGet_api/binance/binance_selected_meta.json" beforeDir="false" afterPath="$PROJECT_DIR$/currency_leverage_collection/data/dataGet_api/binance/binance_selected_meta.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency_leverage_collection/data/dataGet_api/binance/brackets_raw.json" beforeDir="false" afterPath="$PROJECT_DIR$/currency_leverage_collection/data/dataGet_api/binance/brackets_raw.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency_leverage_collection/data/dataGet_api/binance/post_empty_raw.json" beforeDir="false" afterPath="$PROJECT_DIR$/currency_leverage_collection/data/dataGet_api/binance/post_empty_raw.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency_leverage_collection/data/dataGet_api/bybit/bybit_selected.json" beforeDir="false" afterPath="$PROJECT_DIR$/currency_leverage_collection/data/dataGet_api/bybit/bybit_selected.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency_leverage_collection/data/dataGet_api/bybit/bybit_selected_meta.json" beforeDir="false" afterPath="$PROJECT_DIR$/currency_leverage_collection/data/dataGet_api/bybit/bybit_selected_meta.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency_leverage_collection/data/dataGet_api/bybit/support_symbol_risk_raw.json" beforeDir="false" afterPath="$PROJECT_DIR$/currency_leverage_collection/data/dataGet_api/bybit/support_symbol_risk_raw.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency_leverage_collection/data/dataGet_api/mexc/detailV2_raw.json" beforeDir="false" afterPath="$PROJECT_DIR$/currency_leverage_collection/data/dataGet_api/mexc/detailV2_raw.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency_leverage_collection/data/dataGet_api/mexc/mexc_selected.json" beforeDir="false" afterPath="$PROJECT_DIR$/currency_leverage_collection/data/dataGet_api/mexc/mexc_selected.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency_leverage_collection/data/dataGet_api/mexc/mexc_selected_meta.json" beforeDir="false" afterPath="$PROJECT_DIR$/currency_leverage_collection/data/dataGet_api/mexc/mexc_selected_meta.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency_leverage_collection/data/dataGet_api/weex/weex_selected.json" beforeDir="false" afterPath="$PROJECT_DIR$/currency_leverage_collection/data/dataGet_api/weex/weex_selected.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency_leverage_collection/data/dataGet_api/weex/weex_selected_meta.json" beforeDir="false" afterPath="$PROJECT_DIR$/currency_leverage_collection/data/dataGet_api/weex/weex_selected_meta.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency_leverage_collection/dataGet/dataGet_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/currency_leverage_collection/dataGet/dataGet_main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency_leverage_collection/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/currency_leverage_collection/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency_leverage_collection/tableMake/tableMake.py" beforeDir="false" afterPath="$PROJECT_DIR$/currency_leverage_collection/tableMake/tableMake.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="33vUoagqM67vLuxrHR7yyrIb2EZ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.dataGet_main.executor": "Run",
+    "Python.fetch_symbols.executor": "Run",
+    "Python.fetch_symbols_api.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.surf_limits_fetch.executor": "Run",
+    "Python.surf_probe_cdp.executor": "Run",
+    "Python.surf_trade_probe_cdp.executor": "Run",
+    "Python.tableMake.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/zhang/Desktop/crypto"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-0509580d9d50-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.14494.241" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="386fb972-146a-4deb-b36a-d267023a6224" name="更改" comment="" />
+      <created>1760197214821</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1760197214821</updated>
+    </task>
+    <servers />
+  </component>
+</project>

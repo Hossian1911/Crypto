@@ -1,7 +1,7 @@
 import json
 import time
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 import io
 import csv
 import pandas as pd
@@ -12,6 +12,7 @@ import json
 ROOT = Path(__file__).resolve().parent
 HTML_DIR = ROOT / "result" / "html"
 SUGGEST_DIR = ROOT / "result" / "suggest"
+BJ_TZ = timezone(timedelta(hours=8))
 
 
 def latest_json() -> Path | None:
@@ -41,6 +42,7 @@ def rows_to_df(rows: list[list[str]]) -> "pd.DataFrame":
 
 
 NUM_RE = re.compile(r"[-+]?[0-9]*\.?[0-9]+")
+TS_RE = re.compile(r"(\d{8}_\d{6})")
 
 
 def _num(v):
@@ -148,6 +150,17 @@ def build_aggregate_union_table(sym: str, payload: dict) -> pd.DataFrame:
             "Min MMR Source": min_mmr_ex,
         })
     return pd.DataFrame.from_records(records)
+
+
+def _parse_ts_from_name(name: str) -> datetime | None:
+    m = TS_RE.search(name or "")
+    if not m:
+        return None
+    try:
+        dt = datetime.strptime(m.group(1), "%Y%m%d_%H%M%S")
+        return dt.replace(tzinfo=BJ_TZ)
+    except Exception:
+        return None
 
 
 # ===== Suggest Rule helpers =====
@@ -284,19 +297,14 @@ def main():
         st.header("Controls")
         idx = max(0, symbols.index("BTCUSDT")) if "BTCUSDT" in symbols and len(symbols) > 0 else 0
         sym = st.selectbox("Symbol", symbols, index=idx if symbols else 0)
-        auto_refresh = st.checkbox("Auto refresh", value=False, help="Auto rerun after APScheduler writes a new file")
-        interval = st.slider("Refresh interval (sec)", 5, 120, 30)
-        ts_text = datetime.fromtimestamp(mtime_ns / 1e9).strftime("%Y-%m-%d %H:%M:%S")
-        st.caption(f"Data file: {data_path.name if data_path else uploaded.name}")
-        st.caption(f"Last modified: {ts_text}")
-
-        if auto_refresh and uploaded is None:
-            st_autorefresh_count = st.experimental_rerun  # prevent linting removal
-            st_autorefresh = st.autorefresh  # type: ignore[attr-defined]
-            try:
-                st.autorefresh(interval=interval * 1000, key="auto-refresh")  # type: ignore[attr-defined]
-            except Exception:
-                pass
+        data_name = data_path.name if data_path else uploaded.name
+        st.caption(f"Data file: {data_name}")
+        ts_guess = _parse_ts_from_name(data_name or "")
+        if ts_guess is not None:
+            st.caption(f"Last updated (UTC+8): {ts_guess.strftime('%Y-%m-%d %H:%M:%S')}")
+        else:
+            ts_text = datetime.fromtimestamp(mtime_ns / 1e9).strftime("%Y-%m-%d %H:%M:%S")
+            st.caption(f"Last modified: {ts_text}")
 
     if not symbols:
         st.warning("Symbols is empty")
