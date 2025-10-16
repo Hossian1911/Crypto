@@ -1,42 +1,50 @@
 {
-  "generated_at": "20251016_204159",
+  "generated_at": "20251016_205812",
   "tiers": {
     "BTCUSDT": [
       {
         "position": 50000,
         "leverage_value": 500.0,
         "leverage_display": "500X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.001,
         "mmr_display": "0.10%",
+        "min_mmr_source": "MECX",
         "im_value": 0.2,
-        "im_display": "0.20%"
+        "im_display": "0.20"
       },
       {
         "position": 200000,
         "leverage_value": 500.0,
         "leverage_display": "500X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.001,
         "mmr_display": "0.10%",
+        "min_mmr_source": "MECX",
         "im_value": 0.2,
-        "im_display": "0.20%"
+        "im_display": "0.20"
       },
       {
         "position": 500000,
         "leverage_value": 500.0,
         "leverage_display": "500X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.001,
         "mmr_display": "0.10%",
+        "min_mmr_source": "MECX",
         "im_value": 0.2,
-        "im_display": "0.20%"
+        "im_display": "0.20"
       },
       {
         "position": 1000000,
         "leverage_value": 400.0,
         "leverage_display": "400X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0015,
         "mmr_display": "0.15%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.25,
-        "im_display": "0.25%"
+        "im_display": "0.25"
       }
     ],
     "ETHUSDT": [
@@ -44,37 +52,45 @@
         "position": 50000,
         "leverage_value": 500.0,
         "leverage_display": "500X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.001,
         "mmr_display": "0.10%",
+        "min_mmr_source": "MECX",
         "im_value": 0.2,
-        "im_display": "0.20%"
+        "im_display": "0.20"
       },
       {
         "position": 200000,
         "leverage_value": 500.0,
         "leverage_display": "500X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.001,
         "mmr_display": "0.10%",
+        "min_mmr_source": "MECX",
         "im_value": 0.2,
-        "im_display": "0.20%"
+        "im_display": "0.20"
       },
       {
         "position": 500000,
         "leverage_value": 500.0,
         "leverage_display": "500X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.001,
         "mmr_display": "0.10%",
+        "min_mmr_source": "MECX",
         "im_value": 0.2,
-        "im_display": "0.20%"
+        "im_display": "0.20"
       },
       {
         "position": 1000000,
         "leverage_value": 400.0,
         "leverage_display": "400X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0015,
         "mmr_display": "0.15%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.25,
-        "im_display": "0.25%"
+        "im_display": "0.25"
       }
     ],
     "BNBUSDT": [
@@ -82,37 +98,45 @@
         "position": 50000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       },
       {
         "position": 200000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       },
       {
         "position": 500000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       },
       {
         "position": 1000000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.004,
         "mmr_display": "0.40%",
+        "min_mmr_source": "MECX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       }
     ],
     "XRPUSDT": [
@@ -120,37 +144,45 @@
         "position": 50000,
         "leverage_value": 300.0,
         "leverage_display": "300X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.002,
         "mmr_display": "0.20%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.3333333333333333,
-        "im_display": "0.33%"
+        "im_display": "0.33"
       },
       {
         "position": 200000,
         "leverage_value": 300.0,
         "leverage_display": "300X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.002,
         "mmr_display": "0.20%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.3333333333333333,
-        "im_display": "0.33%"
+        "im_display": "0.33"
       },
       {
         "position": 500000,
         "leverage_value": 300.0,
         "leverage_display": "300X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.002,
         "mmr_display": "0.20%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.3333333333333333,
-        "im_display": "0.33%"
+        "im_display": "0.33"
       },
       {
         "position": 1000000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       }
     ],
     "SOLUSDT": [
@@ -158,37 +190,45 @@
         "position": 50000,
         "leverage_value": 300.0,
         "leverage_display": "300X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.002,
         "mmr_display": "0.20%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.3333333333333333,
-        "im_display": "0.33%"
+        "im_display": "0.33"
       },
       {
         "position": 200000,
         "leverage_value": 300.0,
         "leverage_display": "300X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.002,
         "mmr_display": "0.20%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.3333333333333333,
-        "im_display": "0.33%"
+        "im_display": "0.33"
       },
       {
         "position": 500000,
         "leverage_value": 300.0,
         "leverage_display": "300X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.002,
         "mmr_display": "0.20%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.3333333333333333,
-        "im_display": "0.33%"
+        "im_display": "0.33"
       },
       {
         "position": 1000000,
         "leverage_value": 300.0,
         "leverage_display": "300X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.002,
         "mmr_display": "0.20%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.3333333333333333,
-        "im_display": "0.33%"
+        "im_display": "0.33"
       }
     ],
     "TRXUSDT": [
@@ -196,37 +236,45 @@
         "position": 50000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       },
       {
         "position": 200000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       },
       {
         "position": 500000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.004,
         "mmr_display": "0.40%",
+        "min_mmr_source": "MECX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       },
       {
         "position": 1000000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.004,
         "mmr_display": "0.40%",
+        "min_mmr_source": "MECX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       }
     ],
     "DOGEUSDT": [
@@ -234,37 +282,45 @@
         "position": 50000,
         "leverage_value": 300.0,
         "leverage_display": "300X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.0023,
         "mmr_display": "0.23%",
+        "min_mmr_source": "MECX",
         "im_value": 0.3333333333333333,
-        "im_display": "0.33%"
+        "im_display": "0.33"
       },
       {
         "position": 200000,
         "leverage_value": 300.0,
         "leverage_display": "300X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.0023,
         "mmr_display": "0.23%",
+        "min_mmr_source": "MECX",
         "im_value": 0.3333333333333333,
-        "im_display": "0.33%"
+        "im_display": "0.33"
       },
       {
         "position": 500000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       },
       {
         "position": 1000000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.004,
         "mmr_display": "0.40%",
+        "min_mmr_source": "MECX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       }
     ],
     "ADAUSDT": [
@@ -272,37 +328,45 @@
         "position": 50000,
         "leverage_value": 300.0,
         "leverage_display": "300X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.002,
         "mmr_display": "0.20%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.3333333333333333,
-        "im_display": "0.33%"
+        "im_display": "0.33"
       },
       {
         "position": 200000,
         "leverage_value": 300.0,
         "leverage_display": "300X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.002,
         "mmr_display": "0.20%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.3333333333333333,
-        "im_display": "0.33%"
+        "im_display": "0.33"
       },
       {
         "position": 500000,
         "leverage_value": 300.0,
         "leverage_display": "300X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.002,
         "mmr_display": "0.20%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.3333333333333333,
-        "im_display": "0.33%"
+        "im_display": "0.33"
       },
       {
         "position": 1000000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.004,
         "mmr_display": "0.40%",
+        "min_mmr_source": "MECX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       }
     ],
     "LINKUSDT": [
@@ -310,37 +374,45 @@
         "position": 50000,
         "leverage_value": 300.0,
         "leverage_display": "300X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.0023,
         "mmr_display": "0.23%",
+        "min_mmr_source": "MECX",
         "im_value": 0.3333333333333333,
-        "im_display": "0.33%"
+        "im_display": "0.33"
       },
       {
         "position": 200000,
         "leverage_value": 300.0,
         "leverage_display": "300X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.0023,
         "mmr_display": "0.23%",
+        "min_mmr_source": "MECX",
         "im_value": 0.3333333333333333,
-        "im_display": "0.33%"
+        "im_display": "0.33"
       },
       {
         "position": 500000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       },
       {
         "position": 1000000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.004,
         "mmr_display": "0.40%",
+        "min_mmr_source": "MECX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       }
     ],
     "HYPEUSDT": [
@@ -348,37 +420,45 @@
         "position": 50000,
         "leverage_value": 100.0,
         "leverage_display": "100X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "MECX",
         "im_value": 1.0,
-        "im_display": "1.00%"
+        "im_display": "1.00"
       },
       {
         "position": 200000,
         "leverage_value": 100.0,
         "leverage_display": "100X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "MECX",
         "im_value": 1.0,
-        "im_display": "1.00%"
+        "im_display": "1.00"
       },
       {
         "position": 500000,
         "leverage_value": 25.0,
         "leverage_display": "25X",
+        "max_lev_source": "BINANCE",
         "mmr_value": 0.02,
         "mmr_display": "2.00%",
+        "min_mmr_source": "BINANCE",
         "im_value": 4.0,
-        "im_display": "4.00%"
+        "im_display": "4.00"
       },
       {
         "position": 1000000,
         "leverage_value": 25.0,
         "leverage_display": "25X",
+        "max_lev_source": "BINANCE",
         "mmr_value": 0.02,
         "mmr_display": "2.00%",
+        "min_mmr_source": "BINANCE",
         "im_value": 4.0,
-        "im_display": "4.00%"
+        "im_display": "4.00"
       }
     ],
     "BCHUSDT": [
@@ -386,37 +466,45 @@
         "position": 50000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       },
       {
         "position": 200000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       },
       {
         "position": 500000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       },
       {
         "position": 1000000,
         "leverage_value": 20.0,
         "leverage_display": "20X",
+        "max_lev_source": "BINANCE",
         "mmr_value": 0.025,
         "mmr_display": "2.50%",
+        "min_mmr_source": "BINANCE",
         "im_value": 5.0,
-        "im_display": "5.00%"
+        "im_display": "5.00"
       }
     ],
     "SUIUSDT": [
@@ -424,37 +512,45 @@
         "position": 50000,
         "leverage_value": 300.0,
         "leverage_display": "300X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.0023,
         "mmr_display": "0.23%",
+        "min_mmr_source": "MECX",
         "im_value": 0.3333333333333333,
-        "im_display": "0.33%"
+        "im_display": "0.33"
       },
       {
         "position": 200000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       },
       {
         "position": 500000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.004,
         "mmr_display": "0.40%",
+        "min_mmr_source": "MECX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       },
       {
         "position": 1000000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.004,
         "mmr_display": "0.40%",
+        "min_mmr_source": "MECX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       }
     ],
     "0GUSDT": [
@@ -462,28 +558,34 @@
         "position": 20000,
         "leverage_value": 75.0,
         "leverage_display": "75X",
+        "max_lev_source": "BINANCE",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "MECX",
         "im_value": 1.3333333333333333,
-        "im_display": "1.33%"
+        "im_display": "1.33"
       },
       {
         "position": 100000,
         "leverage_value": 50.0,
         "leverage_display": "50X",
+        "max_lev_source": "BINANCE",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "MECX",
         "im_value": 2.0,
-        "im_display": "2.00%"
+        "im_display": "2.00"
       },
       {
         "position": 200000,
         "leverage_value": 50.0,
         "leverage_display": "50X",
+        "max_lev_source": "BINANCE",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "MECX",
         "im_value": 2.0,
-        "im_display": "2.00%"
+        "im_display": "2.00"
       }
     ],
     "1000BONKUSDT": [
@@ -491,28 +593,34 @@
         "position": 20000,
         "leverage_value": 125.0,
         "leverage_display": "125X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.004,
         "mmr_display": "0.40%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.8,
-        "im_display": "0.80%"
+        "im_display": "0.80"
       },
       {
         "position": 100000,
         "leverage_value": 125.0,
         "leverage_display": "125X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.004,
         "mmr_display": "0.40%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.8,
-        "im_display": "0.80%"
+        "im_display": "0.80"
       },
       {
         "position": 200000,
         "leverage_value": 125.0,
         "leverage_display": "125X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.004,
         "mmr_display": "0.40%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.8,
-        "im_display": "0.80%"
+        "im_display": "0.80"
       }
     ],
     "2ZUSDT": [
@@ -520,28 +628,34 @@
         "position": 20000,
         "leverage_value": 50.0,
         "leverage_display": "50X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.01,
         "mmr_display": "1.00%",
+        "min_mmr_source": "MECX",
         "im_value": 2.0,
-        "im_display": "2.00%"
+        "im_display": "2.00"
       },
       {
         "position": 100000,
         "leverage_value": 20.0,
         "leverage_display": "20X",
+        "max_lev_source": "BYBIT",
         "mmr_value": 0.025,
         "mmr_display": "2.50%",
+        "min_mmr_source": "BYBIT",
         "im_value": 5.0,
-        "im_display": "5.00%"
+        "im_display": "5.00"
       },
       {
         "position": 200000,
         "leverage_value": 14.29,
         "leverage_display": "14.29X",
+        "max_lev_source": "BYBIT",
         "mmr_value": 0.035,
         "mmr_display": "3.50%",
+        "min_mmr_source": "BYBIT",
         "im_value": 6.997900629811057,
-        "im_display": "7.00%"
+        "im_display": "7.00"
       }
     ],
     "4USDT": [
@@ -549,28 +663,34 @@
         "position": 20000,
         "leverage_value": 20.0,
         "leverage_display": "20X",
+        "max_lev_source": "BINANCE",
         "mmr_value": 0.025,
         "mmr_display": "2.50%",
+        "min_mmr_source": "BINANCE",
         "im_value": 5.0,
-        "im_display": "5.00%"
+        "im_display": "5.00"
       },
       {
         "position": 100000,
         "leverage_value": 12.5,
         "leverage_display": "12.5X",
+        "max_lev_source": "BYBIT",
         "mmr_value": 0.04,
         "mmr_display": "4.00%",
+        "min_mmr_source": "BYBIT",
         "im_value": 8.0,
-        "im_display": "8.00%"
+        "im_display": "8.00"
       },
       {
         "position": 200000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       }
     ],
     "AAVEUSDT": [
@@ -578,28 +698,34 @@
         "position": 20000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       },
       {
         "position": 100000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       },
       {
         "position": 200000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       }
     ],
     "ACTUSDT": [
@@ -607,28 +733,34 @@
         "position": 20000,
         "leverage_value": 100.0,
         "leverage_display": "100X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "WEEX",
         "im_value": 1.0,
-        "im_display": "1.00%"
+        "im_display": "1.00"
       },
       {
         "position": 100000,
         "leverage_value": 100.0,
         "leverage_display": "100X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "MECX",
         "im_value": 1.0,
-        "im_display": "1.00%"
+        "im_display": "1.00"
       },
       {
         "position": 200000,
         "leverage_value": 25.0,
         "leverage_display": "25X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.02,
         "mmr_display": "2.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 4.0,
-        "im_display": "4.00%"
+        "im_display": "4.00"
       }
     ],
     "AGTUSDT": [
@@ -636,28 +768,34 @@
         "position": 20000,
         "leverage_value": 20.0,
         "leverage_display": "20X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.025,
         "mmr_display": "2.50%",
+        "min_mmr_source": "WEEX",
         "im_value": 5.0,
-        "im_display": "5.00%"
+        "im_display": "5.00"
       },
       {
         "position": 100000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       },
       {
         "position": 200000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       }
     ],
     "AI16ZUSDT": [
@@ -665,28 +803,34 @@
         "position": 20000,
         "leverage_value": 100.0,
         "leverage_display": "100X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "MECX",
         "im_value": 1.0,
-        "im_display": "1.00%"
+        "im_display": "1.00"
       },
       {
         "position": 100000,
         "leverage_value": 20.0,
         "leverage_display": "20X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.025,
         "mmr_display": "2.50%",
+        "min_mmr_source": "WEEX",
         "im_value": 5.0,
-        "im_display": "5.00%"
+        "im_display": "5.00"
       },
       {
         "position": 200000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       }
     ],
     "AIAUSDT": [
@@ -694,28 +838,34 @@
         "position": 20000,
         "leverage_value": 20.0,
         "leverage_display": "20X",
+        "max_lev_source": "BINANCE",
         "mmr_value": 0.025,
         "mmr_display": "2.50%",
+        "min_mmr_source": "BINANCE",
         "im_value": 5.0,
-        "im_display": "5.00%"
+        "im_display": "5.00"
       },
       {
         "position": 100000,
         "leverage_value": 12.5,
         "leverage_display": "12.5X",
+        "max_lev_source": "BYBIT",
         "mmr_value": 0.04,
         "mmr_display": "4.00%",
+        "min_mmr_source": "BYBIT",
         "im_value": 8.0,
-        "im_display": "8.00%"
+        "im_display": "8.00"
       },
       {
         "position": 200000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       }
     ],
     "AIUSDT": [
@@ -723,28 +873,34 @@
         "position": 20000,
         "leverage_value": 100.0,
         "leverage_display": "100X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "MECX",
         "im_value": 1.0,
-        "im_display": "1.00%"
+        "im_display": "1.00"
       },
       {
         "position": 100000,
         "leverage_value": 50.0,
         "leverage_display": "50X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.01,
         "mmr_display": "1.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 2.0,
-        "im_display": "2.00%"
+        "im_display": "2.00"
       },
       {
         "position": 200000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       }
     ],
     "AIXBTUSDT": [
@@ -752,28 +908,34 @@
         "position": 20000,
         "leverage_value": 100.0,
         "leverage_display": "100X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "MECX",
         "im_value": 1.0,
-        "im_display": "1.00%"
+        "im_display": "1.00"
       },
       {
         "position": 100000,
         "leverage_value": 33.33,
         "leverage_display": "33.33X",
+        "max_lev_source": "BYBIT",
         "mmr_value": 0.0167,
         "mmr_display": "1.67%",
+        "min_mmr_source": "BYBIT",
         "im_value": 3.0003000300030003,
-        "im_display": "3.00%"
+        "im_display": "3.00"
       },
       {
         "position": 200000,
         "leverage_value": 14.29,
         "leverage_display": "14.29X",
+        "max_lev_source": "BYBIT",
         "mmr_value": 0.035,
         "mmr_display": "3.50%",
+        "min_mmr_source": "BYBIT",
         "im_value": 6.997900629811057,
-        "im_display": "7.00%"
+        "im_display": "7.00"
       }
     ],
     "ARBUSDT": [
@@ -781,28 +943,34 @@
         "position": 20000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       },
       {
         "position": 100000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       },
       {
         "position": 200000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       }
     ],
     "ARCUSDT": [
@@ -810,28 +978,34 @@
         "position": 20000,
         "leverage_value": 25.0,
         "leverage_display": "25X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.02,
         "mmr_display": "2.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 4.0,
-        "im_display": "4.00%"
+        "im_display": "4.00"
       },
       {
         "position": 100000,
         "leverage_value": 20.0,
         "leverage_display": "20X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.025,
         "mmr_display": "2.50%",
+        "min_mmr_source": "WEEX",
         "im_value": 5.0,
-        "im_display": "5.00%"
+        "im_display": "5.00"
       },
       {
         "position": 200000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       }
     ],
     "ASTERUSDT": [
@@ -839,28 +1013,34 @@
         "position": 20000,
         "leverage_value": 100.0,
         "leverage_display": "100X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "MECX",
         "im_value": 1.0,
-        "im_display": "1.00%"
+        "im_display": "1.00"
       },
       {
         "position": 100000,
         "leverage_value": 50.0,
         "leverage_display": "50X",
+        "max_lev_source": "BINANCE",
         "mmr_value": 0.015,
         "mmr_display": "1.50%",
+        "min_mmr_source": "BINANCE",
         "im_value": 2.0,
-        "im_display": "2.00%"
+        "im_display": "2.00"
       },
       {
         "position": 200000,
         "leverage_value": 50.0,
         "leverage_display": "50X",
+        "max_lev_source": "BINANCE",
         "mmr_value": 0.015,
         "mmr_display": "1.50%",
+        "min_mmr_source": "BINANCE",
         "im_value": 2.0,
-        "im_display": "2.00%"
+        "im_display": "2.00"
       }
     ],
     "AVAXUSDT": [
@@ -868,28 +1048,34 @@
         "position": 20000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       },
       {
         "position": 100000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       },
       {
         "position": 200000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       }
     ],
     "AVLUSDT": [
@@ -897,28 +1083,34 @@
         "position": 20000,
         "leverage_value": 20.0,
         "leverage_display": "20X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.025,
         "mmr_display": "2.50%",
+        "min_mmr_source": "WEEX",
         "im_value": 5.0,
-        "im_display": "5.00%"
+        "im_display": "5.00"
       },
       {
         "position": 100000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       },
       {
         "position": 200000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       }
     ],
     "AVNTUSDT": [
@@ -926,28 +1118,34 @@
         "position": 20000,
         "leverage_value": 50.0,
         "leverage_display": "50X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.01,
         "mmr_display": "1.00%",
+        "min_mmr_source": "MECX",
         "im_value": 2.0,
-        "im_display": "2.00%"
+        "im_display": "2.00"
       },
       {
         "position": 100000,
         "leverage_value": 12.5,
         "leverage_display": "12.5X",
+        "max_lev_source": "BYBIT",
         "mmr_value": 0.04,
         "mmr_display": "4.00%",
+        "min_mmr_source": "BYBIT",
         "im_value": 8.0,
-        "im_display": "8.00%"
+        "im_display": "8.00"
       },
       {
         "position": 200000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       }
     ],
     "B2USDT": [
@@ -955,28 +1153,34 @@
         "position": 20000,
         "leverage_value": 100.0,
         "leverage_display": "100X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "MECX",
         "im_value": 1.0,
-        "im_display": "1.00%"
+        "im_display": "1.00"
       },
       {
         "position": 100000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       },
       {
         "position": 200000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       }
     ],
     "BABYUSDT": [
@@ -984,28 +1188,34 @@
         "position": 20000,
         "leverage_value": 45.0,
         "leverage_display": "45X",
+        "max_lev_source": "BYBIT",
         "mmr_value": 0.0111,
         "mmr_display": "1.11%",
+        "min_mmr_source": "BYBIT",
         "im_value": 2.2222222222222223,
-        "im_display": "2.22%"
+        "im_display": "2.22"
       },
       {
         "position": 100000,
         "leverage_value": 30.0,
         "leverage_display": "30X",
+        "max_lev_source": "BYBIT",
         "mmr_value": 0.0167,
         "mmr_display": "1.67%",
+        "min_mmr_source": "BYBIT",
         "im_value": 3.3333333333333335,
-        "im_display": "3.33%"
+        "im_display": "3.33"
       },
       {
         "position": 200000,
         "leverage_value": 14.29,
         "leverage_display": "14.29X",
+        "max_lev_source": "BYBIT",
         "mmr_value": 0.035,
         "mmr_display": "3.50%",
+        "min_mmr_source": "BYBIT",
         "im_value": 6.997900629811057,
-        "im_display": "7.00%"
+        "im_display": "7.00"
       }
     ],
     "BAKEUSDT": [
@@ -1013,28 +1223,34 @@
         "position": 20000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       },
       {
         "position": 100000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       },
       {
         "position": 200000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       }
     ],
     "BANUSDT": [
@@ -1042,28 +1258,34 @@
         "position": 20000,
         "leverage_value": 100.0,
         "leverage_display": "100X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "MECX",
         "im_value": 1.0,
-        "im_display": "1.00%"
+        "im_display": "1.00"
       },
       {
         "position": 100000,
         "leverage_value": 20.0,
         "leverage_display": "20X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.025,
         "mmr_display": "2.50%",
+        "min_mmr_source": "WEEX",
         "im_value": 5.0,
-        "im_display": "5.00%"
+        "im_display": "5.00"
       },
       {
         "position": 200000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       }
     ],
     "BGBUSDT": [
@@ -1071,28 +1293,34 @@
         "position": 20000,
         "leverage_value": 400.0,
         "leverage_display": "400X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0015,
         "mmr_display": "0.15%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.25,
-        "im_display": "0.25%"
+        "im_display": "0.25"
       },
       {
         "position": 100000,
         "leverage_value": 400.0,
         "leverage_display": "400X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0015,
         "mmr_display": "0.15%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.25,
-        "im_display": "0.25%"
+        "im_display": "0.25"
       },
       {
         "position": 200000,
         "leverage_value": 400.0,
         "leverage_display": "400X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0015,
         "mmr_display": "0.15%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.25,
-        "im_display": "0.25%"
+        "im_display": "0.25"
       }
     ],
     "BIOUSDT": [
@@ -1100,28 +1328,34 @@
         "position": 20000,
         "leverage_value": 100.0,
         "leverage_display": "100X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "WEEX",
         "im_value": 1.0,
-        "im_display": "1.00%"
+        "im_display": "1.00"
       },
       {
         "position": 100000,
         "leverage_value": 20.0,
         "leverage_display": "20X",
+        "max_lev_source": "BINANCE",
         "mmr_value": 0.025,
         "mmr_display": "2.50%",
+        "min_mmr_source": "BINANCE",
         "im_value": 5.0,
-        "im_display": "5.00%"
+        "im_display": "5.00"
       },
       {
         "position": 200000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "BINANCE",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "BINANCE",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       }
     ],
     "BNXUSDT": [
@@ -1129,28 +1363,34 @@
         "position": 20000,
         "leverage_value": 125.0,
         "leverage_display": "125X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.004,
         "mmr_display": "0.40%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.8,
-        "im_display": "0.80%"
+        "im_display": "0.80"
       },
       {
         "position": 100000,
         "leverage_value": 125.0,
         "leverage_display": "125X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.004,
         "mmr_display": "0.40%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.8,
-        "im_display": "0.80%"
+        "im_display": "0.80"
       },
       {
         "position": 200000,
         "leverage_value": 20.0,
         "leverage_display": "20X",
+        "max_lev_source": "BYBIT",
         "mmr_value": 0.025,
         "mmr_display": "2.50%",
+        "min_mmr_source": "BYBIT",
         "im_value": 5.0,
-        "im_display": "5.00%"
+        "im_display": "5.00"
       }
     ],
     "BROCCOLIUSDT": [
@@ -1158,28 +1398,34 @@
         "position": 20000,
         "leverage_value": 50.0,
         "leverage_display": "50X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.01,
         "mmr_display": "1.00%",
+        "min_mmr_source": "MECX",
         "im_value": 2.0,
-        "im_display": "2.00%"
+        "im_display": "2.00"
       },
       {
         "position": 100000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       },
       {
         "position": 200000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       }
     ],
     "BSWUSDT": [
@@ -1187,28 +1433,34 @@
         "position": 20000,
         "leverage_value": 100.0,
         "leverage_display": "100X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "WEEX",
         "im_value": 1.0,
-        "im_display": "1.00%"
+        "im_display": "1.00"
       },
       {
         "position": 100000,
         "leverage_value": 100.0,
         "leverage_display": "100X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "WEEX",
         "im_value": 1.0,
-        "im_display": "1.00%"
+        "im_display": "1.00"
       },
       {
         "position": 200000,
         "leverage_value": 50.0,
         "leverage_display": "50X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.01,
         "mmr_display": "1.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 2.0,
-        "im_display": "2.00%"
+        "im_display": "2.00"
       }
     ],
     "BTRUSDT": [
@@ -1216,28 +1468,34 @@
         "position": 20000,
         "leverage_value": 50.0,
         "leverage_display": "50X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.01,
         "mmr_display": "1.00%",
+        "min_mmr_source": "MECX",
         "im_value": 2.0,
-        "im_display": "2.00%"
+        "im_display": "2.00"
       },
       {
         "position": 100000,
         "leverage_value": 12.5,
         "leverage_display": "12.5X",
+        "max_lev_source": "BYBIT",
         "mmr_value": 0.04,
         "mmr_display": "4.00%",
+        "min_mmr_source": "BYBIT",
         "im_value": 8.0,
-        "im_display": "8.00%"
+        "im_display": "8.00"
       },
       {
         "position": 200000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       }
     ],
     "CAKEUSDT": [
@@ -1245,28 +1503,34 @@
         "position": 20000,
         "leverage_value": 125.0,
         "leverage_display": "125X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.004,
         "mmr_display": "0.40%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.8,
-        "im_display": "0.80%"
+        "im_display": "0.80"
       },
       {
         "position": 100000,
         "leverage_value": 125.0,
         "leverage_display": "125X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.004,
         "mmr_display": "0.40%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.8,
-        "im_display": "0.80%"
+        "im_display": "0.80"
       },
       {
         "position": 200000,
         "leverage_value": 125.0,
         "leverage_display": "125X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.004,
         "mmr_display": "0.40%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.8,
-        "im_display": "0.80%"
+        "im_display": "0.80"
       }
     ],
     "CFXUSDT": [
@@ -1274,28 +1538,34 @@
         "position": 20000,
         "leverage_value": 125.0,
         "leverage_display": "125X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.004,
         "mmr_display": "0.40%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.8,
-        "im_display": "0.80%"
+        "im_display": "0.80"
       },
       {
         "position": 100000,
         "leverage_value": 125.0,
         "leverage_display": "125X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.004,
         "mmr_display": "0.40%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.8,
-        "im_display": "0.80%"
+        "im_display": "0.80"
       },
       {
         "position": 200000,
         "leverage_value": 125.0,
         "leverage_display": "125X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.004,
         "mmr_display": "0.40%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.8,
-        "im_display": "0.80%"
+        "im_display": "0.80"
       }
     ],
     "CHEEMSUSDT": [
@@ -1303,28 +1573,34 @@
         "position": 20000,
         "leverage_value": 25.0,
         "leverage_display": "25X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.02,
         "mmr_display": "2.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 4.0,
-        "im_display": "4.00%"
+        "im_display": "4.00"
       },
       {
         "position": 100000,
         "leverage_value": 20.0,
         "leverage_display": "20X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.025,
         "mmr_display": "2.50%",
+        "min_mmr_source": "WEEX",
         "im_value": 5.0,
-        "im_display": "5.00%"
+        "im_display": "5.00"
       },
       {
         "position": 200000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       }
     ],
     "CLOUSDT": [
@@ -1332,28 +1608,34 @@
         "position": 20000,
         "leverage_value": 50.0,
         "leverage_display": "50X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.01,
         "mmr_display": "1.00%",
+        "min_mmr_source": "MECX",
         "im_value": 2.0,
-        "im_display": "2.00%"
+        "im_display": "2.00"
       },
       {
         "position": 100000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       },
       {
         "position": 200000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       }
     ],
     "COAIUSDT": [
@@ -1361,28 +1643,34 @@
         "position": 20000,
         "leverage_value": 20.0,
         "leverage_display": "20X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.025,
         "mmr_display": "2.50%",
+        "min_mmr_source": "WEEX",
         "im_value": 5.0,
-        "im_display": "5.00%"
+        "im_display": "5.00"
       },
       {
         "position": 100000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       },
       {
         "position": 200000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       }
     ],
     "CRVUSDT": [
@@ -1390,28 +1678,34 @@
         "position": 20000,
         "leverage_value": 125.0,
         "leverage_display": "125X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.004,
         "mmr_display": "0.40%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.8,
-        "im_display": "0.80%"
+        "im_display": "0.80"
       },
       {
         "position": 100000,
         "leverage_value": 125.0,
         "leverage_display": "125X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.004,
         "mmr_display": "0.40%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.8,
-        "im_display": "0.80%"
+        "im_display": "0.80"
       },
       {
         "position": 200000,
         "leverage_value": 125.0,
         "leverage_display": "125X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.004,
         "mmr_display": "0.40%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.8,
-        "im_display": "0.80%"
+        "im_display": "0.80"
       }
     ],
     "DOGUSDT": [
@@ -1419,28 +1713,34 @@
         "position": 20000,
         "leverage_value": 100.0,
         "leverage_display": "100X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "MECX",
         "im_value": 1.0,
-        "im_display": "1.00%"
+        "im_display": "1.00"
       },
       {
         "position": 100000,
         "leverage_value": 14.29,
         "leverage_display": "14.29X",
+        "max_lev_source": "BYBIT",
         "mmr_value": 0.035,
         "mmr_display": "3.50%",
+        "min_mmr_source": "BYBIT",
         "im_value": 6.997900629811057,
-        "im_display": "7.00%"
+        "im_display": "7.00"
       },
       {
         "position": 200000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       }
     ],
     "DOTUSDT": [
@@ -1448,28 +1748,34 @@
         "position": 20000,
         "leverage_value": 300.0,
         "leverage_display": "300X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.0023,
         "mmr_display": "0.23%",
+        "min_mmr_source": "MECX",
         "im_value": 0.3333333333333333,
-        "im_display": "0.33%"
+        "im_display": "0.33"
       },
       {
         "position": 100000,
         "leverage_value": 300.0,
         "leverage_display": "300X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.0023,
         "mmr_display": "0.23%",
+        "min_mmr_source": "MECX",
         "im_value": 0.3333333333333333,
-        "im_display": "0.33%"
+        "im_display": "0.33"
       },
       {
         "position": 200000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       }
     ],
     "ENAUSDT": [
@@ -1477,28 +1783,34 @@
         "position": 20000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       },
       {
         "position": 100000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       },
       {
         "position": 200000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       }
     ],
     "ENSOUSDT": [
@@ -1506,28 +1818,34 @@
         "position": 20000,
         "leverage_value": 50.0,
         "leverage_display": "50X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "MECX",
         "im_value": 2.0,
-        "im_display": "2.00%"
+        "im_display": "2.00"
       },
       {
         "position": 100000,
         "leverage_value": 20.0,
         "leverage_display": "20X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.025,
         "mmr_display": "2.50%",
+        "min_mmr_source": "WEEX",
         "im_value": 5.0,
-        "im_display": "5.00%"
+        "im_display": "5.00"
       },
       {
         "position": 200000,
         "leverage_value": 20.0,
         "leverage_display": "20X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.025,
         "mmr_display": "2.50%",
+        "min_mmr_source": "WEEX",
         "im_value": 5.0,
-        "im_display": "5.00%"
+        "im_display": "5.00"
       }
     ],
     "EOSUSDT": [
@@ -1535,28 +1853,34 @@
         "position": 20000,
         "leverage_value": 125.0,
         "leverage_display": "125X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.004,
         "mmr_display": "0.40%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.8,
-        "im_display": "0.80%"
+        "im_display": "0.80"
       },
       {
         "position": 100000,
         "leverage_value": 125.0,
         "leverage_display": "125X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.004,
         "mmr_display": "0.40%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.8,
-        "im_display": "0.80%"
+        "im_display": "0.80"
       },
       {
         "position": 200000,
         "leverage_value": 125.0,
         "leverage_display": "125X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.004,
         "mmr_display": "0.40%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.8,
-        "im_display": "0.80%"
+        "im_display": "0.80"
       }
     ],
     "FARTCOINUSDT": [
@@ -1564,28 +1888,34 @@
         "position": 20000,
         "leverage_value": 100.0,
         "leverage_display": "100X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "WEEX",
         "im_value": 1.0,
-        "im_display": "1.00%"
+        "im_display": "1.00"
       },
       {
         "position": 100000,
         "leverage_value": 100.0,
         "leverage_display": "100X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "WEEX",
         "im_value": 1.0,
-        "im_display": "1.00%"
+        "im_display": "1.00"
       },
       {
         "position": 200000,
         "leverage_value": 100.0,
         "leverage_display": "100X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "WEEX",
         "im_value": 1.0,
-        "im_display": "1.00%"
+        "im_display": "1.00"
       }
     ],
     "FFUSDT": [
@@ -1593,28 +1923,34 @@
         "position": 20000,
         "leverage_value": 75.0,
         "leverage_display": "75X",
+        "max_lev_source": "BINANCE",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "MECX",
         "im_value": 1.3333333333333333,
-        "im_display": "1.33%"
+        "im_display": "1.33"
       },
       {
         "position": 100000,
         "leverage_value": 50.0,
         "leverage_display": "50X",
+        "max_lev_source": "BINANCE",
         "mmr_value": 0.015,
         "mmr_display": "1.50%",
+        "min_mmr_source": "BINANCE",
         "im_value": 2.0,
-        "im_display": "2.00%"
+        "im_display": "2.00"
       },
       {
         "position": 200000,
         "leverage_value": 50.0,
         "leverage_display": "50X",
+        "max_lev_source": "BINANCE",
         "mmr_value": 0.015,
         "mmr_display": "1.50%",
+        "min_mmr_source": "BINANCE",
         "im_value": 2.0,
-        "im_display": "2.00%"
+        "im_display": "2.00"
       }
     ],
     "FHEUSDT": [
@@ -1622,28 +1958,34 @@
         "position": 20000,
         "leverage_value": 20.0,
         "leverage_display": "20X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.025,
         "mmr_display": "2.50%",
+        "min_mmr_source": "WEEX",
         "im_value": 5.0,
-        "im_display": "5.00%"
+        "im_display": "5.00"
       },
       {
         "position": 100000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       },
       {
         "position": 200000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       }
     ],
     "FLOCKUSDT": [
@@ -1651,28 +1993,34 @@
         "position": 20000,
         "leverage_value": 100.0,
         "leverage_display": "100X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "MECX",
         "im_value": 1.0,
-        "im_display": "1.00%"
+        "im_display": "1.00"
       },
       {
         "position": 100000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "BINANCE",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "BINANCE",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       },
       {
         "position": 200000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "BYBIT",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "BYBIT",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       }
     ],
     "FTTUSDT": [
@@ -1680,28 +2028,34 @@
         "position": 20000,
         "leverage_value": 125.0,
         "leverage_display": "125X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.004,
         "mmr_display": "0.40%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.8,
-        "im_display": "0.80%"
+        "im_display": "0.80"
       },
       {
         "position": 100000,
         "leverage_value": 50.0,
         "leverage_display": "50X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.01,
         "mmr_display": "1.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 2.0,
-        "im_display": "2.00%"
+        "im_display": "2.00"
       },
       {
         "position": 200000,
         "leverage_value": 20.0,
         "leverage_display": "20X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.025,
         "mmr_display": "2.50%",
+        "min_mmr_source": "WEEX",
         "im_value": 5.0,
-        "im_display": "5.00%"
+        "im_display": "5.00"
       }
     ],
     "GIGGLEUSDT": [
@@ -1709,28 +2063,34 @@
         "position": 20000,
         "leverage_value": 50.0,
         "leverage_display": "50X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.01,
         "mmr_display": "1.00%",
+        "min_mmr_source": "MECX",
         "im_value": 2.0,
-        "im_display": "2.00%"
+        "im_display": "2.00"
       },
       {
         "position": 100000,
         "leverage_value": 12.5,
         "leverage_display": "12.5X",
+        "max_lev_source": "BYBIT",
         "mmr_value": 0.04,
         "mmr_display": "4.00%",
+        "min_mmr_source": "BYBIT",
         "im_value": 8.0,
-        "im_display": "8.00%"
+        "im_display": "8.00"
       },
       {
         "position": 200000,
         "leverage_value": 8.34,
         "leverage_display": "8.34X",
+        "max_lev_source": "BYBIT",
         "mmr_value": 0.06,
         "mmr_display": "6.00%",
+        "min_mmr_source": "BYBIT",
         "im_value": 11.990407673860911,
-        "im_display": "11.99%"
+        "im_display": "11.99"
       }
     ],
     "GRIFFAINUSDT": [
@@ -1738,28 +2098,34 @@
         "position": 20000,
         "leverage_value": 100.0,
         "leverage_display": "100X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "MECX",
         "im_value": 1.0,
-        "im_display": "1.00%"
+        "im_display": "1.00"
       },
       {
         "position": 100000,
         "leverage_value": 12.5,
         "leverage_display": "12.5X",
+        "max_lev_source": "BYBIT",
         "mmr_value": 0.04,
         "mmr_display": "4.00%",
+        "min_mmr_source": "BYBIT",
         "im_value": 8.0,
-        "im_display": "8.00%"
+        "im_display": "8.00"
       },
       {
         "position": 200000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       }
     ],
     "HIFIUSDT": [
@@ -1767,28 +2133,34 @@
         "position": 20000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       },
       {
         "position": 100000,
         "leverage_value": 50.0,
         "leverage_display": "50X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.01,
         "mmr_display": "1.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 2.0,
-        "im_display": "2.00%"
+        "im_display": "2.00"
       },
       {
         "position": 200000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       }
     ],
     "IPUSDT": [
@@ -1796,28 +2168,34 @@
         "position": 20000,
         "leverage_value": 75.0,
         "leverage_display": "75X",
+        "max_lev_source": "BINANCE",
         "mmr_value": 0.004,
         "mmr_display": "0.40%",
+        "min_mmr_source": "MECX",
         "im_value": 1.3333333333333333,
-        "im_display": "1.33%"
+        "im_display": "1.33"
       },
       {
         "position": 100000,
         "leverage_value": 50.0,
         "leverage_display": "50X",
+        "max_lev_source": "BINANCE",
         "mmr_value": 0.015,
         "mmr_display": "1.50%",
+        "min_mmr_source": "BINANCE",
         "im_value": 2.0,
-        "im_display": "2.00%"
+        "im_display": "2.00"
       },
       {
         "position": 200000,
         "leverage_value": 50.0,
         "leverage_display": "50X",
+        "max_lev_source": "BINANCE",
         "mmr_value": 0.015,
         "mmr_display": "1.50%",
+        "min_mmr_source": "BINANCE",
         "im_value": 2.0,
-        "im_display": "2.00%"
+        "im_display": "2.00"
       }
     ],
     "JELLYJELLYUSDT": [
@@ -1825,28 +2203,34 @@
         "position": 20000,
         "leverage_value": 100.0,
         "leverage_display": "100X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "MECX",
         "im_value": 1.0,
-        "im_display": "1.00%"
+        "im_display": "1.00"
       },
       {
         "position": 100000,
         "leverage_value": 20.0,
         "leverage_display": "20X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.025,
         "mmr_display": "2.50%",
+        "min_mmr_source": "WEEX",
         "im_value": 5.0,
-        "im_display": "5.00%"
+        "im_display": "5.00"
       },
       {
         "position": 200000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       }
     ],
     "JUPUSDT": [
@@ -1854,28 +2238,34 @@
         "position": 20000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       },
       {
         "position": 100000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       },
       {
         "position": 200000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.004,
         "mmr_display": "0.40%",
+        "min_mmr_source": "MECX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       }
     ],
     "KAITOUSDT": [
@@ -1883,28 +2273,34 @@
         "position": 20000,
         "leverage_value": 50.0,
         "leverage_display": "50X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.01,
         "mmr_display": "1.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 2.0,
-        "im_display": "2.00%"
+        "im_display": "2.00"
       },
       {
         "position": 100000,
         "leverage_value": 20.0,
         "leverage_display": "20X",
+        "max_lev_source": "BINANCE",
         "mmr_value": 0.025,
         "mmr_display": "2.50%",
+        "min_mmr_source": "BINANCE",
         "im_value": 5.0,
-        "im_display": "5.00%"
+        "im_display": "5.00"
       },
       {
         "position": 200000,
         "leverage_value": 20.0,
         "leverage_display": "20X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.025,
         "mmr_display": "2.50%",
+        "min_mmr_source": "WEEX",
         "im_value": 5.0,
-        "im_display": "5.00%"
+        "im_display": "5.00"
       }
     ],
     "KUSDT": [
@@ -1912,28 +2308,34 @@
         "position": 20000,
         "leverage_value": 20.0,
         "leverage_display": "20X",
+        "max_lev_source": "BYBIT",
         "mmr_value": 0.025,
         "mmr_display": "2.50%",
+        "min_mmr_source": "BYBIT",
         "im_value": 5.0,
-        "im_display": "5.00%"
+        "im_display": "5.00"
       },
       {
         "position": 100000,
         "leverage_value": 12.5,
         "leverage_display": "12.5X",
+        "max_lev_source": "BYBIT",
         "mmr_value": 0.04,
         "mmr_display": "4.00%",
+        "min_mmr_source": "BYBIT",
         "im_value": 8.0,
-        "im_display": "8.00%"
+        "im_display": "8.00"
       },
       {
         "position": 200000,
         "leverage_value": 8.34,
         "leverage_display": "8.34X",
+        "max_lev_source": "BYBIT",
         "mmr_value": 0.06,
         "mmr_display": "6.00%",
+        "min_mmr_source": "BYBIT",
         "im_value": 11.990407673860911,
-        "im_display": "11.99%"
+        "im_display": "11.99"
       }
     ],
     "LAUNCHCOINUSDT": [
@@ -1941,28 +2343,34 @@
         "position": 20000,
         "leverage_value": 25.0,
         "leverage_display": "25X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.02,
         "mmr_display": "2.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 4.0,
-        "im_display": "4.00%"
+        "im_display": "4.00"
       },
       {
         "position": 100000,
         "leverage_value": 20.0,
         "leverage_display": "20X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.025,
         "mmr_display": "2.50%",
+        "min_mmr_source": "WEEX",
         "im_value": 5.0,
-        "im_display": "5.00%"
+        "im_display": "5.00"
       },
       {
         "position": 200000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       }
     ],
     "LIBRAUSDT": [
@@ -1970,28 +2378,34 @@
         "position": 20000,
         "leverage_value": 1.0,
         "leverage_display": "1X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.5,
         "mmr_display": "50.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 100.0,
-        "im_display": "100.00%"
+        "im_display": "100.00"
       },
       {
         "position": 100000,
         "leverage_value": 1.0,
         "leverage_display": "1X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.5,
         "mmr_display": "50.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 100.0,
-        "im_display": "100.00%"
+        "im_display": "100.00"
       },
       {
         "position": 200000,
         "leverage_value": 1.0,
         "leverage_display": "1X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.5,
         "mmr_display": "50.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 100.0,
-        "im_display": "100.00%"
+        "im_display": "100.00"
       }
     ],
     "LIGHTUSDT": [
@@ -1999,28 +2413,34 @@
         "position": 20000,
         "leverage_value": 20.0,
         "leverage_display": "20X",
+        "max_lev_source": "BINANCE",
         "mmr_value": 0.025,
         "mmr_display": "2.50%",
+        "min_mmr_source": "BINANCE",
         "im_value": 5.0,
-        "im_display": "5.00%"
+        "im_display": "5.00"
       },
       {
         "position": 100000,
         "leverage_value": 12.5,
         "leverage_display": "12.5X",
+        "max_lev_source": "BYBIT",
         "mmr_value": 0.04,
         "mmr_display": "4.00%",
+        "min_mmr_source": "BYBIT",
         "im_value": 8.0,
-        "im_display": "8.00%"
+        "im_display": "8.00"
       },
       {
         "position": 200000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       }
     ],
     "LINEAUSDT": [
@@ -2028,28 +2448,34 @@
         "position": 20000,
         "leverage_value": 100.0,
         "leverage_display": "100X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "MECX",
         "im_value": 1.0,
-        "im_display": "1.00%"
+        "im_display": "1.00"
       },
       {
         "position": 100000,
         "leverage_value": 25.0,
         "leverage_display": "25X",
+        "max_lev_source": "BYBIT",
         "mmr_value": 0.02,
         "mmr_display": "2.00%",
+        "min_mmr_source": "BYBIT",
         "im_value": 4.0,
-        "im_display": "4.00%"
+        "im_display": "4.00"
       },
       {
         "position": 200000,
         "leverage_value": 20.0,
         "leverage_display": "20X",
+        "max_lev_source": "BINANCE",
         "mmr_value": 0.025,
         "mmr_display": "2.50%",
+        "min_mmr_source": "BINANCE",
         "im_value": 5.0,
-        "im_display": "5.00%"
+        "im_display": "5.00"
       }
     ],
     "LPTUSDT": [
@@ -2057,28 +2483,34 @@
         "position": 20000,
         "leverage_value": 75.0,
         "leverage_display": "75X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0067,
         "mmr_display": "0.67%",
+        "min_mmr_source": "WEEX",
         "im_value": 1.3333333333333333,
-        "im_display": "1.33%"
+        "im_display": "1.33"
       },
       {
         "position": 100000,
         "leverage_value": 75.0,
         "leverage_display": "75X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0067,
         "mmr_display": "0.67%",
+        "min_mmr_source": "WEEX",
         "im_value": 1.3333333333333333,
-        "im_display": "1.33%"
+        "im_display": "1.33"
       },
       {
         "position": 200000,
         "leverage_value": 75.0,
         "leverage_display": "75X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0067,
         "mmr_display": "0.67%",
+        "min_mmr_source": "WEEX",
         "im_value": 1.3333333333333333,
-        "im_display": "1.33%"
+        "im_display": "1.33"
       }
     ],
     "LTCUSDT": [
@@ -2086,28 +2518,34 @@
         "position": 20000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       },
       {
         "position": 100000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       },
       {
         "position": 200000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       }
     ],
     "MASKUSDT": [
@@ -2115,28 +2553,34 @@
         "position": 20000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       },
       {
         "position": 100000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       },
       {
         "position": 200000,
         "leverage_value": 50.0,
         "leverage_display": "50X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.01,
         "mmr_display": "1.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 2.0,
-        "im_display": "2.00%"
+        "im_display": "2.00"
       }
     ],
     "MELANIAUSDT": [
@@ -2144,28 +2588,34 @@
         "position": 20000,
         "leverage_value": 100.0,
         "leverage_display": "100X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "MECX",
         "im_value": 1.0,
-        "im_display": "1.00%"
+        "im_display": "1.00"
       },
       {
         "position": 100000,
         "leverage_value": 100.0,
         "leverage_display": "100X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "MECX",
         "im_value": 1.0,
-        "im_display": "1.00%"
+        "im_display": "1.00"
       },
       {
         "position": 200000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       }
     ],
     "MEMEUSDT": [
@@ -2173,28 +2623,34 @@
         "position": 20000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       },
       {
         "position": 100000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       },
       {
         "position": 200000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       }
     ],
     "MERLUSDT": [
@@ -2202,28 +2658,34 @@
         "position": 20000,
         "leverage_value": 100.0,
         "leverage_display": "100X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "MECX",
         "im_value": 1.0,
-        "im_display": "1.00%"
+        "im_display": "1.00"
       },
       {
         "position": 100000,
         "leverage_value": 14.29,
         "leverage_display": "14.29X",
+        "max_lev_source": "BYBIT",
         "mmr_value": 0.035,
         "mmr_display": "3.50%",
+        "min_mmr_source": "BYBIT",
         "im_value": 6.997900629811057,
-        "im_display": "7.00%"
+        "im_display": "7.00"
       },
       {
         "position": 200000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       }
     ],
     "MEWUSDT": [
@@ -2231,28 +2693,34 @@
         "position": 20000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       },
       {
         "position": 100000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       },
       {
         "position": 200000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       }
     ],
     "MIRAUSDT": [
@@ -2260,28 +2728,34 @@
         "position": 20000,
         "leverage_value": 100.0,
         "leverage_display": "100X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "MECX",
         "im_value": 1.0,
-        "im_display": "1.00%"
+        "im_display": "1.00"
       },
       {
         "position": 100000,
         "leverage_value": 20.0,
         "leverage_display": "20X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.025,
         "mmr_display": "2.50%",
+        "min_mmr_source": "WEEX",
         "im_value": 5.0,
-        "im_display": "5.00%"
+        "im_display": "5.00"
       },
       {
         "position": 200000,
         "leverage_value": 20.0,
         "leverage_display": "20X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.025,
         "mmr_display": "2.50%",
+        "min_mmr_source": "WEEX",
         "im_value": 5.0,
-        "im_display": "5.00%"
+        "im_display": "5.00"
       }
     ],
     "MKRUSDT": [
@@ -2289,28 +2763,34 @@
         "position": 20000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       },
       {
         "position": 100000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       },
       {
         "position": 200000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       }
     ],
     "MNTUSDT": [
@@ -2318,28 +2798,34 @@
         "position": 20000,
         "leverage_value": 100.0,
         "leverage_display": "100X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "MECX",
         "im_value": 1.0,
-        "im_display": "1.00%"
+        "im_display": "1.00"
       },
       {
         "position": 100000,
         "leverage_value": 25.0,
         "leverage_display": "25X",
+        "max_lev_source": "BYBIT",
         "mmr_value": 0.02,
         "mmr_display": "2.00%",
+        "min_mmr_source": "BYBIT",
         "im_value": 4.0,
-        "im_display": "4.00%"
+        "im_display": "4.00"
       },
       {
         "position": 200000,
         "leverage_value": 25.0,
         "leverage_display": "25X",
+        "max_lev_source": "BYBIT",
         "mmr_value": 0.02,
         "mmr_display": "2.00%",
+        "min_mmr_source": "BYBIT",
         "im_value": 4.0,
-        "im_display": "4.00%"
+        "im_display": "4.00"
       }
     ],
     "MONUSDT": [
@@ -2347,28 +2833,34 @@
         "position": 20000,
         "leverage_value": 50.0,
         "leverage_display": "50X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.01,
         "mmr_display": "1.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 2.0,
-        "im_display": "2.00%"
+        "im_display": "2.00"
       },
       {
         "position": 100000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       },
       {
         "position": 200000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       }
     ],
     "MOODENGUSDT": [
@@ -2376,28 +2868,34 @@
         "position": 20000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       },
       {
         "position": 100000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       },
       {
         "position": 200000,
         "leverage_value": 125.0,
         "leverage_display": "125X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.004,
         "mmr_display": "0.40%",
+        "min_mmr_source": "MECX",
         "im_value": 0.8,
-        "im_display": "0.80%"
+        "im_display": "0.80"
       }
     ],
     "MUBARAKUSDT": [
@@ -2405,28 +2903,34 @@
         "position": 20000,
         "leverage_value": 50.0,
         "leverage_display": "50X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.01,
         "mmr_display": "1.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 2.0,
-        "im_display": "2.00%"
+        "im_display": "2.00"
       },
       {
         "position": 100000,
         "leverage_value": 20.0,
         "leverage_display": "20X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.025,
         "mmr_display": "2.50%",
+        "min_mmr_source": "WEEX",
         "im_value": 5.0,
-        "im_display": "5.00%"
+        "im_display": "5.00"
       },
       {
         "position": 200000,
         "leverage_value": 20.0,
         "leverage_display": "20X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.025,
         "mmr_display": "2.50%",
+        "min_mmr_source": "WEEX",
         "im_value": 5.0,
-        "im_display": "5.00%"
+        "im_display": "5.00"
       }
     ],
     "MUSDT": [
@@ -2434,28 +2938,34 @@
         "position": 20000,
         "leverage_value": 40.0,
         "leverage_display": "40X",
+        "max_lev_source": "BYBIT",
         "mmr_value": 0.0125,
         "mmr_display": "1.25%",
+        "min_mmr_source": "BYBIT",
         "im_value": 2.5,
-        "im_display": "2.50%"
+        "im_display": "2.50"
       },
       {
         "position": 100000,
         "leverage_value": 20.0,
         "leverage_display": "20X",
+        "max_lev_source": "BYBIT",
         "mmr_value": 0.025,
         "mmr_display": "2.50%",
+        "min_mmr_source": "BYBIT",
         "im_value": 5.0,
-        "im_display": "5.00%"
+        "im_display": "5.00"
       },
       {
         "position": 200000,
         "leverage_value": 14.29,
         "leverage_display": "14.29X",
+        "max_lev_source": "BYBIT",
         "mmr_value": 0.035,
         "mmr_display": "3.50%",
+        "min_mmr_source": "BYBIT",
         "im_value": 6.997900629811057,
-        "im_display": "7.00%"
+        "im_display": "7.00"
       }
     ],
     "MYXUSDT": [
@@ -2463,28 +2973,34 @@
         "position": 20000,
         "leverage_value": 20.0,
         "leverage_display": "20X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.025,
         "mmr_display": "2.50%",
+        "min_mmr_source": "WEEX",
         "im_value": 5.0,
-        "im_display": "5.00%"
+        "im_display": "5.00"
       },
       {
         "position": 100000,
         "leverage_value": 12.5,
         "leverage_display": "12.5X",
+        "max_lev_source": "BYBIT",
         "mmr_value": 0.04,
         "mmr_display": "4.00%",
+        "min_mmr_source": "BYBIT",
         "im_value": 8.0,
-        "im_display": "8.00%"
+        "im_display": "8.00"
       },
       {
         "position": 200000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       }
     ],
     "NMRUSDT": [
@@ -2492,28 +3008,34 @@
         "position": 20000,
         "leverage_value": 100.0,
         "leverage_display": "100X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "WEEX",
         "im_value": 1.0,
-        "im_display": "1.00%"
+        "im_display": "1.00"
       },
       {
         "position": 100000,
         "leverage_value": 100.0,
         "leverage_display": "100X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "WEEX",
         "im_value": 1.0,
-        "im_display": "1.00%"
+        "im_display": "1.00"
       },
       {
         "position": 200000,
         "leverage_value": 100.0,
         "leverage_display": "100X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "WEEX",
         "im_value": 1.0,
-        "im_display": "1.00%"
+        "im_display": "1.00"
       }
     ],
     "OKBUSDT": [
@@ -2521,28 +3043,34 @@
         "position": 20000,
         "leverage_value": 400.0,
         "leverage_display": "400X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0015,
         "mmr_display": "0.15%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.25,
-        "im_display": "0.25%"
+        "im_display": "0.25"
       },
       {
         "position": 100000,
         "leverage_value": 400.0,
         "leverage_display": "400X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0015,
         "mmr_display": "0.15%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.25,
-        "im_display": "0.25%"
+        "im_display": "0.25"
       },
       {
         "position": 200000,
         "leverage_value": 400.0,
         "leverage_display": "400X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0015,
         "mmr_display": "0.15%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.25,
-        "im_display": "0.25%"
+        "im_display": "0.25"
       }
     ],
     "OMUSDT": [
@@ -2550,28 +3078,34 @@
         "position": 20000,
         "leverage_value": 50.0,
         "leverage_display": "50X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "MECX",
         "im_value": 2.0,
-        "im_display": "2.00%"
+        "im_display": "2.00"
       },
       {
         "position": 100000,
         "leverage_value": 50.0,
         "leverage_display": "50X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.01,
         "mmr_display": "1.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 2.0,
-        "im_display": "2.00%"
+        "im_display": "2.00"
       },
       {
         "position": 200000,
         "leverage_value": 20.0,
         "leverage_display": "20X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.025,
         "mmr_display": "2.50%",
+        "min_mmr_source": "WEEX",
         "im_value": 5.0,
-        "im_display": "5.00%"
+        "im_display": "5.00"
       }
     ],
     "OPENUSDT": [
@@ -2579,28 +3113,34 @@
         "position": 20000,
         "leverage_value": 50.0,
         "leverage_display": "50X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.01,
         "mmr_display": "1.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 2.0,
-        "im_display": "2.00%"
+        "im_display": "2.00"
       },
       {
         "position": 100000,
         "leverage_value": 20.0,
         "leverage_display": "20X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.025,
         "mmr_display": "2.50%",
+        "min_mmr_source": "WEEX",
         "im_value": 5.0,
-        "im_display": "5.00%"
+        "im_display": "5.00"
       },
       {
         "position": 200000,
         "leverage_value": 20.0,
         "leverage_display": "20X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.025,
         "mmr_display": "2.50%",
+        "min_mmr_source": "WEEX",
         "im_value": 5.0,
-        "im_display": "5.00%"
+        "im_display": "5.00"
       }
     ],
     "ORCAUSDT": [
@@ -2608,28 +3148,34 @@
         "position": 20000,
         "leverage_value": 50.0,
         "leverage_display": "50X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.01,
         "mmr_display": "1.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 2.0,
-        "im_display": "2.00%"
+        "im_display": "2.00"
       },
       {
         "position": 100000,
         "leverage_value": 14.29,
         "leverage_display": "14.29X",
+        "max_lev_source": "BYBIT",
         "mmr_value": 0.035,
         "mmr_display": "3.50%",
+        "min_mmr_source": "BYBIT",
         "im_value": 6.997900629811057,
-        "im_display": "7.00%"
+        "im_display": "7.00"
       },
       {
         "position": 200000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       }
     ],
     "ORDIUSDT": [
@@ -2637,28 +3183,34 @@
         "position": 20000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       },
       {
         "position": 100000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       },
       {
         "position": 200000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       }
     ],
     "PARTIUSDT": [
@@ -2666,28 +3218,34 @@
         "position": 20000,
         "leverage_value": 50.0,
         "leverage_display": "50X",
+        "max_lev_source": "BYBIT",
         "mmr_value": 0.0111,
         "mmr_display": "1.11%",
+        "min_mmr_source": "BYBIT",
         "im_value": 2.0,
-        "im_display": "2.00%"
+        "im_display": "2.00"
       },
       {
         "position": 100000,
         "leverage_value": 33.33,
         "leverage_display": "33.33X",
+        "max_lev_source": "BYBIT",
         "mmr_value": 0.0167,
         "mmr_display": "1.67%",
+        "min_mmr_source": "BYBIT",
         "im_value": 3.0003000300030003,
-        "im_display": "3.00%"
+        "im_display": "3.00"
       },
       {
         "position": 200000,
         "leverage_value": 14.29,
         "leverage_display": "14.29X",
+        "max_lev_source": "BYBIT",
         "mmr_value": 0.035,
         "mmr_display": "3.50%",
+        "min_mmr_source": "BYBIT",
         "im_value": 6.997900629811057,
-        "im_display": "7.00%"
+        "im_display": "7.00"
       }
     ],
     "PAXGUSDT": [
@@ -2695,28 +3253,34 @@
         "position": 20000,
         "leverage_value": 75.0,
         "leverage_display": "75X",
+        "max_lev_source": "BINANCE",
         "mmr_value": 0.004,
         "mmr_display": "0.40%",
+        "min_mmr_source": "MECX",
         "im_value": 1.3333333333333333,
-        "im_display": "1.33%"
+        "im_display": "1.33"
       },
       {
         "position": 100000,
         "leverage_value": 50.0,
         "leverage_display": "50X",
+        "max_lev_source": "BINANCE",
         "mmr_value": 0.015,
         "mmr_display": "1.50%",
+        "min_mmr_source": "BINANCE",
         "im_value": 2.0,
-        "im_display": "2.00%"
+        "im_display": "2.00"
       },
       {
         "position": 200000,
         "leverage_value": 50.0,
         "leverage_display": "50X",
+        "max_lev_source": "BINANCE",
         "mmr_value": 0.015,
         "mmr_display": "1.50%",
+        "min_mmr_source": "BINANCE",
         "im_value": 2.0,
-        "im_display": "2.00%"
+        "im_display": "2.00"
       }
     ],
     "PENGUUSDT": [
@@ -2724,28 +3288,34 @@
         "position": 20000,
         "leverage_value": 125.0,
         "leverage_display": "125X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.004,
         "mmr_display": "0.40%",
+        "min_mmr_source": "MECX",
         "im_value": 0.8,
-        "im_display": "0.80%"
+        "im_display": "0.80"
       },
       {
         "position": 100000,
         "leverage_value": 125.0,
         "leverage_display": "125X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.004,
         "mmr_display": "0.40%",
+        "min_mmr_source": "MECX",
         "im_value": 0.8,
-        "im_display": "0.80%"
+        "im_display": "0.80"
       },
       {
         "position": 200000,
         "leverage_value": 125.0,
         "leverage_display": "125X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.004,
         "mmr_display": "0.40%",
+        "min_mmr_source": "MECX",
         "im_value": 0.8,
-        "im_display": "0.80%"
+        "im_display": "0.80"
       }
     ],
     "PEOPLEUSDT": [
@@ -2753,28 +3323,34 @@
         "position": 20000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       },
       {
         "position": 100000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       },
       {
         "position": 200000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       }
     ],
     "PEPEUSDT": [
@@ -2782,28 +3358,34 @@
         "position": 20000,
         "leverage_value": 400.0,
         "leverage_display": "400X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0015,
         "mmr_display": "0.15%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.25,
-        "im_display": "0.25%"
+        "im_display": "0.25"
       },
       {
         "position": 100000,
         "leverage_value": 400.0,
         "leverage_display": "400X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0015,
         "mmr_display": "0.15%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.25,
-        "im_display": "0.25%"
+        "im_display": "0.25"
       },
       {
         "position": 200000,
         "leverage_value": 400.0,
         "leverage_display": "400X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0015,
         "mmr_display": "0.15%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.25,
-        "im_display": "0.25%"
+        "im_display": "0.25"
       }
     ],
     "PIUSDT": [
@@ -2811,28 +3393,34 @@
         "position": 20000,
         "leverage_value": 125.0,
         "leverage_display": "125X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.004,
         "mmr_display": "0.40%",
+        "min_mmr_source": "MECX",
         "im_value": 0.8,
-        "im_display": "0.80%"
+        "im_display": "0.80"
       },
       {
         "position": 100000,
         "leverage_value": 20.0,
         "leverage_display": "20X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.025,
         "mmr_display": "2.50%",
+        "min_mmr_source": "WEEX",
         "im_value": 5.0,
-        "im_display": "5.00%"
+        "im_display": "5.00"
       },
       {
         "position": 200000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       }
     ],
     "PLUMEUSDT": [
@@ -2840,28 +3428,34 @@
         "position": 20000,
         "leverage_value": 100.0,
         "leverage_display": "100X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "MECX",
         "im_value": 1.0,
-        "im_display": "1.00%"
+        "im_display": "1.00"
       },
       {
         "position": 100000,
         "leverage_value": 100.0,
         "leverage_display": "100X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "MECX",
         "im_value": 1.0,
-        "im_display": "1.00%"
+        "im_display": "1.00"
       },
       {
         "position": 200000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       }
     ],
     "PNUTUSDT": [
@@ -2869,28 +3463,34 @@
         "position": 20000,
         "leverage_value": 100.0,
         "leverage_display": "100X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "MECX",
         "im_value": 1.0,
-        "im_display": "1.00%"
+        "im_display": "1.00"
       },
       {
         "position": 100000,
         "leverage_value": 100.0,
         "leverage_display": "100X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "MECX",
         "im_value": 1.0,
-        "im_display": "1.00%"
+        "im_display": "1.00"
       },
       {
         "position": 200000,
         "leverage_value": 100.0,
         "leverage_display": "100X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "MECX",
         "im_value": 1.0,
-        "im_display": "1.00%"
+        "im_display": "1.00"
       }
     ],
     "POPCATUSDT": [
@@ -2898,28 +3498,34 @@
         "position": 20000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       },
       {
         "position": 100000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       },
       {
         "position": 200000,
         "leverage_value": 50.0,
         "leverage_display": "50X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.01,
         "mmr_display": "1.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 2.0,
-        "im_display": "2.00%"
+        "im_display": "2.00"
       }
     ],
     "PUMPUSDT": [
@@ -2927,28 +3533,34 @@
         "position": 20000,
         "leverage_value": 75.0,
         "leverage_display": "75X",
+        "max_lev_source": "BINANCE",
         "mmr_value": 0.01,
         "mmr_display": "1.00%",
+        "min_mmr_source": "BINANCE",
         "im_value": 1.3333333333333333,
-        "im_display": "1.33%"
+        "im_display": "1.33"
       },
       {
         "position": 100000,
         "leverage_value": 50.0,
         "leverage_display": "50X",
+        "max_lev_source": "BINANCE",
         "mmr_value": 0.015,
         "mmr_display": "1.50%",
+        "min_mmr_source": "BINANCE",
         "im_value": 2.0,
-        "im_display": "2.00%"
+        "im_display": "2.00"
       },
       {
         "position": 200000,
         "leverage_value": 50.0,
         "leverage_display": "50X",
+        "max_lev_source": "BINANCE",
         "mmr_value": 0.015,
         "mmr_display": "1.50%",
+        "min_mmr_source": "BINANCE",
         "im_value": 2.0,
-        "im_display": "2.00%"
+        "im_display": "2.00"
       }
     ],
     "QUSDT": [
@@ -2956,28 +3568,34 @@
         "position": 20000,
         "leverage_value": 50.0,
         "leverage_display": "50X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.01,
         "mmr_display": "1.00%",
+        "min_mmr_source": "MECX",
         "im_value": 2.0,
-        "im_display": "2.00%"
+        "im_display": "2.00"
       },
       {
         "position": 100000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       },
       {
         "position": 200000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       }
     ],
     "RAYUSDT": [
@@ -2985,28 +3603,34 @@
         "position": 20000,
         "leverage_value": 100.0,
         "leverage_display": "100X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "WEEX",
         "im_value": 1.0,
-        "im_display": "1.00%"
+        "im_display": "1.00"
       },
       {
         "position": 100000,
         "leverage_value": 100.0,
         "leverage_display": "100X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "MECX",
         "im_value": 1.0,
-        "im_display": "1.00%"
+        "im_display": "1.00"
       },
       {
         "position": 200000,
         "leverage_value": 100.0,
         "leverage_display": "100X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "MECX",
         "im_value": 1.0,
-        "im_display": "1.00%"
+        "im_display": "1.00"
       }
     ],
     "REDUSDT": [
@@ -3014,28 +3638,34 @@
         "position": 20000,
         "leverage_value": 50.0,
         "leverage_display": "50X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "MECX",
         "im_value": 2.0,
-        "im_display": "2.00%"
+        "im_display": "2.00"
       },
       {
         "position": 100000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "BINANCE",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "BINANCE",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       },
       {
         "position": 200000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       }
     ],
     "RESOLVUSDT": [
@@ -3043,28 +3673,34 @@
         "position": 20000,
         "leverage_value": 20.0,
         "leverage_display": "20X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.025,
         "mmr_display": "2.50%",
+        "min_mmr_source": "WEEX",
         "im_value": 5.0,
-        "im_display": "5.00%"
+        "im_display": "5.00"
       },
       {
         "position": 100000,
         "leverage_value": 12.5,
         "leverage_display": "12.5X",
+        "max_lev_source": "BYBIT",
         "mmr_value": 0.04,
         "mmr_display": "4.00%",
+        "min_mmr_source": "BYBIT",
         "im_value": 8.0,
-        "im_display": "8.00%"
+        "im_display": "8.00"
       },
       {
         "position": 200000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       }
     ],
     "RHEAUSDT": [
@@ -3072,28 +3708,34 @@
         "position": 20000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       },
       {
         "position": 100000,
         "leverage_value": 5.0,
         "leverage_display": "5X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.1,
         "mmr_display": "10.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 20.0,
-        "im_display": "20.00%"
+        "im_display": "20.00"
       },
       {
         "position": 200000,
         "leverage_value": 5.0,
         "leverage_display": "5X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.1,
         "mmr_display": "10.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 20.0,
-        "im_display": "20.00%"
+        "im_display": "20.00"
       }
     ],
     "SAHARAUSDT": [
@@ -3101,28 +3743,34 @@
         "position": 20000,
         "leverage_value": 50.0,
         "leverage_display": "50X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.01,
         "mmr_display": "1.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 2.0,
-        "im_display": "2.00%"
+        "im_display": "2.00"
       },
       {
         "position": 100000,
         "leverage_value": 25.0,
         "leverage_display": "25X",
+        "max_lev_source": "BYBIT",
         "mmr_value": 0.02,
         "mmr_display": "2.00%",
+        "min_mmr_source": "BYBIT",
         "im_value": 4.0,
-        "im_display": "4.00%"
+        "im_display": "4.00"
       },
       {
         "position": 200000,
         "leverage_value": 20.0,
         "leverage_display": "20X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.025,
         "mmr_display": "2.50%",
+        "min_mmr_source": "WEEX",
         "im_value": 5.0,
-        "im_display": "5.00%"
+        "im_display": "5.00"
       }
     ],
     "SAPIENUSDT": [
@@ -3130,28 +3778,34 @@
         "position": 20000,
         "leverage_value": 50.0,
         "leverage_display": "50X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.01,
         "mmr_display": "1.00%",
+        "min_mmr_source": "MECX",
         "im_value": 2.0,
-        "im_display": "2.00%"
+        "im_display": "2.00"
       },
       {
         "position": 100000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       },
       {
         "position": 200000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       }
     ],
     "SATSUSDT": [
@@ -3159,28 +3813,34 @@
         "position": 20000,
         "leverage_value": 400.0,
         "leverage_display": "400X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0015,
         "mmr_display": "0.15%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.25,
-        "im_display": "0.25%"
+        "im_display": "0.25"
       },
       {
         "position": 100000,
         "leverage_value": 400.0,
         "leverage_display": "400X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0015,
         "mmr_display": "0.15%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.25,
-        "im_display": "0.25%"
+        "im_display": "0.25"
       },
       {
         "position": 200000,
         "leverage_value": 400.0,
         "leverage_display": "400X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0015,
         "mmr_display": "0.15%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.25,
-        "im_display": "0.25%"
+        "im_display": "0.25"
       }
     ],
     "SHELLUSDT": [
@@ -3188,28 +3848,34 @@
         "position": 20000,
         "leverage_value": 100.0,
         "leverage_display": "100X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "MECX",
         "im_value": 1.0,
-        "im_display": "1.00%"
+        "im_display": "1.00"
       },
       {
         "position": 100000,
         "leverage_value": 14.29,
         "leverage_display": "14.29X",
+        "max_lev_source": "BYBIT",
         "mmr_value": 0.035,
         "mmr_display": "3.50%",
+        "min_mmr_source": "BYBIT",
         "im_value": 6.997900629811057,
-        "im_display": "7.00%"
+        "im_display": "7.00"
       },
       {
         "position": 200000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       }
     ],
     "SOMIUSDT": [
@@ -3217,28 +3883,34 @@
         "position": 20000,
         "leverage_value": 45.0,
         "leverage_display": "45X",
+        "max_lev_source": "BYBIT",
         "mmr_value": 0.0111,
         "mmr_display": "1.11%",
+        "min_mmr_source": "BYBIT",
         "im_value": 2.2222222222222223,
-        "im_display": "2.22%"
+        "im_display": "2.22"
       },
       {
         "position": 100000,
         "leverage_value": 30.0,
         "leverage_display": "30X",
+        "max_lev_source": "BYBIT",
         "mmr_value": 0.0167,
         "mmr_display": "1.67%",
+        "min_mmr_source": "BYBIT",
         "im_value": 3.3333333333333335,
-        "im_display": "3.33%"
+        "im_display": "3.33"
       },
       {
         "position": 200000,
         "leverage_value": 14.29,
         "leverage_display": "14.29X",
+        "max_lev_source": "BYBIT",
         "mmr_value": 0.035,
         "mmr_display": "3.50%",
+        "min_mmr_source": "BYBIT",
         "im_value": 6.997900629811057,
-        "im_display": "7.00%"
+        "im_display": "7.00"
       }
     ],
     "SPXUSDT": [
@@ -3246,28 +3918,34 @@
         "position": 20000,
         "leverage_value": 100.0,
         "leverage_display": "100X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "WEEX",
         "im_value": 1.0,
-        "im_display": "1.00%"
+        "im_display": "1.00"
       },
       {
         "position": 100000,
         "leverage_value": 100.0,
         "leverage_display": "100X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "MECX",
         "im_value": 1.0,
-        "im_display": "1.00%"
+        "im_display": "1.00"
       },
       {
         "position": 200000,
         "leverage_value": 14.29,
         "leverage_display": "14.29X",
+        "max_lev_source": "BYBIT",
         "mmr_value": 0.035,
         "mmr_display": "3.50%",
+        "min_mmr_source": "BYBIT",
         "im_value": 6.997900629811057,
-        "im_display": "7.00%"
+        "im_display": "7.00"
       }
     ],
     "STBLUSDT": [
@@ -3275,28 +3953,34 @@
         "position": 20000,
         "leverage_value": 100.0,
         "leverage_display": "100X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "MECX",
         "im_value": 1.0,
-        "im_display": "1.00%"
+        "im_display": "1.00"
       },
       {
         "position": 100000,
         "leverage_value": 12.5,
         "leverage_display": "12.5X",
+        "max_lev_source": "BYBIT",
         "mmr_value": 0.04,
         "mmr_display": "4.00%",
+        "min_mmr_source": "BYBIT",
         "im_value": 8.0,
-        "im_display": "8.00%"
+        "im_display": "8.00"
       },
       {
         "position": 200000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       }
     ],
     "SUNUSDT": [
@@ -3304,28 +3988,34 @@
         "position": 20000,
         "leverage_value": 125.0,
         "leverage_display": "125X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.004,
         "mmr_display": "0.40%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.8,
-        "im_display": "0.80%"
+        "im_display": "0.80"
       },
       {
         "position": 100000,
         "leverage_value": 125.0,
         "leverage_display": "125X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.004,
         "mmr_display": "0.40%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.8,
-        "im_display": "0.80%"
+        "im_display": "0.80"
       },
       {
         "position": 200000,
         "leverage_value": 125.0,
         "leverage_display": "125X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.004,
         "mmr_display": "0.40%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.8,
-        "im_display": "0.80%"
+        "im_display": "0.80"
       }
     ],
     "SUSDT": [
@@ -3333,28 +4023,34 @@
         "position": 20000,
         "leverage_value": 125.0,
         "leverage_display": "125X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.004,
         "mmr_display": "0.40%",
+        "min_mmr_source": "MECX",
         "im_value": 0.8,
-        "im_display": "0.80%"
+        "im_display": "0.80"
       },
       {
         "position": 100000,
         "leverage_value": 125.0,
         "leverage_display": "125X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.004,
         "mmr_display": "0.40%",
+        "min_mmr_source": "MECX",
         "im_value": 0.8,
-        "im_display": "0.80%"
+        "im_display": "0.80"
       },
       {
         "position": 200000,
         "leverage_value": 125.0,
         "leverage_display": "125X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.004,
         "mmr_display": "0.40%",
+        "min_mmr_source": "MECX",
         "im_value": 0.8,
-        "im_display": "0.80%"
+        "im_display": "0.80"
       }
     ],
     "TAOUSDT": [
@@ -3362,28 +4058,34 @@
         "position": 20000,
         "leverage_value": 300.0,
         "leverage_display": "300X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.0023,
         "mmr_display": "0.23%",
+        "min_mmr_source": "MECX",
         "im_value": 0.3333333333333333,
-        "im_display": "0.33%"
+        "im_display": "0.33"
       },
       {
         "position": 100000,
         "leverage_value": 300.0,
         "leverage_display": "300X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.0023,
         "mmr_display": "0.23%",
+        "min_mmr_source": "MECX",
         "im_value": 0.3333333333333333,
-        "im_display": "0.33%"
+        "im_display": "0.33"
       },
       {
         "position": 200000,
         "leverage_value": 300.0,
         "leverage_display": "300X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.0023,
         "mmr_display": "0.23%",
+        "min_mmr_source": "MECX",
         "im_value": 0.3333333333333333,
-        "im_display": "0.33%"
+        "im_display": "0.33"
       }
     ],
     "TAUSDT": [
@@ -3391,28 +4093,34 @@
         "position": 20000,
         "leverage_value": 20.0,
         "leverage_display": "20X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.025,
         "mmr_display": "2.50%",
+        "min_mmr_source": "WEEX",
         "im_value": 5.0,
-        "im_display": "5.00%"
+        "im_display": "5.00"
       },
       {
         "position": 100000,
         "leverage_value": 12.5,
         "leverage_display": "12.5X",
+        "max_lev_source": "BYBIT",
         "mmr_value": 0.04,
         "mmr_display": "4.00%",
+        "min_mmr_source": "BYBIT",
         "im_value": 8.0,
-        "im_display": "8.00%"
+        "im_display": "8.00"
       },
       {
         "position": 200000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       }
     ],
     "TONUSDT": [
@@ -3420,28 +4128,34 @@
         "position": 20000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       },
       {
         "position": 100000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       },
       {
         "position": 200000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       }
     ],
     "TREEUSDT": [
@@ -3449,28 +4163,34 @@
         "position": 20000,
         "leverage_value": 50.0,
         "leverage_display": "50X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.01,
         "mmr_display": "1.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 2.0,
-        "im_display": "2.00%"
+        "im_display": "2.00"
       },
       {
         "position": 100000,
         "leverage_value": 30.0,
         "leverage_display": "30X",
+        "max_lev_source": "BYBIT",
         "mmr_value": 0.0167,
         "mmr_display": "1.67%",
+        "min_mmr_source": "BYBIT",
         "im_value": 3.3333333333333335,
-        "im_display": "3.33%"
+        "im_display": "3.33"
       },
       {
         "position": 200000,
         "leverage_value": 20.0,
         "leverage_display": "20X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.025,
         "mmr_display": "2.50%",
+        "min_mmr_source": "WEEX",
         "im_value": 5.0,
-        "im_display": "5.00%"
+        "im_display": "5.00"
       }
     ],
     "TRUMPUSDT": [
@@ -3478,28 +4198,34 @@
         "position": 20000,
         "leverage_value": 100.0,
         "leverage_display": "100X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "WEEX",
         "im_value": 1.0,
-        "im_display": "1.00%"
+        "im_display": "1.00"
       },
       {
         "position": 100000,
         "leverage_value": 100.0,
         "leverage_display": "100X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "WEEX",
         "im_value": 1.0,
-        "im_display": "1.00%"
+        "im_display": "1.00"
       },
       {
         "position": 200000,
         "leverage_value": 100.0,
         "leverage_display": "100X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "WEEX",
         "im_value": 1.0,
-        "im_display": "1.00%"
+        "im_display": "1.00"
       }
     ],
     "TSTUSDT": [
@@ -3507,28 +4233,34 @@
         "position": 20000,
         "leverage_value": 20.0,
         "leverage_display": "20X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.025,
         "mmr_display": "2.50%",
+        "min_mmr_source": "WEEX",
         "im_value": 5.0,
-        "im_display": "5.00%"
+        "im_display": "5.00"
       },
       {
         "position": 100000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       },
       {
         "position": 200000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       }
     ],
     "UXLINKUSDT": [
@@ -3536,28 +4268,34 @@
         "position": 20000,
         "leverage_value": 125.0,
         "leverage_display": "125X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.004,
         "mmr_display": "0.40%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.8,
-        "im_display": "0.80%"
+        "im_display": "0.80"
       },
       {
         "position": 100000,
         "leverage_value": 125.0,
         "leverage_display": "125X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.004,
         "mmr_display": "0.40%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.8,
-        "im_display": "0.80%"
+        "im_display": "0.80"
       },
       {
         "position": 200000,
         "leverage_value": 20.0,
         "leverage_display": "20X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.025,
         "mmr_display": "2.50%",
+        "min_mmr_source": "WEEX",
         "im_value": 5.0,
-        "im_display": "5.00%"
+        "im_display": "5.00"
       }
     ],
     "VANAUSDT": [
@@ -3565,28 +4303,34 @@
         "position": 20000,
         "leverage_value": 25.0,
         "leverage_display": "25X",
+        "max_lev_source": "BINANCE",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "MECX",
         "im_value": 4.0,
-        "im_display": "4.00%"
+        "im_display": "4.00"
       },
       {
         "position": 100000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "BINANCE",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "BINANCE",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       },
       {
         "position": 200000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       }
     ],
     "VINEUSDT": [
@@ -3594,28 +4338,34 @@
         "position": 20000,
         "leverage_value": 100.0,
         "leverage_display": "100X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.004,
         "mmr_display": "0.40%",
+        "min_mmr_source": "MECX",
         "im_value": 1.0,
-        "im_display": "1.00%"
+        "im_display": "1.00"
       },
       {
         "position": 100000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "BYBIT",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "BYBIT",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       },
       {
         "position": 200000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "BYBIT",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "BYBIT",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       }
     ],
     "VIRTUALUSDT": [
@@ -3623,28 +4373,34 @@
         "position": 20000,
         "leverage_value": 100.0,
         "leverage_display": "100X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "WEEX",
         "im_value": 1.0,
-        "im_display": "1.00%"
+        "im_display": "1.00"
       },
       {
         "position": 100000,
         "leverage_value": 25.0,
         "leverage_display": "25X",
+        "max_lev_source": "BYBIT",
         "mmr_value": 0.02,
         "mmr_display": "2.00%",
+        "min_mmr_source": "BYBIT",
         "im_value": 4.0,
-        "im_display": "4.00%"
+        "im_display": "4.00"
       },
       {
         "position": 200000,
         "leverage_value": 20.0,
         "leverage_display": "20X",
+        "max_lev_source": "BYBIT",
         "mmr_value": 0.025,
         "mmr_display": "2.50%",
+        "min_mmr_source": "BYBIT",
         "im_value": 5.0,
-        "im_display": "5.00%"
+        "im_display": "5.00"
       }
     ],
     "VVVUSDT": [
@@ -3652,28 +4408,34 @@
         "position": 20000,
         "leverage_value": 100.0,
         "leverage_display": "100X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "MECX",
         "im_value": 1.0,
-        "im_display": "1.00%"
+        "im_display": "1.00"
       },
       {
         "position": 100000,
         "leverage_value": 100.0,
         "leverage_display": "100X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "MECX",
         "im_value": 1.0,
-        "im_display": "1.00%"
+        "im_display": "1.00"
       },
       {
         "position": 200000,
         "leverage_value": 100.0,
         "leverage_display": "100X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "MECX",
         "im_value": 1.0,
-        "im_display": "1.00%"
+        "im_display": "1.00"
       }
     ],
     "WALUSDT": [
@@ -3681,28 +4443,34 @@
         "position": 20000,
         "leverage_value": 25.0,
         "leverage_display": "25X",
+        "max_lev_source": "BINANCE",
         "mmr_value": 0.01,
         "mmr_display": "1.00%",
+        "min_mmr_source": "MECX",
         "im_value": 4.0,
-        "im_display": "4.00%"
+        "im_display": "4.00"
       },
       {
         "position": 100000,
         "leverage_value": 12.5,
         "leverage_display": "12.5X",
+        "max_lev_source": "BYBIT",
         "mmr_value": 0.04,
         "mmr_display": "4.00%",
+        "min_mmr_source": "BYBIT",
         "im_value": 8.0,
-        "im_display": "8.00%"
+        "im_display": "8.00"
       },
       {
         "position": 200000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       }
     ],
     "WIFUSDT": [
@@ -3710,28 +4478,34 @@
         "position": 20000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       },
       {
         "position": 100000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       },
       {
         "position": 200000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       }
     ],
     "WLDUSDT": [
@@ -3739,28 +4513,34 @@
         "position": 20000,
         "leverage_value": 300.0,
         "leverage_display": "300X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.0023,
         "mmr_display": "0.23%",
+        "min_mmr_source": "MECX",
         "im_value": 0.3333333333333333,
-        "im_display": "0.33%"
+        "im_display": "0.33"
       },
       {
         "position": 100000,
         "leverage_value": 300.0,
         "leverage_display": "300X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.0023,
         "mmr_display": "0.23%",
+        "min_mmr_source": "MECX",
         "im_value": 0.3333333333333333,
-        "im_display": "0.33%"
+        "im_display": "0.33"
       },
       {
         "position": 200000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       }
     ],
     "WLFIUSDT": [
@@ -3768,28 +4548,34 @@
         "position": 20000,
         "leverage_value": 100.0,
         "leverage_display": "100X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "MECX",
         "im_value": 1.0,
-        "im_display": "1.00%"
+        "im_display": "1.00"
       },
       {
         "position": 100000,
         "leverage_value": 100.0,
         "leverage_display": "100X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "MECX",
         "im_value": 1.0,
-        "im_display": "1.00%"
+        "im_display": "1.00"
       },
       {
         "position": 200000,
         "leverage_value": 100.0,
         "leverage_display": "100X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "MECX",
         "im_value": 1.0,
-        "im_display": "1.00%"
+        "im_display": "1.00"
       }
     ],
     "WUSDT": [
@@ -3797,28 +4583,34 @@
         "position": 20000,
         "leverage_value": 50.0,
         "leverage_display": "50X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.008,
         "mmr_display": "0.80%",
+        "min_mmr_source": "BYBIT",
         "im_value": 2.0,
-        "im_display": "2.00%"
+        "im_display": "2.00"
       },
       {
         "position": 100000,
         "leverage_value": 50.0,
         "leverage_display": "50X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.01,
         "mmr_display": "1.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 2.0,
-        "im_display": "2.00%"
+        "im_display": "2.00"
       },
       {
         "position": 200000,
         "leverage_value": 50.0,
         "leverage_display": "50X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.01,
         "mmr_display": "1.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 2.0,
-        "im_display": "2.00%"
+        "im_display": "2.00"
       }
     ],
     "XANUSDT": [
@@ -3826,28 +4618,34 @@
         "position": 20000,
         "leverage_value": 100.0,
         "leverage_display": "100X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "MECX",
         "im_value": 1.0,
-        "im_display": "1.00%"
+        "im_display": "1.00"
       },
       {
         "position": 100000,
         "leverage_value": 12.5,
         "leverage_display": "12.5X",
+        "max_lev_source": "BYBIT",
         "mmr_value": 0.04,
         "mmr_display": "4.00%",
+        "min_mmr_source": "BYBIT",
         "im_value": 8.0,
-        "im_display": "8.00%"
+        "im_display": "8.00"
       },
       {
         "position": 200000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       }
     ],
     "XPLUSDT": [
@@ -3855,28 +4653,34 @@
         "position": 20000,
         "leverage_value": 100.0,
         "leverage_display": "100X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "MECX",
         "im_value": 1.0,
-        "im_display": "1.00%"
+        "im_display": "1.00"
       },
       {
         "position": 100000,
         "leverage_value": 100.0,
         "leverage_display": "100X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "MECX",
         "im_value": 1.0,
-        "im_display": "1.00%"
+        "im_display": "1.00"
       },
       {
         "position": 200000,
         "leverage_value": 50.0,
         "leverage_display": "50X",
+        "max_lev_source": "BINANCE",
         "mmr_value": 0.015,
         "mmr_display": "1.50%",
+        "min_mmr_source": "BINANCE",
         "im_value": 2.0,
-        "im_display": "2.00%"
+        "im_display": "2.00"
       }
     ],
     "YGGUSDT": [
@@ -3884,28 +4688,34 @@
         "position": 20000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       },
       {
         "position": 100000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       },
       {
         "position": 200000,
         "leverage_value": 200.0,
         "leverage_display": "200X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.0025,
         "mmr_display": "0.25%",
+        "min_mmr_source": "WEEX",
         "im_value": 0.5,
-        "im_display": "0.50%"
+        "im_display": "0.50"
       }
     ],
     "YZYUSDT": [
@@ -3913,28 +4723,34 @@
         "position": 20000,
         "leverage_value": 50.0,
         "leverage_display": "50X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.01,
         "mmr_display": "1.00%",
+        "min_mmr_source": "MECX",
         "im_value": 2.0,
-        "im_display": "2.00%"
+        "im_display": "2.00"
       },
       {
         "position": 100000,
         "leverage_value": 12.5,
         "leverage_display": "12.5X",
+        "max_lev_source": "BYBIT",
         "mmr_value": 0.04,
         "mmr_display": "4.00%",
+        "min_mmr_source": "BYBIT",
         "im_value": 8.0,
-        "im_display": "8.00%"
+        "im_display": "8.00"
       },
       {
         "position": 200000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       }
     ],
     "ZECUSDT": [
@@ -3942,28 +4758,34 @@
         "position": 20000,
         "leverage_value": 100.0,
         "leverage_display": "100X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.005,
         "mmr_display": "0.50%",
+        "min_mmr_source": "MECX",
         "im_value": 1.0,
-        "im_display": "1.00%"
+        "im_display": "1.00"
       },
       {
         "position": 100000,
         "leverage_value": 50.0,
         "leverage_display": "50X",
+        "max_lev_source": "BINANCE",
         "mmr_value": 0.01,
         "mmr_display": "1.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 2.0,
-        "im_display": "2.00%"
+        "im_display": "2.00"
       },
       {
         "position": 200000,
         "leverage_value": 50.0,
         "leverage_display": "50X",
+        "max_lev_source": "BINANCE",
         "mmr_value": 0.01,
         "mmr_display": "1.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 2.0,
-        "im_display": "2.00%"
+        "im_display": "2.00"
       }
     ],
     "ZKCUSDT": [
@@ -3971,28 +4793,34 @@
         "position": 20000,
         "leverage_value": 50.0,
         "leverage_display": "50X",
+        "max_lev_source": "MECX",
         "mmr_value": 0.01,
         "mmr_display": "1.00%",
+        "min_mmr_source": "MECX",
         "im_value": 2.0,
-        "im_display": "2.00%"
+        "im_display": "2.00"
       },
       {
         "position": 100000,
         "leverage_value": 12.5,
         "leverage_display": "12.5X",
+        "max_lev_source": "BYBIT",
         "mmr_value": 0.04,
         "mmr_display": "4.00%",
+        "min_mmr_source": "BYBIT",
         "im_value": 8.0,
-        "im_display": "8.00%"
+        "im_display": "8.00"
       },
       {
         "position": 200000,
         "leverage_value": 10.0,
         "leverage_display": "10X",
+        "max_lev_source": "WEEX",
         "mmr_value": 0.05,
         "mmr_display": "5.00%",
+        "min_mmr_source": "WEEX",
         "im_value": 10.0,
-        "im_display": "10.00%"
+        "im_display": "10.00"
       }
     ]
   }
