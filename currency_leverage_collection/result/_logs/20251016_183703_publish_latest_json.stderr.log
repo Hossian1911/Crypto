@@ -1,0 +1,6 @@
+warning: in the working copy of 'currency_leverage_collection/result/suggest/suggest_rules_20251016_183703.json', CRLF will be replaced by LF the next time Git touches it
+error: cannot pull with rebase: You have unstaged changes.
+error: additionally, your index contains uncommitted changes.
+error: Please commit or stash them.
+To github.com:Hossian1911/Crypto.git
+   5835d5b..b640107  main -> main

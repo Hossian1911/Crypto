@@ -1,0 +1,19 @@
+[info] tableMake_main 启动，顺序执行 3 个步骤…
+
+===== 生成 Excel 报表 =====
+[tableMake] CWD: C:\Users\zhang\Desktop\crypto\currency_leverage_collection\tableMake
+[tableMake] SCRIPT_DIR: C:\Users\zhang\Desktop\crypto\currency_leverage_collection\tableMake
+[tableMake] RESULT_DIR: C:\Users\zhang\Desktop\crypto\currency_leverage_collection\result
+[tableMake] Guard: 本脚本输出到 'result/'
+已生成: C:\Users\zhang\Desktop\crypto\currency_leverage_collection\result\Leverage&Margin_20251016_184741.xlsx
+
+===== 创建最小表结构 (symbol, exchange, max_leverage, max_size, mmr) =====
+[info] connecting postgres ...
+[ok] schema prepared for table: platform_exchanges_setting_min
+
+===== 从最新 Excel 写入数据库 (upsert by symbol,exchange) =====
+[info] 使用最新 Excel: Leverage&Margin_20251016_184741.xlsx
+[build] rows from excel: 4689
+[ok] written: 4689 rows to platform_exchanges_setting_min
+
+[ok] 全部步骤完成：已生成 Excel，并将 5 列数据写入数据库表 platform_exchanges_setting_min。

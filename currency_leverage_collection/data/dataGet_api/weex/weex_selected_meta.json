@@ -1,7 +1,7 @@
 {
   "source": "https://www.weex.com/zh-CN/futures/introduction/risk-limit",
-  "generated_at": "2025-10-15 14:22:28",
-  "count_symbols": 132,
+  "generated_at": "2025-10-16 18:47:32",
+  "count_symbols": 134,
   "count_errors": 0,
   "errors": [],
   "note": "所有字段均为字符串，直接来自页面展示（lv, range, mlev, mmr）",

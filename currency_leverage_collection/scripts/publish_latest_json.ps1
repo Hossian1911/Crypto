@@ -12,6 +12,8 @@ if (-not (Test-Path $JsonDir)) {
   Write-Error "JSON directory not found: $JsonDir"
 }
 
+$SuggestDir = Join-Path $RepoDir "currency_leverage_collection\result\suggest"
+
 # Find leverage JSON files
 $files = Get-ChildItem -Path $JsonDir -Filter "Leverage&Margin_*.json" -File | Sort-Object LastWriteTime
 if (-not $files) {
@@ -45,6 +47,31 @@ foreach ($f in $toDelete) {
 # Stage latest JSON (relative path)
 $latestRel = $latest.FullName.Replace($RepoDir + "\", "")
 git add -- "$latestRel"
+
+# Also handle latest suggest JSON if present
+if (Test-Path $SuggestDir) {
+  $sfiles = Get-ChildItem -Path $SuggestDir -Filter "suggest_rules_*.json" -File | Sort-Object LastWriteTime
+  if ($sfiles) {
+    $sKeep = $sfiles | Select-Object -Last $Keep
+    $sLatest = $sKeep[-1]
+    # Delete older
+    $sDelete = $sfiles | Where-Object { $_.FullName -notin ($sKeep | ForEach-Object FullName) }
+    foreach ($sf in $sDelete) {
+      try {
+        Write-Host "Deleting old suggest JSON:" $sf.FullName
+        Remove-Item -Force $sf.FullName
+        $rel = $sf.FullName.Replace($RepoDir + "\", "")
+        git rm -f --ignore-unmatch -- "$rel" | Out-Null
+      } catch {
+        Write-Warning "Failed to delete $($sf.FullName): $_"
+      }
+    }
+    $sRel = $sLatest.FullName.Replace($RepoDir + "\", "")
+    git add -- "$sRel"
+  } else {
+    Write-Host "No suggest JSON found under $SuggestDir"
+  }
+}
 
 # Commit if there are staged changes
 $diff = git diff --cached --name-only

@@ -34,12 +34,14 @@
     "CAKEUSDT",
     "CFXUSDT",
     "CHEEMSUSDT",
+    "CLOUSDT",
     "COAIUSDT",
     "CRVUSDT",
     "DOGEUSDT",
     "DOGUSDT",
     "DOTUSDT",
     "ENAUSDT",
+    "ENSOUSDT",
     "EOSUSDT",
     "ETHUSDT",
     "FARTCOINUSDT",
@@ -136,259 +138,7 @@
   "results": [
     {
       "symbol": "0GUSDT",
-      "url": "https://www.bybitglobal.com/x-api/contract/v5/public/support/symbol-risk?symbol=0GUSDT",
-      "status": 200,
-      "data": {
-        "ret_code": 0,
-        "ret_msg": "success",
-        "result": {
-          "list": [
-            {
-              "gear": "1",
-              "storingLocationValue": "5000",
-              "maintenanceMarginRate": "1%",
-              "initialMarginRate": "2%",
-              "maximumLever": "50",
-              "mmDeduction": ""
-            },
-            {
-              "gear": "2",
-              "storingLocationValue": "10000",
-              "maintenanceMarginRate": "1.11%",
-              "initialMarginRate": "2.22%",
-              "maximumLever": "45",
-              "mmDeduction": "5.5"
-            },
-            {
-              "gear": "3",
-              "storingLocationValue": "20000",
-              "maintenanceMarginRate": "1.25%",
-              "initialMarginRate": "2.5%",
-              "maximumLever": "40",
-              "mmDeduction": "19.5"
-            },
-            {
-              "gear": "4",
-              "storingLocationValue": "30000",
-              "maintenanceMarginRate": "1.43%",
-              "initialMarginRate": "2.86%",
-              "maximumLever": "35",
-              "mmDeduction": "55.5"
-            },
-            {
-              "gear": "5",
-              "storingLocationValue": "40000",
-              "maintenanceMarginRate": "1.67%",
-              "initialMarginRate": "3.33%",
-              "maximumLever": "30",
-              "mmDeduction": "127.5"
-            },
-            {
-              "gear": "6",
-              "storingLocationValue": "50000",
-              "maintenanceMarginRate": "2%",
-              "initialMarginRate": "4%",
-              "maximumLever": "25",
-              "mmDeduction": "259.5"
-            },
-            {
-              "gear": "7",
-              "storingLocationValue": "100000",
-              "maintenanceMarginRate": "2.5%",
-              "initialMarginRate": "5%",
-              "maximumLever": "20",
-              "mmDeduction": "509.5"
-            },
-            {
-              "gear": "8",
-              "storingLocationValue": "150000",
-              "maintenanceMarginRate": "3%",
-              "initialMarginRate": "6%",
-              "maximumLever": "16.67",
-              "mmDeduction": "1009.5"
-            },
-            {
-              "gear": "9",
-              "storingLocationValue": "200000",
-              "maintenanceMarginRate": "3.5%",
-              "initialMarginRate": "7%",
-              "maximumLever": "14.29",
-              "mmDeduction": "1759.5"
-            },
-            {
-              "gear": "10",
-              "storingLocationValue": "225000",
-              "maintenanceMarginRate": "4%",
-              "initialMarginRate": "8%",
-              "maximumLever": "12.5",
-              "mmDeduction": "2759.5"
-            },
-            {
-              "gear": "11",
-              "storingLocationValue": "250000",
-              "maintenanceMarginRate": "4.5%",
-              "initialMarginRate": "9%",
-              "maximumLever": "11.11",
-              "mmDeduction": "3884.5"
-            },
-            {
-              "gear": "12",
-              "storingLocationValue": "275000",
-              "maintenanceMarginRate": "5%",
-              "initialMarginRate": "10%",
-              "maximumLever": "10",
-              "mmDeduction": "5134.5"
-            },
-            {
-              "gear": "13",
-              "storingLocationValue": "300000",
-              "maintenanceMarginRate": "5.5%",
-              "initialMarginRate": "11%",
-              "maximumLever": "9.09",
-              "mmDeduction": "6509.5"
-            },
-            {
-              "gear": "14",
-              "storingLocationValue": "350000",
-              "maintenanceMarginRate": "6%",
-              "initialMarginRate": "12%",
-              "maximumLever": "8.33",
-              "mmDeduction": "8009.5"
-            },
-            {
-              "gear": "15",
-              "storingLocationValue": "375000",
-              "maintenanceMarginRate": "6.5%",
-              "initialMarginRate": "13%",
-              "maximumLever": "7.69",
-              "mmDeduction": "9759.5"
-            },
-            {
-              "gear": "16",
-              "storingLocationValue": "850000",
-              "maintenanceMarginRate": "7%",
-              "initialMarginRate": "14%",
-              "maximumLever": "7.14",
-              "mmDeduction": "11634.5"
-            },
-            {
-              "gear": "17",
-              "storingLocationValue": "950000",
-              "maintenanceMarginRate": "7.5%",
-              "initialMarginRate": "15%",
-              "maximumLever": "6.67",
-              "mmDeduction": "15884.5"
-            },
-            {
-              "gear": "18",
-              "storingLocationValue": "1050000",
-              "maintenanceMarginRate": "8%",
-              "initialMarginRate": "16%",
-              "maximumLever": "6.25",
-              "mmDeduction": "20634.5"
-            },
-            {
-              "gear": "19",
-              "storingLocationValue": "1150000",
-              "maintenanceMarginRate": "8.5%",
-              "initialMarginRate": "17%",
-              "maximumLever": "5.88",
-              "mmDeduction": "25884.5"
-            },
-            {
-              "gear": "20",
-              "storingLocationValue": "1250000",
-              "maintenanceMarginRate": "9%",
-              "initialMarginRate": "18%",
-              "maximumLever": "5.56",
-              "mmDeduction": "31634.5"
-            },
-            {
-              "gear": "21",
-              "storingLocationValue": "1350000",
-              "maintenanceMarginRate": "11%",
-              "initialMarginRate": "22%",
-              "maximumLever": "4.55",
-              "mmDeduction": "56634.5"
-            },
-            {
-              "gear": "22",
-              "storingLocationValue": "1450000",
-              "maintenanceMarginRate": "13%",
-              "initialMarginRate": "26%",
-              "maximumLever": "3.85",
-              "mmDeduction": "83634.5"
-            },
-            {
-              "gear": "23",
-              "storingLocationValue": "1550000",
-              "maintenanceMarginRate": "15%",
-              "initialMarginRate": "30%",
-              "maximumLever": "3.33",
-              "mmDeduction": "112634.5"
-            },
-            {
-              "gear": "24",
-              "storingLocationValue": "1650000",
-              "maintenanceMarginRate": "17%",
-              "initialMarginRate": "34%",
-              "maximumLever": "2.94",
-              "mmDeduction": "143634.5"
-            },
-            {
-              "gear": "25",
-              "storingLocationValue": "1750000",
-              "maintenanceMarginRate": "19%",
-              "initialMarginRate": "38%",
-              "maximumLever": "2.63",
-              "mmDeduction": "176634.5"
-            },
-            {
-              "gear": "26",
-              "storingLocationValue": "1850000",
-              "maintenanceMarginRate": "21%",
-              "initialMarginRate": "42%",
-              "maximumLever": "2.38",
-              "mmDeduction": "211634.5"
-            },
-            {
-              "gear": "27",
-              "storingLocationValue": "1950000",
-              "maintenanceMarginRate": "23%",
-              "initialMarginRate": "46%",
-              "maximumLever": "2.17",
-              "mmDeduction": "248634.5"
-            },
-            {
-              "gear": "28",
-              "storingLocationValue": "2050000",
-              "maintenanceMarginRate": "25%",
-              "initialMarginRate": "50%",
-              "maximumLever": "2",
-              "mmDeduction": "287634.5"
-            },
-            {
-              "gear": "29",
-              "storingLocationValue": "2150000",
-              "maintenanceMarginRate": "33%",
-              "initialMarginRate": "66.67%",
-              "maximumLever": "1.5",
-              "mmDeduction": "451634.5"
-            },
-            {
-              "gear": "30",
-              "storingLocationValue": "2500000",
-              "maintenanceMarginRate": "60%",
-              "initialMarginRate": "100%",
-              "maximumLever": "1",
-              "mmDeduction": "1032134.5"
-            }
-          ]
-        },
-        "ext_code": "",
-        "ext_info": null,
-        "time_now": "1760509102.628265"
-      }
+      "error": "[WinError 10054] 远程主机强迫关闭了一个现有的连接。"
     },
     {
       "symbol": "1000BONKUSDT",
@@ -643,7 +393,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509102.683218"
+        "time_now": "1760611396.635036"
       }
     },
     {
@@ -899,7 +649,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509102.639888"
+        "time_now": "1760611397.661816"
       }
     },
     {
@@ -1155,7 +905,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509103.002106"
+        "time_now": "1760611396.720960"
       }
     },
     {
@@ -1411,264 +1161,12 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509108.032748"
+        "time_now": "1760611401.703429"
       }
     },
     {
       "symbol": "ACTUSDT",
-      "url": "https://www.bybitglobal.com/x-api/contract/v5/public/support/symbol-risk?symbol=ACTUSDT",
-      "status": 200,
-      "data": {
-        "ret_code": 0,
-        "ret_msg": "success",
-        "result": {
-          "list": [
-            {
-              "gear": "1",
-              "storingLocationValue": "25000",
-              "maintenanceMarginRate": "2%",
-              "initialMarginRate": "4%",
-              "maximumLever": "25",
-              "mmDeduction": ""
-            },
-            {
-              "gear": "2",
-              "storingLocationValue": "50000",
-              "maintenanceMarginRate": "2.5%",
-              "initialMarginRate": "5%",
-              "maximumLever": "20",
-              "mmDeduction": "125"
-            },
-            {
-              "gear": "3",
-              "storingLocationValue": "75000",
-              "maintenanceMarginRate": "3%",
-              "initialMarginRate": "6%",
-              "maximumLever": "16.67",
-              "mmDeduction": "375"
-            },
-            {
-              "gear": "4",
-              "storingLocationValue": "100000",
-              "maintenanceMarginRate": "3.5%",
-              "initialMarginRate": "7%",
-              "maximumLever": "14.29",
-              "mmDeduction": "750"
-            },
-            {
-              "gear": "5",
-              "storingLocationValue": "125000",
-              "maintenanceMarginRate": "4%",
-              "initialMarginRate": "8%",
-              "maximumLever": "12.5",
-              "mmDeduction": "1250"
-            },
-            {
-              "gear": "6",
-              "storingLocationValue": "150000",
-              "maintenanceMarginRate": "4.5%",
-              "initialMarginRate": "9%",
-              "maximumLever": "11.12",
-              "mmDeduction": "1875"
-            },
-            {
-              "gear": "7",
-              "storingLocationValue": "175000",
-              "maintenanceMarginRate": "5%",
-              "initialMarginRate": "10%",
-              "maximumLever": "10",
-              "mmDeduction": "2625"
-            },
-            {
-              "gear": "8",
-              "storingLocationValue": "200000",
-              "maintenanceMarginRate": "5.5%",
-              "initialMarginRate": "11%",
-              "maximumLever": "9.1",
-              "mmDeduction": "3500"
-            },
-            {
-              "gear": "9",
-              "storingLocationValue": "225000",
-              "maintenanceMarginRate": "6%",
-              "initialMarginRate": "12%",
-              "maximumLever": "8.34",
-              "mmDeduction": "4500"
-            },
-            {
-              "gear": "10",
-              "storingLocationValue": "250000",
-              "maintenanceMarginRate": "6.5%",
-              "initialMarginRate": "13%",
-              "maximumLever": "7.7",
-              "mmDeduction": "5625"
-            },
-            {
-              "gear": "11",
-              "storingLocationValue": "275000",
-              "maintenanceMarginRate": "7%",
-              "initialMarginRate": "14%",
-              "maximumLever": "7.15",
-              "mmDeduction": "6875"
-            },
-            {
-              "gear": "12",
-              "storingLocationValue": "300000",
-              "maintenanceMarginRate": "7.5%",
-              "initialMarginRate": "15%",
-              "maximumLever": "6.67",
-              "mmDeduction": "8250"
-            },
-            {
-              "gear": "13",
-              "storingLocationValue": "325000",
-              "maintenanceMarginRate": "8%",
-              "initialMarginRate": "16%",
-              "maximumLever": "6.25",
-              "mmDeduction": "9750"
-            },
-            {
-              "gear": "14",
-              "storingLocationValue": "350000",
-              "maintenanceMarginRate": "8.5%",
-              "initialMarginRate": "17%",
-              "maximumLever": "5.89",
-              "mmDeduction": "11375"
-            },
-            {
-              "gear": "15",
-              "storingLocationValue": "375000",
-              "maintenanceMarginRate": "9%",
-              "initialMarginRate": "18%",
-              "maximumLever": "5.56",
-              "mmDeduction": "13125"
-            },
-            {
-              "gear": "16",
-              "storingLocationValue": "850000",
-              "maintenanceMarginRate": "11%",
-              "initialMarginRate": "22%",
-              "maximumLever": "4.55",
-              "mmDeduction": "20625"
-            },
-            {
-              "gear": "17",
-              "storingLocationValue": "950000",
-              "maintenanceMarginRate": "13%",
-              "initialMarginRate": "26%",
-              "maximumLever": "3.85",
-              "mmDeduction": "37625"
-            },
-            {
-              "gear": "18",
-              "storingLocationValue": "1050000",
-              "maintenanceMarginRate": "15%",
-              "initialMarginRate": "30%",
-              "maximumLever": "3.34",
-              "mmDeduction": "56625"
-            },
-            {
-              "gear": "19",
-              "storingLocationValue": "1150000",
-              "maintenanceMarginRate": "17%",
-              "initialMarginRate": "34%",
-              "maximumLever": "2.95",
-              "mmDeduction": "77625"
-            },
-            {
-              "gear": "20",
-              "storingLocationValue": "1250000",
-              "maintenanceMarginRate": "19%",
-              "initialMarginRate": "38%",
-              "maximumLever": "2.64",
-              "mmDeduction": "100625"
-            },
-            {
-              "gear": "21",
-              "storingLocationValue": "1350000",
-              "maintenanceMarginRate": "21%",
-              "initialMarginRate": "42%",
-              "maximumLever": "2.39",
-              "mmDeduction": "125625"
-            },
-            {
-              "gear": "22",
-              "storingLocationValue": "1450000",
-              "maintenanceMarginRate": "23%",
-              "initialMarginRate": "46%",
-              "maximumLever": "2.18",
-              "mmDeduction": "152625"
-            },
-            {
-              "gear": "23",
-              "storingLocationValue": "1550000",
-              "maintenanceMarginRate": "25%",
-              "initialMarginRate": "50%",
-              "maximumLever": "2",
-              "mmDeduction": "181625"
-            },
-            {
-              "gear": "24",
-              "storingLocationValue": "1650000",
-              "maintenanceMarginRate": "27%",
-              "initialMarginRate": "54%",
-              "maximumLever": "1.86",
-              "mmDeduction": "212625"
-            },
-            {
-              "gear": "25",
-              "storingLocationValue": "1750000",
-              "maintenanceMarginRate": "29%",
-              "initialMarginRate": "58%",
-              "maximumLever": "1.73",
-              "mmDeduction": "245625"
-            },
-            {
-              "gear": "26",
-              "storingLocationValue": "1850000",
-              "maintenanceMarginRate": "31%",
-              "initialMarginRate": "62%",
-              "maximumLever": "1.62",
-              "mmDeduction": "280625"
-            },
-            {
-              "gear": "27",
-              "storingLocationValue": "1950000",
-              "maintenanceMarginRate": "33%",
-              "initialMarginRate": "66%",
-              "maximumLever": "1.52",
-              "mmDeduction": "317625"
-            },
-            {
-              "gear": "28",
-              "storingLocationValue": "2050000",
-              "maintenanceMarginRate": "35%",
-              "initialMarginRate": "70%",
-              "maximumLever": "1.43",
-              "mmDeduction": "356625"
-            },
-            {
-              "gear": "29",
-              "storingLocationValue": "2150000",
-              "maintenanceMarginRate": "45%",
-              "initialMarginRate": "90%",
-              "maximumLever": "1.12",
-              "mmDeduction": "561625"
-            },
-            {
-              "gear": "30",
-              "storingLocationValue": "2500000",
-              "maintenanceMarginRate": "60%",
-              "initialMarginRate": "100%",
-              "maximumLever": "1",
-              "mmDeduction": "884125"
-            }
-          ]
-        },
-        "ext_code": "",
-        "ext_info": null,
-        "time_now": "1760509108.256177"
-      }
+      "error": "[WinError 10054] 远程主机强迫关闭了一个现有的连接。"
     },
     {
       "symbol": "ADAUSDT",
@@ -1923,7 +1421,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509108.469142"
+        "time_now": "1760611402.787526"
       }
     },
     {
@@ -2179,7 +1677,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509108.893683"
+        "time_now": "1760611406.722658"
       }
     },
     {
@@ -2267,264 +1765,12 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509114.155546"
+        "time_now": "1760611406.079172"
       }
     },
     {
       "symbol": "AIAUSDT",
-      "url": "https://www.bybitglobal.com/x-api/contract/v5/public/support/symbol-risk?symbol=AIAUSDT",
-      "status": 200,
-      "data": {
-        "ret_code": 0,
-        "ret_msg": "success",
-        "result": {
-          "list": [
-            {
-              "gear": "1",
-              "storingLocationValue": "5000",
-              "maintenanceMarginRate": "2%",
-              "initialMarginRate": "4%",
-              "maximumLever": "25",
-              "mmDeduction": ""
-            },
-            {
-              "gear": "2",
-              "storingLocationValue": "25000",
-              "maintenanceMarginRate": "2.5%",
-              "initialMarginRate": "5%",
-              "maximumLever": "20",
-              "mmDeduction": "25"
-            },
-            {
-              "gear": "3",
-              "storingLocationValue": "50000",
-              "maintenanceMarginRate": "3%",
-              "initialMarginRate": "6%",
-              "maximumLever": "16.67",
-              "mmDeduction": "150"
-            },
-            {
-              "gear": "4",
-              "storingLocationValue": "75000",
-              "maintenanceMarginRate": "3.5%",
-              "initialMarginRate": "7%",
-              "maximumLever": "14.29",
-              "mmDeduction": "400"
-            },
-            {
-              "gear": "5",
-              "storingLocationValue": "100000",
-              "maintenanceMarginRate": "4%",
-              "initialMarginRate": "8%",
-              "maximumLever": "12.5",
-              "mmDeduction": "775"
-            },
-            {
-              "gear": "6",
-              "storingLocationValue": "125000",
-              "maintenanceMarginRate": "4.5%",
-              "initialMarginRate": "9%",
-              "maximumLever": "11.12",
-              "mmDeduction": "1275"
-            },
-            {
-              "gear": "7",
-              "storingLocationValue": "150000",
-              "maintenanceMarginRate": "5%",
-              "initialMarginRate": "10%",
-              "maximumLever": "10",
-              "mmDeduction": "1900"
-            },
-            {
-              "gear": "8",
-              "storingLocationValue": "175000",
-              "maintenanceMarginRate": "5.5%",
-              "initialMarginRate": "11%",
-              "maximumLever": "9.1",
-              "mmDeduction": "2650"
-            },
-            {
-              "gear": "9",
-              "storingLocationValue": "200000",
-              "maintenanceMarginRate": "6%",
-              "initialMarginRate": "12%",
-              "maximumLever": "8.34",
-              "mmDeduction": "3525"
-            },
-            {
-              "gear": "10",
-              "storingLocationValue": "225000",
-              "maintenanceMarginRate": "6.5%",
-              "initialMarginRate": "13%",
-              "maximumLever": "7.7",
-              "mmDeduction": "4525"
-            },
-            {
-              "gear": "11",
-              "storingLocationValue": "250000",
-              "maintenanceMarginRate": "7%",
-              "initialMarginRate": "14%",
-              "maximumLever": "7.15",
-              "mmDeduction": "5650"
-            },
-            {
-              "gear": "12",
-              "storingLocationValue": "275000",
-              "maintenanceMarginRate": "7.5%",
-              "initialMarginRate": "15%",
-              "maximumLever": "6.67",
-              "mmDeduction": "6900"
-            },
-            {
-              "gear": "13",
-              "storingLocationValue": "300000",
-              "maintenanceMarginRate": "8%",
-              "initialMarginRate": "16%",
-              "maximumLever": "6.25",
-              "mmDeduction": "8275"
-            },
-            {
-              "gear": "14",
-              "storingLocationValue": "325000",
-              "maintenanceMarginRate": "8.5%",
-              "initialMarginRate": "17%",
-              "maximumLever": "5.89",
-              "mmDeduction": "9775"
-            },
-            {
-              "gear": "15",
-              "storingLocationValue": "350000",
-              "maintenanceMarginRate": "9%",
-              "initialMarginRate": "18%",
-              "maximumLever": "5.56",
-              "mmDeduction": "11400"
-            },
-            {
-              "gear": "16",
-              "storingLocationValue": "800000",
-              "maintenanceMarginRate": "11%",
-              "initialMarginRate": "22%",
-              "maximumLever": "4.55",
-              "mmDeduction": "18400"
-            },
-            {
-              "gear": "17",
-              "storingLocationValue": "900000",
-              "maintenanceMarginRate": "13%",
-              "initialMarginRate": "26%",
-              "maximumLever": "3.85",
-              "mmDeduction": "34400"
-            },
-            {
-              "gear": "18",
-              "storingLocationValue": "1000000",
-              "maintenanceMarginRate": "15%",
-              "initialMarginRate": "30%",
-              "maximumLever": "3.34",
-              "mmDeduction": "52400"
-            },
-            {
-              "gear": "19",
-              "storingLocationValue": "1100000",
-              "maintenanceMarginRate": "17%",
-              "initialMarginRate": "34%",
-              "maximumLever": "2.95",
-              "mmDeduction": "72400"
-            },
-            {
-              "gear": "20",
-              "storingLocationValue": "1200000",
-              "maintenanceMarginRate": "19%",
-              "initialMarginRate": "38%",
-              "maximumLever": "2.64",
-              "mmDeduction": "94400"
-            },
-            {
-              "gear": "21",
-              "storingLocationValue": "1300000",
-              "maintenanceMarginRate": "21%",
-              "initialMarginRate": "42%",
-              "maximumLever": "2.39",
-              "mmDeduction": "118400"
-            },
-            {
-              "gear": "22",
-              "storingLocationValue": "1400000",
-              "maintenanceMarginRate": "23%",
-              "initialMarginRate": "46%",
-              "maximumLever": "2.18",
-              "mmDeduction": "144400"
-            },
-            {
-              "gear": "23",
-              "storingLocationValue": "1500000",
-              "maintenanceMarginRate": "25%",
-              "initialMarginRate": "50%",
-              "maximumLever": "2",
-              "mmDeduction": "172400"
-            },
-            {
-              "gear": "24",
-              "storingLocationValue": "1600000",
-              "maintenanceMarginRate": "27%",
-              "initialMarginRate": "54%",
-              "maximumLever": "1.86",
-              "mmDeduction": "202400"
-            },
-            {
-              "gear": "25",
-              "storingLocationValue": "1700000",
-              "maintenanceMarginRate": "29%",
-              "initialMarginRate": "58%",
-              "maximumLever": "1.73",
-              "mmDeduction": "234400"
-            },
-            {
-              "gear": "26",
-              "storingLocationValue": "1800000",
-              "maintenanceMarginRate": "31%",
-              "initialMarginRate": "62%",
-              "maximumLever": "1.62",
-              "mmDeduction": "268400"
-            },
-            {
-              "gear": "27",
-              "storingLocationValue": "1900000",
-              "maintenanceMarginRate": "33%",
-              "initialMarginRate": "66%",
-              "maximumLever": "1.52",
-              "mmDeduction": "304400"
-            },
-            {
-              "gear": "28",
-              "storingLocationValue": "2000000",
-              "maintenanceMarginRate": "35%",
-              "initialMarginRate": "70%",
-              "maximumLever": "1.43",
-              "mmDeduction": "342400"
-            },
-            {
-              "gear": "29",
-              "storingLocationValue": "2100000",
-              "maintenanceMarginRate": "45%",
-              "initialMarginRate": "90%",
-              "maximumLever": "1.12",
-              "mmDeduction": "542400"
-            },
-            {
-              "gear": "30",
-              "storingLocationValue": "2500000",
-              "maintenanceMarginRate": "60%",
-              "initialMarginRate": "100%",
-              "maximumLever": "1",
-              "mmDeduction": "857400"
-            }
-          ]
-        },
-        "ext_code": "",
-        "ext_info": null,
-        "time_now": "1760509114.365306"
-      }
+      "error": "[WinError 10054] 远程主机强迫关闭了一个现有的连接。"
     },
     {
       "symbol": "AIUSDT",
@@ -2779,520 +2025,16 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509114.550895"
+        "time_now": "1760611411.407070"
       }
     },
     {
       "symbol": "AIXBTUSDT",
-      "url": "https://www.bybitglobal.com/x-api/contract/v5/public/support/symbol-risk?symbol=AIXBTUSDT",
-      "status": 200,
-      "data": {
-        "ret_code": 0,
-        "ret_msg": "success",
-        "result": {
-          "list": [
-            {
-              "gear": "1",
-              "storingLocationValue": "5000",
-              "maintenanceMarginRate": "0.8%",
-              "initialMarginRate": "1.33%",
-              "maximumLever": "75",
-              "mmDeduction": ""
-            },
-            {
-              "gear": "2",
-              "storingLocationValue": "25000",
-              "maintenanceMarginRate": "1.11%",
-              "initialMarginRate": "2%",
-              "maximumLever": "50",
-              "mmDeduction": "15.5"
-            },
-            {
-              "gear": "3",
-              "storingLocationValue": "100000",
-              "maintenanceMarginRate": "1.67%",
-              "initialMarginRate": "3%",
-              "maximumLever": "33.33",
-              "mmDeduction": "155.5"
-            },
-            {
-              "gear": "4",
-              "storingLocationValue": "125000",
-              "maintenanceMarginRate": "2%",
-              "initialMarginRate": "4%",
-              "maximumLever": "25",
-              "mmDeduction": "485.5"
-            },
-            {
-              "gear": "5",
-              "storingLocationValue": "150000",
-              "maintenanceMarginRate": "2.5%",
-              "initialMarginRate": "5%",
-              "maximumLever": "20",
-              "mmDeduction": "1110.5"
-            },
-            {
-              "gear": "6",
-              "storingLocationValue": "175000",
-              "maintenanceMarginRate": "3%",
-              "initialMarginRate": "6%",
-              "maximumLever": "16.67",
-              "mmDeduction": "1860.5"
-            },
-            {
-              "gear": "7",
-              "storingLocationValue": "200000",
-              "maintenanceMarginRate": "3.5%",
-              "initialMarginRate": "7%",
-              "maximumLever": "14.29",
-              "mmDeduction": "2735.5"
-            },
-            {
-              "gear": "8",
-              "storingLocationValue": "225000",
-              "maintenanceMarginRate": "4%",
-              "initialMarginRate": "8%",
-              "maximumLever": "12.5",
-              "mmDeduction": "3735.5"
-            },
-            {
-              "gear": "9",
-              "storingLocationValue": "250000",
-              "maintenanceMarginRate": "4.5%",
-              "initialMarginRate": "9%",
-              "maximumLever": "11.11",
-              "mmDeduction": "4860.5"
-            },
-            {
-              "gear": "10",
-              "storingLocationValue": "275000",
-              "maintenanceMarginRate": "5%",
-              "initialMarginRate": "10%",
-              "maximumLever": "10",
-              "mmDeduction": "6110.5"
-            },
-            {
-              "gear": "11",
-              "storingLocationValue": "300000",
-              "maintenanceMarginRate": "5.5%",
-              "initialMarginRate": "11%",
-              "maximumLever": "9.09",
-              "mmDeduction": "7485.5"
-            },
-            {
-              "gear": "12",
-              "storingLocationValue": "350000",
-              "maintenanceMarginRate": "6%",
-              "initialMarginRate": "12%",
-              "maximumLever": "8.33",
-              "mmDeduction": "8985.5"
-            },
-            {
-              "gear": "13",
-              "storingLocationValue": "375000",
-              "maintenanceMarginRate": "6.5%",
-              "initialMarginRate": "13%",
-              "maximumLever": "7.69",
-              "mmDeduction": "10735.5"
-            },
-            {
-              "gear": "14",
-              "storingLocationValue": "850000",
-              "maintenanceMarginRate": "7%",
-              "initialMarginRate": "14%",
-              "maximumLever": "7.14",
-              "mmDeduction": "12610.5"
-            },
-            {
-              "gear": "15",
-              "storingLocationValue": "950000",
-              "maintenanceMarginRate": "7.5%",
-              "initialMarginRate": "15%",
-              "maximumLever": "6.67",
-              "mmDeduction": "16860.5"
-            },
-            {
-              "gear": "16",
-              "storingLocationValue": "1050000",
-              "maintenanceMarginRate": "8%",
-              "initialMarginRate": "16%",
-              "maximumLever": "6.25",
-              "mmDeduction": "21610.5"
-            },
-            {
-              "gear": "17",
-              "storingLocationValue": "1150000",
-              "maintenanceMarginRate": "8.5%",
-              "initialMarginRate": "17%",
-              "maximumLever": "5.88",
-              "mmDeduction": "26860.5"
-            },
-            {
-              "gear": "18",
-              "storingLocationValue": "1250000",
-              "maintenanceMarginRate": "9%",
-              "initialMarginRate": "18%",
-              "maximumLever": "5.56",
-              "mmDeduction": "32610.5"
-            },
-            {
-              "gear": "19",
-              "storingLocationValue": "1275000",
-              "maintenanceMarginRate": "9.5%",
-              "initialMarginRate": "19%",
-              "maximumLever": "5.26",
-              "mmDeduction": "38860.5"
-            },
-            {
-              "gear": "20",
-              "storingLocationValue": "1300000",
-              "maintenanceMarginRate": "10%",
-              "initialMarginRate": "20%",
-              "maximumLever": "5",
-              "mmDeduction": "45235.5"
-            },
-            {
-              "gear": "21",
-              "storingLocationValue": "1325000",
-              "maintenanceMarginRate": "10.5%",
-              "initialMarginRate": "21%",
-              "maximumLever": "4.76",
-              "mmDeduction": "51735.5"
-            },
-            {
-              "gear": "22",
-              "storingLocationValue": "1350000",
-              "maintenanceMarginRate": "11%",
-              "initialMarginRate": "22%",
-              "maximumLever": "4.55",
-              "mmDeduction": "58360.5"
-            },
-            {
-              "gear": "23",
-              "storingLocationValue": "1375000",
-              "maintenanceMarginRate": "11.5%",
-              "initialMarginRate": "23%",
-              "maximumLever": "4.35",
-              "mmDeduction": "65110.5"
-            },
-            {
-              "gear": "24",
-              "storingLocationValue": "1400000",
-              "maintenanceMarginRate": "12%",
-              "initialMarginRate": "24%",
-              "maximumLever": "4.17",
-              "mmDeduction": "71985.5"
-            },
-            {
-              "gear": "25",
-              "storingLocationValue": "1425000",
-              "maintenanceMarginRate": "12.5%",
-              "initialMarginRate": "25%",
-              "maximumLever": "4",
-              "mmDeduction": "78985.5"
-            },
-            {
-              "gear": "26",
-              "storingLocationValue": "1450000",
-              "maintenanceMarginRate": "13%",
-              "initialMarginRate": "26%",
-              "maximumLever": "3.85",
-              "mmDeduction": "86110.5"
-            },
-            {
-              "gear": "27",
-              "storingLocationValue": "1650000",
-              "maintenanceMarginRate": "13.5%",
-              "initialMarginRate": "27%",
-              "maximumLever": "3.7",
-              "mmDeduction": "93360.5"
-            },
-            {
-              "gear": "28",
-              "storingLocationValue": "1850000",
-              "maintenanceMarginRate": "20%",
-              "initialMarginRate": "40%",
-              "maximumLever": "2.5",
-              "mmDeduction": "200610.5"
-            },
-            {
-              "gear": "29",
-              "storingLocationValue": "2250000",
-              "maintenanceMarginRate": "40%",
-              "initialMarginRate": "70%",
-              "maximumLever": "1.43",
-              "mmDeduction": "570610.5"
-            },
-            {
-              "gear": "30",
-              "storingLocationValue": "2500000",
-              "maintenanceMarginRate": "60%",
-              "initialMarginRate": "100%",
-              "maximumLever": "1",
-              "mmDeduction": "1020610.5"
-            }
-          ]
-        },
-        "ext_code": "",
-        "ext_info": null,
-        "time_now": "1760509115.862476"
-      }
+      "error": "[WinError 10054] 远程主机强迫关闭了一个现有的连接。"
     },
     {
       "symbol": "ARBUSDT",
-      "url": "https://www.bybitglobal.com/x-api/contract/v5/public/support/symbol-risk?symbol=ARBUSDT",
-      "status": 200,
-      "data": {
-        "ret_code": 0,
-        "ret_msg": "success",
-        "result": {
-          "list": [
-            {
-              "gear": "1",
-              "storingLocationValue": "200000",
-              "maintenanceMarginRate": "1%",
-              "initialMarginRate": "2%",
-              "maximumLever": "50",
-              "mmDeduction": ""
-            },
-            {
-              "gear": "2",
-              "storingLocationValue": "400000",
-              "maintenanceMarginRate": "1.5%",
-              "initialMarginRate": "3%",
-              "maximumLever": "33.33",
-              "mmDeduction": "1000"
-            },
-            {
-              "gear": "3",
-              "storingLocationValue": "600000",
-              "maintenanceMarginRate": "2%",
-              "initialMarginRate": "4%",
-              "maximumLever": "25",
-              "mmDeduction": "3000"
-            },
-            {
-              "gear": "4",
-              "storingLocationValue": "800000",
-              "maintenanceMarginRate": "2.5%",
-              "initialMarginRate": "5%",
-              "maximumLever": "20",
-              "mmDeduction": "6000"
-            },
-            {
-              "gear": "5",
-              "storingLocationValue": "1000000",
-              "maintenanceMarginRate": "3%",
-              "initialMarginRate": "6%",
-              "maximumLever": "16.67",
-              "mmDeduction": "10000"
-            },
-            {
-              "gear": "6",
-              "storingLocationValue": "1200000",
-              "maintenanceMarginRate": "3.5%",
-              "initialMarginRate": "7%",
-              "maximumLever": "14.29",
-              "mmDeduction": "15000"
-            },
-            {
-              "gear": "7",
-              "storingLocationValue": "1400000",
-              "maintenanceMarginRate": "4%",
-              "initialMarginRate": "8%",
-              "maximumLever": "12.5",
-              "mmDeduction": "21000"
-            },
-            {
-              "gear": "8",
-              "storingLocationValue": "1600000",
-              "maintenanceMarginRate": "4.5%",
-              "initialMarginRate": "9%",
-              "maximumLever": "11.11",
-              "mmDeduction": "28000"
-            },
-            {
-              "gear": "9",
-              "storingLocationValue": "1800000",
-              "maintenanceMarginRate": "5%",
-              "initialMarginRate": "10%",
-              "maximumLever": "10",
-              "mmDeduction": "36000"
-            },
-            {
-              "gear": "10",
-              "storingLocationValue": "2000000",
-              "maintenanceMarginRate": "5.5%",
-              "initialMarginRate": "11%",
-              "maximumLever": "9.09",
-              "mmDeduction": "45000"
-            },
-            {
-              "gear": "11",
-              "storingLocationValue": "2200000",
-              "maintenanceMarginRate": "6%",
-              "initialMarginRate": "12%",
-              "maximumLever": "8.33",
-              "mmDeduction": "55000"
-            },
-            {
-              "gear": "12",
-              "storingLocationValue": "2400000",
-              "maintenanceMarginRate": "6.5%",
-              "initialMarginRate": "13%",
-              "maximumLever": "7.69",
-              "mmDeduction": "66000"
-            },
-            {
-              "gear": "13",
-              "storingLocationValue": "2600000",
-              "maintenanceMarginRate": "7%",
-              "initialMarginRate": "14%",
-              "maximumLever": "7.14",
-              "mmDeduction": "78000"
-            },
-            {
-              "gear": "14",
-              "storingLocationValue": "2800000",
-              "maintenanceMarginRate": "7.5%",
-              "initialMarginRate": "15%",
-              "maximumLever": "6.67",
-              "mmDeduction": "91000"
-            },
-            {
-              "gear": "15",
-              "storingLocationValue": "3000000",
-              "maintenanceMarginRate": "8%",
-              "initialMarginRate": "16%",
-              "maximumLever": "6.25",
-              "mmDeduction": "105000"
-            },
-            {
-              "gear": "16",
-              "storingLocationValue": "3200000",
-              "maintenanceMarginRate": "8.5%",
-              "initialMarginRate": "17%",
-              "maximumLever": "5.88",
-              "mmDeduction": "120000"
-            },
-            {
-              "gear": "17",
-              "storingLocationValue": "3400000",
-              "maintenanceMarginRate": "9%",
-              "initialMarginRate": "18%",
-              "maximumLever": "5.56",
-              "mmDeduction": "136000"
-            },
-            {
-              "gear": "18",
-              "storingLocationValue": "3900000",
-              "maintenanceMarginRate": "9.5%",
-              "initialMarginRate": "19%",
-              "maximumLever": "5.26",
-              "mmDeduction": "153000"
-            },
-            {
-              "gear": "19",
-              "storingLocationValue": "4400000",
-              "maintenanceMarginRate": "10%",
-              "initialMarginRate": "20%",
-              "maximumLever": "5",
-              "mmDeduction": "172500"
-            },
-            {
-              "gear": "20",
-              "storingLocationValue": "4900000",
-              "maintenanceMarginRate": "10.5%",
-              "initialMarginRate": "21%",
-              "maximumLever": "4.76",
-              "mmDeduction": "194500"
-            },
-            {
-              "gear": "21",
-              "storingLocationValue": "5400000",
-              "maintenanceMarginRate": "11%",
-              "initialMarginRate": "22%",
-              "maximumLever": "4.55",
-              "mmDeduction": "219000"
-            },
-            {
-              "gear": "22",
-              "storingLocationValue": "5900000",
-              "maintenanceMarginRate": "11.5%",
-              "initialMarginRate": "23%",
-              "maximumLever": "4.35",
-              "mmDeduction": "246000"
-            },
-            {
-              "gear": "23",
-              "storingLocationValue": "6400000",
-              "maintenanceMarginRate": "12%",
-              "initialMarginRate": "24%",
-              "maximumLever": "4.17",
-              "mmDeduction": "275500"
-            },
-            {
-              "gear": "24",
-              "storingLocationValue": "6900000",
-              "maintenanceMarginRate": "12.5%",
-              "initialMarginRate": "25%",
-              "maximumLever": "4",
-              "mmDeduction": "307500"
-            },
-            {
-              "gear": "25",
-              "storingLocationValue": "7400000",
-              "maintenanceMarginRate": "15.6%",
-              "initialMarginRate": "26%",
-              "maximumLever": "3.85",
-              "mmDeduction": "521400"
-            },
-            {
-              "gear": "26",
-              "storingLocationValue": "7900000",
-              "maintenanceMarginRate": "17.64%",
-              "initialMarginRate": "29.4%",
-              "maximumLever": "3.4",
-              "mmDeduction": "672360"
-            },
-            {
-              "gear": "27",
-              "storingLocationValue": "8400000",
-              "maintenanceMarginRate": "19.98%",
-              "initialMarginRate": "33.3%",
-              "maximumLever": "3",
-              "mmDeduction": "857220"
-            },
-            {
-              "gear": "28",
-              "storingLocationValue": "8900000",
-              "maintenanceMarginRate": "24%",
-              "initialMarginRate": "40%",
-              "maximumLever": "2.5",
-              "mmDeduction": "1194900"
-            },
-            {
-              "gear": "29",
-              "storingLocationValue": "9400000",
-              "maintenanceMarginRate": "30%",
-              "initialMarginRate": "50%",
-              "maximumLever": "2",
-              "mmDeduction": "1728900"
-            },
-            {
-              "gear": "30",
-              "storingLocationValue": "15000000",
-              "maintenanceMarginRate": "40.02%",
-              "initialMarginRate": "66.7%",
-              "maximumLever": "1.5",
-              "mmDeduction": "2670780"
-            }
-          ]
-        },
-        "ext_code": "",
-        "ext_info": null,
-        "time_now": "1760509120.307843"
-      }
+      "error": "[WinError 10054] 远程主机强迫关闭了一个现有的连接。"
     },
     {
       "symbol": "ARCUSDT",
@@ -3363,264 +2105,12 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509120.636993"
+        "time_now": "1760611415.424343"
       }
     },
     {
       "symbol": "ASTERUSDT",
-      "url": "https://www.bybitglobal.com/x-api/contract/v5/public/support/symbol-risk?symbol=ASTERUSDT",
-      "status": 200,
-      "data": {
-        "ret_code": 0,
-        "ret_msg": "success",
-        "result": {
-          "list": [
-            {
-              "gear": "1",
-              "storingLocationValue": "5000",
-              "maintenanceMarginRate": "1%",
-              "initialMarginRate": "2%",
-              "maximumLever": "50",
-              "mmDeduction": ""
-            },
-            {
-              "gear": "2",
-              "storingLocationValue": "10000",
-              "maintenanceMarginRate": "1.11%",
-              "initialMarginRate": "2.22%",
-              "maximumLever": "45",
-              "mmDeduction": "5.5"
-            },
-            {
-              "gear": "3",
-              "storingLocationValue": "20000",
-              "maintenanceMarginRate": "1.25%",
-              "initialMarginRate": "2.5%",
-              "maximumLever": "40",
-              "mmDeduction": "19.5"
-            },
-            {
-              "gear": "4",
-              "storingLocationValue": "30000",
-              "maintenanceMarginRate": "1.43%",
-              "initialMarginRate": "2.86%",
-              "maximumLever": "35",
-              "mmDeduction": "55.5"
-            },
-            {
-              "gear": "5",
-              "storingLocationValue": "40000",
-              "maintenanceMarginRate": "1.67%",
-              "initialMarginRate": "3.33%",
-              "maximumLever": "30",
-              "mmDeduction": "127.5"
-            },
-            {
-              "gear": "6",
-              "storingLocationValue": "50000",
-              "maintenanceMarginRate": "2%",
-              "initialMarginRate": "4%",
-              "maximumLever": "25",
-              "mmDeduction": "259.5"
-            },
-            {
-              "gear": "7",
-              "storingLocationValue": "100000",
-              "maintenanceMarginRate": "2.5%",
-              "initialMarginRate": "5%",
-              "maximumLever": "20",
-              "mmDeduction": "509.5"
-            },
-            {
-              "gear": "8",
-              "storingLocationValue": "150000",
-              "maintenanceMarginRate": "3%",
-              "initialMarginRate": "6%",
-              "maximumLever": "16.67",
-              "mmDeduction": "1009.5"
-            },
-            {
-              "gear": "9",
-              "storingLocationValue": "200000",
-              "maintenanceMarginRate": "3.5%",
-              "initialMarginRate": "7%",
-              "maximumLever": "14.29",
-              "mmDeduction": "1759.5"
-            },
-            {
-              "gear": "10",
-              "storingLocationValue": "225000",
-              "maintenanceMarginRate": "4%",
-              "initialMarginRate": "8%",
-              "maximumLever": "12.5",
-              "mmDeduction": "2759.5"
-            },
-            {
-              "gear": "11",
-              "storingLocationValue": "250000",
-              "maintenanceMarginRate": "4.5%",
-              "initialMarginRate": "9%",
-              "maximumLever": "11.11",
-              "mmDeduction": "3884.5"
-            },
-            {
-              "gear": "12",
-              "storingLocationValue": "275000",
-              "maintenanceMarginRate": "5%",
-              "initialMarginRate": "10%",
-              "maximumLever": "10",
-              "mmDeduction": "5134.5"
-            },
-            {
-              "gear": "13",
-              "storingLocationValue": "300000",
-              "maintenanceMarginRate": "5.5%",
-              "initialMarginRate": "11%",
-              "maximumLever": "9.09",
-              "mmDeduction": "6509.5"
-            },
-            {
-              "gear": "14",
-              "storingLocationValue": "350000",
-              "maintenanceMarginRate": "6%",
-              "initialMarginRate": "12%",
-              "maximumLever": "8.33",
-              "mmDeduction": "8009.5"
-            },
-            {
-              "gear": "15",
-              "storingLocationValue": "375000",
-              "maintenanceMarginRate": "6.5%",
-              "initialMarginRate": "13%",
-              "maximumLever": "7.69",
-              "mmDeduction": "9759.5"
-            },
-            {
-              "gear": "16",
-              "storingLocationValue": "850000",
-              "maintenanceMarginRate": "7%",
-              "initialMarginRate": "14%",
-              "maximumLever": "7.14",
-              "mmDeduction": "11634.5"
-            },
-            {
-              "gear": "17",
-              "storingLocationValue": "950000",
-              "maintenanceMarginRate": "7.5%",
-              "initialMarginRate": "15%",
-              "maximumLever": "6.67",
-              "mmDeduction": "15884.5"
-            },
-            {
-              "gear": "18",
-              "storingLocationValue": "1050000",
-              "maintenanceMarginRate": "8%",
-              "initialMarginRate": "16%",
-              "maximumLever": "6.25",
-              "mmDeduction": "20634.5"
-            },
-            {
-              "gear": "19",
-              "storingLocationValue": "1150000",
-              "maintenanceMarginRate": "8.5%",
-              "initialMarginRate": "17%",
-              "maximumLever": "5.88",
-              "mmDeduction": "25884.5"
-            },
-            {
-              "gear": "20",
-              "storingLocationValue": "1250000",
-              "maintenanceMarginRate": "9%",
-              "initialMarginRate": "18%",
-              "maximumLever": "5.56",
-              "mmDeduction": "31634.5"
-            },
-            {
-              "gear": "21",
-              "storingLocationValue": "1350000",
-              "maintenanceMarginRate": "11%",
-              "initialMarginRate": "22%",
-              "maximumLever": "4.55",
-              "mmDeduction": "56634.5"
-            },
-            {
-              "gear": "22",
-              "storingLocationValue": "1450000",
-              "maintenanceMarginRate": "13%",
-              "initialMarginRate": "26%",
-              "maximumLever": "3.85",
-              "mmDeduction": "83634.5"
-            },
-            {
-              "gear": "23",
-              "storingLocationValue": "1550000",
-              "maintenanceMarginRate": "15%",
-              "initialMarginRate": "30%",
-              "maximumLever": "3.33",
-              "mmDeduction": "112634.5"
-            },
-            {
-              "gear": "24",
-              "storingLocationValue": "1650000",
-              "maintenanceMarginRate": "17%",
-              "initialMarginRate": "34%",
-              "maximumLever": "2.94",
-              "mmDeduction": "143634.5"
-            },
-            {
-              "gear": "25",
-              "storingLocationValue": "1750000",
-              "maintenanceMarginRate": "19%",
-              "initialMarginRate": "38%",
-              "maximumLever": "2.63",
-              "mmDeduction": "176634.5"
-            },
-            {
-              "gear": "26",
-              "storingLocationValue": "1850000",
-              "maintenanceMarginRate": "21%",
-              "initialMarginRate": "42%",
-              "maximumLever": "2.38",
-              "mmDeduction": "211634.5"
-            },
-            {
-              "gear": "27",
-              "storingLocationValue": "1950000",
-              "maintenanceMarginRate": "23%",
-              "initialMarginRate": "46%",
-              "maximumLever": "2.17",
-              "mmDeduction": "248634.5"
-            },
-            {
-              "gear": "28",
-              "storingLocationValue": "2050000",
-              "maintenanceMarginRate": "25%",
-              "initialMarginRate": "50%",
-              "maximumLever": "2",
-              "mmDeduction": "287634.5"
-            },
-            {
-              "gear": "29",
-              "storingLocationValue": "2150000",
-              "maintenanceMarginRate": "33%",
-              "initialMarginRate": "66.67%",
-              "maximumLever": "1.5",
-              "mmDeduction": "451634.5"
-            },
-            {
-              "gear": "30",
-              "storingLocationValue": "2500000",
-              "maintenanceMarginRate": "60%",
-              "initialMarginRate": "100%",
-              "maximumLever": "1",
-              "mmDeduction": "1032134.5"
-            }
-          ]
-        },
-        "ext_code": "",
-        "ext_info": null,
-        "time_now": "1760509120.786799"
-      }
+      "error": "[WinError 10054] 远程主机强迫关闭了一个现有的连接。"
     },
     {
       "symbol": "AVAXUSDT",
@@ -3875,7 +2365,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509122.409704"
+        "time_now": "1760611420.364109"
       }
     },
     {
@@ -3947,7 +2437,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509126.465066"
+        "time_now": "1760611420.430850"
       }
     },
     {
@@ -4203,7 +2693,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509126.699019"
+        "time_now": "1760611420.100354"
       }
     },
     {
@@ -4459,7 +2949,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509126.829690"
+        "time_now": "1760611427.909374"
       }
     },
     {
@@ -4715,7 +3205,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509128.593853"
+        "time_now": "1760611425.058103"
       }
     },
     {
@@ -4971,7 +3461,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509132.467939"
+        "time_now": "1760611425.126501"
       }
     },
     {
@@ -5227,7 +3717,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509132.679344"
+        "time_now": "1760611425.156448"
       }
     },
     {
@@ -5483,7 +3973,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509132.797085"
+        "time_now": "1760611430.243122"
       }
     },
     {
@@ -5498,7 +3988,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509134.599360"
+        "time_now": "1760611430.349304"
       }
     },
     {
@@ -5586,7 +4076,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509138.272261"
+        "time_now": "1760611430.446486"
       }
     },
     {
@@ -5842,592 +4332,20 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509138.542683"
+        "time_now": "1760611432.757253"
       }
     },
     {
       "symbol": "BNXUSDT",
-      "url": "https://www.bybitglobal.com/x-api/contract/v5/public/support/symbol-risk?symbol=BNXUSDT",
-      "status": 200,
-      "data": {
-        "ret_code": 0,
-        "ret_msg": "success",
-        "result": {
-          "list": [
-            {
-              "gear": "1",
-              "storingLocationValue": "100000",
-              "maintenanceMarginRate": "2%",
-              "initialMarginRate": "4%",
-              "maximumLever": "25",
-              "mmDeduction": ""
-            },
-            {
-              "gear": "2",
-              "storingLocationValue": "200000",
-              "maintenanceMarginRate": "2.5%",
-              "initialMarginRate": "5%",
-              "maximumLever": "20",
-              "mmDeduction": "500"
-            },
-            {
-              "gear": "3",
-              "storingLocationValue": "300000",
-              "maintenanceMarginRate": "3%",
-              "initialMarginRate": "6%",
-              "maximumLever": "16.67",
-              "mmDeduction": "1500"
-            },
-            {
-              "gear": "4",
-              "storingLocationValue": "400000",
-              "maintenanceMarginRate": "3.5%",
-              "initialMarginRate": "7%",
-              "maximumLever": "14.29",
-              "mmDeduction": "3000"
-            },
-            {
-              "gear": "5",
-              "storingLocationValue": "500000",
-              "maintenanceMarginRate": "4%",
-              "initialMarginRate": "8%",
-              "maximumLever": "12.5",
-              "mmDeduction": "5000"
-            },
-            {
-              "gear": "6",
-              "storingLocationValue": "600000",
-              "maintenanceMarginRate": "4.5%",
-              "initialMarginRate": "9%",
-              "maximumLever": "11.11",
-              "mmDeduction": "7500"
-            },
-            {
-              "gear": "7",
-              "storingLocationValue": "700000",
-              "maintenanceMarginRate": "5%",
-              "initialMarginRate": "10%",
-              "maximumLever": "10",
-              "mmDeduction": "10500"
-            },
-            {
-              "gear": "8",
-              "storingLocationValue": "800000",
-              "maintenanceMarginRate": "5.5%",
-              "initialMarginRate": "11%",
-              "maximumLever": "9.09",
-              "mmDeduction": "14000"
-            },
-            {
-              "gear": "9",
-              "storingLocationValue": "900000",
-              "maintenanceMarginRate": "6%",
-              "initialMarginRate": "12%",
-              "maximumLever": "8.33",
-              "mmDeduction": "18000"
-            },
-            {
-              "gear": "10",
-              "storingLocationValue": "1000000",
-              "maintenanceMarginRate": "6.5%",
-              "initialMarginRate": "13%",
-              "maximumLever": "7.69",
-              "mmDeduction": "22500"
-            },
-            {
-              "gear": "11",
-              "storingLocationValue": "1100000",
-              "maintenanceMarginRate": "7%",
-              "initialMarginRate": "14%",
-              "maximumLever": "7.14",
-              "mmDeduction": "27500"
-            },
-            {
-              "gear": "12",
-              "storingLocationValue": "1200000",
-              "maintenanceMarginRate": "7.5%",
-              "initialMarginRate": "15%",
-              "maximumLever": "6.67",
-              "mmDeduction": "33000"
-            },
-            {
-              "gear": "13",
-              "storingLocationValue": "1300000",
-              "maintenanceMarginRate": "8%",
-              "initialMarginRate": "16%",
-              "maximumLever": "6.25",
-              "mmDeduction": "39000"
-            },
-            {
-              "gear": "14",
-              "storingLocationValue": "1400000",
-              "maintenanceMarginRate": "8.5%",
-              "initialMarginRate": "17%",
-              "maximumLever": "5.88",
-              "mmDeduction": "45500"
-            },
-            {
-              "gear": "15",
-              "storingLocationValue": "1500000",
-              "maintenanceMarginRate": "9%",
-              "initialMarginRate": "18%",
-              "maximumLever": "5.56",
-              "mmDeduction": "52500"
-            },
-            {
-              "gear": "16",
-              "storingLocationValue": "2000000",
-              "maintenanceMarginRate": "11%",
-              "initialMarginRate": "22%",
-              "maximumLever": "4.55",
-              "mmDeduction": "82500"
-            },
-            {
-              "gear": "17",
-              "storingLocationValue": "2500000",
-              "maintenanceMarginRate": "13%",
-              "initialMarginRate": "26%",
-              "maximumLever": "3.85",
-              "mmDeduction": "122500"
-            },
-            {
-              "gear": "18",
-              "storingLocationValue": "3000000",
-              "maintenanceMarginRate": "15%",
-              "initialMarginRate": "30%",
-              "maximumLever": "3.33",
-              "mmDeduction": "172500"
-            },
-            {
-              "gear": "19",
-              "storingLocationValue": "3500000",
-              "maintenanceMarginRate": "17%",
-              "initialMarginRate": "34%",
-              "maximumLever": "2.94",
-              "mmDeduction": "232500"
-            },
-            {
-              "gear": "20",
-              "storingLocationValue": "4000000",
-              "maintenanceMarginRate": "19%",
-              "initialMarginRate": "38%",
-              "maximumLever": "2.63",
-              "mmDeduction": "302500"
-            },
-            {
-              "gear": "21",
-              "storingLocationValue": "4500000",
-              "maintenanceMarginRate": "21%",
-              "initialMarginRate": "42%",
-              "maximumLever": "2.38",
-              "mmDeduction": "382500"
-            },
-            {
-              "gear": "22",
-              "storingLocationValue": "5000000",
-              "maintenanceMarginRate": "23%",
-              "initialMarginRate": "46%",
-              "maximumLever": "2.17",
-              "mmDeduction": "472500"
-            },
-            {
-              "gear": "23",
-              "storingLocationValue": "5500000",
-              "maintenanceMarginRate": "25%",
-              "initialMarginRate": "50%",
-              "maximumLever": "2",
-              "mmDeduction": "572500"
-            },
-            {
-              "gear": "24",
-              "storingLocationValue": "6000000",
-              "maintenanceMarginRate": "27%",
-              "initialMarginRate": "54%",
-              "maximumLever": "1.85",
-              "mmDeduction": "682500"
-            },
-            {
-              "gear": "25",
-              "storingLocationValue": "6500000",
-              "maintenanceMarginRate": "29%",
-              "initialMarginRate": "58%",
-              "maximumLever": "1.72",
-              "mmDeduction": "802500"
-            },
-            {
-              "gear": "26",
-              "storingLocationValue": "7000000",
-              "maintenanceMarginRate": "31%",
-              "initialMarginRate": "62%",
-              "maximumLever": "1.61",
-              "mmDeduction": "932500"
-            },
-            {
-              "gear": "27",
-              "storingLocationValue": "7500000",
-              "maintenanceMarginRate": "33%",
-              "initialMarginRate": "66%",
-              "maximumLever": "1.52",
-              "mmDeduction": "1072500"
-            },
-            {
-              "gear": "28",
-              "storingLocationValue": "8000000",
-              "maintenanceMarginRate": "35%",
-              "initialMarginRate": "70%",
-              "maximumLever": "1.43",
-              "mmDeduction": "1222500"
-            },
-            {
-              "gear": "29",
-              "storingLocationValue": "8500000",
-              "maintenanceMarginRate": "45%",
-              "initialMarginRate": "90%",
-              "maximumLever": "1.11",
-              "mmDeduction": "2022500"
-            },
-            {
-              "gear": "30",
-              "storingLocationValue": "10000000",
-              "maintenanceMarginRate": "60%",
-              "initialMarginRate": "100%",
-              "maximumLever": "1",
-              "mmDeduction": "3297500"
-            }
-          ]
-        },
-        "ext_code": "",
-        "ext_info": null,
-        "time_now": "1760509140.025357"
-      }
+      "error": "[WinError 10054] 远程主机强迫关闭了一个现有的连接。"
     },
     {
       "symbol": "BROCCOLIUSDT",
-      "url": "https://www.bybitglobal.com/x-api/contract/v5/public/support/symbol-risk?symbol=BROCCOLIUSDT",
-      "status": 200,
-      "data": {
-        "ret_code": 0,
-        "ret_msg": "success",
-        "result": {
-          "list": [
-            {
-              "gear": "1",
-              "storingLocationValue": "5000",
-              "maintenanceMarginRate": "2%",
-              "initialMarginRate": "4%",
-              "maximumLever": "25",
-              "mmDeduction": ""
-            },
-            {
-              "gear": "2",
-              "storingLocationValue": "25000",
-              "maintenanceMarginRate": "2.5%",
-              "initialMarginRate": "5%",
-              "maximumLever": "20",
-              "mmDeduction": "25"
-            },
-            {
-              "gear": "3",
-              "storingLocationValue": "200000",
-              "maintenanceMarginRate": "5%",
-              "initialMarginRate": "10%",
-              "maximumLever": "10",
-              "mmDeduction": "650"
-            },
-            {
-              "gear": "4",
-              "storingLocationValue": "500000",
-              "maintenanceMarginRate": "10%",
-              "initialMarginRate": "20%",
-              "maximumLever": "5",
-              "mmDeduction": "10650"
-            },
-            {
-              "gear": "5",
-              "storingLocationValue": "850000",
-              "maintenanceMarginRate": "12.5%",
-              "initialMarginRate": "25%",
-              "maximumLever": "4",
-              "mmDeduction": "23150"
-            },
-            {
-              "gear": "6",
-              "storingLocationValue": "1500000",
-              "maintenanceMarginRate": "25%",
-              "initialMarginRate": "50%",
-              "maximumLever": "2",
-              "mmDeduction": "129400"
-            },
-            {
-              "gear": "7",
-              "storingLocationValue": "2500000",
-              "maintenanceMarginRate": "50%",
-              "initialMarginRate": "100%",
-              "maximumLever": "1",
-              "mmDeduction": "504400"
-            }
-          ]
-        },
-        "ext_code": "",
-        "ext_info": null,
-        "time_now": "1760509140.977696"
-      }
+      "error": "[WinError 10054] 远程主机强迫关闭了一个现有的连接。"
     },
     {
       "symbol": "BSWUSDT",
-      "url": "https://www.bybitglobal.com/x-api/contract/v5/public/support/symbol-risk?symbol=BSWUSDT",
-      "status": 200,
-      "data": {
-        "ret_code": 0,
-        "ret_msg": "success",
-        "result": {
-          "list": [
-            {
-              "gear": "1",
-              "storingLocationValue": "5000",
-              "maintenanceMarginRate": "2.5%",
-              "initialMarginRate": "5%",
-              "maximumLever": "20",
-              "mmDeduction": ""
-            },
-            {
-              "gear": "2",
-              "storingLocationValue": "9000",
-              "maintenanceMarginRate": "2.63%",
-              "initialMarginRate": "5.26%",
-              "maximumLever": "19",
-              "mmDeduction": "6.5"
-            },
-            {
-              "gear": "3",
-              "storingLocationValue": "13000",
-              "maintenanceMarginRate": "2.78%",
-              "initialMarginRate": "5.56%",
-              "maximumLever": "18",
-              "mmDeduction": "20"
-            },
-            {
-              "gear": "4",
-              "storingLocationValue": "17000",
-              "maintenanceMarginRate": "2.94%",
-              "initialMarginRate": "5.88%",
-              "maximumLever": "17",
-              "mmDeduction": "40.8"
-            },
-            {
-              "gear": "5",
-              "storingLocationValue": "21000",
-              "maintenanceMarginRate": "3.13%",
-              "initialMarginRate": "6.25%",
-              "maximumLever": "16",
-              "mmDeduction": "73.1"
-            },
-            {
-              "gear": "6",
-              "storingLocationValue": "25000",
-              "maintenanceMarginRate": "3.33%",
-              "initialMarginRate": "6.67%",
-              "maximumLever": "15",
-              "mmDeduction": "115.1"
-            },
-            {
-              "gear": "7",
-              "storingLocationValue": "40000",
-              "maintenanceMarginRate": "3.57%",
-              "initialMarginRate": "7.14%",
-              "maximumLever": "14",
-              "mmDeduction": "175.1"
-            },
-            {
-              "gear": "8",
-              "storingLocationValue": "55000",
-              "maintenanceMarginRate": "3.85%",
-              "initialMarginRate": "7.69%",
-              "maximumLever": "13",
-              "mmDeduction": "287.1"
-            },
-            {
-              "gear": "9",
-              "storingLocationValue": "70000",
-              "maintenanceMarginRate": "4.17%",
-              "initialMarginRate": "8.33%",
-              "maximumLever": "12",
-              "mmDeduction": "463.1"
-            },
-            {
-              "gear": "10",
-              "storingLocationValue": "85000",
-              "maintenanceMarginRate": "4.55%",
-              "initialMarginRate": "9.09%",
-              "maximumLever": "11",
-              "mmDeduction": "729.1"
-            },
-            {
-              "gear": "11",
-              "storingLocationValue": "100000",
-              "maintenanceMarginRate": "5%",
-              "initialMarginRate": "10%",
-              "maximumLever": "10",
-              "mmDeduction": "1111.6"
-            },
-            {
-              "gear": "12",
-              "storingLocationValue": "110000",
-              "maintenanceMarginRate": "5.26%",
-              "initialMarginRate": "10.53%",
-              "maximumLever": "9.5",
-              "mmDeduction": "1371.6"
-            },
-            {
-              "gear": "13",
-              "storingLocationValue": "120000",
-              "maintenanceMarginRate": "5.56%",
-              "initialMarginRate": "11.11%",
-              "maximumLever": "9",
-              "mmDeduction": "1701.6"
-            },
-            {
-              "gear": "14",
-              "storingLocationValue": "130000",
-              "maintenanceMarginRate": "5.88%",
-              "initialMarginRate": "11.76%",
-              "maximumLever": "8.5",
-              "mmDeduction": "2085.6"
-            },
-            {
-              "gear": "15",
-              "storingLocationValue": "140000",
-              "maintenanceMarginRate": "6.25%",
-              "initialMarginRate": "12.5%",
-              "maximumLever": "8",
-              "mmDeduction": "2566.6"
-            },
-            {
-              "gear": "16",
-              "storingLocationValue": "150000",
-              "maintenanceMarginRate": "6.67%",
-              "initialMarginRate": "13.33%",
-              "maximumLever": "7.5",
-              "mmDeduction": "3154.6"
-            },
-            {
-              "gear": "17",
-              "storingLocationValue": "160000",
-              "maintenanceMarginRate": "7.14%",
-              "initialMarginRate": "14.29%",
-              "maximumLever": "7",
-              "mmDeduction": "3859.6"
-            },
-            {
-              "gear": "18",
-              "storingLocationValue": "170000",
-              "maintenanceMarginRate": "7.69%",
-              "initialMarginRate": "15.38%",
-              "maximumLever": "6.5",
-              "mmDeduction": "4739.6"
-            },
-            {
-              "gear": "19",
-              "storingLocationValue": "180000",
-              "maintenanceMarginRate": "8.33%",
-              "initialMarginRate": "16.67%",
-              "maximumLever": "6",
-              "mmDeduction": "5827.6"
-            },
-            {
-              "gear": "20",
-              "storingLocationValue": "190000",
-              "maintenanceMarginRate": "9.09%",
-              "initialMarginRate": "18.18%",
-              "maximumLever": "5.5",
-              "mmDeduction": "7195.6"
-            },
-            {
-              "gear": "21",
-              "storingLocationValue": "200000",
-              "maintenanceMarginRate": "10%",
-              "initialMarginRate": "20%",
-              "maximumLever": "5",
-              "mmDeduction": "8924.6"
-            },
-            {
-              "gear": "22",
-              "storingLocationValue": "350000",
-              "maintenanceMarginRate": "11.11%",
-              "initialMarginRate": "22.22%",
-              "maximumLever": "4.5",
-              "mmDeduction": "11144.6"
-            },
-            {
-              "gear": "23",
-              "storingLocationValue": "500000",
-              "maintenanceMarginRate": "12.5%",
-              "initialMarginRate": "25%",
-              "maximumLever": "4",
-              "mmDeduction": "16009.6"
-            },
-            {
-              "gear": "24",
-              "storingLocationValue": "625000",
-              "maintenanceMarginRate": "14.29%",
-              "initialMarginRate": "28.57%",
-              "maximumLever": "3.5",
-              "mmDeduction": "24959.6"
-            },
-            {
-              "gear": "25",
-              "storingLocationValue": "750000",
-              "maintenanceMarginRate": "16.67%",
-              "initialMarginRate": "33.33%",
-              "maximumLever": "3",
-              "mmDeduction": "39834.6"
-            },
-            {
-              "gear": "26",
-              "storingLocationValue": "875000",
-              "maintenanceMarginRate": "20%",
-              "initialMarginRate": "40%",
-              "maximumLever": "2.5",
-              "mmDeduction": "64809.6"
-            },
-            {
-              "gear": "27",
-              "storingLocationValue": "1000000",
-              "maintenanceMarginRate": "25%",
-              "initialMarginRate": "50%",
-              "maximumLever": "2",
-              "mmDeduction": "108559.6"
-            },
-            {
-              "gear": "28",
-              "storingLocationValue": "1300000",
-              "maintenanceMarginRate": "33.33%",
-              "initialMarginRate": "66.67%",
-              "maximumLever": "1.5",
-              "mmDeduction": "191859.6"
-            },
-            {
-              "gear": "29",
-              "storingLocationValue": "1600000",
-              "maintenanceMarginRate": "40%",
-              "initialMarginRate": "80%",
-              "maximumLever": "1.25",
-              "mmDeduction": "278569.6"
-            },
-            {
-              "gear": "30",
-              "storingLocationValue": "2000000",
-              "maintenanceMarginRate": "50%",
-              "initialMarginRate": "100%",
-              "maximumLever": "1",
-              "mmDeduction": "438569.6"
-            }
-          ]
-        },
-        "ext_code": "",
-        "ext_info": null,
-        "time_now": "1760509144.463943"
-      }
+      "error": "[WinError 10054] 远程主机强迫关闭了一个现有的连接。"
     },
     {
       "symbol": "BTCUSDT",
@@ -6722,7 +4640,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509144.292667"
+        "time_now": "1760611436.943420"
       }
     },
     {
@@ -6978,7 +4896,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509146.125968"
+        "time_now": "1760611442.316195"
       }
     },
     {
@@ -7234,268 +5152,20 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509146.881937"
+        "time_now": "1760611444.396836"
       }
     },
     {
       "symbol": "CFXUSDT",
-      "url": "https://www.bybitglobal.com/x-api/contract/v5/public/support/symbol-risk?symbol=CFXUSDT",
-      "status": 200,
-      "data": {
-        "ret_code": 0,
-        "ret_msg": "success",
-        "result": {
-          "list": [
-            {
-              "gear": "1",
-              "storingLocationValue": "25000",
-              "maintenanceMarginRate": "2%",
-              "initialMarginRate": "4%",
-              "maximumLever": "25",
-              "mmDeduction": ""
-            },
-            {
-              "gear": "2",
-              "storingLocationValue": "50000",
-              "maintenanceMarginRate": "2.5%",
-              "initialMarginRate": "5%",
-              "maximumLever": "20",
-              "mmDeduction": "125"
-            },
-            {
-              "gear": "3",
-              "storingLocationValue": "75000",
-              "maintenanceMarginRate": "3%",
-              "initialMarginRate": "6%",
-              "maximumLever": "16.67",
-              "mmDeduction": "375"
-            },
-            {
-              "gear": "4",
-              "storingLocationValue": "100000",
-              "maintenanceMarginRate": "3.5%",
-              "initialMarginRate": "7%",
-              "maximumLever": "14.29",
-              "mmDeduction": "750"
-            },
-            {
-              "gear": "5",
-              "storingLocationValue": "125000",
-              "maintenanceMarginRate": "4%",
-              "initialMarginRate": "8%",
-              "maximumLever": "12.5",
-              "mmDeduction": "1250"
-            },
-            {
-              "gear": "6",
-              "storingLocationValue": "150000",
-              "maintenanceMarginRate": "4.5%",
-              "initialMarginRate": "9%",
-              "maximumLever": "11.12",
-              "mmDeduction": "1875"
-            },
-            {
-              "gear": "7",
-              "storingLocationValue": "175000",
-              "maintenanceMarginRate": "5%",
-              "initialMarginRate": "10%",
-              "maximumLever": "10",
-              "mmDeduction": "2625"
-            },
-            {
-              "gear": "8",
-              "storingLocationValue": "200000",
-              "maintenanceMarginRate": "5.5%",
-              "initialMarginRate": "11%",
-              "maximumLever": "9.1",
-              "mmDeduction": "3500"
-            },
-            {
-              "gear": "9",
-              "storingLocationValue": "225000",
-              "maintenanceMarginRate": "6%",
-              "initialMarginRate": "12%",
-              "maximumLever": "8.34",
-              "mmDeduction": "4500"
-            },
-            {
-              "gear": "10",
-              "storingLocationValue": "250000",
-              "maintenanceMarginRate": "6.5%",
-              "initialMarginRate": "13%",
-              "maximumLever": "7.7",
-              "mmDeduction": "5625"
-            },
-            {
-              "gear": "11",
-              "storingLocationValue": "275000",
-              "maintenanceMarginRate": "7%",
-              "initialMarginRate": "14%",
-              "maximumLever": "7.15",
-              "mmDeduction": "6875"
-            },
-            {
-              "gear": "12",
-              "storingLocationValue": "300000",
-              "maintenanceMarginRate": "7.5%",
-              "initialMarginRate": "15%",
-              "maximumLever": "6.67",
-              "mmDeduction": "8250"
-            },
-            {
-              "gear": "13",
-              "storingLocationValue": "325000",
-              "maintenanceMarginRate": "8%",
-              "initialMarginRate": "16%",
-              "maximumLever": "6.25",
-              "mmDeduction": "9750"
-            },
-            {
-              "gear": "14",
-              "storingLocationValue": "350000",
-              "maintenanceMarginRate": "8.5%",
-              "initialMarginRate": "17%",
-              "maximumLever": "5.89",
-              "mmDeduction": "11375"
-            },
-            {
-              "gear": "15",
-              "storingLocationValue": "375000",
-              "maintenanceMarginRate": "9%",
-              "initialMarginRate": "18%",
-              "maximumLever": "5.56",
-              "mmDeduction": "13125"
-            },
-            {
-              "gear": "16",
-              "storingLocationValue": "850000",
-              "maintenanceMarginRate": "11%",
-              "initialMarginRate": "22%",
-              "maximumLever": "4.55",
-              "mmDeduction": "20625"
-            },
-            {
-              "gear": "17",
-              "storingLocationValue": "950000",
-              "maintenanceMarginRate": "13%",
-              "initialMarginRate": "26%",
-              "maximumLever": "3.85",
-              "mmDeduction": "37625"
-            },
-            {
-              "gear": "18",
-              "storingLocationValue": "1050000",
-              "maintenanceMarginRate": "15%",
-              "initialMarginRate": "30%",
-              "maximumLever": "3.34",
-              "mmDeduction": "56625"
-            },
-            {
-              "gear": "19",
-              "storingLocationValue": "1150000",
-              "maintenanceMarginRate": "17%",
-              "initialMarginRate": "34%",
-              "maximumLever": "2.95",
-              "mmDeduction": "77625"
-            },
-            {
-              "gear": "20",
-              "storingLocationValue": "1250000",
-              "maintenanceMarginRate": "19%",
-              "initialMarginRate": "38%",
-              "maximumLever": "2.64",
-              "mmDeduction": "100625"
-            },
-            {
-              "gear": "21",
-              "storingLocationValue": "1350000",
-              "maintenanceMarginRate": "21%",
-              "initialMarginRate": "42%",
-              "maximumLever": "2.39",
-              "mmDeduction": "125625"
-            },
-            {
-              "gear": "22",
-              "storingLocationValue": "1450000",
-              "maintenanceMarginRate": "23%",
-              "initialMarginRate": "46%",
-              "maximumLever": "2.18",
-              "mmDeduction": "152625"
-            },
-            {
-              "gear": "23",
-              "storingLocationValue": "1550000",
-              "maintenanceMarginRate": "25%",
-              "initialMarginRate": "50%",
-              "maximumLever": "2",
-              "mmDeduction": "181625"
-            },
-            {
-              "gear": "24",
-              "storingLocationValue": "1650000",
-              "maintenanceMarginRate": "27%",
-              "initialMarginRate": "54%",
-              "maximumLever": "1.86",
-              "mmDeduction": "212625"
-            },
-            {
-              "gear": "25",
-              "storingLocationValue": "1750000",
-              "maintenanceMarginRate": "29%",
-              "initialMarginRate": "58%",
-              "maximumLever": "1.73",
-              "mmDeduction": "245625"
-            },
-            {
-              "gear": "26",
-              "storingLocationValue": "1850000",
-              "maintenanceMarginRate": "31%",
-              "initialMarginRate": "62%",
-              "maximumLever": "1.62",
-              "mmDeduction": "280625"
-            },
-            {
-              "gear": "27",
-              "storingLocationValue": "1950000",
-              "maintenanceMarginRate": "33%",
-              "initialMarginRate": "66%",
-              "maximumLever": "1.52",
-              "mmDeduction": "317625"
-            },
-            {
-              "gear": "28",
-              "storingLocationValue": "2050000",
-              "maintenanceMarginRate": "35%",
-              "initialMarginRate": "70%",
-              "maximumLever": "1.43",
-              "mmDeduction": "356625"
-            },
-            {
-              "gear": "29",
-              "storingLocationValue": "2150000",
-              "maintenanceMarginRate": "45%",
-              "initialMarginRate": "90%",
-              "maximumLever": "1.12",
-              "mmDeduction": "561625"
-            },
-            {
-              "gear": "30",
-              "storingLocationValue": "2500000",
-              "maintenanceMarginRate": "60%",
-              "initialMarginRate": "100%",
-              "maximumLever": "1",
-              "mmDeduction": "884125"
-            }
-          ]
-        },
-        "ext_code": "",
-        "ext_info": null,
-        "time_now": "1760509150.050607"
-      }
+      "error": "[WinError 10054] 远程主机强迫关闭了一个现有的连接。"
     },
     {
       "symbol": "CHEEMSUSDT",
-      "url": "https://www.bybitglobal.com/x-api/contract/v5/public/support/symbol-risk?symbol=CHEEMSUSDT",
+      "error": "[WinError 10054] 远程主机强迫关闭了一个现有的连接。"
+    },
+    {
+      "symbol": "CLOUSDT",
+      "url": "https://www.bybitglobal.com/x-api/contract/v5/public/support/symbol-risk?symbol=CLOUSDT",
       "status": 200,
       "data": {
         "ret_code": 0,
@@ -7505,7 +5175,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509150.333724"
+        "time_now": "1760611446.714895"
       }
     },
     {
@@ -7519,249 +5189,249 @@
           "list": [
             {
               "gear": "1",
-              "storingLocationValue": "5000",
-              "maintenanceMarginRate": "2%",
-              "initialMarginRate": "4%",
-              "maximumLever": "25",
+              "storingLocationValue": "15000",
+              "maintenanceMarginRate": "4%",
+              "initialMarginRate": "8%",
+              "maximumLever": "12.5",
               "mmDeduction": ""
             },
             {
               "gear": "2",
               "storingLocationValue": "25000",
-              "maintenanceMarginRate": "2.5%",
-              "initialMarginRate": "5%",
-              "maximumLever": "20",
-              "mmDeduction": "25"
-            },
-            {
-              "gear": "3",
-              "storingLocationValue": "50000",
-              "maintenanceMarginRate": "3%",
-              "initialMarginRate": "6%",
-              "maximumLever": "16.67",
-              "mmDeduction": "150"
-            },
-            {
-              "gear": "4",
-              "storingLocationValue": "75000",
-              "maintenanceMarginRate": "3.5%",
-              "initialMarginRate": "7%",
-              "maximumLever": "14.29",
-              "mmDeduction": "400"
-            },
-            {
-              "gear": "5",
-              "storingLocationValue": "100000",
-              "maintenanceMarginRate": "4%",
-              "initialMarginRate": "8%",
-              "maximumLever": "12.5",
-              "mmDeduction": "775"
-            },
-            {
-              "gear": "6",
-              "storingLocationValue": "125000",
-              "maintenanceMarginRate": "4.5%",
-              "initialMarginRate": "9%",
-              "maximumLever": "11.12",
-              "mmDeduction": "1275"
-            },
-            {
-              "gear": "7",
-              "storingLocationValue": "150000",
               "maintenanceMarginRate": "5%",
               "initialMarginRate": "10%",
               "maximumLever": "10",
-              "mmDeduction": "1900"
+              "mmDeduction": "150"
             },
             {
-              "gear": "8",
-              "storingLocationValue": "175000",
-              "maintenanceMarginRate": "5.5%",
-              "initialMarginRate": "11%",
-              "maximumLever": "9.1",
-              "mmDeduction": "2650"
-            },
-            {
-              "gear": "9",
-              "storingLocationValue": "200000",
+              "gear": "3",
+              "storingLocationValue": "37500",
               "maintenanceMarginRate": "6%",
               "initialMarginRate": "12%",
-              "maximumLever": "8.34",
-              "mmDeduction": "3525"
+              "maximumLever": "8.33",
+              "mmDeduction": "400"
             },
             {
-              "gear": "10",
-              "storingLocationValue": "225000",
-              "maintenanceMarginRate": "6.5%",
-              "initialMarginRate": "13%",
-              "maximumLever": "7.7",
-              "mmDeduction": "4525"
-            },
-            {
-              "gear": "11",
-              "storingLocationValue": "250000",
+              "gear": "4",
+              "storingLocationValue": "50000",
               "maintenanceMarginRate": "7%",
               "initialMarginRate": "14%",
-              "maximumLever": "7.15",
-              "mmDeduction": "5650"
+              "maximumLever": "7.14",
+              "mmDeduction": "775"
             },
             {
-              "gear": "12",
-              "storingLocationValue": "275000",
-              "maintenanceMarginRate": "7.5%",
-              "initialMarginRate": "15%",
-              "maximumLever": "6.67",
-              "mmDeduction": "6900"
-            },
-            {
-              "gear": "13",
-              "storingLocationValue": "300000",
+              "gear": "5",
+              "storingLocationValue": "62500",
               "maintenanceMarginRate": "8%",
               "initialMarginRate": "16%",
               "maximumLever": "6.25",
-              "mmDeduction": "8275"
+              "mmDeduction": "1275"
             },
             {
-              "gear": "14",
-              "storingLocationValue": "325000",
-              "maintenanceMarginRate": "8.5%",
-              "initialMarginRate": "17%",
-              "maximumLever": "5.89",
-              "mmDeduction": "9775"
-            },
-            {
-              "gear": "15",
-              "storingLocationValue": "350000",
+              "gear": "6",
+              "storingLocationValue": "75000",
               "maintenanceMarginRate": "9%",
               "initialMarginRate": "18%",
               "maximumLever": "5.56",
-              "mmDeduction": "11400"
+              "mmDeduction": "1900"
             },
             {
-              "gear": "16",
-              "storingLocationValue": "800000",
+              "gear": "7",
+              "storingLocationValue": "87500",
+              "maintenanceMarginRate": "10%",
+              "initialMarginRate": "20%",
+              "maximumLever": "5",
+              "mmDeduction": "2650"
+            },
+            {
+              "gear": "8",
+              "storingLocationValue": "100000",
               "maintenanceMarginRate": "11%",
               "initialMarginRate": "22%",
               "maximumLever": "4.55",
-              "mmDeduction": "18400"
+              "mmDeduction": "3525"
             },
             {
-              "gear": "17",
-              "storingLocationValue": "900000",
+              "gear": "9",
+              "storingLocationValue": "112500",
+              "maintenanceMarginRate": "12%",
+              "initialMarginRate": "24%",
+              "maximumLever": "4.17",
+              "mmDeduction": "4525"
+            },
+            {
+              "gear": "10",
+              "storingLocationValue": "125000",
               "maintenanceMarginRate": "13%",
               "initialMarginRate": "26%",
               "maximumLever": "3.85",
-              "mmDeduction": "34400"
+              "mmDeduction": "5650"
+            },
+            {
+              "gear": "11",
+              "storingLocationValue": "137500",
+              "maintenanceMarginRate": "14%",
+              "initialMarginRate": "28%",
+              "maximumLever": "3.57",
+              "mmDeduction": "6900"
+            },
+            {
+              "gear": "12",
+              "storingLocationValue": "150000",
+              "maintenanceMarginRate": "15%",
+              "initialMarginRate": "30%",
+              "maximumLever": "3.33",
+              "mmDeduction": "8275"
+            },
+            {
+              "gear": "13",
+              "storingLocationValue": "162500",
+              "maintenanceMarginRate": "16%",
+              "initialMarginRate": "32%",
+              "maximumLever": "3.13",
+              "mmDeduction": "9775"
+            },
+            {
+              "gear": "14",
+              "storingLocationValue": "175000",
+              "maintenanceMarginRate": "17%",
+              "initialMarginRate": "34%",
+              "maximumLever": "2.94",
+              "mmDeduction": "11400"
+            },
+            {
+              "gear": "15",
+              "storingLocationValue": "187500",
+              "maintenanceMarginRate": "18%",
+              "initialMarginRate": "36%",
+              "maximumLever": "2.78",
+              "mmDeduction": "13150"
+            },
+            {
+              "gear": "16",
+              "storingLocationValue": "425000",
+              "maintenanceMarginRate": "20%",
+              "initialMarginRate": "40%",
+              "maximumLever": "2.5",
+              "mmDeduction": "16900"
+            },
+            {
+              "gear": "17",
+              "storingLocationValue": "475000",
+              "maintenanceMarginRate": "22%",
+              "initialMarginRate": "44%",
+              "maximumLever": "2.27",
+              "mmDeduction": "25400"
             },
             {
               "gear": "18",
-              "storingLocationValue": "1000000",
-              "maintenanceMarginRate": "15%",
-              "initialMarginRate": "30%",
-              "maximumLever": "3.34",
-              "mmDeduction": "52400"
+              "storingLocationValue": "525000",
+              "maintenanceMarginRate": "24%",
+              "initialMarginRate": "48%",
+              "maximumLever": "2.08",
+              "mmDeduction": "34900"
             },
             {
               "gear": "19",
-              "storingLocationValue": "1100000",
-              "maintenanceMarginRate": "17%",
-              "initialMarginRate": "34%",
-              "maximumLever": "2.95",
-              "mmDeduction": "72400"
+              "storingLocationValue": "575000",
+              "maintenanceMarginRate": "26%",
+              "initialMarginRate": "52%",
+              "maximumLever": "1.92",
+              "mmDeduction": "45400"
             },
             {
               "gear": "20",
-              "storingLocationValue": "1200000",
-              "maintenanceMarginRate": "19%",
-              "initialMarginRate": "38%",
-              "maximumLever": "2.64",
-              "mmDeduction": "94400"
+              "storingLocationValue": "625000",
+              "maintenanceMarginRate": "28%",
+              "initialMarginRate": "56%",
+              "maximumLever": "1.79",
+              "mmDeduction": "56900"
             },
             {
               "gear": "21",
-              "storingLocationValue": "1300000",
-              "maintenanceMarginRate": "21%",
-              "initialMarginRate": "42%",
-              "maximumLever": "2.39",
-              "mmDeduction": "118400"
+              "storingLocationValue": "675000",
+              "maintenanceMarginRate": "30%",
+              "initialMarginRate": "60%",
+              "maximumLever": "1.67",
+              "mmDeduction": "69400"
             },
             {
               "gear": "22",
-              "storingLocationValue": "1400000",
-              "maintenanceMarginRate": "23%",
-              "initialMarginRate": "46%",
-              "maximumLever": "2.18",
-              "mmDeduction": "144400"
+              "storingLocationValue": "725000",
+              "maintenanceMarginRate": "32%",
+              "initialMarginRate": "64%",
+              "maximumLever": "1.56",
+              "mmDeduction": "82900"
             },
             {
               "gear": "23",
-              "storingLocationValue": "1500000",
-              "maintenanceMarginRate": "25%",
-              "initialMarginRate": "50%",
-              "maximumLever": "2",
-              "mmDeduction": "172400"
+              "storingLocationValue": "775000",
+              "maintenanceMarginRate": "34%",
+              "initialMarginRate": "68%",
+              "maximumLever": "1.47",
+              "mmDeduction": "97400"
             },
             {
               "gear": "24",
-              "storingLocationValue": "1600000",
-              "maintenanceMarginRate": "27%",
-              "initialMarginRate": "54%",
-              "maximumLever": "1.86",
-              "mmDeduction": "202400"
+              "storingLocationValue": "825000",
+              "maintenanceMarginRate": "36%",
+              "initialMarginRate": "72%",
+              "maximumLever": "1.39",
+              "mmDeduction": "112900"
             },
             {
               "gear": "25",
-              "storingLocationValue": "1700000",
-              "maintenanceMarginRate": "29%",
-              "initialMarginRate": "58%",
-              "maximumLever": "1.73",
-              "mmDeduction": "234400"
+              "storingLocationValue": "875000",
+              "maintenanceMarginRate": "38%",
+              "initialMarginRate": "76%",
+              "maximumLever": "1.32",
+              "mmDeduction": "129400"
             },
             {
               "gear": "26",
-              "storingLocationValue": "1800000",
-              "maintenanceMarginRate": "31%",
-              "initialMarginRate": "62%",
-              "maximumLever": "1.62",
-              "mmDeduction": "268400"
+              "storingLocationValue": "925000",
+              "maintenanceMarginRate": "40%",
+              "initialMarginRate": "80%",
+              "maximumLever": "1.25",
+              "mmDeduction": "146900"
             },
             {
               "gear": "27",
-              "storingLocationValue": "1900000",
-              "maintenanceMarginRate": "33%",
-              "initialMarginRate": "66%",
-              "maximumLever": "1.52",
-              "mmDeduction": "304400"
+              "storingLocationValue": "975000",
+              "maintenanceMarginRate": "42%",
+              "initialMarginRate": "84%",
+              "maximumLever": "1.19",
+              "mmDeduction": "165400"
             },
             {
               "gear": "28",
-              "storingLocationValue": "2000000",
-              "maintenanceMarginRate": "35%",
-              "initialMarginRate": "70%",
-              "maximumLever": "1.43",
-              "mmDeduction": "342400"
+              "storingLocationValue": "1025000",
+              "maintenanceMarginRate": "44%",
+              "initialMarginRate": "88%",
+              "maximumLever": "1.14",
+              "mmDeduction": "184900"
             },
             {
               "gear": "29",
-              "storingLocationValue": "2100000",
-              "maintenanceMarginRate": "45%",
-              "initialMarginRate": "90%",
-              "maximumLever": "1.12",
-              "mmDeduction": "542400"
+              "storingLocationValue": "1075000",
+              "maintenanceMarginRate": "46%",
+              "initialMarginRate": "92%",
+              "maximumLever": "1.09",
+              "mmDeduction": "205400"
             },
             {
               "gear": "30",
-              "storingLocationValue": "2500000",
+              "storingLocationValue": "1250000",
               "maintenanceMarginRate": "60%",
               "initialMarginRate": "100%",
               "maximumLever": "1",
-              "mmDeduction": "857400"
+              "mmDeduction": "355900"
             }
           ]
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509151.885234"
+        "time_now": "1760611448.754725"
       }
     },
     {
@@ -8017,7 +5687,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509152.718910"
+        "time_now": "1760611451.634208"
       }
     },
     {
@@ -8273,7 +5943,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509155.733969"
+        "time_now": "1760611453.868288"
       }
     },
     {
@@ -8529,7 +6199,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509155.877587"
+        "time_now": "1760611454.098096"
       }
     },
     {
@@ -8785,7 +6455,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509157.587085"
+        "time_now": "1760611454.165920"
       }
     },
     {
@@ -9041,7 +6711,263 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509158.480463"
+        "time_now": "1760611457.046101"
+      }
+    },
+    {
+      "symbol": "ENSOUSDT",
+      "url": "https://www.bybitglobal.com/x-api/contract/v5/public/support/symbol-risk?symbol=ENSOUSDT",
+      "status": 200,
+      "data": {
+        "ret_code": 0,
+        "ret_msg": "success",
+        "result": {
+          "list": [
+            {
+              "gear": "1",
+              "storingLocationValue": "5000",
+              "maintenanceMarginRate": "1%",
+              "initialMarginRate": "2%",
+              "maximumLever": "50",
+              "mmDeduction": ""
+            },
+            {
+              "gear": "2",
+              "storingLocationValue": "10000",
+              "maintenanceMarginRate": "1.11%",
+              "initialMarginRate": "2.22%",
+              "maximumLever": "45",
+              "mmDeduction": "5.5"
+            },
+            {
+              "gear": "3",
+              "storingLocationValue": "20000",
+              "maintenanceMarginRate": "1.25%",
+              "initialMarginRate": "2.5%",
+              "maximumLever": "40",
+              "mmDeduction": "19.5"
+            },
+            {
+              "gear": "4",
+              "storingLocationValue": "30000",
+              "maintenanceMarginRate": "1.43%",
+              "initialMarginRate": "2.86%",
+              "maximumLever": "35",
+              "mmDeduction": "55.5"
+            },
+            {
+              "gear": "5",
+              "storingLocationValue": "40000",
+              "maintenanceMarginRate": "1.67%",
+              "initialMarginRate": "3.33%",
+              "maximumLever": "30",
+              "mmDeduction": "127.5"
+            },
+            {
+              "gear": "6",
+              "storingLocationValue": "50000",
+              "maintenanceMarginRate": "2%",
+              "initialMarginRate": "4%",
+              "maximumLever": "25",
+              "mmDeduction": "259.5"
+            },
+            {
+              "gear": "7",
+              "storingLocationValue": "100000",
+              "maintenanceMarginRate": "2.5%",
+              "initialMarginRate": "5%",
+              "maximumLever": "20",
+              "mmDeduction": "509.5"
+            },
+            {
+              "gear": "8",
+              "storingLocationValue": "150000",
+              "maintenanceMarginRate": "3%",
+              "initialMarginRate": "6%",
+              "maximumLever": "16.67",
+              "mmDeduction": "1009.5"
+            },
+            {
+              "gear": "9",
+              "storingLocationValue": "200000",
+              "maintenanceMarginRate": "3.5%",
+              "initialMarginRate": "7%",
+              "maximumLever": "14.29",
+              "mmDeduction": "1759.5"
+            },
+            {
+              "gear": "10",
+              "storingLocationValue": "225000",
+              "maintenanceMarginRate": "4%",
+              "initialMarginRate": "8%",
+              "maximumLever": "12.5",
+              "mmDeduction": "2759.5"
+            },
+            {
+              "gear": "11",
+              "storingLocationValue": "250000",
+              "maintenanceMarginRate": "4.5%",
+              "initialMarginRate": "9%",
+              "maximumLever": "11.11",
+              "mmDeduction": "3884.5"
+            },
+            {
+              "gear": "12",
+              "storingLocationValue": "275000",
+              "maintenanceMarginRate": "5%",
+              "initialMarginRate": "10%",
+              "maximumLever": "10",
+              "mmDeduction": "5134.5"
+            },
+            {
+              "gear": "13",
+              "storingLocationValue": "300000",
+              "maintenanceMarginRate": "5.5%",
+              "initialMarginRate": "11%",
+              "maximumLever": "9.09",
+              "mmDeduction": "6509.5"
+            },
+            {
+              "gear": "14",
+              "storingLocationValue": "350000",
+              "maintenanceMarginRate": "6%",
+              "initialMarginRate": "12%",
+              "maximumLever": "8.33",
+              "mmDeduction": "8009.5"
+            },
+            {
+              "gear": "15",
+              "storingLocationValue": "375000",
+              "maintenanceMarginRate": "6.5%",
+              "initialMarginRate": "13%",
+              "maximumLever": "7.69",
+              "mmDeduction": "9759.5"
+            },
+            {
+              "gear": "16",
+              "storingLocationValue": "850000",
+              "maintenanceMarginRate": "7%",
+              "initialMarginRate": "14%",
+              "maximumLever": "7.14",
+              "mmDeduction": "11634.5"
+            },
+            {
+              "gear": "17",
+              "storingLocationValue": "950000",
+              "maintenanceMarginRate": "7.5%",
+              "initialMarginRate": "15%",
+              "maximumLever": "6.67",
+              "mmDeduction": "15884.5"
+            },
+            {
+              "gear": "18",
+              "storingLocationValue": "1050000",
+              "maintenanceMarginRate": "8%",
+              "initialMarginRate": "16%",
+              "maximumLever": "6.25",
+              "mmDeduction": "20634.5"
+            },
+            {
+              "gear": "19",
+              "storingLocationValue": "1150000",
+              "maintenanceMarginRate": "8.5%",
+              "initialMarginRate": "17%",
+              "maximumLever": "5.88",
+              "mmDeduction": "25884.5"
+            },
+            {
+              "gear": "20",
+              "storingLocationValue": "1250000",
+              "maintenanceMarginRate": "9%",
+              "initialMarginRate": "18%",
+              "maximumLever": "5.56",
+              "mmDeduction": "31634.5"
+            },
+            {
+              "gear": "21",
+              "storingLocationValue": "1350000",
+              "maintenanceMarginRate": "11%",
+              "initialMarginRate": "22%",
+              "maximumLever": "4.55",
+              "mmDeduction": "56634.5"
+            },
+            {
+              "gear": "22",
+              "storingLocationValue": "1450000",
+              "maintenanceMarginRate": "13%",
+              "initialMarginRate": "26%",
+              "maximumLever": "3.85",
+              "mmDeduction": "83634.5"
+            },
+            {
+              "gear": "23",
+              "storingLocationValue": "1550000",
+              "maintenanceMarginRate": "15%",
+              "initialMarginRate": "30%",
+              "maximumLever": "3.33",
+              "mmDeduction": "112634.5"
+            },
+            {
+              "gear": "24",
+              "storingLocationValue": "1650000",
+              "maintenanceMarginRate": "17%",
+              "initialMarginRate": "34%",
+              "maximumLever": "2.94",
+              "mmDeduction": "143634.5"
+            },
+            {
+              "gear": "25",
+              "storingLocationValue": "1750000",
+              "maintenanceMarginRate": "19%",
+              "initialMarginRate": "38%",
+              "maximumLever": "2.63",
+              "mmDeduction": "176634.5"
+            },
+            {
+              "gear": "26",
+              "storingLocationValue": "1850000",
+              "maintenanceMarginRate": "21%",
+              "initialMarginRate": "42%",
+              "maximumLever": "2.38",
+              "mmDeduction": "211634.5"
+            },
+            {
+              "gear": "27",
+              "storingLocationValue": "1950000",
+              "maintenanceMarginRate": "23%",
+              "initialMarginRate": "46%",
+              "maximumLever": "2.17",
+              "mmDeduction": "248634.5"
+            },
+            {
+              "gear": "28",
+              "storingLocationValue": "2050000",
+              "maintenanceMarginRate": "25%",
+              "initialMarginRate": "50%",
+              "maximumLever": "2",
+              "mmDeduction": "287634.5"
+            },
+            {
+              "gear": "29",
+              "storingLocationValue": "2150000",
+              "maintenanceMarginRate": "33%",
+              "initialMarginRate": "66.67%",
+              "maximumLever": "1.5",
+              "mmDeduction": "451634.5"
+            },
+            {
+              "gear": "30",
+              "storingLocationValue": "2500000",
+              "maintenanceMarginRate": "60%",
+              "initialMarginRate": "100%",
+              "maximumLever": "1",
+              "mmDeduction": "1032134.5"
+            }
+          ]
+        },
+        "ext_code": "",
+        "ext_info": null,
+        "time_now": "1760611460.688830"
       }
     },
     {
@@ -9297,7 +7223,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509161.465257"
+        "time_now": "1760611460.860111"
       }
     },
     {
@@ -9593,7 +7519,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509161.508129"
+        "time_now": "1760611460.803400"
       }
     },
     {
@@ -9665,7 +7591,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509163.421389"
+        "time_now": "1760611461.936709"
       }
     },
     {
@@ -9921,7 +7847,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509164.479944"
+        "time_now": "1760611465.753484"
       }
     },
     {
@@ -10177,7 +8103,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509167.362242"
+        "time_now": "1760611465.560250"
       }
     },
     {
@@ -10249,7 +8175,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509167.472961"
+        "time_now": "1760611465.580472"
       }
     },
     {
@@ -10385,7 +8311,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509169.485968"
+        "time_now": "1760611467.656374"
       }
     },
     {
@@ -10641,7 +8567,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509170.447292"
+        "time_now": "1760611470.125440"
       }
     },
     {
@@ -10897,7 +8823,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509173.248970"
+        "time_now": "1760611470.152065"
       }
     },
     {
@@ -11153,7 +9079,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509173.279896"
+        "time_now": "1760611470.341293"
       }
     },
     {
@@ -11409,7 +9335,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509175.357993"
+        "time_now": "1760611472.465355"
       }
     },
     {
@@ -11481,7 +9407,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509176.420661"
+        "time_now": "1760611477.948497"
       }
     },
     {
@@ -11553,7 +9479,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509179.220210"
+        "time_now": "1760611478.231239"
       }
     },
     {
@@ -11809,7 +9735,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509179.199924"
+        "time_now": "1760611475.092511"
       }
     },
     {
@@ -11897,7 +9823,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509181.652583"
+        "time_now": "1760611476.974903"
       }
     },
     {
@@ -12153,7 +10079,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509182.513983"
+        "time_now": "1760611479.591461"
       }
     },
     {
@@ -12409,7 +10335,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509185.074126"
+        "time_now": "1760611481.489314"
       }
     },
     {
@@ -12424,7 +10350,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509185.084178"
+        "time_now": "1760611482.566659"
       }
     },
     {
@@ -12680,7 +10606,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509187.693781"
+        "time_now": "1760611482.918669"
       }
     },
     {
@@ -12936,7 +10862,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509189.734417"
+        "time_now": "1760611484.876567"
       }
     },
     {
@@ -13192,7 +11118,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509190.910794"
+        "time_now": "1760611486.988699"
       }
     },
     {
@@ -13448,7 +11374,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509191.392524"
+        "time_now": "1760611487.944697"
       }
     },
     {
@@ -13704,7 +11630,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509192.823532"
+        "time_now": "1760611488.392915"
       }
     },
     {
@@ -13960,7 +11886,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509194.210014"
+        "time_now": "1760611489.673956"
       }
     },
     {
@@ -14032,7 +11958,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509195.249238"
+        "time_now": "1760611491.739279"
       }
     },
     {
@@ -14288,7 +12214,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509195.793444"
+        "time_now": "1760611492.652142"
       }
     },
     {
@@ -14544,7 +12470,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509197.134965"
+        "time_now": "1760611492.996747"
       }
     },
     {
@@ -14800,7 +12726,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509198.462487"
+        "time_now": "1760611494.298767"
       }
     },
     {
@@ -15056,7 +12982,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509199.493765"
+        "time_now": "1760611496.345966"
       }
     },
     {
@@ -15312,7 +13238,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509200.013675"
+        "time_now": "1760611497.828329"
       }
     },
     {
@@ -15568,7 +13494,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509201.396425"
+        "time_now": "1760611498.411963"
       }
     },
     {
@@ -15824,7 +13750,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509202.586270"
+        "time_now": "1760611499.314911"
       }
     },
     {
@@ -16080,7 +14006,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509203.571842"
+        "time_now": "1760611501.153769"
       }
     },
     {
@@ -16336,7 +14262,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509204.259174"
+        "time_now": "1760611502.597455"
       }
     },
     {
@@ -16592,7 +14518,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509205.642452"
+        "time_now": "1760611503.138342"
       }
     },
     {
@@ -16848,7 +14774,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509206.931084"
+        "time_now": "1760611504.104269"
       }
     },
     {
@@ -17104,7 +15030,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509207.890079"
+        "time_now": "1760611506.156073"
       }
     },
     {
@@ -17360,7 +15286,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509208.524900"
+        "time_now": "1760611507.370403"
       }
     },
     {
@@ -17616,7 +15542,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509209.831056"
+        "time_now": "1760611507.960186"
       }
     },
     {
@@ -17872,7 +15798,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509211.084291"
+        "time_now": "1760611508.841262"
       }
     },
     {
@@ -18128,7 +16054,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509212.007908"
+        "time_now": "1760611510.972042"
       }
     },
     {
@@ -18384,7 +16310,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509212.685901"
+        "time_now": "1760611512.435987"
       }
     },
     {
@@ -18640,7 +16566,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509214.041204"
+        "time_now": "1760611513.151327"
       }
     },
     {
@@ -18896,7 +16822,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509215.468012"
+        "time_now": "1760611513.992619"
       }
     },
     {
@@ -18984,7 +16910,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509216.372514"
+        "time_now": "1760611515.827847"
       }
     },
     {
@@ -19240,7 +17166,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509217.139650"
+        "time_now": "1760611517.139888"
       }
     },
     {
@@ -19255,7 +17181,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509218.409515"
+        "time_now": "1760611517.864965"
       }
     },
     {
@@ -19270,7 +17196,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509219.632199"
+        "time_now": "1760611518.874522"
       }
     },
     {
@@ -19342,7 +17268,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509220.479663"
+        "time_now": "1760611520.856336"
       }
     },
     {
@@ -19598,7 +17524,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509221.333878"
+        "time_now": "1760611522.117881"
       }
     },
     {
@@ -19854,7 +17780,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509222.589232"
+        "time_now": "1760611522.913975"
       }
     },
     {
@@ -20110,7 +18036,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509223.978497"
+        "time_now": "1760611523.998838"
       }
     },
     {
@@ -20366,7 +18292,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509224.746906"
+        "time_now": "1760611525.677232"
       }
     },
     {
@@ -20502,7 +18428,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509225.609036"
+        "time_now": "1760611526.790079"
       }
     },
     {
@@ -20574,7 +18500,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509226.863836"
+        "time_now": "1760611527.462989"
       }
     },
     {
@@ -20830,7 +18756,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509228.197115"
+        "time_now": "1760611528.392652"
       }
     },
     {
@@ -21086,7 +19012,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509228.927258"
+        "time_now": "1760611530.111262"
       }
     },
     {
@@ -21342,7 +19268,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509229.760564"
+        "time_now": "1760611531.122007"
       }
     },
     {
@@ -21598,7 +19524,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509230.970269"
+        "time_now": "1760611531.758595"
       }
     },
     {
@@ -21613,7 +19539,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509232.337936"
+        "time_now": "1760611532.723990"
       }
     },
     {
@@ -21869,7 +19795,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509233.786650"
+        "time_now": "1760611534.667247"
       }
     },
     {
@@ -22165,7 +20091,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509234.218072"
+        "time_now": "1760611535.632830"
       }
     },
     {
@@ -22421,7 +20347,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509235.009755"
+        "time_now": "1760611536.388734"
       }
     },
     {
@@ -22677,7 +20603,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509236.509092"
+        "time_now": "1760611537.454562"
       }
     },
     {
@@ -22933,7 +20859,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509237.935356"
+        "time_now": "1760611539.198353"
       }
     },
     {
@@ -23189,7 +21115,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509238.353632"
+        "time_now": "1760611540.175495"
       }
     },
     {
@@ -23445,7 +21371,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509239.061827"
+        "time_now": "1760611540.760767"
       }
     },
     {
@@ -23701,7 +21627,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509240.718581"
+        "time_now": "1760611541.521246"
       }
     },
     {
@@ -23957,7 +21883,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509242.026173"
+        "time_now": "1760611543.223980"
       }
     },
     {
@@ -24213,7 +22139,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509242.504637"
+        "time_now": "1760611544.254453"
       }
     },
     {
@@ -24469,7 +22395,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509243.153614"
+        "time_now": "1760611544.790993"
       }
     },
     {
@@ -24725,7 +22651,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509244.847377"
+        "time_now": "1760611545.575316"
       }
     },
     {
@@ -24797,7 +22723,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509246.160928"
+        "time_now": "1760611547.279172"
       }
     },
     {
@@ -25053,7 +22979,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509246.665286"
+        "time_now": "1760611548.333719"
       }
     },
     {
@@ -25068,7 +22994,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509248.241517"
+        "time_now": "1760611548.950706"
       }
     },
     {
@@ -25324,7 +23250,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509249.123261"
+        "time_now": "1760611549.703347"
       }
     },
     {
@@ -25412,7 +23338,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509250.276556"
+        "time_now": "1760611551.391343"
       }
     },
     {
@@ -25484,7 +23410,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509250.874258"
+        "time_now": "1760611553.348971"
       }
     },
     {
@@ -25740,7 +23666,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509252.423059"
+        "time_now": "1760611553.289269"
       }
     },
     {
@@ -25812,7 +23738,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509253.344454"
+        "time_now": "1760611553.690974"
       }
     },
     {
@@ -26068,7 +23994,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509254.453951"
+        "time_now": "1760611555.376840"
       }
     },
     {
@@ -26324,7 +24250,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509255.074608"
+        "time_now": "1760611557.354028"
       }
     },
     {
@@ -26580,7 +24506,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509256.614024"
+        "time_now": "1760611557.429097"
       }
     },
     {
@@ -26836,7 +24762,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509257.471226"
+        "time_now": "1760611557.652683"
       }
     },
     {
@@ -27092,7 +25018,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509258.632893"
+        "time_now": "1760611559.405499"
       }
     },
     {
@@ -27348,7 +25274,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509259.052289"
+        "time_now": "1760611561.406007"
       }
     },
     {
@@ -27604,7 +25530,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509260.758643"
+        "time_now": "1760611561.454406"
       }
     },
     {
@@ -27860,7 +25786,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509261.585015"
+        "time_now": "1760611561.668436"
       }
     },
     {
@@ -28116,7 +26042,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509262.792230"
+        "time_now": "1760611563.361272"
       }
     },
     {
@@ -28372,7 +26298,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509263.249007"
+        "time_now": "1760611565.812293"
       }
     },
     {
@@ -28628,7 +26554,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509265.508606"
+        "time_now": "1760611565.816722"
       }
     },
     {
@@ -28884,7 +26810,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760509265.317215"
+        "time_now": "1760611565.815160"
       }
     }
   ]

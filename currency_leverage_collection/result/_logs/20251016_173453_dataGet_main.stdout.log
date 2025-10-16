@@ -1,0 +1,7 @@
+[cmc_top20] 开始获取 CoinMarketCap Top20（排除 USDT/USDC）…
+[cmc_top20] 完成: OK 用时 11.3s  日志: cmc_top20.stdout.log / cmc_top20.stderr.log
+将并行运行 5 个数据获取任务（线程池大小=4）...
+日志目录: C:\Users\zhang\Desktop\crypto\currency_leverage_collection\data\dataGet_api\_logs
+[binance] 完成: OK 用时 7.0s  日志: binance.stdout.log / binance.stderr.log
+[mexc] 完成: OK 用时 12.7s  日志: mexc.stdout.log / mexc.stderr.log
+[surf] 完成: OK 用时 11.0s  日志: surf.stdout.log / surf.stderr.log

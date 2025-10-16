@@ -1,0 +1,10 @@
+RepoDir: C:\Users\zhang\Desktop\crypto
+Latest JSON: C:\Users\zhang\Desktop\crypto\currency_leverage_collection\result\html\Leverage&Margin_20251016_184741.json
+Deleting old JSON: C:\Users\zhang\Desktop\crypto\currency_leverage_collection\result\html\Leverage&Margin_20251016_183652.json
+Deleting old suggest JSON: C:\Users\zhang\Desktop\crypto\currency_leverage_collection\result\suggest\suggest_rules_20251016_183703.json
+[main 6a23991] data: update leverage JSON (2025-10-16 18:47:55)
+ 3 files changed, 8 insertions(+), 8 deletions(-)
+ delete mode 100644 currency_leverage_collection/result/html/Leverage&Margin_20251016_183652.json
+ create mode 100644 currency_leverage_collection/result/html/Leverage&Margin_20251016_184741.json
+ rename currency_leverage_collection/result/suggest/{suggest_rules_20251016_183703.json => suggest_rules_20251016_184752.json} (99%)
+Published latest JSON and pushed to remote.

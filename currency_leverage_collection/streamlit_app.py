@@ -320,37 +320,30 @@ def main():
         else:
             st.dataframe(agg_df, use_container_width=True)
 
-    # Suggest Rule tab: load from latest Excel under result/suggest
+    # Suggest Rule tab: JSON-only from result/suggest
     with tabs[1]:
-        st.subheader("Suggest Rule (From Excel)")
+        st.subheader("Suggest Rule")
         try:
-            files = sorted(SUGGEST_DIR.glob("suggest_rules_*.xlsx"))
-            if not files:
-                st.info("No suggest Excel found under result/suggest.")
+            jfiles = sorted(SUGGEST_DIR.glob("suggest_rules_*.json"))
+            df = None
+            if jfiles:
+                jpath = jfiles[-1]
+                jdata = json.loads(jpath.read_text(encoding="utf-8"))
+                tiers = (jdata.get("tiers") or {}).get(sym)
+                if isinstance(tiers, list):
+                    recs = []
+                    for t in tiers:
+                        recs.append({
+                            "max position size": _fmt_pos(t.get("position")),
+                            "Max Leverage": t.get("leverage_display") or "",
+                            "Min MMR": t.get("mmr_display") or "",
+                            "IM(%)": t.get("im_display") or "",
+                        })
+                    df = pd.DataFrame.from_records(recs)
+            if df is not None:
+                st.dataframe(df, use_container_width=True)
             else:
-                xlsx = files[-1]
-                # Try exact sheet name first
-                sheet_exact = f"{sym} Suggest Rule"
-                try:
-                    df = pd.read_excel(xlsx, sheet_name=sheet_exact)
-                except Exception:
-                    # Fallback: pick the first sheet that startswith symbol
-                    try:
-                        x = pd.read_excel(xlsx, sheet_name=None)
-                        cand = None
-                        for k in x.keys():
-                            if str(k).startswith(sym):
-                                cand = k
-                                break
-                        if cand is None:
-                            st.warning(f"Sheet for {sym} not found in {xlsx.name}")
-                        else:
-                            df = x[cand]
-                    except Exception as e:
-                        st.error(f"Failed to read Excel: {e}")
-                        df = None
-                if 'df' in locals() and isinstance(df, pd.DataFrame):
-                    st.dataframe(df, use_container_width=True)
+                st.info("No suggest JSON found under result/suggest.")
         except Exception as e:
             st.error(f"Error loading suggest table: {e}")
 

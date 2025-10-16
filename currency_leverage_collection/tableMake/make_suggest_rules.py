@@ -19,9 +19,6 @@ MINOR_TIERS = [20_000, 100_000, 200_000]
 
 EXS_SHOW = ["BINANCE", "WEEX", "MECX", "BYBIT"]
 
-LEV_MAX = 1000
-LEV_STEP = 5       # 杠杆取整刻度（5X）
-
 
 def _latest_json() -> Optional[Path]:
     files = sorted(HTML_DIR.glob("Leverage&Margin_*.json"))
@@ -85,13 +82,6 @@ def _pos_fmt(v: float) -> str:
     if float(v).is_integer():
         return f"{int(v):,}"
     return f"{v:,.2f}"
-
-
-def _round_leverage(x: float) -> float:
-    x = min(LEV_MAX, max(1.0, x))
-    # 四舍五入到 5X 刻度
-    return float(int(round(x / LEV_STEP)) * LEV_STEP)
-
 
 def _select_tier_for_threshold(rows: List[List[Any]], S: float) -> Optional[Tuple[float, float]]:
     """
@@ -192,6 +182,8 @@ def generate_excel() -> Path:
     default_ws = wb.active
     wb.remove(default_ws)
 
+    tiers_json: Dict[str, List[Dict[str, Any]]] = {}
+
     def write_sheet(sym: str, tiers: List[int]) -> None:
         ws = wb.create_sheet(title=f"{sym} Suggest Rule")
         header = ["max position size", "Max Leverage", "Min MMR", "IM(%)"]
@@ -203,11 +195,21 @@ def generate_excel() -> Path:
             cell.alignment = Alignment(horizontal="center", vertical="center")
             cell.fill = PatternFill("solid", fgColor="FFFFF2AB")
         # 逐层级写入：严格按街上基准聚合
+        tiers_json[sym] = []
         for S in tiers:
             street_lev, street_mmr = _street_for_symbol(payload, sym, float(S))
             # 若缺失，留空
             if street_lev is None and street_mmr is None:
                 ws.append([_pos_fmt(S), "", "", ""])
+                tiers_json[sym].append({
+                    "position": S,
+                    "leverage_value": None,
+                    "leverage_display": "",
+                    "mmr_value": None,
+                    "mmr_display": "",
+                    "im_value": None,
+                    "im_display": "",
+                })
                 continue
             lev_str = _lev_fmt(street_lev) if street_lev is not None else ""
             mmr_str = _mmr_fmt(street_mmr) if street_mmr is not None else ""
@@ -218,6 +220,15 @@ def generate_excel() -> Path:
                 mmr_str,
                 im_pct,
             ])
+            tiers_json[sym].append({
+                "position": S,
+                "leverage_value": float(street_lev) if street_lev is not None else None,
+                "leverage_display": lev_str,
+                "mmr_value": float(street_mmr) if street_mmr is not None else None,
+                "mmr_display": mmr_str,
+                "im_value": (100.0 / float(street_lev)) if street_lev is not None else None,
+                "im_display": (im_pct + "%") if im_pct else "",
+            })
         # 边框
         thin = Side(style="thin", color="FFCCCCCC")
         border_all = Border(left=thin, right=thin, top=thin, bottom=thin)
@@ -233,9 +244,17 @@ def generate_excel() -> Path:
     for sym in minors:
         write_sheet(sym, MINOR_TIERS)
 
-    out = OUT_DIR / f"suggest_rules_{time.strftime('%Y%m%d_%H%M%S')}.xlsx"
-    wb.save(out)
-    return out
+    ts = time.strftime('%Y%m%d_%H%M%S')
+    out_xlsx = OUT_DIR / f"suggest_rules_{ts}.xlsx"
+    wb.save(out_xlsx)
+
+    out_json = OUT_DIR / f"suggest_rules_{ts}.json"
+    payload_out = {
+        "generated_at": ts,
+        "tiers": tiers_json,
+    }
+    out_json.write_text(json.dumps(payload_out, ensure_ascii=False, indent=2), encoding="utf-8")
+    return out_xlsx
 
 
 if __name__ == "__main__":

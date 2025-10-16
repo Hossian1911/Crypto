@@ -1,0 +1,5 @@
+error: cannot pull with rebase: You have unstaged changes.
+error: additionally, your index contains uncommitted changes.
+error: Please commit or stash them.
+To github.com:Hossian1911/Crypto.git
+   6344590..5835d5b  main -> main
