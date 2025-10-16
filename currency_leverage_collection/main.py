@@ -31,6 +31,7 @@ FETCH_SYMBOLS = BASE_DIR / "currencyGet_surf" / "fetch_symbols_api.py"
 DATAGET_MAIN = BASE_DIR / "dataGet" / "dataGet_main.py"
 TABLE_MAKE = BASE_DIR / "tableMake" / "tableMake_main.py"
 PUBLISH_PS1 = BASE_DIR / "scripts" / "publish_latest_json.ps1"
+SUGGEST_RULES = BASE_DIR / "tableMake" / "make_suggest_rules.py"
 
 LOG_DIR = BASE_DIR / "result" / "_logs"
 LOG_DIR.mkdir(parents=True, exist_ok=True)
@@ -119,6 +120,13 @@ def run_once() -> int:
         print("[!] tableMake 失败")
         logging.error("tableMake 失败, rc=%s", rc)
         return rc
+    # 3.1) 生成 Suggest Rules Excel
+    if SUGGEST_RULES.exists():
+        s_rc = run_py("make_suggest_rules", SUGGEST_RULES)
+        if s_rc != 0:
+            print("[!] make_suggest_rules 失败")
+            logging.error("make_suggest_rules 失败, rc=%s", s_rc)
+            return s_rc
     prc = run_ps1("publish_latest_json", PUBLISH_PS1)
     if prc != 0:
         print("[!] publish_latest_json 失败")

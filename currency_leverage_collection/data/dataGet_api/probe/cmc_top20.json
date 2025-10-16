@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "url_used": "https://api.coinmarketcap.com/data-api/v3/cryptocurrency/listing?start=1&limit=20&convert=USD&sortBy=market_cap&sortType=desc&cryptoType=all&tagType=all",
+    "count": 20
+  },
+  "items": [
+    {
+      "name": "Bitcoin",
+      "marketcap": 2209565501632.342
+    },
+    {
+      "name": "Ethereum",
+      "marketcap": 484188127347.00305
+    },
+    {
+      "name": "Tether USDt",
+      "marketcap": 181385647994.33356
+    },
+    {
+      "name": "BNB",
+      "marketcap": 164354638020.14996
+    },
+    {
+      "name": "XRP",
+      "marketcap": 144740216678.5486
+    },
+    {
+      "name": "Solana",
+      "marketcap": 105900095250.28722
+    },
+    {
+      "name": "USDC",
+      "marketcap": 76069910122.80247
+    },
+    {
+      "name": "TRON",
+      "marketcap": 30478692947.717205
+    },
+    {
+      "name": "Dogecoin",
+      "marketcap": 29897883511.172955
+    },
+    {
+      "name": "Cardano",
+      "marketcap": 24070813430.988213
+    },
+    {
+      "name": "Hyperliquid",
+      "marketcap": 12726648177.293406
+    },
+    {
+      "name": "Ethena USDe",
+      "marketcap": 12475725046.653164
+    },
+    {
+      "name": "Chainlink",
+      "marketcap": 12250111582.086697
+    },
+    {
+      "name": "Bitcoin Cash",
+      "marketcap": 10413880460.02102
+    },
+    {
+      "name": "Stellar",
+      "marketcap": 10412122093.565056
+    },
+    {
+      "name": "Sui",
+      "marketcap": 9700601949.382656
+    },
+    {
+      "name": "Avalanche",
+      "marketcap": 9225501530.022064
+    },
+    {
+      "name": "UNUS SED LEO",
+      "marketcap": 8899802987.08194
+    },
+    {
+      "name": "Hedera",
+      "marketcap": 7594841847.48096
+    },
+    {
+      "name": "Litecoin",
+      "marketcap": 7254134198.47606
+    }
+  ]
+}

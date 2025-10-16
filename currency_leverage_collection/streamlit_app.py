@@ -7,9 +7,11 @@ import csv
 import pandas as pd
 import streamlit as st
 import re
+import json
 
 ROOT = Path(__file__).resolve().parent
 HTML_DIR = ROOT / "result" / "html"
+SUGGEST_DIR = ROOT / "result" / "suggest"
 
 
 def latest_json() -> Path | None:
@@ -148,6 +150,107 @@ def build_aggregate_union_table(sym: str, payload: dict) -> pd.DataFrame:
     return pd.DataFrame.from_records(records)
 
 
+# ===== Suggest Rule helpers =====
+MAJOR_TIERS = [50_000, 200_000, 500_000, 1_000_000]
+MINOR_TIERS = [20_000, 100_000, 200_000]
+EXS_SHOW = ["BINANCE", "WEEX", "MECX", "BYBIT"]
+ALPHA_TOP = 0.40
+ALPHA_MID = 0.50
+LEV_MAX = 1000
+LEV_STEP = 5
+MMR_FLOOR = 0.0002  # 0.02%
+
+
+def _round_leverage(x: float) -> float:
+    x = min(LEV_MAX, max(1.0, x))
+    return float(int(round(x / LEV_STEP)) * LEV_STEP)
+
+
+def _select_tier_for_threshold(rows: list[list], S: float) -> tuple[float, float] | None:
+    parsed: list[tuple[float, float, float]] = []
+    for r in rows or []:
+        if len(r) < 4:
+            continue
+        lev = _lev_to_float(r[1])
+        pos = _num(r[2])
+        mmr = _mmr_to_float(r[3])
+        if lev is None or pos is None or mmr is None:
+            continue
+        parsed.append((lev, pos, mmr))
+    if not parsed:
+        return None
+    parsed.sort(key=lambda t: t[1], reverse=True)
+    if S >= parsed[0][1]:
+        return parsed[0][0], parsed[0][2]
+    for i in range(len(parsed) - 1):
+        lev, pos, mmr = parsed[i]
+        _, pos_next, _ = parsed[i + 1]
+        if pos >= S and pos_next < S:
+            return lev, mmr
+    return None
+
+
+def _street_for_symbol(payload: dict, sym: str, S: float) -> tuple[float | None, float | None]:
+    levs: list[float] = []
+    mmrs: list[float] = []
+    sym_map = payload.get(sym) or {}
+    for ex in EXS_SHOW:
+        rows = sym_map.get(ex) or []
+        pick = _select_tier_for_threshold(rows, S)
+        if pick is None:
+            continue
+        lev, mmr = pick
+        levs.append(lev)
+        mmrs.append(mmr)
+    return (max(levs) if levs else None, min(mmrs) if mmrs else None)
+
+
+def _load_majors() -> set[str]:
+    cmc_path = ROOT / "data" / "dataGet_api" / "cmc" / "cmc_top20.json"
+    majors: set[str] = set()
+    try:
+        if cmc_path.exists():
+            arr = json.loads(cmc_path.read_text(encoding="utf-8"))
+            for it in arr:
+                sym = str(it.get("name") or "").upper().strip()
+                if sym and sym not in {"USDT", "USDC"}:
+                    majors.add(f"{sym}USDT")
+    except Exception:
+        pass
+    return majors
+
+
+def build_suggest_rule_table(sym: str, payload: dict) -> pd.DataFrame:
+    majors = _load_majors()
+    tiers = MAJOR_TIERS if sym in majors else MINOR_TIERS
+    recs: list[dict] = []
+    for idx, S in enumerate(tiers):
+        street_lev, street_mmr = _street_for_symbol(payload, sym, float(S))
+        if idx == len(tiers) - 1:
+            base_lev = street_lev or 10.0
+            sug_lev = _round_leverage(base_lev * 1.10)
+            im = 1.0 / sug_lev
+            mmr_rule = max(MMR_FLOOR, ALPHA_TOP * im)
+            mmr_street = street_mmr if street_mmr is not None else 1.0
+            sug_mmr = min(mmr_rule, mmr_street * 0.90)
+        else:
+            base_lev = street_lev or 10.0
+            sug_lev = _round_leverage(base_lev * 0.90)
+            im = 1.0 / sug_lev
+            mmr_rule = max(MMR_FLOOR, ALPHA_MID * im)
+            sug_mmr = min(mmr_rule, street_mmr) if street_mmr is not None else mmr_rule
+        recs.append({
+            "Max Position (USDT)": _fmt_pos(S),
+            "Leverage": f"{int(sug_lev)}X" if float(sug_lev).is_integer() else f"{sug_lev}X",
+            "IM": _fmt_pct(1.0 / sug_lev),
+            "MMR": _fmt_pct(sug_mmr),
+            "Street Max Lev": f"{int(street_lev)}X" if street_lev and float(street_lev).is_integer() else (f"{street_lev}X" if street_lev else ""),
+            "Street Min MMR": _fmt_pct(street_mmr) if street_mmr is not None else "",
+        })
+    df = pd.DataFrame.from_records(recs)
+    return df
+
+
 def main():
     st.set_page_config(page_title="Leverage & MMR Dashboard", layout="wide")
     st.title("Leverage & MMR Dashboard")
@@ -205,7 +308,7 @@ def main():
         st.warning("No summary for selected symbol")
         return
 
-    ex_order = ["Aggregate", "BINANCE", "WEEX", "MECX", "BYBIT", "SURF"]
+    ex_order = ["Aggregate", "Suggest Rule", "BINANCE", "WEEX", "MECX", "BYBIT", "SURF"]
     tabs = st.tabs(ex_order)
 
     # Aggregate tab: union of leverage tiers across exchanges
@@ -217,8 +320,42 @@ def main():
         else:
             st.dataframe(agg_df, use_container_width=True)
 
-    # Exchange tabs
-    for tab, ex in zip(tabs[1:], ex_order[1:]):
+    # Suggest Rule tab: load from latest Excel under result/suggest
+    with tabs[1]:
+        st.subheader("Suggest Rule (From Excel)")
+        try:
+            files = sorted(SUGGEST_DIR.glob("suggest_rules_*.xlsx"))
+            if not files:
+                st.info("No suggest Excel found under result/suggest.")
+            else:
+                xlsx = files[-1]
+                # Try exact sheet name first
+                sheet_exact = f"{sym} Suggest Rule"
+                try:
+                    df = pd.read_excel(xlsx, sheet_name=sheet_exact)
+                except Exception:
+                    # Fallback: pick the first sheet that startswith symbol
+                    try:
+                        x = pd.read_excel(xlsx, sheet_name=None)
+                        cand = None
+                        for k in x.keys():
+                            if str(k).startswith(sym):
+                                cand = k
+                                break
+                        if cand is None:
+                            st.warning(f"Sheet for {sym} not found in {xlsx.name}")
+                        else:
+                            df = x[cand]
+                    except Exception as e:
+                        st.error(f"Failed to read Excel: {e}")
+                        df = None
+                if 'df' in locals() and isinstance(df, pd.DataFrame):
+                    st.dataframe(df, use_container_width=True)
+        except Exception as e:
+            st.error(f"Error loading suggest table: {e}")
+
+    # Exchange tabs (shifted by 1 due to Suggest Rule)
+    for tab, ex in zip(tabs[2:], ex_order[2:]):
         with tab:
             rows = payload.get(sym, {}).get(ex, [["", "", "", ""]])
             df = rows_to_df(rows)

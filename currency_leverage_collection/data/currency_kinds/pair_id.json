@@ -1,6 +1,6 @@
 {
   "source_url": "https://surfv2-api.surf.one/public/pair/profit/stats",
-  "collected_at": "2025-10-15T14:19:43",
+  "collected_at": "2025-10-16T17:26:02",
   "items": [
     {
       "symbol": "SOL",
@@ -529,7 +529,15 @@
     {
       "symbol": "2Z",
       "pair_id": "442085980090346496"
+    },
+    {
+      "symbol": "ENSO",
+      "pair_id": "446374236764046336"
+    },
+    {
+      "symbol": "CLO",
+      "pair_id": "446427840212435968"
     }
   ],
-  "count": 132
+  "count": 134
 }

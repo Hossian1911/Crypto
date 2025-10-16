@@ -1,0 +1,82 @@
+[
+  {
+    "name": "BTC",
+    "marketcap": 2211037065810.0
+  },
+  {
+    "name": "ETH",
+    "marketcap": 483163268901.0
+  },
+  {
+    "name": "BNB",
+    "marketcap": 165839108576.0
+  },
+  {
+    "name": "XRP",
+    "marketcap": 143952710619.0
+  },
+  {
+    "name": "SOL",
+    "marketcap": 105752582698.0
+  },
+  {
+    "name": "STETH",
+    "marketcap": 33963890016.0
+  },
+  {
+    "name": "TRX",
+    "marketcap": 30484703771.0
+  },
+  {
+    "name": "DOGE",
+    "marketcap": 29837794075.0
+  },
+  {
+    "name": "ADA",
+    "marketcap": 24526644365.0
+  },
+  {
+    "name": "WSTETH",
+    "marketcap": 15552626151.0
+  },
+  {
+    "name": "WBETH",
+    "marketcap": 14092264701.0
+  },
+  {
+    "name": "WBTC",
+    "marketcap": 14081222375.0
+  },
+  {
+    "name": "FIGR_HELOC",
+    "marketcap": 13304822121.0
+  },
+  {
+    "name": "LINK",
+    "marketcap": 12566501501.0
+  },
+  {
+    "name": "USDE",
+    "marketcap": 12474883701.0
+  },
+  {
+    "name": "WEETH",
+    "marketcap": 10719607883.0
+  },
+  {
+    "name": "BCH",
+    "marketcap": 10387252604.0
+  },
+  {
+    "name": "XLM",
+    "marketcap": 10360950159.0
+  },
+  {
+    "name": "HYPE",
+    "marketcap": 10239018493.0
+  },
+  {
+    "name": "SUI",
+    "marketcap": 9673529327.0
+  }
+]

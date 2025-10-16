@@ -1,6 +1,6 @@
 {
   "source_url": "https://surfv2-api.surf.one/public/pair/profit/stats",
-  "collected_at": "2025-10-15T14:19:43",
+  "collected_at": "2025-10-16T17:26:02",
   "pairs": [
     {
       "pair": "SOL/USDT",
@@ -661,7 +661,17 @@
       "pair": "2Z/USDT",
       "base": "2Z",
       "quote": "USDT"
+    },
+    {
+      "pair": "ENSO/USDT",
+      "base": "ENSO",
+      "quote": "USDT"
+    },
+    {
+      "pair": "CLO/USDT",
+      "base": "CLO",
+      "quote": "USDT"
     }
   ],
-  "count": 132
+  "count": 134
 }

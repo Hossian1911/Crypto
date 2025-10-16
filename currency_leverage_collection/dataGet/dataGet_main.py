@@ -10,7 +10,7 @@ from typing import Dict, List, Tuple
 BASE_DIR = Path(__file__).resolve().parent
 PYTHON = sys.executable or "python"
 
-# 四个数据获取脚本（按需调整路径）
+# 五个数据获取脚本（按需调整路径）
 SCRIPTS = {
     "binance": BASE_DIR / "binance_brackets_fetch.py",
     "bybit": BASE_DIR / "bybit_brackets_fetch.py",
@@ -41,6 +41,16 @@ def _run_script(name: str, script_path: Path, extra_args: List[str] | None = Non
 
 
 def main(parallel: int = 4) -> None:
+    # 先抓取 CMC Top20（过滤 USDT/USDC）
+    cmc_script = BASE_DIR / "cmc_top20_fetch.py"
+    if cmc_script.exists():
+        print("[cmc_top20] 开始获取 CoinMarketCap Top20（排除 USDT/USDC）…")
+        name, rc, outp, errp, dur = _run_script("cmc_top20", cmc_script, [])
+        status = "OK" if rc == 0 else f"FAIL({rc})"
+        print(f"[cmc_top20] 完成: {status} 用时 {dur:.1f}s  日志: {outp.name} / {errp.name}")
+    else:
+        print("[cmc_top20] 跳过：脚本不存在")
+
     # 任务列表：可在此为各脚本添加自定义参数
     jobs: List[Tuple[str, Path, List[str]]] = [
         ("binance", SCRIPTS["binance"], []),
