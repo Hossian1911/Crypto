@@ -1,5 +1,5 @@
 {
-  "generated_at": "20251016_184752",
+  "generated_at": "20251016_195142",
   "tiers": {
     "BTCUSDT": [
       {
@@ -343,44 +343,6 @@
         "im_display": "0.50%"
       }
     ],
-    "BCHUSDT": [
-      {
-        "position": 50000,
-        "leverage_value": 200.0,
-        "leverage_display": "200X",
-        "mmr_value": 0.0025,
-        "mmr_display": "0.25%",
-        "im_value": 0.5,
-        "im_display": "0.50%"
-      },
-      {
-        "position": 200000,
-        "leverage_value": 200.0,
-        "leverage_display": "200X",
-        "mmr_value": 0.0025,
-        "mmr_display": "0.25%",
-        "im_value": 0.5,
-        "im_display": "0.50%"
-      },
-      {
-        "position": 500000,
-        "leverage_value": 200.0,
-        "leverage_display": "200X",
-        "mmr_value": 0.0025,
-        "mmr_display": "0.25%",
-        "im_value": 0.5,
-        "im_display": "0.50%"
-      },
-      {
-        "position": 1000000,
-        "leverage_value": 200.0,
-        "leverage_display": "200X",
-        "mmr_value": 0.004,
-        "mmr_display": "0.40%",
-        "im_value": 0.5,
-        "im_display": "0.50%"
-      }
-    ],
     "HYPEUSDT": [
       {
         "position": 50000,
@@ -417,6 +379,44 @@
         "mmr_display": "0.50%",
         "im_value": 1.0,
         "im_display": "1.00%"
+      }
+    ],
+    "BCHUSDT": [
+      {
+        "position": 50000,
+        "leverage_value": 200.0,
+        "leverage_display": "200X",
+        "mmr_value": 0.0025,
+        "mmr_display": "0.25%",
+        "im_value": 0.5,
+        "im_display": "0.50%"
+      },
+      {
+        "position": 200000,
+        "leverage_value": 200.0,
+        "leverage_display": "200X",
+        "mmr_value": 0.0025,
+        "mmr_display": "0.25%",
+        "im_value": 0.5,
+        "im_display": "0.50%"
+      },
+      {
+        "position": 500000,
+        "leverage_value": 200.0,
+        "leverage_display": "200X",
+        "mmr_value": 0.0025,
+        "mmr_display": "0.25%",
+        "im_value": 0.5,
+        "im_display": "0.50%"
+      },
+      {
+        "position": 1000000,
+        "leverage_value": 200.0,
+        "leverage_display": "200X",
+        "mmr_value": 0.004,
+        "mmr_display": "0.40%",
+        "im_value": 0.5,
+        "im_display": "0.50%"
       }
     ],
     "SUIUSDT": [
@@ -1145,12 +1145,12 @@
       },
       {
         "position": 200000,
-        "leverage_value": 10.0,
-        "leverage_display": "10X",
-        "mmr_value": 0.05,
-        "mmr_display": "5.00%",
-        "im_value": 10.0,
-        "im_display": "10.00%"
+        "leverage_value": 20.0,
+        "leverage_display": "20X",
+        "mmr_value": 0.025,
+        "mmr_display": "2.50%",
+        "im_value": 5.0,
+        "im_display": "5.00%"
       }
     ],
     "BROCCOLIUSDT": [
