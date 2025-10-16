@@ -1,5 +1,5 @@
 {
-  "generated_at": "20251016_183703",
+  "generated_at": "20251016_184752",
   "tiers": {
     "BTCUSDT": [
       {
@@ -1145,12 +1145,12 @@
       },
       {
         "position": 200000,
-        "leverage_value": 20.0,
-        "leverage_display": "20X",
-        "mmr_value": 0.025,
-        "mmr_display": "2.50%",
-        "im_value": 5.0,
-        "im_display": "5.00%"
+        "leverage_value": 10.0,
+        "leverage_display": "10X",
+        "mmr_value": 0.05,
+        "mmr_display": "5.00%",
+        "im_value": 10.0,
+        "im_display": "10.00%"
       }
     ],
     "BROCCOLIUSDT": [
