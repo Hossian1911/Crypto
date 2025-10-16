@@ -1,5 +1,5 @@
 {
-  "generated_at": "20251016_223635",
+  "generated_at": "20251016_233545",
   "tiers": {
     "BTCUSDT": [
       {
@@ -2936,36 +2936,36 @@
     "MUSDT": [
       {
         "position": 20000,
-        "leverage_value": 40.0,
-        "leverage_display": "40X",
-        "max_lev_source": "BYBIT",
-        "mmr_value": 0.0125,
-        "mmr_display": "1.25%",
-        "min_mmr_source": "BYBIT",
-        "im_value": 2.5,
-        "im_display": "2.50"
-      },
-      {
-        "position": 100000,
         "leverage_value": 20.0,
         "leverage_display": "20X",
-        "max_lev_source": "BYBIT",
+        "max_lev_source": "BINANCE",
         "mmr_value": 0.025,
         "mmr_display": "2.50%",
-        "min_mmr_source": "BYBIT",
+        "min_mmr_source": "BINANCE",
         "im_value": 5.0,
         "im_display": "5.00"
       },
       {
+        "position": 100000,
+        "leverage_value": 10.0,
+        "leverage_display": "10X",
+        "max_lev_source": "WEEX",
+        "mmr_value": 0.05,
+        "mmr_display": "5.00%",
+        "min_mmr_source": "WEEX",
+        "im_value": 10.0,
+        "im_display": "10.00"
+      },
+      {
         "position": 200000,
-        "leverage_value": 14.29,
-        "leverage_display": "14.29X",
-        "max_lev_source": "BYBIT",
-        "mmr_value": 0.035,
-        "mmr_display": "3.50%",
-        "min_mmr_source": "BYBIT",
-        "im_value": 6.997900629811057,
-        "im_display": "7.00"
+        "leverage_value": 10.0,
+        "leverage_display": "10X",
+        "max_lev_source": "WEEX",
+        "mmr_value": 0.05,
+        "mmr_display": "5.00%",
+        "min_mmr_source": "WEEX",
+        "im_value": 10.0,
+        "im_display": "10.00"
       }
     ],
     "MYXUSDT": [
@@ -3157,14 +3157,14 @@
       },
       {
         "position": 100000,
-        "leverage_value": 14.29,
-        "leverage_display": "14.29X",
-        "max_lev_source": "BYBIT",
-        "mmr_value": 0.035,
-        "mmr_display": "3.50%",
-        "min_mmr_source": "BYBIT",
-        "im_value": 6.997900629811057,
-        "im_display": "7.00"
+        "leverage_value": 10.0,
+        "leverage_display": "10X",
+        "max_lev_source": "WEEX",
+        "mmr_value": 0.05,
+        "mmr_display": "5.00%",
+        "min_mmr_source": "WEEX",
+        "im_value": 10.0,
+        "im_display": "10.00"
       },
       {
         "position": 200000,
