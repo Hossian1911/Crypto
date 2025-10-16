@@ -389,7 +389,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619222.486251"
+        "time_now": "1760625114.570315"
       }
     },
     {
@@ -645,7 +645,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619222.529702"
+        "time_now": "1760625114.613729"
       }
     },
     {
@@ -901,7 +901,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619222.545403"
+        "time_now": "1760625114.575869"
       }
     },
     {
@@ -1157,7 +1157,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619222.824990"
+        "time_now": "1760625115.467829"
       }
     },
     {
@@ -1413,7 +1413,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619228.250702"
+        "time_now": "1760625119.249384"
       }
     },
     {
@@ -1669,7 +1669,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619228.298144"
+        "time_now": "1760625119.256876"
       }
     },
     {
@@ -1925,7 +1925,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619228.325691"
+        "time_now": "1760625119.926767"
       }
     },
     {
@@ -2181,7 +2181,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619228.890938"
+        "time_now": "1760625121.996932"
       }
     },
     {
@@ -2269,7 +2269,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619234.040863"
+        "time_now": "1760625125.891965"
       }
     },
     {
@@ -2525,7 +2525,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619234.245977"
+        "time_now": "1760625127.884742"
       }
     },
     {
@@ -2781,7 +2781,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619234.155140"
+        "time_now": "1760625125.647643"
       }
     },
     {
@@ -3037,336 +3037,16 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619234.728056"
+        "time_now": "1760625127.029027"
       }
     },
     {
       "symbol": "ARBUSDT",
-      "url": "https://www.bybitglobal.com/x-api/contract/v5/public/support/symbol-risk?symbol=ARBUSDT",
-      "status": 200,
-      "data": {
-        "ret_code": 0,
-        "ret_msg": "success",
-        "result": {
-          "list": [
-            {
-              "gear": "1",
-              "storingLocationValue": "200000",
-              "maintenanceMarginRate": "1%",
-              "initialMarginRate": "2%",
-              "maximumLever": "50",
-              "mmDeduction": ""
-            },
-            {
-              "gear": "2",
-              "storingLocationValue": "400000",
-              "maintenanceMarginRate": "1.5%",
-              "initialMarginRate": "3%",
-              "maximumLever": "33.33",
-              "mmDeduction": "1000"
-            },
-            {
-              "gear": "3",
-              "storingLocationValue": "600000",
-              "maintenanceMarginRate": "2%",
-              "initialMarginRate": "4%",
-              "maximumLever": "25",
-              "mmDeduction": "3000"
-            },
-            {
-              "gear": "4",
-              "storingLocationValue": "800000",
-              "maintenanceMarginRate": "2.5%",
-              "initialMarginRate": "5%",
-              "maximumLever": "20",
-              "mmDeduction": "6000"
-            },
-            {
-              "gear": "5",
-              "storingLocationValue": "1000000",
-              "maintenanceMarginRate": "3%",
-              "initialMarginRate": "6%",
-              "maximumLever": "16.67",
-              "mmDeduction": "10000"
-            },
-            {
-              "gear": "6",
-              "storingLocationValue": "1200000",
-              "maintenanceMarginRate": "3.5%",
-              "initialMarginRate": "7%",
-              "maximumLever": "14.29",
-              "mmDeduction": "15000"
-            },
-            {
-              "gear": "7",
-              "storingLocationValue": "1400000",
-              "maintenanceMarginRate": "4%",
-              "initialMarginRate": "8%",
-              "maximumLever": "12.5",
-              "mmDeduction": "21000"
-            },
-            {
-              "gear": "8",
-              "storingLocationValue": "1600000",
-              "maintenanceMarginRate": "4.5%",
-              "initialMarginRate": "9%",
-              "maximumLever": "11.11",
-              "mmDeduction": "28000"
-            },
-            {
-              "gear": "9",
-              "storingLocationValue": "1800000",
-              "maintenanceMarginRate": "5%",
-              "initialMarginRate": "10%",
-              "maximumLever": "10",
-              "mmDeduction": "36000"
-            },
-            {
-              "gear": "10",
-              "storingLocationValue": "2000000",
-              "maintenanceMarginRate": "5.5%",
-              "initialMarginRate": "11%",
-              "maximumLever": "9.09",
-              "mmDeduction": "45000"
-            },
-            {
-              "gear": "11",
-              "storingLocationValue": "2200000",
-              "maintenanceMarginRate": "6%",
-              "initialMarginRate": "12%",
-              "maximumLever": "8.33",
-              "mmDeduction": "55000"
-            },
-            {
-              "gear": "12",
-              "storingLocationValue": "2400000",
-              "maintenanceMarginRate": "6.5%",
-              "initialMarginRate": "13%",
-              "maximumLever": "7.69",
-              "mmDeduction": "66000"
-            },
-            {
-              "gear": "13",
-              "storingLocationValue": "2600000",
-              "maintenanceMarginRate": "7%",
-              "initialMarginRate": "14%",
-              "maximumLever": "7.14",
-              "mmDeduction": "78000"
-            },
-            {
-              "gear": "14",
-              "storingLocationValue": "2800000",
-              "maintenanceMarginRate": "7.5%",
-              "initialMarginRate": "15%",
-              "maximumLever": "6.67",
-              "mmDeduction": "91000"
-            },
-            {
-              "gear": "15",
-              "storingLocationValue": "3000000",
-              "maintenanceMarginRate": "8%",
-              "initialMarginRate": "16%",
-              "maximumLever": "6.25",
-              "mmDeduction": "105000"
-            },
-            {
-              "gear": "16",
-              "storingLocationValue": "3200000",
-              "maintenanceMarginRate": "8.5%",
-              "initialMarginRate": "17%",
-              "maximumLever": "5.88",
-              "mmDeduction": "120000"
-            },
-            {
-              "gear": "17",
-              "storingLocationValue": "3400000",
-              "maintenanceMarginRate": "9%",
-              "initialMarginRate": "18%",
-              "maximumLever": "5.56",
-              "mmDeduction": "136000"
-            },
-            {
-              "gear": "18",
-              "storingLocationValue": "3900000",
-              "maintenanceMarginRate": "9.5%",
-              "initialMarginRate": "19%",
-              "maximumLever": "5.26",
-              "mmDeduction": "153000"
-            },
-            {
-              "gear": "19",
-              "storingLocationValue": "4400000",
-              "maintenanceMarginRate": "10%",
-              "initialMarginRate": "20%",
-              "maximumLever": "5",
-              "mmDeduction": "172500"
-            },
-            {
-              "gear": "20",
-              "storingLocationValue": "4900000",
-              "maintenanceMarginRate": "10.5%",
-              "initialMarginRate": "21%",
-              "maximumLever": "4.76",
-              "mmDeduction": "194500"
-            },
-            {
-              "gear": "21",
-              "storingLocationValue": "5400000",
-              "maintenanceMarginRate": "11%",
-              "initialMarginRate": "22%",
-              "maximumLever": "4.55",
-              "mmDeduction": "219000"
-            },
-            {
-              "gear": "22",
-              "storingLocationValue": "5900000",
-              "maintenanceMarginRate": "11.5%",
-              "initialMarginRate": "23%",
-              "maximumLever": "4.35",
-              "mmDeduction": "246000"
-            },
-            {
-              "gear": "23",
-              "storingLocationValue": "6400000",
-              "maintenanceMarginRate": "12%",
-              "initialMarginRate": "24%",
-              "maximumLever": "4.17",
-              "mmDeduction": "275500"
-            },
-            {
-              "gear": "24",
-              "storingLocationValue": "6900000",
-              "maintenanceMarginRate": "12.5%",
-              "initialMarginRate": "25%",
-              "maximumLever": "4",
-              "mmDeduction": "307500"
-            },
-            {
-              "gear": "25",
-              "storingLocationValue": "7400000",
-              "maintenanceMarginRate": "15.6%",
-              "initialMarginRate": "26%",
-              "maximumLever": "3.85",
-              "mmDeduction": "521400"
-            },
-            {
-              "gear": "26",
-              "storingLocationValue": "7900000",
-              "maintenanceMarginRate": "17.64%",
-              "initialMarginRate": "29.4%",
-              "maximumLever": "3.4",
-              "mmDeduction": "672360"
-            },
-            {
-              "gear": "27",
-              "storingLocationValue": "8400000",
-              "maintenanceMarginRate": "19.98%",
-              "initialMarginRate": "33.3%",
-              "maximumLever": "3",
-              "mmDeduction": "857220"
-            },
-            {
-              "gear": "28",
-              "storingLocationValue": "8900000",
-              "maintenanceMarginRate": "24%",
-              "initialMarginRate": "40%",
-              "maximumLever": "2.5",
-              "mmDeduction": "1194900"
-            },
-            {
-              "gear": "29",
-              "storingLocationValue": "9400000",
-              "maintenanceMarginRate": "30%",
-              "initialMarginRate": "50%",
-              "maximumLever": "2",
-              "mmDeduction": "1728900"
-            },
-            {
-              "gear": "30",
-              "storingLocationValue": "15000000",
-              "maintenanceMarginRate": "40.02%",
-              "initialMarginRate": "66.7%",
-              "maximumLever": "1.5",
-              "mmDeduction": "2670780"
-            }
-          ]
-        },
-        "ext_code": "",
-        "ext_info": null,
-        "time_now": "1760619239.103715"
-      }
+      "error": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)"
     },
     {
       "symbol": "ARCUSDT",
-      "url": "https://www.bybitglobal.com/x-api/contract/v5/public/support/symbol-risk?symbol=ARCUSDT",
-      "status": 200,
-      "data": {
-        "ret_code": 0,
-        "ret_msg": "success",
-        "result": {
-          "list": [
-            {
-              "gear": "1",
-              "storingLocationValue": "5000",
-              "maintenanceMarginRate": "2%",
-              "initialMarginRate": "4%",
-              "maximumLever": "25",
-              "mmDeduction": ""
-            },
-            {
-              "gear": "2",
-              "storingLocationValue": "25000",
-              "maintenanceMarginRate": "2.5%",
-              "initialMarginRate": "5%",
-              "maximumLever": "20",
-              "mmDeduction": "25"
-            },
-            {
-              "gear": "3",
-              "storingLocationValue": "200000",
-              "maintenanceMarginRate": "5%",
-              "initialMarginRate": "10%",
-              "maximumLever": "10",
-              "mmDeduction": "650"
-            },
-            {
-              "gear": "4",
-              "storingLocationValue": "500000",
-              "maintenanceMarginRate": "10%",
-              "initialMarginRate": "20%",
-              "maximumLever": "5",
-              "mmDeduction": "10650"
-            },
-            {
-              "gear": "5",
-              "storingLocationValue": "850000",
-              "maintenanceMarginRate": "12.5%",
-              "initialMarginRate": "25%",
-              "maximumLever": "4",
-              "mmDeduction": "23150"
-            },
-            {
-              "gear": "6",
-              "storingLocationValue": "1500000",
-              "maintenanceMarginRate": "25%",
-              "initialMarginRate": "50%",
-              "maximumLever": "2",
-              "mmDeduction": "129400"
-            },
-            {
-              "gear": "7",
-              "storingLocationValue": "2500000",
-              "maintenanceMarginRate": "50%",
-              "initialMarginRate": "100%",
-              "maximumLever": "1",
-              "mmDeduction": "504400"
-            }
-          ]
-        },
-        "ext_code": "",
-        "ext_info": null,
-        "time_now": "1760619239.177010"
-      }
+      "error": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)"
     },
     {
       "symbol": "ASTERUSDT",
@@ -3621,7 +3301,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619239.345536"
+        "time_now": "1760625131.682017"
       }
     },
     {
@@ -3877,7 +3557,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619239.987404"
+        "time_now": "1760625133.314427"
       }
     },
     {
@@ -3949,7 +3629,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619244.245090"
+        "time_now": "1760625140.136486"
       }
     },
     {
@@ -4205,7 +3885,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619244.277221"
+        "time_now": "1760625137.700104"
       }
     },
     {
@@ -4461,7 +4141,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619244.414440"
+        "time_now": "1760625141.583437"
       }
     },
     {
@@ -4717,7 +4397,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619244.913620"
+        "time_now": "1760625142.531270"
       }
     },
     {
@@ -4973,7 +4653,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619249.296134"
+        "time_now": "1760625143.785575"
       }
     },
     {
@@ -5229,7 +4909,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619249.326862"
+        "time_now": "1760625144.960668"
       }
     },
     {
@@ -5485,7 +5165,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619249.660450"
+        "time_now": "1760625146.678417"
       }
     },
     {
@@ -5500,7 +5180,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619249.962647"
+        "time_now": "1760625147.215985"
       }
     },
     {
@@ -5588,7 +5268,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619254.270002"
+        "time_now": "1760625148.601396"
       }
     },
     {
@@ -5844,7 +5524,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619254.310905"
+        "time_now": "1760625149.753472"
       }
     },
     {
@@ -6100,7 +5780,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619254.585065"
+        "time_now": "1760625151.437411"
       }
     },
     {
@@ -6172,7 +5852,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619255.146382"
+        "time_now": "1760625152.290968"
       }
     },
     {
@@ -6428,7 +6108,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619259.436987"
+        "time_now": "1760625153.631972"
       }
     },
     {
@@ -6724,7 +6404,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619259.467906"
+        "time_now": "1760625154.818604"
       }
     },
     {
@@ -6980,7 +6660,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619259.702343"
+        "time_now": "1760625156.134758"
       }
     },
     {
@@ -7236,7 +6916,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619260.133089"
+        "time_now": "1760625157.199080"
       }
     },
     {
@@ -7492,7 +7172,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619264.158694"
+        "time_now": "1760625158.227146"
       }
     },
     {
@@ -7507,7 +7187,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619264.251628"
+        "time_now": "1760625159.641672"
       }
     },
     {
@@ -7522,7 +7202,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619264.463300"
+        "time_now": "1760625160.717595"
       }
     },
     {
@@ -7778,7 +7458,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619265.085427"
+        "time_now": "1760625161.597042"
       }
     },
     {
@@ -8034,7 +7714,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619269.151114"
+        "time_now": "1760625162.728772"
       }
     },
     {
@@ -8290,7 +7970,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619269.326697"
+        "time_now": "1760625164.190918"
       }
     },
     {
@@ -8546,7 +8226,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619269.420596"
+        "time_now": "1760625165.003250"
       }
     },
     {
@@ -8802,7 +8482,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619270.207916"
+        "time_now": "1760625166.221937"
       }
     },
     {
@@ -9058,7 +8738,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619274.288726"
+        "time_now": "1760625167.137174"
       }
     },
     {
@@ -9314,7 +8994,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619274.317753"
+        "time_now": "1760625168.514227"
       }
     },
     {
@@ -9570,7 +9250,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619274.554595"
+        "time_now": "1760625169.433403"
       }
     },
     {
@@ -9866,7 +9546,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619275.262576"
+        "time_now": "1760625170.712645"
       }
     },
     {
@@ -9938,7 +9618,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619279.703417"
+        "time_now": "1760625171.583810"
       }
     },
     {
@@ -10194,7 +9874,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619279.748517"
+        "time_now": "1760625173.027203"
       }
     },
     {
@@ -10450,7 +10130,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619280.139421"
+        "time_now": "1760625173.871857"
       }
     },
     {
@@ -10522,7 +10202,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619281.161720"
+        "time_now": "1760625175.154540"
       }
     },
     {
@@ -10658,7 +10338,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619285.844370"
+        "time_now": "1760625176.101735"
       }
     },
     {
@@ -10914,7 +10594,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619285.892903"
+        "time_now": "1760625177.493532"
       }
     },
     {
@@ -11170,7 +10850,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619286.198149"
+        "time_now": "1760625178.528618"
       }
     },
     {
@@ -11426,7 +11106,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619287.344722"
+        "time_now": "1760625179.792140"
       }
     },
     {
@@ -11682,7 +11362,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619291.791255"
+        "time_now": "1760625180.634052"
       }
     },
     {
@@ -11754,7 +11434,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619291.998012"
+        "time_now": "1760625182.308630"
       }
     },
     {
@@ -11826,7 +11506,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619292.240785"
+        "time_now": "1760625183.269386"
       }
     },
     {
@@ -12082,7 +11762,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619293.406915"
+        "time_now": "1760625184.629449"
       }
     },
     {
@@ -12170,7 +11850,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619297.893796"
+        "time_now": "1760625185.463003"
       }
     },
     {
@@ -12426,7 +12106,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619298.255258"
+        "time_now": "1760625187.248030"
       }
     },
     {
@@ -12682,7 +12362,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619298.361461"
+        "time_now": "1760625188.134081"
       }
     },
     {
@@ -12697,7 +12377,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619299.620479"
+        "time_now": "1760625189.302340"
       }
     },
     {
@@ -12953,7 +12633,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619303.912318"
+        "time_now": "1760625190.334424"
       }
     },
     {
@@ -13209,7 +12889,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619304.450698"
+        "time_now": "1760625191.934445"
       }
     },
     {
@@ -13465,7 +13145,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619304.450699"
+        "time_now": "1760625193.029677"
       }
     },
     {
@@ -13721,7 +13401,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619305.841858"
+        "time_now": "1760625193.956529"
       }
     },
     {
@@ -13977,7 +13657,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619310.010694"
+        "time_now": "1760625195.244118"
       }
     },
     {
@@ -14233,7 +13913,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619310.604749"
+        "time_now": "1760625196.725248"
       }
     },
     {
@@ -14305,7 +13985,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619310.655970"
+        "time_now": "1760625197.880661"
       }
     },
     {
@@ -14561,7 +14241,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619311.946956"
+        "time_now": "1760625198.628360"
       }
     },
     {
@@ -14817,7 +14497,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619314.695840"
+        "time_now": "1760625200.196108"
       }
     },
     {
@@ -15073,7 +14753,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619315.376493"
+        "time_now": "1760625201.581166"
       }
     },
     {
@@ -15329,7 +15009,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619315.359945"
+        "time_now": "1760625202.729911"
       }
     },
     {
@@ -15585,7 +15265,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619316.340559"
+        "time_now": "1760625203.541665"
       }
     },
     {
@@ -15841,7 +15521,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619319.245607"
+        "time_now": "1760625205.108897"
       }
     },
     {
@@ -16097,7 +15777,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619319.749584"
+        "time_now": "1760625206.451705"
       }
     },
     {
@@ -16353,7 +16033,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619319.764313"
+        "time_now": "1760625208.039399"
       }
     },
     {
@@ -16609,7 +16289,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619320.756279"
+        "time_now": "1760625208.378010"
       }
     },
     {
@@ -16865,7 +16545,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619323.708741"
+        "time_now": "1760625209.720000"
       }
     },
     {
@@ -17121,7 +16801,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619324.081363"
+        "time_now": "1760625211.270407"
       }
     },
     {
@@ -17377,7 +17057,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619324.166393"
+        "time_now": "1760625212.665197"
       }
     },
     {
@@ -17633,7 +17313,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619325.165778"
+        "time_now": "1760625213.220745"
       }
     },
     {
@@ -17889,7 +17569,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619328.074763"
+        "time_now": "1760625214.390297"
       }
     },
     {
@@ -18145,7 +17825,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619328.488824"
+        "time_now": "1760625215.914218"
       }
     },
     {
@@ -18401,7 +18081,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619328.571123"
+        "time_now": "1760625217.396175"
       }
     },
     {
@@ -18657,7 +18337,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619329.688399"
+        "time_now": "1760625217.944574"
       }
     },
     {
@@ -18913,7 +18593,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619332.468147"
+        "time_now": "1760625219.161037"
       }
     },
     {
@@ -19169,7 +18849,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619332.945414"
+        "time_now": "1760625220.541224"
       }
     },
     {
@@ -19257,7 +18937,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619333.120918"
+        "time_now": "1760625222.055904"
       }
     },
     {
@@ -19513,7 +19193,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619334.175755"
+        "time_now": "1760625222.580610"
       }
     },
     {
@@ -19528,7 +19208,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619336.824361"
+        "time_now": "1760625223.906818"
       }
     },
     {
@@ -19543,7 +19223,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619337.401274"
+        "time_now": "1760625225.291376"
       }
     },
     {
@@ -19615,7 +19295,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619337.555080"
+        "time_now": "1760625226.694177"
       }
     },
     {
@@ -19871,7 +19551,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619338.762762"
+        "time_now": "1760625227.286487"
       }
     },
     {
@@ -20127,7 +19807,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619341.361653"
+        "time_now": "1760625228.695577"
       }
     },
     {
@@ -20383,7 +20063,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619342.021041"
+        "time_now": "1760625229.931461"
       }
     },
     {
@@ -20639,7 +20319,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619342.101042"
+        "time_now": "1760625231.001332"
       }
     },
     {
@@ -20775,7 +20455,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619343.227440"
+        "time_now": "1760625231.744785"
       }
     },
     {
@@ -20847,7 +20527,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619345.849201"
+        "time_now": "1760625233.113943"
       }
     },
     {
@@ -21103,7 +20783,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619346.489096"
+        "time_now": "1760625234.590922"
       }
     },
     {
@@ -21359,7 +21039,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619346.507342"
+        "time_now": "1760625235.666053"
       }
     },
     {
@@ -21615,7 +21295,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619347.688108"
+        "time_now": "1760625236.624790"
       }
     },
     {
@@ -21871,7 +21551,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619350.579698"
+        "time_now": "1760625237.839987"
       }
     },
     {
@@ -21886,7 +21566,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619351.383962"
+        "time_now": "1760625239.509114"
       }
     },
     {
@@ -22142,7 +21822,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619351.199271"
+        "time_now": "1760625240.423583"
       }
     },
     {
@@ -22438,7 +22118,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619352.668405"
+        "time_now": "1760625241.312591"
       }
     },
     {
@@ -22694,7 +22374,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619355.286307"
+        "time_now": "1760625242.525923"
       }
     },
     {
@@ -22950,7 +22630,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619355.793680"
+        "time_now": "1760625244.327340"
       }
     },
     {
@@ -23206,7 +22886,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619355.877521"
+        "time_now": "1760625245.288007"
       }
     },
     {
@@ -23462,7 +23142,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619357.028496"
+        "time_now": "1760625245.902488"
       }
     },
     {
@@ -23718,7 +23398,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619359.609666"
+        "time_now": "1760625247.091933"
       }
     },
     {
@@ -23974,7 +23654,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619360.193979"
+        "time_now": "1760625248.812717"
       }
     },
     {
@@ -24230,7 +23910,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619360.145073"
+        "time_now": "1760625249.883703"
       }
     },
     {
@@ -24486,7 +24166,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619361.411603"
+        "time_now": "1760625250.388011"
       }
     },
     {
@@ -24742,7 +24422,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619363.766253"
+        "time_now": "1760625251.588827"
       }
     },
     {
@@ -24998,7 +24678,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619364.311539"
+        "time_now": "1760625253.430205"
       }
     },
     {
@@ -25070,7 +24750,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619364.398855"
+        "time_now": "1760625254.432350"
       }
     },
     {
@@ -25326,7 +25006,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619365.504055"
+        "time_now": "1760625254.872870"
       }
     },
     {
@@ -25341,7 +25021,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619367.886960"
+        "time_now": "1760625256.109538"
       }
     },
     {
@@ -25597,7 +25277,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619368.351980"
+        "time_now": "1760625257.811635"
       }
     },
     {
@@ -25685,7 +25365,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619368.457628"
+        "time_now": "1760625258.786962"
       }
     },
     {
@@ -25757,7 +25437,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619369.639009"
+        "time_now": "1760625259.317290"
       }
     },
     {
@@ -26013,7 +25693,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619371.966426"
+        "time_now": "1760625260.466533"
       }
     },
     {
@@ -26085,7 +25765,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619372.541662"
+        "time_now": "1760625262.200056"
       }
     },
     {
@@ -26341,7 +26021,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619372.523332"
+        "time_now": "1760625263.289553"
       }
     },
     {
@@ -26597,7 +26277,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619373.729437"
+        "time_now": "1760625263.711529"
       }
     },
     {
@@ -26853,7 +26533,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619376.110712"
+        "time_now": "1760625264.842647"
       }
     },
     {
@@ -27109,7 +26789,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619376.586892"
+        "time_now": "1760625266.475430"
       }
     },
     {
@@ -27365,7 +27045,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619376.809394"
+        "time_now": "1760625267.614828"
       }
     },
     {
@@ -27621,7 +27301,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619377.829002"
+        "time_now": "1760625267.830242"
       }
     },
     {
@@ -27877,7 +27557,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619380.195581"
+        "time_now": "1760625268.740200"
       }
     },
     {
@@ -28133,7 +27813,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619380.671049"
+        "time_now": "1760625270.317198"
       }
     },
     {
@@ -28389,7 +28069,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619380.825043"
+        "time_now": "1760625271.557319"
       }
     },
     {
@@ -28645,7 +28325,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619381.702771"
+        "time_now": "1760625271.755092"
       }
     },
     {
@@ -28901,7 +28581,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619383.938222"
+        "time_now": "1760625272.781524"
       }
     },
     {
@@ -29157,7 +28837,7 @@
         },
         "ext_code": "",
         "ext_info": null,
-        "time_now": "1760619384.459886"
+        "time_now": "1760625273.912000"
       }
     }
   ]

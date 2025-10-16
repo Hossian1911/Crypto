@@ -150,18 +150,6 @@ def main() -> int:
         ]
     )
 
-    # CI 环境（如 GitHub Actions）：跳过锁与常驻循环，只跑一次并退出
-    if os.getenv("CI") == "true":
-        logging.info("检测到 CI 环境，跳过 applock 与常驻循环，执行一次 run_once()")
-        try:
-            rc = run_once()
-            return rc
-        finally:
-            try:
-                release_lock()
-            except Exception:
-                pass
-
     if not acquire_lock():
         print("[!] 已有实例在运行，当前进程退出")
         logging.error("已有实例在运行，退出")

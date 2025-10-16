@@ -1,22 +1,13 @@
 {
   "items": [
     {
-      "symbol": "ETH",
-      "pair_id": "5",
-      "pair_name": "ETH/USDT",
+      "symbol": "DOGE",
+      "pair_id": "7",
+      "pair_name": "DOGE/USDT",
       "max_leverage": 1000,
-      "max_order_size": "200000",
+      "max_order_size": "100000",
       "max_mmr": 0.006,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=5"
-    },
-    {
-      "symbol": "SOL",
-      "pair_id": "3",
-      "pair_name": "SOL/USDT",
-      "max_leverage": 1000,
-      "max_order_size": "200000",
-      "max_mmr": 0.006,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=3"
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=7"
     },
     {
       "symbol": "BNB",
@@ -28,58 +19,13 @@
       "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=4"
     },
     {
-      "symbol": "AAVE",
-      "pair_id": "344556658007413760",
-      "pair_name": "AAVE/USDT",
+      "symbol": "LTC",
+      "pair_id": "344556659181818880",
+      "pair_name": "LTC/USDT",
       "max_leverage": 1000,
       "max_order_size": "50000",
       "max_mmr": 0.006,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=344556658007413760"
-    },
-    {
-      "symbol": "MERL",
-      "pair_id": "338391213563145213",
-      "pair_name": "MERL/USDT",
-      "max_leverage": 100,
-      "max_order_size": "50000",
-      "max_mmr": 0.01,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=338391213563145213"
-    },
-    {
-      "symbol": "DOGE",
-      "pair_id": "7",
-      "pair_name": "DOGE/USDT",
-      "max_leverage": 1000,
-      "max_order_size": "100000",
-      "max_mmr": 0.006,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=7"
-    },
-    {
-      "symbol": "BTC",
-      "pair_id": "6",
-      "pair_name": "BTC/USDT",
-      "max_leverage": 1000,
-      "max_order_size": "500000",
-      "max_mmr": 0.006,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=6"
-    },
-    {
-      "symbol": "FARTCOIN",
-      "pair_id": "345622504624494603",
-      "pair_name": "FARTCOIN/USDT",
-      "max_leverage": 1000,
-      "max_order_size": "50000",
-      "max_mmr": 0.01,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=345622504624494603"
-    },
-    {
-      "symbol": "WLD",
-      "pair_id": "345622500929312768",
-      "pair_name": "WLD/USDT",
-      "max_leverage": 1000,
-      "max_order_size": "20000",
-      "max_mmr": 0.01,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=345622500929312768"
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=344556659181818880"
     },
     {
       "symbol": "CHEEMS",
@@ -89,6 +35,15 @@
       "max_order_size": "50000",
       "max_mmr": 0.006,
       "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=345622504624494595"
+    },
+    {
+      "symbol": "WLD",
+      "pair_id": "345622500929312768",
+      "pair_name": "WLD/USDT",
+      "max_leverage": 1000,
+      "max_order_size": "20000",
+      "max_mmr": 0.01,
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=345622500929312768"
     },
     {
       "symbol": "ARC",
@@ -109,6 +64,15 @@
       "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=345622504624494605"
     },
     {
+      "symbol": "FARTCOIN",
+      "pair_id": "345622504624494603",
+      "pair_name": "FARTCOIN/USDT",
+      "max_leverage": 1000,
+      "max_order_size": "50000",
+      "max_mmr": 0.01,
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=345622504624494603"
+    },
+    {
       "symbol": "MELANIA",
       "pair_id": "345622504624494608",
       "pair_name": "MELANIA/USDT",
@@ -127,13 +91,31 @@
       "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=345622504624494609"
     },
     {
-      "symbol": "AVL",
-      "pair_id": "345622504624494619",
-      "pair_name": "AVL/USDT",
-      "max_leverage": 200,
-      "max_order_size": "20000",
+      "symbol": "MOODENG",
+      "pair_id": "345622504624494610",
+      "pair_name": "MOODENG/USDT",
+      "max_leverage": 500,
+      "max_order_size": "50000",
       "max_mmr": 0.006,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=345622504624494619"
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=345622504624494610"
+    },
+    {
+      "symbol": "SOL",
+      "pair_id": "3",
+      "pair_name": "SOL/USDT",
+      "max_leverage": 1000,
+      "max_order_size": "200000",
+      "max_mmr": 0.006,
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=3"
+    },
+    {
+      "symbol": "AAVE",
+      "pair_id": "344556658007413760",
+      "pair_name": "AAVE/USDT",
+      "max_leverage": 1000,
+      "max_order_size": "50000",
+      "max_mmr": 0.006,
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=344556658007413760"
     },
     {
       "symbol": "VINE",
@@ -145,105 +127,6 @@
       "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=345622504624494614"
     },
     {
-      "symbol": "LTC",
-      "pair_id": "344556659181818880",
-      "pair_name": "LTC/USDT",
-      "max_leverage": 1000,
-      "max_order_size": "50000",
-      "max_mmr": 0.006,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=344556659181818880"
-    },
-    {
-      "symbol": "BROCCOLI",
-      "pair_id": "345622504624494621",
-      "pair_name": "BROCCOLI/USDT",
-      "max_leverage": 200,
-      "max_order_size": "50000",
-      "max_mmr": 0.006,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=345622504624494621"
-    },
-    {
-      "symbol": "RAY",
-      "pair_id": "347111602306969600",
-      "pair_name": "RAY/USDT",
-      "max_leverage": 200,
-      "max_order_size": "50000",
-      "max_mmr": 0.006,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=347111602306969600"
-    },
-    {
-      "symbol": "LIBRA",
-      "pair_id": "345622504624494620",
-      "pair_name": "LIBRA/USDT",
-      "max_leverage": 50,
-      "max_order_size": "20000",
-      "max_mmr": 0.006,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=345622504624494620"
-    },
-    {
-      "symbol": "ADA",
-      "pair_id": "347111605171679232",
-      "pair_name": "ADA/USDT",
-      "max_leverage": 1000,
-      "max_order_size": "100000",
-      "max_mmr": 0.006,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=347111605171679232"
-    },
-    {
-      "symbol": "JUP",
-      "pair_id": "347111604018245632",
-      "pair_name": "JUP/USDT",
-      "max_leverage": 1000,
-      "max_order_size": "25000",
-      "max_mmr": 0.01,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=347111604018245632"
-    },
-    {
-      "symbol": "ACT",
-      "pair_id": "347111604295069696",
-      "pair_name": "ACT/USDT",
-      "max_leverage": 200,
-      "max_order_size": "50000",
-      "max_mmr": 0.006,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=347111604295069696"
-    },
-    {
-      "symbol": "PNUT",
-      "pair_id": "347111608942358528",
-      "pair_name": "PNUT/USDT",
-      "max_leverage": 1000,
-      "max_order_size": "50000",
-      "max_mmr": 0.006,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=347111608942358528"
-    },
-    {
-      "symbol": "BNX",
-      "pair_id": "347111611643490304",
-      "pair_name": "BNX/USDT",
-      "max_leverage": null,
-      "max_order_size": null,
-      "max_mmr": null,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=347111611643490304"
-    },
-    {
-      "symbol": "XRP",
-      "pair_id": "347111606283169792",
-      "pair_name": "XRP/USDT",
-      "max_leverage": 1000,
-      "max_order_size": "100000",
-      "max_mmr": 0.006,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=347111606283169792"
-    },
-    {
-      "symbol": "EOS",
-      "pair_id": "347111607847645184",
-      "pair_name": "EOS/USDT",
-      "max_leverage": 200,
-      "max_order_size": "50000",
-      "max_mmr": 0.006,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=347111607847645184"
-    },
-    {
       "symbol": "TST",
       "pair_id": "345622504624494617",
       "pair_name": "TST/USDT",
@@ -253,13 +136,13 @@
       "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=345622504624494617"
     },
     {
-      "symbol": "MOODENG",
-      "pair_id": "345622504624494610",
-      "pair_name": "MOODENG/USDT",
-      "max_leverage": 500,
-      "max_order_size": "50000",
+      "symbol": "VVV",
+      "pair_id": "345622504624494616",
+      "pair_name": "VVV/USDT",
+      "max_leverage": 50,
+      "max_order_size": "20000",
       "max_mmr": 0.006,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=345622504624494610"
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=345622504624494616"
     },
     {
       "symbol": "POPCAT",
@@ -271,6 +154,69 @@
       "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=345622504624494612"
     },
     {
+      "symbol": "JUP",
+      "pair_id": "347111604018245632",
+      "pair_name": "JUP/USDT",
+      "max_leverage": 1000,
+      "max_order_size": "25000",
+      "max_mmr": 0.01,
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=347111604018245632"
+    },
+    {
+      "symbol": "RAY",
+      "pair_id": "347111602306969600",
+      "pair_name": "RAY/USDT",
+      "max_leverage": 200,
+      "max_order_size": "50000",
+      "max_mmr": 0.006,
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=347111602306969600"
+    },
+    {
+      "symbol": "AVL",
+      "pair_id": "345622504624494619",
+      "pair_name": "AVL/USDT",
+      "max_leverage": 200,
+      "max_order_size": "20000",
+      "max_mmr": 0.006,
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=345622504624494619"
+    },
+    {
+      "symbol": "BROCCOLI",
+      "pair_id": "345622504624494621",
+      "pair_name": "BROCCOLI/USDT",
+      "max_leverage": 200,
+      "max_order_size": "50000",
+      "max_mmr": 0.006,
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=345622504624494621"
+    },
+    {
+      "symbol": "LIBRA",
+      "pair_id": "345622504624494620",
+      "pair_name": "LIBRA/USDT",
+      "max_leverage": 50,
+      "max_order_size": "20000",
+      "max_mmr": 0.006,
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=345622504624494620"
+    },
+    {
+      "symbol": "ACT",
+      "pair_id": "347111604295069696",
+      "pair_name": "ACT/USDT",
+      "max_leverage": 200,
+      "max_order_size": "50000",
+      "max_mmr": 0.006,
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=347111604295069696"
+    },
+    {
+      "symbol": "ADA",
+      "pair_id": "347111605171679232",
+      "pair_name": "ADA/USDT",
+      "max_leverage": 1000,
+      "max_order_size": "100000",
+      "max_mmr": 0.006,
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=347111605171679232"
+    },
+    {
       "symbol": "TRX",
       "pair_id": "347111611874177024",
       "pair_name": "TRX/USDT",
@@ -280,13 +226,13 @@
       "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=347111611874177024"
     },
     {
-      "symbol": "VVV",
-      "pair_id": "345622504624494616",
-      "pair_name": "VVV/USDT",
-      "max_leverage": 50,
-      "max_order_size": "20000",
+      "symbol": "BTC",
+      "pair_id": "6",
+      "pair_name": "BTC/USDT",
+      "max_leverage": 1000,
+      "max_order_size": "500000",
       "max_mmr": 0.006,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=345622504624494616"
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=6"
     },
     {
       "symbol": "BAKE",
@@ -316,22 +262,31 @@
       "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=347111614285901824"
     },
     {
-      "symbol": "PEPE",
-      "pair_id": "347111616588574720",
-      "pair_name": "PEPE/USDT",
+      "symbol": "XRP",
+      "pair_id": "347111606283169792",
+      "pair_name": "XRP/USDT",
       "max_leverage": 1000,
       "max_order_size": "100000",
-      "max_mmr": 0.01,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=347111616588574720"
+      "max_mmr": 0.006,
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=347111606283169792"
     },
     {
-      "symbol": "WIF",
-      "pair_id": "347111620719964160",
-      "pair_name": "WIF/USDT",
-      "max_leverage": 1000,
+      "symbol": "EOS",
+      "pair_id": "347111607847645184",
+      "pair_name": "EOS/USDT",
+      "max_leverage": 200,
       "max_order_size": "50000",
-      "max_mmr": 0.01,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=347111620719964160"
+      "max_mmr": 0.006,
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=347111607847645184"
+    },
+    {
+      "symbol": "BNX",
+      "pair_id": "347111611643490304",
+      "pair_name": "BNX/USDT",
+      "max_leverage": null,
+      "max_order_size": null,
+      "max_mmr": null,
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=347111611643490304"
     },
     {
       "symbol": "PENGU",
@@ -341,6 +296,15 @@
       "max_order_size": "50000",
       "max_mmr": 0.01,
       "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=347111618681532416"
+    },
+    {
+      "symbol": "PNUT",
+      "pair_id": "347111608942358528",
+      "pair_name": "PNUT/USDT",
+      "max_leverage": 1000,
+      "max_order_size": "50000",
+      "max_mmr": 0.006,
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=347111608942358528"
     },
     {
       "symbol": "LINK",
@@ -361,31 +325,22 @@
       "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=347465522314880001"
     },
     {
-      "symbol": "AIXBT",
-      "pair_id": "347495740595551232",
-      "pair_name": "AIXBT/USDT",
-      "max_leverage": 200,
-      "max_order_size": "50000",
-      "max_mmr": 0.006,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=347495740595551232"
-    },
-    {
-      "symbol": "HYPE",
-      "pair_id": "347465522314880003",
-      "pair_name": "HYPE/USDT",
+      "symbol": "PEPE",
+      "pair_id": "347111616588574720",
+      "pair_name": "PEPE/USDT",
       "max_leverage": 1000,
       "max_order_size": "100000",
       "max_mmr": 0.01,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=347465522314880003"
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=347111616588574720"
     },
     {
-      "symbol": "SUI",
-      "pair_id": "347465522314880004",
-      "pair_name": "SUI/USDT",
+      "symbol": "WIF",
+      "pair_id": "347111620719964160",
+      "pair_name": "WIF/USDT",
       "max_leverage": 1000,
-      "max_order_size": "100000",
-      "max_mmr": 0.006,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=347465522314880004"
+      "max_order_size": "50000",
+      "max_mmr": 0.01,
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=347111620719964160"
     },
     {
       "symbol": "TRUMP",
@@ -406,6 +361,42 @@
       "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=347465522314880002"
     },
     {
+      "symbol": "SUI",
+      "pair_id": "347465522314880004",
+      "pair_name": "SUI/USDT",
+      "max_leverage": 1000,
+      "max_order_size": "100000",
+      "max_mmr": 0.006,
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=347465522314880004"
+    },
+    {
+      "symbol": "HYPE",
+      "pair_id": "347465522314880003",
+      "pair_name": "HYPE/USDT",
+      "max_leverage": 1000,
+      "max_order_size": "100000",
+      "max_mmr": 0.01,
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=347465522314880003"
+    },
+    {
+      "symbol": "AIXBT",
+      "pair_id": "347495740595551232",
+      "pair_name": "AIXBT/USDT",
+      "max_leverage": 200,
+      "max_order_size": "50000",
+      "max_mmr": 0.006,
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=347495740595551232"
+    },
+    {
+      "symbol": "KAITO",
+      "pair_id": "360931161288998912",
+      "pair_name": "KAITO/USDT",
+      "max_leverage": 200,
+      "max_order_size": "10000",
+      "max_mmr": 0.006,
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=360931161288998912"
+    },
+    {
       "symbol": "IP",
       "pair_id": "359465789956292608",
       "pair_name": "IP/USDT",
@@ -424,15 +415,6 @@
       "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=360852310403842048"
     },
     {
-      "symbol": "KAITO",
-      "pair_id": "360931161288998912",
-      "pair_name": "KAITO/USDT",
-      "max_leverage": 200,
-      "max_order_size": "10000",
-      "max_mmr": 0.006,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=360931161288998912"
-    },
-    {
       "symbol": "SHELL",
       "pair_id": "359465791478824960",
       "pair_name": "SHELL/USDT",
@@ -442,13 +424,13 @@
       "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=359465791478824960"
     },
     {
-      "symbol": "TON",
-      "pair_id": "362953984731774976",
-      "pair_name": "TON/USDT",
-      "max_leverage": 1000,
-      "max_order_size": "100000",
+      "symbol": "BAN",
+      "pair_id": "361865415812448256",
+      "pair_name": "BAN/USDT",
+      "max_leverage": 50,
+      "max_order_size": "20000",
       "max_mmr": 0.006,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=362953984731774976"
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=361865415812448256"
     },
     {
       "symbol": "VANA",
@@ -460,31 +442,22 @@
       "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=362563872936165376"
     },
     {
-      "symbol": "DOG",
-      "pair_id": "362953990117261312",
-      "pair_name": "DOG/USDT",
-      "max_leverage": 200,
+      "symbol": "MERL",
+      "pair_id": "338391213563145213",
+      "pair_name": "MERL/USDT",
+      "max_leverage": 100,
       "max_order_size": "50000",
-      "max_mmr": 0.006,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=362953990117261312"
+      "max_mmr": 0.01,
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=338391213563145213"
     },
     {
-      "symbol": "ORDI",
-      "pair_id": "362953992407351296",
-      "pair_name": "ORDI/USDT",
+      "symbol": "MUBARAK",
+      "pair_id": "369821362136547328",
+      "pair_name": "MUBARAK/USDT",
       "max_leverage": 200,
-      "max_order_size": "50000",
-      "max_mmr": 0.006,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=362953992407351296"
-    },
-    {
-      "symbol": "BAN",
-      "pair_id": "361865415812448256",
-      "pair_name": "BAN/USDT",
-      "max_leverage": 50,
       "max_order_size": "20000",
-      "max_mmr": 0.006,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=361865415812448256"
+      "max_mmr": 0.01,
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=369821362136547328"
     },
     {
       "symbol": "ORCA",
@@ -505,40 +478,22 @@
       "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=362953995846680576"
     },
     {
-      "symbol": "MUBARAK",
-      "pair_id": "369821362136547328",
-      "pair_name": "MUBARAK/USDT",
+      "symbol": "ORDI",
+      "pair_id": "362953992407351296",
+      "pair_name": "ORDI/USDT",
       "max_leverage": 200,
-      "max_order_size": "20000",
-      "max_mmr": 0.01,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=369821362136547328"
-    },
-    {
-      "symbol": "S",
-      "pair_id": "372406396785786880",
-      "pair_name": "S/USDT",
-      "max_leverage": 1000,
       "max_order_size": "50000",
       "max_mmr": 0.006,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=372406396785786880"
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=362953992407351296"
     },
     {
-      "symbol": "PAXG",
-      "pair_id": "373889454600880128",
-      "pair_name": "PAXG/USDT",
+      "symbol": "TON",
+      "pair_id": "362953984731774976",
+      "pair_name": "TON/USDT",
       "max_leverage": 1000,
-      "max_order_size": "200000",
-      "max_mmr": 0.01,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=373889454600880128"
-    },
-    {
-      "symbol": "FHE",
-      "pair_id": "378692710455836672",
-      "pair_name": "FHE/USDT",
-      "max_leverage": 10,
-      "max_order_size": "50000",
+      "max_order_size": "100000",
       "max_mmr": 0.006,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=378692710455836672"
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=362953984731774976"
     },
     {
       "symbol": "PARTI",
@@ -550,112 +505,40 @@
       "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=372865786315800576"
     },
     {
-      "symbol": "BABY",
-      "pair_id": "378697810184241152",
-      "pair_name": "BABY/USDT",
+      "symbol": "S",
+      "pair_id": "372406396785786880",
+      "pair_name": "S/USDT",
+      "max_leverage": 1000,
+      "max_order_size": "50000",
+      "max_mmr": 0.006,
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=372406396785786880"
+    },
+    {
+      "symbol": "FHE",
+      "pair_id": "378692710455836672",
+      "pair_name": "FHE/USDT",
+      "max_leverage": 10,
+      "max_order_size": "50000",
+      "max_mmr": 0.006,
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=378692710455836672"
+    },
+    {
+      "symbol": "DOG",
+      "pair_id": "362953990117261312",
+      "pair_name": "DOG/USDT",
       "max_leverage": 200,
       "max_order_size": "50000",
       "max_mmr": 0.006,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=378697810184241152"
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=362953990117261312"
     },
     {
-      "symbol": "RESOLV",
-      "pair_id": "401345707035852800",
-      "pair_name": "RESOLV/USDT",
+      "symbol": "PAXG",
+      "pair_id": "373889454600880128",
+      "pair_name": "PAXG/USDT",
       "max_leverage": 1000,
-      "max_order_size": "50000",
-      "max_mmr": 0.006,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=401345707035852800"
-    },
-    {
-      "symbol": "TAO",
-      "pair_id": "400641520052469760",
-      "pair_name": "TAO/USDT",
-      "max_leverage": 1000,
-      "max_order_size": "50000",
+      "max_order_size": "200000",
       "max_mmr": 0.01,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=400641520052469760"
-    },
-    {
-      "symbol": "AVAX",
-      "pair_id": "400641523470827520",
-      "pair_name": "AVAX/USDT",
-      "max_leverage": 1000,
-      "max_order_size": "50000",
-      "max_mmr": 0.006,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=400641523470827520"
-    },
-    {
-      "symbol": "SPX",
-      "pair_id": "410114104766758912",
-      "pair_name": "SPX/USDT",
-      "max_leverage": 1000,
-      "max_order_size": "50000",
-      "max_mmr": 0.006,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=410114104766758912"
-    },
-    {
-      "symbol": "PUMP",
-      "pair_id": "412394882502492160",
-      "pair_name": "PUMP/USDT",
-      "max_leverage": 1000,
-      "max_order_size": "50000",
-      "max_mmr": 0.01,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=412394882502492160"
-    },
-    {
-      "symbol": "1000BONK",
-      "pair_id": "410470859602395136",
-      "pair_name": "1000BONK/USDT",
-      "max_leverage": 1000,
-      "max_order_size": "50000",
-      "max_mmr": 0.01,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=410470859602395136"
-    },
-    {
-      "symbol": "SAHARA",
-      "pair_id": "416568236344082432",
-      "pair_name": "SAHARA/USDT",
-      "max_leverage": 1000,
-      "max_order_size": "50000",
-      "max_mmr": 0.01,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=416568236344082432"
-    },
-    {
-      "symbol": "ENA",
-      "pair_id": "398828132376772608",
-      "pair_name": "ENA/USDT",
-      "max_leverage": 1000,
-      "max_order_size": "50000",
-      "max_mmr": 0.006,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=398828132376772608"
-    },
-    {
-      "symbol": "ARB",
-      "pair_id": "398828133622480896",
-      "pair_name": "ARB/USDT",
-      "max_leverage": 1000,
-      "max_order_size": "50000",
-      "max_mmr": 0.01,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=398828133622480896"
-    },
-    {
-      "symbol": "MKR",
-      "pair_id": "400641518932590592",
-      "pair_name": "MKR/USDT",
-      "max_leverage": 100,
-      "max_order_size": "50000",
-      "max_mmr": 0.01,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=400641518932590592"
-    },
-    {
-      "symbol": "LPT",
-      "pair_id": "396827018349510656",
-      "pair_name": "LPT/USDT",
-      "max_leverage": 1000,
-      "max_order_size": "50000",
-      "max_mmr": 0.006,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=396827018349510656"
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=373889454600880128"
     },
     {
       "symbol": "MASK",
@@ -667,22 +550,85 @@
       "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=398828134889160704"
     },
     {
-      "symbol": "OKB",
-      "pair_id": "423891225494421504",
-      "pair_name": "OKB/USDT",
+      "symbol": "LPT",
+      "pair_id": "396827018349510656",
+      "pair_name": "LPT/USDT",
       "max_leverage": 1000,
       "max_order_size": "50000",
-      "max_mmr": 0.01,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=423891225494421504"
+      "max_mmr": 0.006,
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=396827018349510656"
     },
     {
-      "symbol": "MYX",
-      "pair_id": "421319393037778944",
-      "pair_name": "MYX/USDT",
+      "symbol": "BABY",
+      "pair_id": "378697810184241152",
+      "pair_name": "BABY/USDT",
+      "max_leverage": 200,
+      "max_order_size": "50000",
+      "max_mmr": 0.006,
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=378697810184241152"
+    },
+    {
+      "symbol": "ENA",
+      "pair_id": "398828132376772608",
+      "pair_name": "ENA/USDT",
+      "max_leverage": 1000,
+      "max_order_size": "50000",
+      "max_mmr": 0.006,
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=398828132376772608"
+    },
+    {
+      "symbol": "AVAX",
+      "pair_id": "400641523470827520",
+      "pair_name": "AVAX/USDT",
+      "max_leverage": 1000,
+      "max_order_size": "50000",
+      "max_mmr": 0.006,
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=400641523470827520"
+    },
+    {
+      "symbol": "RESOLV",
+      "pair_id": "401345707035852800",
+      "pair_name": "RESOLV/USDT",
+      "max_leverage": 1000,
+      "max_order_size": "50000",
+      "max_mmr": 0.006,
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=401345707035852800"
+    },
+    {
+      "symbol": "SPX",
+      "pair_id": "410114104766758912",
+      "pair_name": "SPX/USDT",
+      "max_leverage": 1000,
+      "max_order_size": "50000",
+      "max_mmr": 0.006,
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=410114104766758912"
+    },
+    {
+      "symbol": "1000BONK",
+      "pair_id": "410470859602395136",
+      "pair_name": "1000BONK/USDT",
       "max_leverage": 1000,
       "max_order_size": "50000",
       "max_mmr": 0.01,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=421319393037778944"
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=410470859602395136"
+    },
+    {
+      "symbol": "PUMP",
+      "pair_id": "412394882502492160",
+      "pair_name": "PUMP/USDT",
+      "max_leverage": 1000,
+      "max_order_size": "50000",
+      "max_mmr": 0.01,
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=412394882502492160"
+    },
+    {
+      "symbol": "SAHARA",
+      "pair_id": "416568236344082432",
+      "pair_name": "SAHARA/USDT",
+      "max_leverage": 1000,
+      "max_order_size": "50000",
+      "max_mmr": 0.01,
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=416568236344082432"
     },
     {
       "symbol": "CFX",
@@ -694,6 +640,24 @@
       "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=418444693890662400"
     },
     {
+      "symbol": "MYX",
+      "pair_id": "421319393037778944",
+      "pair_name": "MYX/USDT",
+      "max_leverage": 1000,
+      "max_order_size": "50000",
+      "max_mmr": 0.01,
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=421319393037778944"
+    },
+    {
+      "symbol": "OKB",
+      "pair_id": "423891225494421504",
+      "pair_name": "OKB/USDT",
+      "max_leverage": 1000,
+      "max_order_size": "50000",
+      "max_mmr": 0.01,
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=423891225494421504"
+    },
+    {
       "symbol": "BGB",
       "pair_id": "424178690243428352",
       "pair_name": "BGB/USDT",
@@ -701,6 +665,15 @@
       "max_order_size": "50000",
       "max_mmr": 0.008,
       "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=424178690243428352"
+    },
+    {
+      "symbol": "PLUME",
+      "pair_id": "425773263986098176",
+      "pair_name": "PLUME/USDT",
+      "max_leverage": 1000,
+      "max_order_size": "50000",
+      "max_mmr": 0.01,
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=425773263986098176"
     },
     {
       "symbol": "MNT",
@@ -721,31 +694,13 @@
       "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=425773265131143168"
     },
     {
-      "symbol": "PLUME",
-      "pair_id": "425773263986098176",
-      "pair_name": "PLUME/USDT",
+      "symbol": "BIO",
+      "pair_id": "426495844024320000",
+      "pair_name": "BIO/USDT",
       "max_leverage": 1000,
       "max_order_size": "50000",
       "max_mmr": 0.01,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=425773263986098176"
-    },
-    {
-      "symbol": "WLFI",
-      "pair_id": "427538006799286272",
-      "pair_name": "WLFI/USDT",
-      "max_leverage": 1000,
-      "max_order_size": "50000",
-      "max_mmr": 0.01,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=427538006799286272"
-    },
-    {
-      "symbol": "XPL",
-      "pair_id": "428976662680436736",
-      "pair_name": "XPL/USDT",
-      "max_leverage": 1000,
-      "max_order_size": "50000",
-      "max_mmr": 0.01,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=428976662680436736"
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=426495844024320000"
     },
     {
       "symbol": "YZY",
@@ -757,22 +712,40 @@
       "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=426759672440029184"
     },
     {
-      "symbol": "BIO",
-      "pair_id": "426495844024320000",
-      "pair_name": "BIO/USDT",
+      "symbol": "WLFI",
+      "pair_id": "427538006799286272",
+      "pair_name": "WLFI/USDT",
       "max_leverage": 1000,
       "max_order_size": "50000",
       "max_mmr": 0.01,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=426495844024320000"
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=427538006799286272"
     },
     {
-      "symbol": "M",
-      "pair_id": "432241655114891264",
-      "pair_name": "M/USDT",
+      "symbol": "TAO",
+      "pair_id": "400641520052469760",
+      "pair_name": "TAO/USDT",
       "max_leverage": 1000,
       "max_order_size": "50000",
       "max_mmr": 0.01,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=432241655114891264"
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=400641520052469760"
+    },
+    {
+      "symbol": "LINEA",
+      "pair_id": "430903578714963968",
+      "pair_name": "LINEA/USDT",
+      "max_leverage": 1000,
+      "max_order_size": "20000",
+      "max_mmr": 0.01,
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=430903578714963968"
+    },
+    {
+      "symbol": "XPL",
+      "pair_id": "428976662680436736",
+      "pair_name": "XPL/USDT",
+      "max_leverage": 1000,
+      "max_order_size": "50000",
+      "max_mmr": 0.01,
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=428976662680436736"
     },
     {
       "symbol": "JELLYJELLY",
@@ -793,40 +766,22 @@
       "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=429348054663954432"
     },
     {
-      "symbol": "LINEA",
-      "pair_id": "430903578714963968",
-      "pair_name": "LINEA/USDT",
-      "max_leverage": 1000,
-      "max_order_size": "20000",
-      "max_mmr": 0.01,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=430903578714963968"
-    },
-    {
-      "symbol": "LAUNCHCOIN",
-      "pair_id": "432655890206687232",
-      "pair_name": "LAUNCHCOIN/USDT",
-      "max_leverage": 100,
-      "max_order_size": "20000",
-      "max_mmr": 0.01,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=432655890206687232"
-    },
-    {
-      "symbol": "BCH",
-      "pair_id": "432324928348356608",
-      "pair_name": "BCH/USDT",
+      "symbol": "ARB",
+      "pair_id": "398828133622480896",
+      "pair_name": "ARB/USDT",
       "max_leverage": 1000,
       "max_order_size": "50000",
       "max_mmr": 0.01,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=432324928348356608"
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=398828133622480896"
     },
     {
-      "symbol": "SAPIEN",
-      "pair_id": "432899090477481984",
-      "pair_name": "SAPIEN/USDT",
+      "symbol": "MKR",
+      "pair_id": "400641518932590592",
+      "pair_name": "MKR/USDT",
       "max_leverage": 100,
-      "max_order_size": "20000",
+      "max_order_size": "50000",
       "max_mmr": 0.01,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=432899090477481984"
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=400641518932590592"
     },
     {
       "symbol": "SOMI",
@@ -838,6 +793,51 @@
       "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=432655892018626560"
     },
     {
+      "symbol": "M",
+      "pair_id": "432241655114891264",
+      "pair_name": "M/USDT",
+      "max_leverage": 1000,
+      "max_order_size": "50000",
+      "max_mmr": 0.01,
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=432241655114891264"
+    },
+    {
+      "symbol": "BCH",
+      "pair_id": "432324928348356608",
+      "pair_name": "BCH/USDT",
+      "max_leverage": 1000,
+      "max_order_size": "50000",
+      "max_mmr": 0.01,
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=432324928348356608"
+    },
+    {
+      "symbol": "NMR",
+      "pair_id": "432899089231773696",
+      "pair_name": "NMR/USDT",
+      "max_leverage": 100,
+      "max_order_size": "20000",
+      "max_mmr": 0.01,
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=432899089231773696"
+    },
+    {
+      "symbol": "LAUNCHCOIN",
+      "pair_id": "432655890206687232",
+      "pair_name": "LAUNCHCOIN/USDT",
+      "max_leverage": 100,
+      "max_order_size": "20000",
+      "max_mmr": 0.01,
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=432655890206687232"
+    },
+    {
+      "symbol": "SAPIEN",
+      "pair_id": "432899090477481984",
+      "pair_name": "SAPIEN/USDT",
+      "max_leverage": 100,
+      "max_order_size": "20000",
+      "max_mmr": 0.01,
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=432899090477481984"
+    },
+    {
       "symbol": "RED",
       "pair_id": "433239137311522816",
       "pair_name": "RED/USDT",
@@ -845,6 +845,51 @@
       "max_order_size": "50000",
       "max_mmr": 0.01,
       "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=433239137311522816"
+    },
+    {
+      "symbol": "OPEN",
+      "pair_id": "433385148075999232",
+      "pair_name": "OPEN/USDT",
+      "max_leverage": 100,
+      "max_order_size": "20000",
+      "max_mmr": 0.01,
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=433385148075999232"
+    },
+    {
+      "symbol": "FLOCK",
+      "pair_id": "433626162028085248",
+      "pair_name": "FLOCK/USDT",
+      "max_leverage": 100,
+      "max_order_size": "20000",
+      "max_mmr": 0.01,
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=433626162028085248"
+    },
+    {
+      "symbol": "K",
+      "pair_id": "433626163345096704",
+      "pair_name": "K/USDT",
+      "max_leverage": 100,
+      "max_order_size": "20000",
+      "max_mmr": 0.01,
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=433626163345096704"
+    },
+    {
+      "symbol": "ETH",
+      "pair_id": "5",
+      "pair_name": "ETH/USDT",
+      "max_leverage": 1000,
+      "max_order_size": "200000",
+      "max_mmr": 0.006,
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=5"
+    },
+    {
+      "symbol": "AI",
+      "pair_id": "433734705884430336",
+      "pair_name": "AI/USDT",
+      "max_leverage": 100,
+      "max_order_size": "20000",
+      "max_mmr": 0.01,
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=433734705884430336"
     },
     {
       "symbol": "TA",
@@ -865,51 +910,6 @@
       "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=433239139693887488"
     },
     {
-      "symbol": "NMR",
-      "pair_id": "432899089231773696",
-      "pair_name": "NMR/USDT",
-      "max_leverage": 100,
-      "max_order_size": "20000",
-      "max_mmr": 0.01,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=432899089231773696"
-    },
-    {
-      "symbol": "K",
-      "pair_id": "433626163345096704",
-      "pair_name": "K/USDT",
-      "max_leverage": 100,
-      "max_order_size": "20000",
-      "max_mmr": 0.01,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=433626163345096704"
-    },
-    {
-      "symbol": "FLOCK",
-      "pair_id": "433626162028085248",
-      "pair_name": "FLOCK/USDT",
-      "max_leverage": 100,
-      "max_order_size": "20000",
-      "max_mmr": 0.01,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=433626162028085248"
-    },
-    {
-      "symbol": "OPEN",
-      "pair_id": "433385148075999232",
-      "pair_name": "OPEN/USDT",
-      "max_leverage": 100,
-      "max_order_size": "20000",
-      "max_mmr": 0.01,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=433385148075999232"
-    },
-    {
-      "symbol": "AI",
-      "pair_id": "433734705884430336",
-      "pair_name": "AI/USDT",
-      "max_leverage": 100,
-      "max_order_size": "20000",
-      "max_mmr": 0.01,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=433734705884430336"
-    },
-    {
       "symbol": "B2",
       "pair_id": "434390666290659328",
       "pair_name": "B2/USDT",
@@ -917,15 +917,6 @@
       "max_order_size": "20000",
       "max_mmr": 0.01,
       "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=434390666290659328"
-    },
-    {
-      "symbol": "YGG",
-      "pair_id": "434752740829167616",
-      "pair_name": "YGG/USDT",
-      "max_leverage": 100,
-      "max_order_size": "20000",
-      "max_mmr": 0.01,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=434752740829167616"
     },
     {
       "symbol": "HIFI",
@@ -937,67 +928,22 @@
       "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=435040168576024576"
     },
     {
-      "symbol": "BSW",
-      "pair_id": "435040170278912000",
-      "pair_name": "BSW/USDT",
+      "symbol": "YGG",
+      "pair_id": "434752740829167616",
+      "pair_name": "YGG/USDT",
       "max_leverage": 100,
       "max_order_size": "20000",
       "max_mmr": 0.01,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=435040170278912000"
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=434752740829167616"
     },
     {
-      "symbol": "PEOPLE",
-      "pair_id": "436617926909362176",
-      "pair_name": "PEOPLE/USDT",
-      "max_leverage": 100,
-      "max_order_size": "20000",
-      "max_mmr": 0.01,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=436617926909362176"
-    },
-    {
-      "symbol": "RHEA",
-      "pair_id": "437315947242455040",
-      "pair_name": "RHEA/USDT",
-      "max_leverage": 100,
-      "max_order_size": "20000",
-      "max_mmr": 0.01,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=437315947242455040"
-    },
-    {
-      "symbol": "ASTER",
-      "pair_id": "437354159306440704",
-      "pair_name": "ASTER/USDT",
+      "symbol": "ZKC",
+      "pair_id": "436312198516572160",
+      "pair_name": "ZKC/USDT",
       "max_leverage": 1000,
-      "max_order_size": "100000",
-      "max_mmr": 0.01,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=437354159306440704"
-    },
-    {
-      "symbol": "STBL",
-      "pair_id": "437680641539047424",
-      "pair_name": "STBL/USDT",
-      "max_leverage": 100,
-      "max_order_size": "50000",
-      "max_mmr": 0.01,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=437680641539047424"
-    },
-    {
-      "symbol": "SUN",
-      "pair_id": "437680642776367104",
-      "pair_name": "SUN/USDT",
-      "max_leverage": 100,
-      "max_order_size": "50000",
-      "max_mmr": 0.01,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=437680642776367104"
-    },
-    {
-      "symbol": "MEME",
-      "pair_id": "435162381555859456",
-      "pair_name": "MEME/USDT",
-      "max_leverage": 100,
       "max_order_size": "20000",
       "max_mmr": 0.01,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=435162381555859456"
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=436312198516572160"
     },
     {
       "symbol": "AVNT",
@@ -1018,6 +964,33 @@
       "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=436265098378477568"
     },
     {
+      "symbol": "BSW",
+      "pair_id": "435040170278912000",
+      "pair_name": "BSW/USDT",
+      "max_leverage": 100,
+      "max_order_size": "20000",
+      "max_mmr": 0.01,
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=435040170278912000"
+    },
+    {
+      "symbol": "MEME",
+      "pair_id": "435162381555859456",
+      "pair_name": "MEME/USDT",
+      "max_leverage": 100,
+      "max_order_size": "20000",
+      "max_mmr": 0.01,
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=435162381555859456"
+    },
+    {
+      "symbol": "PEOPLE",
+      "pair_id": "436617926909362176",
+      "pair_name": "PEOPLE/USDT",
+      "max_leverage": 100,
+      "max_order_size": "20000",
+      "max_mmr": 0.01,
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=436617926909362176"
+    },
+    {
       "symbol": "Q",
       "pair_id": "436337626698481664",
       "pair_name": "Q/USDT",
@@ -1025,6 +998,15 @@
       "max_order_size": "20000",
       "max_mmr": 0.01,
       "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=436337626698481664"
+    },
+    {
+      "symbol": "STBL",
+      "pair_id": "437680641539047424",
+      "pair_name": "STBL/USDT",
+      "max_leverage": 100,
+      "max_order_size": "50000",
+      "max_mmr": 0.01,
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=437680641539047424"
     },
     {
       "symbol": "W",
@@ -1036,58 +1018,31 @@
       "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=437943168139264000"
     },
     {
-      "symbol": "FTT",
-      "pair_id": "439062993519509504",
-      "pair_name": "FTT/USDT",
-      "max_leverage": 100,
-      "max_order_size": "50000",
-      "max_mmr": 0.01,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=439062993519509504"
-    },
-    {
-      "symbol": "ZEC",
-      "pair_id": "440126685295824896",
-      "pair_name": "ZEC/USDT",
+      "symbol": "ASTER",
+      "pair_id": "437354159306440704",
+      "pair_name": "ASTER/USDT",
       "max_leverage": 1000,
-      "max_order_size": "50000",
+      "max_order_size": "100000",
       "max_mmr": 0.01,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=440126685295824896"
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=437354159306440704"
     },
     {
-      "symbol": "WAL",
-      "pair_id": "440126675170775040",
-      "pair_name": "WAL/USDT",
+      "symbol": "SUN",
+      "pair_id": "437680642776367104",
+      "pair_name": "SUN/USDT",
       "max_leverage": 100,
       "max_order_size": "50000",
       "max_mmr": 0.01,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=440126675170775040"
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=437680642776367104"
     },
     {
-      "symbol": "0G",
-      "pair_id": "438308644195401728",
-      "pair_name": "0G/USDT",
-      "max_leverage": 1000,
-      "max_order_size": "50000",
-      "max_mmr": 0.01,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=438308644195401728"
-    },
-    {
-      "symbol": "AGT",
-      "pair_id": "440126691608252416",
-      "pair_name": "AGT/USDT",
+      "symbol": "RHEA",
+      "pair_id": "437315947242455040",
+      "pair_name": "RHEA/USDT",
       "max_leverage": 100,
-      "max_order_size": "50000",
+      "max_order_size": "20000",
       "max_mmr": 0.01,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=440126691608252416"
-    },
-    {
-      "symbol": "UXLINK",
-      "pair_id": "438710658586902528",
-      "pair_name": "UXLINK/USDT",
-      "max_leverage": 100,
-      "max_order_size": "50000",
-      "max_mmr": 0.01,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=438710658586902528"
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=437315947242455040"
     },
     {
       "symbol": "MIRA",
@@ -1099,22 +1054,58 @@
       "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=439911659746917376"
     },
     {
-      "symbol": "ZKC",
-      "pair_id": "436312198516572160",
-      "pair_name": "ZKC/USDT",
-      "max_leverage": 200,
-      "max_order_size": "20000",
-      "max_mmr": 0.01,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=436312198516572160"
-    },
-    {
-      "symbol": "AIA",
-      "pair_id": "440126702135955456",
-      "pair_name": "AIA/USDT",
+      "symbol": "FTT",
+      "pair_id": "439062993519509504",
+      "pair_name": "FTT/USDT",
       "max_leverage": 100,
       "max_order_size": "50000",
       "max_mmr": 0.01,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=440126702135955456"
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=439062993519509504"
+    },
+    {
+      "symbol": "0G",
+      "pair_id": "438308644195401728",
+      "pair_name": "0G/USDT",
+      "max_leverage": 1000,
+      "max_order_size": "50000",
+      "max_mmr": 0.01,
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=438308644195401728"
+    },
+    {
+      "symbol": "WAL",
+      "pair_id": "440126675170775040",
+      "pair_name": "WAL/USDT",
+      "max_leverage": 100,
+      "max_order_size": "50000",
+      "max_mmr": 0.01,
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=440126675170775040"
+    },
+    {
+      "symbol": "UXLINK",
+      "pair_id": "438710658586902528",
+      "pair_name": "UXLINK/USDT",
+      "max_leverage": 100,
+      "max_order_size": "50000",
+      "max_mmr": 0.01,
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=438710658586902528"
+    },
+    {
+      "symbol": "ZEC",
+      "pair_id": "440126685295824896",
+      "pair_name": "ZEC/USDT",
+      "max_leverage": 1000,
+      "max_order_size": "50000",
+      "max_mmr": 0.01,
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=440126685295824896"
+    },
+    {
+      "symbol": "AGT",
+      "pair_id": "440126691608252416",
+      "pair_name": "AGT/USDT",
+      "max_leverage": 100,
+      "max_order_size": "50000",
+      "max_mmr": 0.01,
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=440126691608252416"
     },
     {
       "symbol": "COAI",
@@ -1135,6 +1126,15 @@
       "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=440258940689338368"
     },
     {
+      "symbol": "AIA",
+      "pair_id": "440126702135955456",
+      "pair_name": "AIA/USDT",
+      "max_leverage": 100,
+      "max_order_size": "50000",
+      "max_mmr": 0.01,
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=440126702135955456"
+    },
+    {
       "symbol": "GIGGLE",
       "pair_id": "440126732464967680",
       "pair_name": "GIGGLE/USDT",
@@ -1153,13 +1153,13 @@
       "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=440968617098104832"
     },
     {
-      "symbol": "MON",
-      "pair_id": "440126845056864256",
-      "pair_name": "MON/USDT",
+      "symbol": "4",
+      "pair_id": "442055780732447744",
+      "pair_name": "4/USDT",
       "max_leverage": 100,
       "max_order_size": "50000",
       "max_mmr": 0.01,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=440126845056864256"
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=442055780732447744"
     },
     {
       "symbol": "FF",
@@ -1171,22 +1171,13 @@
       "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=440998816812519424"
     },
     {
-      "symbol": "4",
-      "pair_id": "442055780732447744",
-      "pair_name": "4/USDT",
+      "symbol": "ENSO",
+      "pair_id": "446374236764046336",
+      "pair_name": "ENSO/USDT",
       "max_leverage": 100,
       "max_order_size": "50000",
       "max_mmr": 0.01,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=442055780732447744"
-    },
-    {
-      "symbol": "2Z",
-      "pair_id": "442085980090346496",
-      "pair_name": "2Z/USDT",
-      "max_leverage": 100,
-      "max_order_size": "50000",
-      "max_mmr": 0.01,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=442085980090346496"
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=446374236764046336"
     },
     {
       "symbol": "CLO",
@@ -1198,13 +1189,22 @@
       "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=446427840212435968"
     },
     {
-      "symbol": "ENSO",
-      "pair_id": "446374236764046336",
-      "pair_name": "ENSO/USDT",
+      "symbol": "2Z",
+      "pair_id": "442085980090346496",
+      "pair_name": "2Z/USDT",
       "max_leverage": 100,
       "max_order_size": "50000",
       "max_mmr": 0.01,
-      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=446374236764046336"
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=442085980090346496"
+    },
+    {
+      "symbol": "MON",
+      "pair_id": "440126845056864256",
+      "pair_name": "MON/USDT",
+      "max_leverage": 100,
+      "max_order_size": "50000",
+      "max_mmr": 0.01,
+      "source_url": "https://surfv2-api.surf.one/pool/pair/config?pair_id=440126845056864256"
     }
   ]
 }
