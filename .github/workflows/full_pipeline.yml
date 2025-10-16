@@ -37,8 +37,14 @@ jobs:
         shell: pwsh
         working-directory: ./currency_leverage_collection
         env:
-          CI: "true"   # 让 main.py 走“跳锁+只跑一次”
+          CI: "true"               # 保持CI一次性运行
+          PYTHONIOENCODING: "utf-8"
+          PYTHONUTF8: "1"
         run: |
+          chcp 65001 > $null
+          [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+          $OutputEncoding = [System.Text.Encoding]::UTF8
+          python -c "import sys; print(sys.stdout.encoding, sys.getfilesystemencoding())"
           python main.py
 
       # 可选：失败时打印最近的错误日志，便于排查
